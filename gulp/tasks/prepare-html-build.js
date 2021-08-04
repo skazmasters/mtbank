@@ -86,7 +86,9 @@ module.exports = () => {
 
     const sourceTemplate = $.fs.readFileSync('./config/template-build.html').toString();
     // Получаем время сборки
+    const date = new Date();
     const options = {
+      weekday: 'short',
       year: 'numeric',
       month: 'long',
       day: 'numeric',
@@ -97,11 +99,11 @@ module.exports = () => {
 
     // Подставляем полученные данные и генерируем билд
     $.fs.writeFileSync(
-      `${$.config.outputPath}/html/index.html`,
+      `${$.config.outputPath}/index.html`,
       sourceTemplate
         .replace('{{items}}', `${html.join('')}`)
         .replace(/{{siteName}}/g, $.config.siteName)
-        .replace('{{buildDate}}', new Date().toLocaleString('ru', options)),
+        .replace('{{buildDate}}', new Intl.DateTimeFormat('ru', options).format(date)),
     );
 
     return $.gulp.src(`${$.config.outputPath}/html/**/*.html`)
