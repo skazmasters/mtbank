@@ -1,0 +1,69 @@
+.page-tabs {
+  background: #FFFFFF;
+  box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+  margin-bottom: 50px;
+  white-space: nowrap;
+
+  @include tablet-and-mobile {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    @include reset-slider-container;
+  }
+
+  &__inner {
+    display: flex;
+
+    @include desktop {
+      margin: 0 -50px;
+      justify-content: center;
+    }
+  }
+
+  &__tab {
+    @include desktop {
+      padding: 0 50px;
+    }
+
+    @include tablet-and-mobile{
+      margin-left: 40px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__link {
+    padding: 43px 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    position: relative;
+    display: block;
+
+    @include tablet-and-mobile {
+      font-size: 16px;
+      padding: 28px 0;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &.active {
+      color: $color-primary;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background: $color-primary;
+      }
+    }
+  }
+}

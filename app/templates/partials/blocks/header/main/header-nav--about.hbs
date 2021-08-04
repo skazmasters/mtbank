@@ -1,0 +1,28 @@
+<li class="header-nav__item js-header__item">
+  <a href="debit-cards.html"
+     class="header-nav__link js-header__link {{#ifCond active 'cards'}} header-nav__link--current{{/ifCond}}">О Банке</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/about/about}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="deposits.html" class="header-nav__link js-header__link{{#ifCond
+          active 'credits'}} header-nav__link--current{{/ifCond}}">Ваше мнение</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/about/opinion}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="deposits.html" class="header-nav__link js-header__link{{#ifCond
+          active 'deposits'}} header-nav__link--current{{/ifCond}}">Карьера</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/about/career}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="#" class="header-nav__link js-header__link{{#ifCond
+          active 'services'}} header-nav__link--current{{/ifCond}}">Контакты</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/about/contacts}}
+  </div>
+</li>

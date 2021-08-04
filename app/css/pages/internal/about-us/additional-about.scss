@@ -1,0 +1,36 @@
+.additional-about {
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h1;
+  }
+
+  &__content {
+    margin-top: 0;
+  }
+
+  .accordion-item__inner {
+    padding-top: 15px;
+    padding-bottom: 0;
+
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+
+  @include mobile {
+    .accordion-item__text {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  .static {
+    max-width: 887px;
+  }
+}
+
+.container-850 {
+  max-width: 890px;
+  margin: 0 auto;
+}

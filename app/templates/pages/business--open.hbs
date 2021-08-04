@@ -1,0 +1,48 @@
+{{! Бизнесу / Открытие счета }}
+
+{{> layout/head page-title="Бизнесу / Открытие счета" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+{{> hero/business-open }}
+
+{{> blocks/common/features-grid title="Преимущества открытия счета в МТБанк" assets-folder="business/open"
+        title-1="Оптимальные тарифные планы"
+        text-1="Если вы еще не являетесь клиентом банка&#8209;предоставляете только справку о доходах и паспорт."
+        title-2="Бесплатное открытие счета"
+        text-2="Одобрение в день обращения. Оформите заявку и получите деньги на следующий день."
+        title-3="Персональные клиент&#8209;менеджеры"
+        text-3="Вы можете погасить всю задолженность по кредиту без каких либо штрафов и процентов."
+        title-4="Бесплатный выпуск карт для перечисления дохода ИП"
+        text-4="Возможность заключения договора добровольного страхования медицинских расходов."
+        title-5="Безналичные платежи"
+        text-5="Безналичные платежи с использованием карточки без комиссии."
+        title-6="Удобное пополнение счёта"
+        text-6="Пополнение счета через интернет банкинг, в отделениях и банкоматах."
+}}
+{{> blocks/business/open/02_pricing }}
+{{> blocks/business/open/03_banner }}
+{{> blocks/business/open/04_services }}
+{{> blocks/business/open/05_operations }}
+{{> blocks/business/open/06_more }}
+{{> blocks/common/terms-section
+        title="Процесс открытия счета" small-title=true
+        term-1="Оформите заявку"
+        term-1-text="Укажите основную информацию о компании"
+        term-2="Дождитесь нашего звонка"
+        term-2-text="Мы свяжемся с вами, чтобы уточнить удобные для вас офис и время визита для открытия счёта"
+        term-3="Приходите в офис"
+        term-3-text="В выбранное время приходите оформлять счёт, обязательно возьмите паспорт"
+}}
+
+{{> forms/business step=1 }}
+{{> forms/business step=1 with-error=true }}
+{{> forms/business step=2 }}
+{{> forms/business step=3 }}
+{{> forms/business step=3 with-error=true }}
+{{> forms/business step=4 }}
+{{> forms/business step=5 }}
+{{> forms/success-account }}
+{{> forms/failure-account }}
+
+{{> layout/footer business=true }}

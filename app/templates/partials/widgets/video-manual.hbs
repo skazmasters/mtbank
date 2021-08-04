@@ -1,0 +1,18 @@
+<div class="video-manual">
+  <div class="video-manual__image">
+    {{> widgets/video-image img=img ext=ext small=true top=true}}
+  </div>
+  <div class="video-manual__content">
+    <span class="video-manual__title">{{title}}</span>
+    <ol>
+      {{#if item-1}}
+        <li>{{{item-1}}}</li>{{/if}}
+      {{#if item-2}}
+        <li>{{{item-2}}}</li>{{/if}}
+      {{#if item-3}}
+        <li>{{{item-3}}}</li>{{/if}}
+      {{#if item-4}}
+        <li>{{{item-4}}}</li>{{/if}}
+    </ol>
+  </div>
+</div>

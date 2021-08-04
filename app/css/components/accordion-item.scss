@@ -1,0 +1,268 @@
+.accordion-item {
+  border-bottom: 1px solid $color-gray-40;
+  margin: 0 -20px;
+  @include mobile {
+    margin: 0 -15px;
+  }
+
+  &:last-child {
+    border-bottom: 0 none;
+  }
+
+  &.opened {
+    border-bottom-color: transparent;
+  }
+
+  &__header {
+    padding: 0 20px;
+    @include mobile {
+      padding: 0 15px;
+    }
+  }
+
+  &__content {
+    // display: none;
+    position: absolute;
+    left: -50000px;
+
+    padding: 0 20px;
+    @include mobile {
+      padding: 0 15px;
+    }
+
+    .opened & {
+      display: block;
+      position: static;
+      left: 0;
+    }
+
+    &.animate {
+      left: 0;
+      position: relative;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.32s ease;
+    }
+
+    .static {
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+      color: $color-gray-100;
+
+      li:before {
+        width: 6px;
+        height: 6px;
+      }
+
+      table {
+        margin-top: 35px;
+      }
+    }
+
+    .gallery-slider {
+      height: 495px;
+      margin-bottom: 40px;
+
+      @include mobile {
+        height: auto;
+      }
+    }
+  }
+
+  &__header-row {
+    padding-right: 150px;
+    position: relative;
+    display: flex;
+    @include mobile {
+      padding-right: 50px;
+      min-height: 33px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    margin-right: 30px;
+    @include mobile {
+      margin-right: 15px;
+    }
+  }
+
+  &__inner {
+    width: 880px;
+    max-width: 100%;
+    padding: 0 0 65px;
+    margin: 0 auto;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    text-align: left;
+    cursor: pointer;
+
+    .accordion-item:first-child & {
+      margin-top: -30px;
+      @include mobile {
+        margin-top: -25px;
+      }
+
+
+      .faq__item & {
+        margin-top: 0;
+      }
+    }
+
+    @include mobile {
+      padding: 25px 0;
+    }
+
+    &:hover {
+      .opened & .accordion-item__title {
+        //color: $color-primary-hover;
+      }
+
+      .accordion-item__icon {
+        border-color: $color-gray-60;
+      }
+
+      .accordion-item__title {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__text-container {
+    display: block;
+    margin-right: 15px;
+  }
+
+  &__title {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    @include text-h3;
+    @include transition;
+    max-width: 990px;
+
+    .accordion-item--small & {
+      font-size: 20px;
+      line-height: 130%;
+      @include mobile {
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    @include reset-slider-container-mobile;
+  }
+
+  &__text {
+    margin: 5px 0 0;
+    @include text-body-2;
+    letter-spacing: -0.03em;
+    color: $color-gray-80;
+    width: 100%;
+    display: flex;
+
+    @include mobile {
+      width: auto;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-top: 10px;
+    }
+
+    span {
+      display: inline-block;
+      padding-left: 15px;
+      margin-left: 15px;
+      position: relative;
+      white-space: nowrap;
+
+      &:first-child {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 1px;
+        height: 70%;
+        border-radius: 10px;
+        @include align(false, true);
+        z-index: 1;
+        background: $color-gray-80;
+      }
+
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    right: 0;
+    @include align(false, true);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 42px;
+    height: 42px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid $color-gray-40;
+    @include transition;
+
+
+    @include media(mobile) {
+      width: 33px;
+      height: 33px;
+    }
+
+    .icon {
+      @include transition;
+    }
+  }
+
+  &.opened {
+    .accordion-item {
+      &__icon,
+      &__title {
+        color: $color-primary;
+      }
+
+      &__icon {
+        background-color: $color-gray-20;
+        border-color: $color-gray-20;
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.section--gray .accordion-item.opened .accordion-item__icon {
+  background: $color-white;
+}

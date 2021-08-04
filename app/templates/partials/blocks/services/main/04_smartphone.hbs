@@ -1,0 +1,43 @@
+<section class="section">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Оплата смартфоном</h2>
+    </header>
+    <div class="section__content">
+      <div class="services-row services-row--full">
+        <div class="services-row__inner">
+          <div class="services-row__cell services-row__cell--50">
+            {{> widgets/service-card
+                    card-mode="big"
+                    icon="apple-pay"
+                    title="Apple Pay"
+                    text="Пользуйтесь всеми преимуществами карты МТБанка с Apple Pay. Это удобный, безопасный способ оплаты."
+                    image="07"
+                    image-mobile="07-mobile"
+                    link-label="Подробнее"
+                    only-browser=true
+            }}
+          </div>
+          <div class="services-row__cell services-row__cell--25">
+            {{> widgets/service-card
+                    card-mode="small"
+                    icon="samsung-pay"
+                    title="Samsung Pay"
+                    text="Безопасный мобильный платежный сервис, который принимается к оплате везде."
+                    link-label="Подробнее"
+            }}
+          </div>
+          <div class="services-row__cell  services-row__cell--25">
+            {{> widgets/service-card
+                    card-mode="small"
+                    icon="mtbank-hce"
+                    title="MTBank HCE"
+                    text="Приложение позволяет рассчитываться за товары и услуги в торговой сети при помощи вашего смартфона прикосновением к терминалу."
+                    link-label="Подробнее"
+            }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

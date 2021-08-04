@@ -1,0 +1,32 @@
+.header-top {
+  background: $color-primary;
+
+  @include tablet-and-mobile {
+    position: relative;
+    z-index: z(header);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+
+    @include mobile{
+      height: 37px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    height: 100%;
+  }
+
+  &__right {
+    height: 100%;
+  }
+}

@@ -1,0 +1,171 @@
+.mixmax-card {
+  height: 100%;
+
+  &__container {
+    padding: 40px 50px 45px;
+    border: 1px solid $color-gray-40;
+    border-radius: 15px;
+    box-shadow: 0 0 0 0 transparent;
+    overflow: hidden;
+    @include transition;
+    height: 100%;
+
+    @include media(mobile) {
+      padding: 17px 17px 30px;
+    }
+
+    &:hover {
+      @include shadow(lg);
+      border-color: transparent;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-width: 275px;
+
+    @include media(mobile) {
+      max-width: initial;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 63.65%;
+    }
+
+    img {
+      @include fill;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      @include shadow(md);
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 30px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  &__btn {
+    @include media(mobile, up) {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  ul {
+    + ul {
+      margin-top: 30px;
+    }
+  }
+
+  li {
+    position: relative;
+    padding-left: 42px;
+    margin-top: 25px;
+    @include text-body-1;
+
+    @include media(mobile, up) {
+      line-height: 26px;
+    }
+
+    @include media(mobile) {
+      margin-top: 15px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      @include sprite('tick');
+
+      @include media(mobile) {
+        transform: scale(0.82);
+      }
+    }
+  }
+
+  .btn {
+    @include media(mobile, up) {
+      @include btn-large;
+    }
+
+    @include media(mobile) {
+      @include btn-regular;
+    }
+  }
+
+  .btn--primary {
+    @include shadow(lg);
+  }
+
+  .btn--simple {
+    color: $color-gray-100;
+
+    &:hover {
+      color: $color-gray-80;
+    }
+  }
+
+  &--mix, &--max {
+    .primary li {
+      &:after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 9px;
+        @include sprite('mixmax-tick');
+
+        @include media(mobile) {
+          transform: scale(0.667);
+        }
+      }
+
+      &:before {
+        width: 30px;
+        height: 30px;
+        background: $color-primary;
+        border-radius: 100%;
+        display: block;
+        position: absolute;
+        left: -5px;
+
+        @include media(mobile) {
+          transform: scale(0.667);
+        }
+      }
+
+      @include media(mobile, up) {
+        margin-top: 27px;
+      }
+    }
+  }
+
+  &--mix {
+    @extend .theme-halva-mix;
+  }
+}

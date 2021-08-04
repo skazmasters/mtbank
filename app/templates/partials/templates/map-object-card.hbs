@@ -1,0 +1,20 @@
+<template id="tpl-object-card">
+  <li class="map-side__object-item">
+    <div class="map-object" data-container>
+      <div class="map-object__details">
+        <span class="map-object__title" data-field="name"></span>
+        <div class="map-object__locations">
+          <span class="map-object__location" data-field="location1"></span>
+          <span class="map-object__location" data-field="location2"></span>
+        </div>
+        <span class="map-object__schedule map-object__schedule--close" data-field="openingTime"></span>
+        <span class="map-object__schedule" data-field="workingHours"></span>
+      </div>
+      <div class="map-object__extra">
+        <div class="map-object__marker" data-icon></div>
+        <span class="map-object__currency" data-field="currency"></span>
+        <span class="map-object__type" data-field="type"></span>
+      </div>
+    </div>
+  </li>
+</template>

@@ -1,0 +1,64 @@
+<div class="button-and-more {{#if no-link}}{{#if mobile-apps}}{{else}}{{#if
+        label-2}}{{else}}button-and-more--no-link{{/if}}{{/if}}{{/if}} {{#if white}}button-and-more--white{{/if}} {{#if
+        small}}button-and-more--small{{/if}}  {{#if
+        link-white}}button-and-more--link-white{{/if}}">
+
+  {{#if label}}
+    {{#if small}}
+      {{#if white}}
+        {{>ui/btn label=label href=href color="white"}}
+      {{ else}}
+        {{>ui/btn label=label href=href color="primary"}}
+        {{#if label-2}}
+          {{>ui/btn label=label-2 icon=label-2-icon}}
+        {{/if}}
+      {{/if}}
+    {{else}}
+      {{#if white}}
+        {{>ui/btn label=label size="large" href=href color="white"}}
+      {{ else}}
+        {{>ui/btn label=label size="large" href=href color="primary"}}
+        {{#if label-2}}
+          {{>ui/btn label=label-2 icon=label-2-icon size="large"}}
+        {{/if}}
+      {{/if}}
+    {{/if}}
+  {{/if}}
+
+  {{#if no-link}}{{else}}
+    {{#if link-label}}
+      <a href="{{href}}" class="button-and-more__link {{#if link-with-dots}}button-and-more__link--dots{{/if}}">
+        {{link-label}}
+      </a>
+    {{else}}
+      <a href="{{href}}" class="button-and-more__link {{#if link-with-dots}}button-and-more__link--dots{{/if}}">
+        Подробнее
+      </a>
+    {{/if}}
+  {{/if}}
+
+  {{#if mobile-apps}}
+    {{#if small}}
+      {{#if mobile-apps-light}}
+        {{> widgets/mobileapp-button size="middle" appstore=true white=true label=false}}
+        {{> widgets/mobileapp-button size="middle" android=true white=true label=false}}
+      {{else}}
+        {{#if mobile-apps-gray}}
+          {{> widgets/mobileapp-button size="middle" appstore=true light=true label=false}}
+          {{> widgets/mobileapp-button size="middle" android=true light=true label=false}}
+        {{else}}
+          {{> widgets/mobileapp-button size="middle" appstore=true white=false label=false}}
+          {{> widgets/mobileapp-button size="middle" googleplay=true white=false label=false}}
+        {{/if}}
+      {{/if}}
+    {{else}}
+      {{#if mobile-apps-light}}
+        {{> widgets/mobileapp-button appstore=true white=true label=false}}
+        {{> widgets/mobileapp-button android=true white=true label=false}}
+      {{else}}
+        {{> widgets/mobileapp-button appstore=true white=false label=false}}
+        {{> widgets/mobileapp-button googleplay=true white=false label=false}}
+      {{/if}}
+    {{/if}}
+  {{/if}}
+</div>

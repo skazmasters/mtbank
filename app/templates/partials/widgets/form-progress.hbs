@@ -1,0 +1,12 @@
+<div class="form-progress">
+  <div class="form-progress__inner">
+    <span class="form-progress__step {{#ifCond step 1}}active{{else}}filled{{/ifCond}}"></span>
+    <span class="form-progress__step {{#ifCond step 2}}active{{/ifCond}}{{#ifCond step 3}}filled{{/ifCond}}{{#ifCond step 4}}filled{{/ifCond}}{{#ifCond step 5}}filled{{/ifCond}}"></span>
+    <span class="form-progress__step {{#ifCond step 3}}active{{/ifCond}}{{#ifCond step 4}}filled{{/ifCond}}{{#ifCond step 5}}filled{{/ifCond}}"></span>
+    <span class="form-progress__step {{#ifCond step 4}}active{{/ifCond}}{{#ifCond step 5}}filled{{/ifCond}}"></span>
+    {{#ifCond count 4}}
+    {{else}}
+      <span class="form-progress__step {{#ifCond step 5}}active{{/ifCond}}"></span>
+    {{/ifCond}}
+  </div>
+</div>

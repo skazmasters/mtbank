@@ -1,0 +1,20 @@
+<div class="subpage-banner {{#if text-wide}}subpage-banner--text-wide{{/if}} {{#if size}} subpage-banner--{{size}}{{/if}} {{#if border}}subpage-banner--border{{/if}}">
+  <a class="subpage-banner__link" href="{{href}}"></a>
+  <div class="subpage-banner__content">
+    <span class="subpage-banner__title">{{title}}</span>
+    <p class="subpage-banner__text">{{{text}}}</p>
+    <div class="subpage-banner__image">
+      {{>components/image img=image img-mobile=img-mobile ext=ext}}
+    </div>
+    {{#if label}}
+      <div class="subpage-banner__btn">
+        {{>ui/btn color=btn-color size=btn-size icon=btn-icon btn-mode=btn-mode label=label}}
+      </div>
+    {{/if}}
+    {{#if link-label}}
+      <div class="subpage-banner__btn subpage-banner__btn--link">
+        <a href="#" class="subpage-banner__btn-link">{{link-label}}</a>
+      </div>
+    {{/if}}
+  </div>
+</div>

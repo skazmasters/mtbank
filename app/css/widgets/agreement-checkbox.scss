@@ -1,0 +1,52 @@
+.agreement-checkbox {
+  position: relative;
+  width: 100%;
+
+  &__error {
+    display: none;
+    position: absolute;
+    filter: drop-shadow(0px 9px 20px rgba(48, 66, 117, 0.13));
+    background: $color-white;
+    font-size: 15px;
+    line-height: 140%;
+    padding: 18px 20px;
+    width: 245px;
+    border-radius: 24px;
+    top: 100%;
+    left: -30px;
+    margin-top: 16px;
+    letter-spacing: -0.04em;
+    z-index: 2;
+
+    &:before {
+      content: '';
+
+      @include no-mobile {
+        @include triangle(24px, up, $color-white);
+      }
+
+      @include mobile {
+        @include triangle(24px, down, $color-white);
+      }
+
+      left: 30px;
+      top: -12px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    @include mobile {
+      transform: translateY(-100%);
+      top: -40px;
+
+      &:before {
+        top: auto;
+        bottom: -12px;
+      }
+    }
+  }
+
+  &._error .agreement-checkbox__error {
+    display: block;
+  }
+}

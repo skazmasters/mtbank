@@ -1,0 +1,36 @@
+<div class="background-card">
+  <div class="background-card__bg">
+    {{#if img-mobile}}
+      {{> components/image img=img img-mobile=img-mobile ext="jpg"}}
+    {{ else }}
+      {{#if ext}}
+        {{> components/image img=img ext=ext}}
+      {{else}}
+        {{> components/image img=img ext="png"}}
+      {{/if}}
+    {{/if}}
+  </div>
+  <div class="background-card__inner">
+    <span class="background-card__title">{{title}}</span>
+    {{#if feature-1}}
+      <ul class="background-card__list">
+        <li class="background-card__list-item">{{feature-1}}</li>
+        {{#if feature-2}}
+          <li class="background-card__list-item">{{feature-2}}</li>{{/if}}
+        {{#if feature-3}}
+          <li class="background-card__list-item">{{feature-3}}</li>{{/if}}
+        {{#if feature-4}}
+          <li class="background-card__list-item">{{feature-4}}</li>{{/if}}
+      </ul>
+    {{/if}}
+    {{#if button-label}}
+      <div class="background-card__submit">
+        {{# if button-dark}}
+          {{> ui/btn label=button-label color="primary" outline="primary"}}
+        {{else}}
+          {{> ui/btn label=button-label color="white"}}
+        {{/if}}
+      </div>
+    {{/if}}
+  </div>
+</div>

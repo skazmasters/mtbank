@@ -1,0 +1,15 @@
+.payokay-terms {
+  padding: 80px 0 100px;
+
+  @include media(mobile) {
+    padding: 50px 0;
+  }
+
+  .section__content {
+    margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 25px;
+    }
+  }
+}

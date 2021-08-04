@@ -1,0 +1,34 @@
+<section class="section {{#if gray}}section--gray section--gray-desktop{{/if}}">
+  <div class="container">
+    <div class="news-section">
+      <div class="news-section__bg">
+        {{> components/image img=img ext="jpg"}}
+      </div>
+
+      <header class="section__header">
+        <div class="section__header-left">
+          <span class="section__title">Новости</span>
+        </div>
+        <div class="section__header-right">
+          {{> components/link-arrow label="Все новости" mobile-hidden=true}}
+        </div>
+      </header>
+
+      <div class="section__content">
+        <div class="news-section__inner">
+          <ul class="news-section__list">
+            <li class="news-section__item">
+              {{> widgets/news-card label=label-1 title=title-1}}
+            </li>
+            <li class="news-section__item">
+              {{> widgets/news-card label=label-2 title=title-2}}
+            </li>
+            <li class="news-section__item">
+              {{> widgets/news-card label=label-3 title=title-3}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+.bonus-card {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E0E5F0;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 23px;
+  height: 100%;
+
+  min-width: 410px;
+  @include mobile {
+    min-width: 267px;
+  }
+
+  @include mobile {
+    padding: 21px 15px;
+  }
+
+  &__image {
+    width: 94px;
+    min-width: 94px;
+
+    @include mobile {
+      min-width: 57px;
+      width: 57px;
+    }
+  }
+
+  &__title {
+    margin-left: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include mobile {
+      margin-left: 15px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+}

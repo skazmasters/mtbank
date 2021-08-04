@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="container">
+    <div class="rates-table rates-table--other">
+      <div class="rates-table__thead">
+        <div class="rates-table__cell rates-table__cell--currency">
+          <span class="rates-table__th">Валюта</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--quantity">
+          <span class="rates-table__th">Кол-во</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--rate">
+          <span class="rates-table__th">Курс МТБанка</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--nbrb">
+          <span class="rates-table__th">Курс НБРБ</span>
+        </div>
+      </div>
+      <div class="rates-table__tbody">
+        {{> blocks/rates/other/row count=1 label="AUD (Австралийский доллар)"}}
+        {{> blocks/rates/other/row count=1 label="CAD (Канадские доллары)"}}
+        {{> blocks/rates/other/row count=1 label="UAH (Гривна)"}}
+        {{> blocks/rates/other/row count=1 label="GBP (Фунты стерлингов)"}}
+        {{> blocks/rates/other/row count=1 label="CHF (Швейцарские франки)"}}
+        {{> blocks/rates/other/row count=100 label="CZK (Чешские кроны)"}}
+        {{> blocks/rates/other/row count=10 label="PLN (Злотые)"}}
+        {{> blocks/rates/other/row count=100 label="BGN (Болгарские левы)"}}
+        {{> blocks/rates/other/row count=1 count=1 label="TRY (Турецкая лира)"}}
+        {{> blocks/rates/other/row count=1 label="CHY (Китайский юань)"}}
+      </div>
+    </div>
+
+    <div class="rates-content">
+      <p class="rates-content__note"><i>*</i> Текстовая строка про курсы по безналичным платежам. </p>
+    </div>
+  </div>
+</section>

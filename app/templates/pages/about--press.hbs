@@ -1,0 +1,26 @@
+{{!О Банке / Пресс-центр}}
+
+{{> layout/head page-title="О Банке / Пресс-центр"}}
+
+{{> layout/header active-header-menu="about"}}
+
+{{> blocks/common/page-header title="Пресс-центр"
+        item-1="Новости"
+        item-1-active=true
+        item-2="Уведомления"
+        item-3="МТБлог"
+}}
+
+<div class="container">
+  <div class="page-sidebar">
+    <div class="page-sidebar__content">
+      {{>blocks/internal/about-press/main/01_filters}}
+      {{>blocks/internal/about-press/main/02_content}}
+    </div>
+    <aside class="page-sidebar__sidebar">
+      {{>blocks/internal/about-press/main/sidebar}}
+    </aside>
+  </div>
+</div>
+
+{{> layout/footer }}

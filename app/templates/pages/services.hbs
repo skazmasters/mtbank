@@ -1,0 +1,19 @@
+{{! Сервисы }}
+
+{{> layout/head page-title="Онлайн-Сервисы"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+{{> blocks/common/page-header-filters title="Онлайн-сервисы" button-1="Приложения" button-2="Оплата гаджетами" button-3="Веб-сервисы"}}
+
+<div class="section section--gray services-main">
+  {{> blocks/services/main/01_main}}
+  {{> blocks/services/main/02_transfer}}
+  {{> blocks/services/main/03_checkout}}
+  {{> blocks/services/main/04_smartphone}}
+  {{> blocks/services/main/05_other}}
+</div>
+
+{{> blocks/common/socials}}
+
+{{> layout/footer }}

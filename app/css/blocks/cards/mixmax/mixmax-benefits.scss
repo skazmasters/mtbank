@@ -1,0 +1,14 @@
+.mixmax-benefits {
+  .cards-benefits {
+    &__bg {
+      background-color: #E7EDF5;
+    }
+  }
+
+  .carousel-slider__inner {
+    @include media(mobile, up) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}

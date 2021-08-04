@@ -1,0 +1,42 @@
+.cooperation-about {
+  padding: 30px 0 60px;
+  @include mobile {
+    padding: 10px 0 0 0;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 825px;
+    color: $color-white;
+    @include text-h2;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include media(tabletSmall) {
+      margin: 70px 0 0;
+    }
+
+    @include media(mobile) {
+      margin-top: 40px;
+    }
+  }
+
+  &__item {
+    flex: 1 1 33.33%;
+    max-width: 33.333%;
+    margin: 75px 0 0;
+    padding: 0 22px;
+
+    @include mobile{
+      flex: 1 1 50%;
+      max-width: 50%;
+      margin-top: 40px;
+    }
+  }
+}

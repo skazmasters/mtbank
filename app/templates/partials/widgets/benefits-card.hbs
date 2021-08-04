@@ -1,0 +1,16 @@
+<div class="benefits-card">
+  <div class="benefits-card__container">
+    {{#if img}}
+      <div class="benefits-card__image">
+        {{>components/image img=img ext=ext}}
+      </div>
+    {{/if}}
+    <div class="benefits-card__inner">
+      <p class="benefits-card__title">{{title}}</p>
+      <p class="benefits-card__text">{{{text}}}</p>
+      {{#if label}}
+        <div class="benefits-card__btn">{{>ui/btn label=label btn-mode="simple"}}</div>
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="manual-card">
+  <div class="manual-card__image">
+    {{> components/image img=image img-mobile=image-mobile ext="png" ext-mobile="jpg"}}
+  </div>
+  <div class="manual-card__content">
+    <span class="manual-card__title">{{title}}</span>
+    <ul>
+      {{#if item-1}}
+        <li>{{item-1}}</li>{{/if}}
+      {{#if item-2}}
+        <li>{{item-2}}</li>{{/if}}
+      {{#if item-3}}
+        <li>{{item-3}}</li>{{/if}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+.review-slider {
+  position: relative;
+
+  &__nav {
+    position: absolute;
+    bottom: 20px;
+    right: -110px;
+    z-index: z(default) + 1;
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+
+    @include media(tabletSmall) {
+      right: 0;
+    }
+
+    @include media(mobile) {
+      margin-top: 30px;
+      position: static;
+      justify-content: center;
+    }
+  }
+
+  &__nav-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    @include transition;
+    background: $color-white;
+
+    @include media(tabletSmall) {
+      width: 42px;
+      height: 42px;
+    }
+
+    &:hover {
+      background-color: $color-gray-20;
+      color: $color-white;
+    }
+
+    &::after {
+      content: '';
+      @include align(true, true);
+
+      @include media(tabletSmall) {
+        transform: translate(-50%, -50%) scale(0.75);
+      }
+    }
+
+    &--prev {
+      &::after {
+        @include sprite('home-hero-arrow-left');
+        left: 49%;
+      }
+    }
+
+    &--next {
+      &::after {
+        @include sprite('home-hero-arrow-right');
+        left: 52%;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.3;
+      cursor: default;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__nav-item {
+    @include media(mobile) {
+      display: none;
+    }
+
+    &--pagination {
+      @include media(mobile, up) {
+        text-align: center;
+        margin: 0 15px;
+      }
+
+      @include media(mobile) {
+        display: block;
+      }
+    }
+  }
+
+  &__nav-pagination {
+    @include text-body-1;
+    color: $color-gray-60;
+    cursor: default !important;
+
+    .swiper-pagination-current {
+      color: $color-gray-100;
+    }
+
+    @include media(mobile) {
+      line-height: 0;
+    }
+  }
+
+  .swiper-container {
+    @include media(mobile, up) {
+      margin: -20px;
+      padding: 20px;
+    }
+
+    @include media(mobile) {
+      margin: -15px;
+      padding: 15px;
+    }
+  }
+}

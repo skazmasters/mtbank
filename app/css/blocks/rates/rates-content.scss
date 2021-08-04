@@ -1,0 +1,31 @@
+.rates-content {
+  margin-top: 70px;
+  width: 935px;
+  max-width: 100%;
+
+  @include smallTablet-and-mobile {
+    margin-top: 40px;
+  }
+
+  &__note {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    i {
+      color: $color-primary;
+    }
+
+    @include smallTablet-and-mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__small {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $color-gray-60;
+  }
+}

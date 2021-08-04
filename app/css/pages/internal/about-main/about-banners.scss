@@ -1,0 +1,46 @@
+.about-banners {
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -22px;
+
+    @include media(mobile) {
+      margin: -12.5px 0;
+    }
+  }
+
+  &__item {
+    flex: 1 1 49%;
+    display: block;
+    margin: 22px;
+    max-width: calc(50% - 45px);
+
+    @include media(tablet) {
+      flex: 1 1 580px;
+      max-width: unset;
+    }
+
+    @include media(mobile) {
+      margin: 12px 0;
+    }
+
+    &--small {
+      flex: 1 1 25%;
+      max-width: calc(25% - 44px);
+
+      @include media(tablet) {
+        flex: 1 1 49%;
+        max-width: calc(50% - 45px);
+      }
+
+      @include media(mobile) {
+        flex: 1 1 100%;
+        max-width: unset;
+      }
+    }
+
+    &--related {
+      max-width: 100%;
+    }
+  }
+}

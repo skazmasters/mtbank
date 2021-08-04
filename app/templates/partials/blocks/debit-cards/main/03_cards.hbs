@@ -1,0 +1,77 @@
+<section class="section">
+  <div class="container">
+    <div class="cards">
+      <div class="js-accord" data-no-scroll="1">
+        <ul class="cards__row">
+          {{# times 3}}
+            <li class="cards__row-cell">
+              {{#>widgets/debit-card img="01" title="Автокарта" text="Автолюбителю"}}
+                <ul>
+                  <li>Мани-бэк 10% в СТО наших партнеров</li>
+                  <li>Мани-бэк 2% за любые покупки</li>
+                  <li>Мани-бэк 5% на АЗС партнеров</li>
+                </ul>
+              {{/widgets/debit-card}}
+            </li>
+            <li class="cards__row-cell">
+              {{#>widgets/debit-card img="02" title="Имклива" text="Карта рассрочки"}}
+                <ul>
+                  <li>Овердрафт под ставку 28,86%</li>
+                  <li>Лимит по овердрафту 5000 BYN</li>
+                  <li>Страховка в подарок</li>
+                </ul>
+              {{/widgets/debit-card}}
+            </li>
+            <li class="cards__row-cell">
+              {{#>widgets/debit-card img="03" title="Халва плюс" text="Бонусная карта"}}
+                <ul>
+                  <li>До 10% баллами за покупки у партнеров</li>
+                  <li>До 1% баллами от любых покупок по карте</li>
+                  <li>Бесплатное пополнение</li>
+                </ul>
+              {{/widgets/debit-card}}
+            </li>
+          {{/times}}
+        </ul>
+
+        <div class="cards__btn js-accord__button">
+          {{>ui/btn label="Показать все карты" mode="js-accord__toggle"}}
+        </div>
+
+        <div class="js-accord__body cards__row-more">
+          <ul class="cards__row">
+            {{# times 2}}
+              <li class="cards__row-cell">
+                {{#>widgets/debit-card img="01" title="Автокарта" text="Автолюбителю"}}
+                  <ul>
+                    <li>Мани-бэк 10% в СТО наших партнеров</li>
+                    <li>Мани-бэк 2% за любые покупки</li>
+                    <li>Мани-бэк 5% на АЗС партнеров</li>
+                  </ul>
+                {{/widgets/debit-card}}
+              </li>
+              <li class="cards__row-cell">
+                {{#>widgets/debit-card img="02" title="Имклива" text="Карта рассрочки"}}
+                  <ul>
+                    <li>Овердрафт под ставку 28,86%</li>
+                    <li>Лимит по овердрафту 5000 BYN</li>
+                    <li>Страховка в подарок</li>
+                  </ul>
+                {{/widgets/debit-card}}
+              </li>
+              <li class="cards__row-cell">
+                {{#>widgets/debit-card img="03" title="Халва плюс" text="Бонусная карта"}}
+                  <ul>
+                    <li>До 10% баллами за покупки у партнеров</li>
+                    <li>До 1% баллами от любых покупок по карте</li>
+                    <li>Бесплатное пополнение</li>
+                  </ul>
+                {{/widgets/debit-card}}
+              </li>
+            {{/times}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

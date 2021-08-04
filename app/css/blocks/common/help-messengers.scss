@@ -1,0 +1,77 @@
+.help-messengers {
+  max-width: 770px;
+
+  &--center{
+    max-width: none;
+    text-align: center;
+
+    @include mobile{
+      text-align: left;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2;
+    max-width: 500px;
+
+    .help-messengers--center &{
+      max-width: none;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 10px 0 0;
+    @include text-body-1;
+    color: $color-gray-80;
+  }
+
+  &__content {
+    @include media(mobile, up) {
+      margin-top: 50px;
+    }
+
+    .help-messengers--center &{
+      margin-top: 30px;
+    }
+
+    @include media(mobile) {
+      display: flex;
+      margin: 30px -15px 0;
+      max-width: 100vw;
+      overflow: auto;
+      @include hide-scrollbar;
+    }
+  }
+
+  &__list {
+    flex: 0 0 auto;
+    display: flex;
+
+    .help-messengers--center &{
+      justify-content: center;
+
+      @include mobile{
+        justify-content: flex-start;
+      }
+    }
+
+    @include media(mobile) {
+      padding: 0 15px;
+    }
+  }
+
+  &__item {
+    margin-left: 40px;
+
+    @include media(mobile) {
+      margin-left: 20px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

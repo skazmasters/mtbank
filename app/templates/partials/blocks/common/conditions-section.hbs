@@ -1,0 +1,49 @@
+<section class="section {{#if no-gray}}{{else}}section--gray{{/if}}">
+  <div class="container">
+    <div class="conditions-block">
+      <div class="conditions-block__image">
+        {{#if img-mobile}}
+          {{> components/image img=img img-mobile=img-mobile ext="png"}}
+        {{else}}
+          {{> components/image img=img ext="png"}}
+        {{/if}}
+      </div>
+      <div class="conditions-block__content">
+        <h2 class="section__title">{{title}}</h2>
+
+        <ul class="conditions-block__list {{#if big}}conditions-block__list--big{{/if}} conditions-block__list--row-3">
+          <li class="conditions-block__item">
+            <span class="conditions-block__label">{{label-1}}</span>
+            <span class="conditions-block__value">{{value-1}}</span>
+          </li>
+          <li class="conditions-block__item">
+            <span class="conditions-block__label">{{label-2}}</span>
+            <span class="conditions-block__value">{{value-2}}</span>
+          </li>
+          <li class="conditions-block__item">
+            <span class="conditions-block__label">{{label-3}}</span>
+            <span class="conditions-block__value">{{value-3}}</span>
+          </li>
+          <li class="conditions-block__item">
+            <span class="conditions-block__label">{{label-4}}</span>
+            <span class="conditions-block__value">{{value-4}}</span>
+          </li>
+          <li class="conditions-block__item">
+            <span class="conditions-block__label">{{label-5}}</span>
+            <span class="conditions-block__value">{{value-5}}</span>
+          </li>
+          {{#if label-6}}
+            <li class="conditions-block__item">
+              <span class="conditions-block__label">{{label-6}}</span>
+              <span class="conditions-block__value">{{value-6}}</span>
+            </li>
+          {{/if}}
+        </ul>
+
+        <div class="conditions-block__button">
+          {{> ui/btn color="primary" size="large" label=button-label}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

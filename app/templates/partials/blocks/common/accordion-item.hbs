@@ -1,0 +1,30 @@
+<div class="accordion-item {{#if small}}accordion-item--small{{/if}} {{#if active}} opened{{/if}} js-accord">
+  <div class="accordion-item__header">
+    <div class="accordion-item__button js-accord__toggle">
+      <div class="accordion-item__header-row">
+        {{#if icon}}
+          <div class="accordion-item__image">
+            {{> components/image img=icon ext="png"}}
+          </div>
+        {{/if}}
+        <span class="accordion-item__title">{{title}}</span>
+        <div class="accordion-item__icon {{#if icon-mode}}{{icon-mode}}{{/if}}">
+          {{>ui/svg name="action--expand-down"}}
+        </div>
+      </div>
+      {{#if text}}
+        <div class="accordion-item__text-wrapper">
+          <div class="accordion-item__text">
+            <span>{{text}}</span>
+            {{#if text-date}}<span>{{text-date}}</span>{{/if}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+  <div class="accordion-item__content js-accord__body">
+    <div class="accordion-item__inner">
+      {{> @partial-block }}
+    </div>
+  </div>
+</div>

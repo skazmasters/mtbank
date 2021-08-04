@@ -1,0 +1,15 @@
+{{! Карта / Одно отделение }}
+{{> layout/head page-title="Карта / Одно отделение"}}
+{{> layout/header}}
+
+{{> widgets/map/container
+    activeObject=true
+    activeTab=0
+}}
+
+{{> templates/map-object-card }}
+{{> templates/map-object-marker }}
+{{> templates/map-object-details }}
+{{> templates/map-zoom-control }}
+
+{{> layout/footer }}

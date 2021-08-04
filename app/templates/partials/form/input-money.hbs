@@ -1,0 +1,11 @@
+<div class="form-field-money js-input-money" {{#if step}}data-step="{{step}}"{{/if}}>
+  <span class="form-field-money__currency">BYN</span>
+  {{#if value}}
+    {{> form/input label=label border=true value=value}}
+  {{ else}}
+    {{> form/input label=label border=true value=0}}
+  {{/if}}
+  <div class="form-field-money__range">
+    <div class="js-input-money__range"></div>
+  </div>
+</div>

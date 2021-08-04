@@ -1,0 +1,50 @@
+.cards-advantages {
+  overflow: hidden;
+
+  &__list {
+    margin: -25px;
+
+    @include media(desktop) {
+      margin: -20px;
+    }
+
+    @include media(mobile) {
+      margin: 0;
+    }
+
+    @include media(mobile, up) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    @include media(mobile, up) {
+      flex: 1 1 275px;
+      max-width: 275px;
+      margin: 25px;
+    }
+
+    @include media(desktop) {
+      flex: 1 1 calc(25% - 40px);
+      max-width: calc(25% - 40px);
+      margin: 20px;
+    }
+
+    @include media(tabletSmall, only) {
+      flex: 1 1 calc(50% - 40px);
+      max-width: calc(50% - 40px);
+      margin: 20px;
+    }
+
+    @include media(mobile) {
+      flex: 1 1 100%;
+      max-width: 100%;
+      margin: 30px 0 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

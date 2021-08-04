@@ -1,0 +1,38 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="2">
+      <header class="section__header">
+        <h2 class="section__title section__title--small">Смотрите также</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 3}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/business-card
+                          title='Валютная площадка "МТБанк&#8209;экспресс"'
+                          text="Онлайн-сервис для валютно&#8209;обменных операций."
+                          image="business/open/more_01"
+                          image-mobile="business/open/more_01-mobile"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/business-card
+                          title='Эквайринг'
+                          text="Принимайте безналичные платежи  по банковским картам с эквайрингом  от МТБанка."
+                          image="business/open/more_02"
+                          image-mobile="business/open/more_02-mobile"
+                  }}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

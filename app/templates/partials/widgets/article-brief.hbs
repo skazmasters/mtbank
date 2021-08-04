@@ -1,0 +1,15 @@
+<div class="article-brief">
+  <span class="article-brief__label">{{label}}</span>
+  <span class="article-brief__title">{{title}}</span>
+  <p class="article-brief__text">{{text}}</p>
+  {{#if file-label}}
+    <div class="article-brief__actions">
+      {{>components/file-download
+          color=file-color
+          label=file-label
+          small=file-small
+          file-icon="files--pdf"
+      }}
+    </div>
+  {{/if}}
+</div>

@@ -1,0 +1,98 @@
+{{!Инвестиции / Карточка}}
+
+{{> layout/head page-title="Инвестиции / Карточка"}}
+{{> layout/header no-menu-mobile=true active-header-menu="investments" }}
+{{> hero/investments-single }}
+
+<div class="js-tabs">
+  {{> blocks/common/page-tabs tab-1="Страхование жизни и здоровья" tab-2="Страхование детей" tab-3="Страхование дополнительной пенсии"}}
+
+  <div class="js-tab-content tab-1 active">
+    {{> blocks/common/card-overview big-left=true
+            img="investments/single/overview_01" ext="png"
+            img-tabletSmall="investments/single/overview_01-mobile"
+            title="Страхование жизни и здоровья"
+            text="Накопительное страхование – это весомая материальная поддержка для Вас и Ваших близких в случае наступления непредвиденных обстоятельств (болезнь, травма и другое), а также возможность накопить внушительную сумму для реализации мечты."
+            button-label="Оформить карту онлайн"
+            button-2-label="Рассчитать страховку"
+            button-2-icon="button--calc"
+    }}
+    {{> blocks/products/common/card-benefits
+            dark=true
+            arrows-white=true
+            background="linear-gradient(93.55deg, #00A2FD -0.4%, #1B74FD 99.55%), linear-gradient(90.81deg, #9849E6 0.56%, #98A1F8 98.82%);"
+            title="Преимущества программы"
+            image="investments/single/image"
+            feature-1-title="Высокая доходность"
+            feature-1-text="Норма доходности составляет до 7% для договоров в BYN, 3% – в USD, 1% – в EUR"
+            feature-1-icon="investments/single/feature_01"
+            feature-2-title="Гибкий график внесения страховых взносов"
+            feature-2-text="У вас есть возможность выбрать график внесения взносов: разово, ежегодно, ежеквартально или ежемесячно"
+            feature-2-icon="investments/single/feature_02"
+            feature-3-title="Проверенное качество"
+            feature-3-text='Страхователем выступает СООО "Приорлайф", которое уже 19 лет успешно работает на рынке РБ'
+            feature-3-icon="investments/single/feature_03"
+    }}
+
+    {{> blocks/common/card-overview no-padding=true gray=true big-left=true
+            img="investments/single/overview_02" ext="png"
+            img-tabletSmall="investments/single/overview_02-mobile"
+            title="Лучшие условия страхования"
+            feature-1="Заключение договора сроком от 3 до 20 лет."
+            feature-2="Возраст застрахованного лица – от 18 лет."
+            feature-3="Размер страховой суммы устанавливается самостоятельно."
+            feature-4="Страховка покрывает следующие риски: дожитие и уход из жизни человека, который застрахован."
+            feature-5="Взносы можно вносить каждый месяц, квартал или раз в год. Предусмотрен также единовременный платеж."
+            button-label="Оформить через интернет-банк"
+            button-2-label="Тарифы и условия"
+            button-2-icon="button--blank"
+    }}
+
+    {{#> blocks/common/section title="Рассчитайте страховку"}}
+      {{> calculators/investment }}
+    {{/blocks/common/section}}
+  </div>
+  <div class="js-tab-content tab-2">
+    {{#> blocks/common/section title="Tab 2"}}{{/blocks/common/section}}
+
+    {{> blocks/products/common/card-benefits
+            dark=true
+            arrows-white=true
+            background="linear-gradient(93.55deg, #00A2FD -0.4%, #1B74FD 99.55%), linear-gradient(90.81deg, #9849E6 0.56%, #98A1F8 98.82%);"
+            title="Преимущества программы"
+            image="investments/single/image"
+            feature-1-title="Высокая доходность"
+            feature-1-text="Норма доходности составляет до 7% для договоров в BYN, 3% – в USD, 1% – в EUR"
+            feature-1-icon="investments/single/feature_01"
+            feature-2-title="Гибкий график внесения страховых взносов"
+            feature-2-text="У вас есть возможность выбрать график внесения взносов: разово, ежегодно, ежеквартально или ежемесячно"
+            feature-2-icon="investments/single/feature_02"
+            feature-3-title="Проверенное качество"
+            feature-3-text='Страхователем выступает СООО "Приорлайф", которое уже 19 лет успешно работает на рынке РБ'
+            feature-3-icon="investments/single/feature_03"
+    }}
+
+  </div>
+  <div class="js-tab-content tab-3">
+    {{#> blocks/common/section title="Tab 3"}}{{/blocks/common/section}}
+
+    {{> blocks/products/common/card-benefits
+            dark=true
+            arrows-white=true
+            background="linear-gradient(93.55deg, #00A2FD -0.4%, #1B74FD 99.55%), linear-gradient(90.81deg, #9849E6 0.56%, #98A1F8 98.82%);"
+            title="Преимущества программы"
+            image="investments/single/image"
+            feature-1-title="Высокая доходность"
+            feature-1-text="Норма доходности составляет до 7% для договоров в BYN, 3% – в USD, 1% – в EUR"
+            feature-1-icon="investments/single/feature_01"
+            feature-2-title="Гибкий график внесения страховых взносов"
+            feature-2-text="У вас есть возможность выбрать график внесения взносов: разово, ежегодно, ежеквартально или ежемесячно"
+            feature-2-icon="investments/single/feature_02"
+            feature-3-title="Проверенное качество"
+            feature-3-text='Страхователем выступает СООО "Приорлайф", которое уже 19 лет успешно работает на рынке РБ'
+            feature-3-icon="investments/single/feature_03"
+    }}
+  </div>
+</div>
+
+{{> layout/footer }}

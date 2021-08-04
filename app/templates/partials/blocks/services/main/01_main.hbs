@@ -1,0 +1,34 @@
+<section class="section">
+  <div class="container">
+    {{> banners/mobile-bank }}
+
+    <div class="services-row services-row--full">
+      <div class="services-row__inner">
+        <div class="services-row__cell">
+          {{> widgets/service-card
+                  card-mode="big"
+                  icon="banking"
+                  title="Интернет-банк"
+                  text="В любой момент вы можете совершить платёж или проверить, сколько осталось на счёте"
+                  image="04"
+                  image-mobile="04-mobile"
+                  link-label="Подробнее"
+                  only-browser=true
+          }}
+        </div>
+        <div class="services-row__cell">
+          {{> widgets/service-card
+                  card-mode="big"
+                  icon="mt-forex"
+                  title="MTBankFX"
+                  text="Быстрый ввод и вывод средств на вашу карту течение 24 часов. И что то еще."
+                  image="03"
+                  image-mobile="03-mobile"
+                  link-label="Подробнее"
+                  app-stores=common.app-stores
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

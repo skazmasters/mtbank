@@ -1,0 +1,28 @@
+.tender-item {
+  &__files {
+    margin-top: 40px;
+  }
+
+  .content-table {
+    td:first-child {
+      @include no-mobile {
+        width: 31%;
+        padding-right: 15px;
+      }
+    }
+
+    td:last-child {
+      @include no-mobile {
+        width: 69%;
+      }
+    }
+  }
+
+  .accordion-item__inner & {
+    padding-top: 20px;
+
+    @include media(mobile) {
+      padding-top: 5px;
+    }
+  }
+}

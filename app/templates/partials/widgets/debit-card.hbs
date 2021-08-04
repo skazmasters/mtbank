@@ -1,0 +1,26 @@
+<div class="debit-card {{#if white}}debit-card--white{{/if}}">
+  <div class="debit-card__container">
+    <div class="debit-card__content">
+      <h3 class="debit-card__title"><a href="#">{{title}}</a></h3>
+      <p class="debit-card__text">{{text}}</p>
+      <div class="debit-card__image">
+        <div class="debit-card__image-container">
+          {{>components/image img=(concat 'common/cards/debits/' img) ext="png"}}
+        </div>
+      </div>
+
+      <div class="debit-card__list">
+        {{> @partial-block}}
+      </div>
+
+      <div class="debit-card__cta">
+        <div class="debit-card__cta-item">
+          {{>ui/btn color="primary" label="Оформить"}}
+        </div>
+        <div class="debit-card__cta-item">
+          <a class="debit-card__cta-link" href="#">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

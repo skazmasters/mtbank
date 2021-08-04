@@ -1,0 +1,82 @@
+{{!Карты / PayOkay}}
+
+{{> layout/head page-title="Карты / PayOkay" theme-color='payokay'}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main" header-main-hide_mobile=true header-nav-active="cards"}}
+
+<div class="hero-menu-block">
+{{> hero/payokay }}
+{{> blocks/common/page-header title="Обзор"
+        item-1="Обзор"
+        item-1-active=true
+        item-2="Тарифы и условия"
+        item-3="Как работает"
+        item-3="Вопрос-ответ"
+        sticky-button=true
+}}
+</div>
+
+{{> blocks/common/card-overview
+        img="common/cards/payokay/payokay"
+        ext="jpg"
+        title="Деньги возвращаются!"
+        text="В течение месяца вы пользуетесь картой PayOkay. По итогам месяца МТБанк возвращает вам часть потраченных средств деньгами на счет вашей карты."
+        button-label="Оформить карту онлайн"
+}}
+
+{{> blocks/products/common/card-advantages
+        feature-1-icon="cards/payokay/icons/04"
+        feature-1-title="Мани-бэк 1% за любые покупки"
+        feature-1-text="Мани-бэк 1% за все покупки (кроме  продуктовых магазинов) в Беларуси и за границей."
+        feature-2-icon="cards/payokay/icons/05"
+        feature-2-title="Мани-бэк здо 2%, за покупку билетов на mtb.tickets.by"
+        feature-2-text="Бронируйте отели со скидной и возвращайте до 2% реальными деньгами."
+        feature-3-icon="cards/payokay/icons/06"
+        feature-3-title="Мани-бэк до 5% за расчеты на booking.com"
+        feature-3-text="Бронируйте отели со скидной и возвращайте до 2% реальными деньгами."
+        feature-4-icon="cards/payokay/icons/07"
+        feature-4-title="Мани-бэк до 5% при возврате Tax Free на карту"
+        feature-4-text="Получайте Tax Free прямо на карту PayOkay с дополнительным бонусом от банка."
+}}
+
+{{> blocks/products/common/card-benefits
+        dark=true
+        arrows-white=true
+        background="linear-gradient(90.78deg,#9849e6 .56%,#98a1f8 98.87%)"
+        title="Преимущества вашей карты"
+        text="Страховка, скидки, специальный курс. Все это доступно с картой PayOkay от МТБанк."
+        image="cards/payokay/benefits/bg"
+        feature-1-title="Страховка в подарок"
+        feature-1-text="Не беспокойтесь о получении страховки перед выездом за границу, получите страховку онлайн и бесплатно."
+        feature-1-icon="cards/payokay/icons/01"
+        feature-2-title="Бесплатное пополнение карт"
+        feature-2-text="Любой банк РБ и в 61 страну мира. Бесплатно для карты МТБанка."
+        feature-2-icon="cards/payokay/icons/02"
+        feature-3-title="Экстренное восстановление карты"
+        feature-3-text="Теперь не стоит беспокоится о потере карты за рубежом. Восстановление за 2 часа."
+        feature-3-icon="cards/payokay/icons/03"
+}}
+
+{{>blocks/products/payokay/main/exchange}}
+
+{{> blocks/products/common/calculator
+        white=true
+        title="Рассчитайте свой кэшбэк"
+        text="Возвращайте до 40% от прибыли в год с картой “Название карты”"
+        has-more-filters=true
+        card-image="common/cards/payokay/payokay"
+        card-image-ext="jpg"
+}}
+
+{{> blocks/products/payokay/main/services }}
+
+{{> blocks/common/terms-section
+        title="Оформите PayOkay для получения зарплаты"
+        term-1="Оформите карту и заполните заявление"
+        term-2="Передайте заявление в бухгалтерию на вашей работе"
+        term-3="Получайте дополнительные преимущества по вашей карте"
+}}
+
+{{> forms/payokay}}
+
+{{> layout/footer }}

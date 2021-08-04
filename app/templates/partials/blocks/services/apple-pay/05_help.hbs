@@ -1,0 +1,47 @@
+<section class="section js-tabs">
+  <div class="container-880">
+    <div class="applepay-help js-tabs">
+      <h2 class="section__title">Как подключить ApplePay</h2>
+      <div class="feature-tabs">
+        <div class="feature-tabs__inner">
+          <div class="feature-tabs__tab">
+            <button class="feature-tabs__link active js-tab" data-target=".tab-1">iPhone</button>
+          </div>
+          <div class="feature-tabs__tab">
+            <button class="feature-tabs__link js-tab" data-target=".tab-2">Apple Watch</button>
+          </div>
+          <div class="feature-tabs__tab">
+            <button class="feature-tabs__link js-tab" data-target=".tab-3">iPad</button>
+          </div>
+          <div class="feature-tabs__tab">
+            <button class="feature-tabs__link js-tab" data-target=".tab-4">MacBook Pro</button>
+          </div>
+        </div>
+      </div>
+
+      {{#times 4}}
+        <div class="applepay-help__slide js-tab-content {{#ifCond this 1}}active{{/ifCond}} tab-{{this}}">
+          <div class="applepay-help__section">
+            {{> widgets/video-manual
+                    img="services/apple-pay/video_01" ext="jpg"
+                    title="В приложении Мой Банк"
+                    item-1="Откройте приложение Мой банк"
+                    item-2="В разделе «Продукты» нажмите на блок «Apple Pay» вверху экрана, а затем — «Начать»."
+                    item-3="Нажмите «Добавить в Apple Wallet». Все поля заполнятся сами.<br/>Затем примите пользовательское соглашениеи дождитесь подтверждения в Apple Wallet."
+            }}
+          </div>
+          <div class="applepay-help__section">
+            {{> widgets/video-manual
+                    img="services/apple-pay/video_02" ext="jpg"
+                    title="В приложении Wallet"
+                    item-1="Откройте приложение Wallet и коснитесь значка «+» в правом верхнем углу."
+                    item-2="Добавьте номер карты вручную (для карт Пакетов решений) или сфотографируйтеее с помощью камеры вашего iPhone."
+                    item-3="Проверьте введенные данные и введите код безопасности карты (3 цифры на обратной стороне)."
+                    item-4="Чтобы привязать карту по умолчанию,ознакомьтесь и примите условия пользовательского соглашения. Введите код подтверждения из смс."
+            }}
+          </div>
+        </div>
+      {{/times}}
+    </div>
+  </div>
+</section>

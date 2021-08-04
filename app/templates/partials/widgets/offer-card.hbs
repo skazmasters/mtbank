@@ -1,0 +1,16 @@
+<div class="offer-card {{#if mobile-block}}offer-card--block{{/if}}">
+  <div class="offer-card__icon">
+    {{>components/image img=image ext="png"}}
+  </div>
+  <div class="offer-card__content">
+    {{#if title}}
+      <span class="offer-card__title">{{{title}}}</span>
+    {{/if}}
+    <p class="offer-card__text">{{{text}}}</p>
+    {{#if link}}
+      <div class="offer-card__link">
+        <a href="#">{{link}}</a>
+      </div>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.header-overlay {
+  position: fixed;
+  left: 0;
+  top: 139px;
+  right: 0;
+  bottom: 0;
+  background: rgba(54, 60, 78, 0.7);
+  z-index: z(header);
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}

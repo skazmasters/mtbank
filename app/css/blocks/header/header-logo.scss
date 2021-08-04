@@ -1,0 +1,17 @@
+.header-logo {
+  &__link {
+    display: flex;
+    align-items: center;
+    @include transition;
+  }
+
+  &__image {
+    width: 150px;
+    height: 47px;
+
+    @include media(mobile) {
+      width: 105px;
+      height: 35px;
+    }
+  }
+}

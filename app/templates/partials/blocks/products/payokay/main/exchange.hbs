@@ -1,0 +1,42 @@
+<section class="section">
+  <div class="container">
+    <div class="payokay-exchange">
+      <div class="payokay-exchange__header">
+        <span class="payokay-exchange__title">Специальный курс</span>
+        <p class="payokay-exchange__text">Покупайте или обмениваете валюту по специальному курсу, доступному лишь
+          держателям карты PayOkay.</p>
+      </div>
+      <div class="payokay-exchange__content">
+        <div class="payokay-exchange__field">
+          {{> widgets/exchange-input }}
+        </div>
+        <ul class="payokay-exchange__list">
+          <li class="payokay-exchange__list-item">
+            {{> widgets/exchange-item
+                    simple=true
+                    image="payokay/byn"
+                    label="Лучший курс BYN"
+                    value="2, 6380"
+            }}
+          </li>
+          <li class="payokay-exchange__list-item">
+            {{> widgets/exchange-item
+                    simple=true
+                    image="payokay/pay"
+                    label="Курс PayOkay"
+                    value="2, 6365"
+            }}
+          </li>
+          <li class="payokay-exchange__list-item">
+            {{> widgets/exchange-item
+                    simple=true
+                    image="payokay/up"
+                    label="Выша выгода в BYN"
+                    value="1, 4985"
+            }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

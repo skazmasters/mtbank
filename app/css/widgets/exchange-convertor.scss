@@ -1,0 +1,43 @@
+.exchange-convertor {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    width: 100%;
+    @include desktop {
+      width: 275px;
+    }
+  }
+
+  @include mobile {
+    display: block;
+
+
+    &__input {
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__splitter {
+    margin: 0 30px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .icon {
+      width: 24px;
+      height: 25px;
+      color: $color-gray-60;
+      margin: 0;
+    }
+
+    &:hover {
+      color: $color-gray-100;
+    }
+  }
+}

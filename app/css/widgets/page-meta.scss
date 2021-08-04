@@ -1,0 +1,85 @@
+.page-meta {
+  width: 100%;
+
+  @include media(mobile, up) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include media(mobile) {
+    @supports not (display: contents) {
+      display: block;
+      margin-top: 30px;
+    }
+
+    @supports (display: contents) {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 10px 30px;
+      align-items: baseline;
+    }
+  }
+
+  @include media(mobileSmall) {
+    @supports (display: contents) {
+      gap: 10px 20px;
+    }
+  }
+
+  &__item {
+    @include media(mobile) {
+      @supports not (display: contents) {
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      @supports (display: contents) {
+        display: contents;
+      }
+    }
+  }
+
+  &__label {
+    @include text-subtitle;
+    color: $color-gray-60;
+
+    @include media(mobile) {
+      @supports not (display: contents) {
+        flex: 0 1 120px;
+        margin-right: 30px;
+      }
+    }
+
+    @include media(mobileSmall) {
+      @supports not (display: contents) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__text {
+    @include text-subtitle;
+
+    @include media(mobile, up) {
+      margin-top: 4px;
+    }
+
+    @include media(mobile) {
+      @supports not (display: contents) {
+        flex: 1 1 140px;
+      }
+    }
+  }
+
+  &__label,
+  &__text {
+    @include media(mobile) {
+      @include text-h6;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<ul class="map-side__object-list js-objects" data-category="terminals">
+  {{#each map.terminals.objects }}
+    <li class="map-side__object-item">
+      {{> widgets/map/sidebar/object
+        title=../map.terminals.name
+        location1=../map.terminals.location1
+        location2=../map.terminals.location2
+        working-hours=../map.terminals.working-hours
+        opening-time=this.opening-time
+        marker-icon=../map.terminals.marker-icon
+        marker-color=this.marker-color
+        currency=../map.terminals.currency
+        active=../activeObject
+        type=../map.terminals.type
+        id=@index
+      }}
+    </li>
+  {{/each}}
+</ul>

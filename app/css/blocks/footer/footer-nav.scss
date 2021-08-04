@@ -1,0 +1,159 @@
+.footer-nav {
+  display: flex;
+
+  @include smallTablet {
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
+
+  @include mobile {
+    display: block;
+  }
+
+  &__cell {
+
+    @include desktop {
+      &:first-child {
+        width: 275px;
+        max-width: 275px;
+      }
+
+      width: 221px;
+      max-width: 221px;
+
+      &:last-child {
+        width: auto;
+        max-width: none;
+      }
+    }
+
+    @include tablet {
+      flex: 1 1 auto;
+    }
+
+    @include tablet-and-mobile {
+      width: auto;
+      max-width: none;
+    }
+
+    @include smallTablet {
+      flex-basis: 50%;
+      margin-top: 30px;
+    }
+
+    @include mobile {
+      border-bottom: 1px solid $color-white-20;
+    }
+  }
+
+  &__menu {
+    @include mobile {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__header {
+    &-link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+      color: $color-white;
+
+      &:hover {
+        @include no-mobile {
+          color: $color-white-70;
+        }
+      }
+
+      @include smallTablet-and-mobile {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+      }
+
+      @include mobile {
+        padding: 15px 0;
+        position: relative;
+        display: block;
+        width: 100%;
+
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          @include transition(transform, 0.3s);
+          @include sprite('footer-menu-arrow');
+          @include align(false, true);
+        }
+
+        .opened &:after {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+
+    @include mobile {
+
+    }
+
+    @include smallTablet {
+      margin-top: 10px;
+    }
+
+    @include mobile {
+      margin-top: 0;
+      display: none;
+
+      .opened & {
+        display: block;
+      }
+
+      &.animate {
+        position: relative;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: height .32s ease;
+      }
+    }
+  }
+
+  &__item {
+    margin-top: 9px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &-link {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: $color-white-70;
+
+      &:hover {
+        color: $color-white;
+      }
+
+      @include smallTablet-and-mobile {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.tabs-slider {
+  @include tablet-and-mobile {
+    .slider-nav {
+      display: none;
+    }
+  }
+
+  &__slider {
+    @include tablet-and-mobile {
+      @include reset-slider-container;
+    }
+  }
+
+  &__slide {
+    height: auto;
+
+    width: 296px;
+    @include desktop {
+      margin-right: 45px;
+    }
+
+    @media (min-width: 1024px) and (max-width: $tabletMedia) {
+      flex: 1 1 auto;
+    }
+
+    @include tablet-and-mobile {
+      width: 224px;
+      min-width: 224px;
+      margin-right: 5px;
+      padding-right: 20px;
+
+      &:last-child {
+        width: 224px;
+        min-width: 224px;
+      }
+    }
+
+    @include mobile {
+      margin-right: 5px;
+      padding-right: 15px;
+      width: 219px;
+
+      &:last-child {
+        width: 219px;
+      }
+    }
+  }
+
+  &__slides {
+    display: flex;
+  }
+}
+
+
+.non-swiper-slide {
+  display: none;
+}

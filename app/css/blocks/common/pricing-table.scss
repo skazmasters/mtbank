@@ -1,0 +1,123 @@
+.pricing-table {
+  &__container {
+    display: flex;
+    overflow: auto;
+    @include hide-scrollbar;
+    margin: 0 -20px;
+
+    @include media(mobile) {
+      margin: 0 -15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: 1 0 100%;
+    padding: 0 20px;
+
+    @include media(mobile) {
+      padding: 0 15px;
+    }
+  }
+
+  &__table {
+    flex: 1 0 100%;
+    min-width: 880px;
+    border-collapse: collapse;
+    border-bottom: 1px solid $color-gray-40;
+    table-layout: fixed;
+
+    @include media(mobile) {
+      min-width: 700px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h4;
+    text-align: left;
+  }
+
+  &__item {
+    border-top: 1px solid $color-gray-40;
+
+    &:first-of-type {
+      border-top: unset;
+    }
+
+    td {
+      &:first-child {
+        width: 110px;
+        border-bottom: unset;
+
+        @include media(mobile) {
+          width: 80px;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 495px;
+
+        @include media(mobile) {
+          width: 400px;
+        }
+      }
+
+      &:last-child {
+        width: 270px;
+
+        @include media(mobile) {
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  &__subitem {
+    td {
+      &:first-child {
+        width: 95px;
+
+        @include media(mobile) {
+          width: 65px;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 380px;
+
+        @include media(mobile) {
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  td {
+    width: 100%;
+    padding: 20px 55px 20px 0;
+    @include text-body-2;
+    color: $color-gray-80;
+    vertical-align: text-top;
+    border-bottom: 1px solid $color-gray-40;
+
+    &:first-child {
+      padding-right: 15px;
+    }
+
+    &:last-child {
+      width: 270px;
+      padding-right: 15px;
+      @include text-h6;
+      color: $color-gray-100;
+    }
+  }
+
+  small {
+    display: block;
+    margin: 2px 0 0;
+    @include text-body-2;
+    color: $color-gray-80;
+  }
+}

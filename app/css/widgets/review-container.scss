@@ -1,0 +1,25 @@
+.review-container {
+  &__title {
+    display: block;
+    @include text-h2;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  &__text {
+    display: block;
+    margin: 20px 0 0;
+    @include text-body-1;
+
+    @include smallTablet-and-mobile {
+      margin-top: 15px;
+    }
+  }
+
+  .review-person {
+    margin-top: 45px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.form-field-money {
+  width: 274px;
+  max-width: 100%;
+  position: relative;
+
+  .form-input {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__currency {
+    position: absolute;
+    right: 16px;
+    top: 17px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    z-index: 1;
+    border-left: 1px solid $color-gray-40;
+    padding-left: 17px;
+    pointer-events: none;
+  }
+
+  .form-input__input {
+    padding-right: 80px;
+  }
+
+  .form-input__placeholder {
+    padding-right: 90px;
+  }
+
+  &__range {
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+    right: 70px;
+    height: 2px;
+
+    .noUi-horizontal {
+      height: 3px;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+      border-radius: 10px;
+
+      .noUi-connect {
+        background: $color-primary;
+      }
+
+      .noUi-handle {
+        width: 20px;
+        height: 20px;
+        background: $color-primary;
+        border: 2px solid $color-white;
+        border-radius: 100%;
+        box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+        top: -8px;
+        cursor: pointer;
+
+        &:before, &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

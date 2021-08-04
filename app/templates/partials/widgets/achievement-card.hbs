@@ -1,0 +1,13 @@
+<div class="achievement-card{{#if mode}} achievement-card--{{mode}}{{/if}}">
+  {{#if popup}}
+    <button class="achievement-card__button js-popup-open" type="button" data-popup="{{popup}}"></button>
+  {{/if}}
+  <div class="achievement-card__container">
+    <div class="achievement-card__header">
+      <div class="achievement-card__title">{{title}}</div>
+    </div>
+    <div class="achievement-card__content">
+      <p class="achievement-card__text">{{text}}</p>
+    </div>
+  </div>
+</div>

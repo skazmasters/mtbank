@@ -1,0 +1,70 @@
+<div class="banner-debit{{#if mode}} banner-debit--{{mode}}{{/if}}{{#if
+    not-individual}}{{else}} banner-debit--individual{{/if}}">
+  <div class="banner-debit__container">
+    <div class="banner-debit__bg">
+      {{#if img-bg}}
+        {{>components/image img=img-bg img-mobile=img-bg-mobile ext="png"}}
+      {{/if}}
+    </div>
+    <div class="banner-debit__fake-img"></div>
+    <div class="banner-debit__content">
+      <p class="banner-debit__title"><a href="#">{{title}}</a></p>
+      <p class="banner-debit__text{{#if fixed}} banner-debit__text--fixed{{/if}}">{{{text}}}</p>
+      <div class="banner-debit__image">
+        {{>components/image img=img img-mobile=img-mobile ext="png"}}
+      </div>
+      {{#if list}}
+        <ul class="banner-debit__list">
+          {{#each list}}
+            <li class="banner-debit__list-item">
+              <span class="banner-debit__list-title">{{this.title}}</span>
+              <span class="banner-debit__list-text">{{this.text}}</span>
+            </li>
+          {{/each}}
+        </ul>
+      {{/if}}
+      {{#if bulleted-list}}
+        <div class="banner-debit__bulleted-list">
+          <ul>
+            {{#each bulleted-list}}
+              <li>{{this.title}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/if}}
+      {{#if label-1}}
+        <div class="banner-debit__cta">
+          <div class="banner-debit__btn">
+            {{>ui/btn color=btn-color label=label-1}}
+          </div>
+          {{#if label-2}}
+            <div class="banner-debit__btn">
+              <a class="banner-debit__btn-item" href="#">{{label-2}}</a>
+            </div>
+          {{/if}}
+          {{#if stores}}
+            <div class="banner-debit__btn banner-debit__btn--store">
+              <a class="banner-debit__store" href="#">
+                {{>ui/svg name="brands--apple"}}
+              </a>
+            </div>
+            <div class="banner-debit__btn banner-debit__btn--store">
+              <a class="banner-debit__store" href="#">
+                {{>ui/svg name="brands--android"}}
+              </a>
+            </div>
+          {{/if}}
+        </div>
+      {{/if}}
+      {{#if icon}}
+        <div class="banner-debit__icon">
+          <div class="banner-debit__icon-image">{{>components/image img=icon img-mobile=icon-mobile ext=icon-ext}}</div>
+          <div class="banner-debit__icon-content">
+            <span class="banner-debit__icon-title">{{icon-title}}</span>
+            <span class="banner-debit__icon-text">{{icon-text}}</span>
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

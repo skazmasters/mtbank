@@ -1,0 +1,17 @@
+.home-blog {
+  .slider-nav {
+    margin-top: 0;
+  }
+
+  .swiper-container {
+    @include desktop {
+      margin-bottom: -20px;
+    }
+  }
+
+  @include tablet-and-mobile {
+    .carousel-slider__slide {
+      min-width: 266px;
+    }
+  }
+}

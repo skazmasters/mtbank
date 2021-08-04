@@ -1,0 +1,35 @@
+.fact-card {
+  padding: 30px 34px 47px 30px;
+  border-radius: 15px;
+  background: $color-gray-20;
+  height: 100%;
+
+  @include mobile {
+    padding: 20px 15px 33px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    display: block;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-80;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

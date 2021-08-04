@@ -1,0 +1,172 @@
+<section class="section">
+  <div class="container-880">
+    <div class="pricing">
+      <!--Section 1-->
+      <div class="pricing__section">
+        <div class="pricing__header">
+          <span class="pricing__title">Стоимость обслуживания</span>
+        </div>
+        <div class="pricing__content">
+          <ul class="pricing__list">
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Карта"
+                      r-title="Дебетовая карта—PayOkay"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Стоимость в год"
+                      r-title="19,90 BYN"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Стоимость за весь срок"
+                      r-title="59,90 BYN"
+              }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Section 2-->
+      <div class="pricing__section">
+        <div class="pricing__header">
+          <span class="pricing__title">Сервисы</span>
+        </div>
+        <div class="pricing__content">
+          <ul class="pricing__list">
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Экстренная блокировка"
+                      r-title="Бесплатно"
+                      popover-text='Информация об ошибке. Короткий обьясняющий текст. И <a href="#">ссылка</a>, если это нужно'
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Экстренная выдача наличных"
+                      r-title="Платно"
+                      popover-text='Информация об ошибке. Короткий обьясняющий текст. И <a href="#">ссылка</a>, если это нужно'
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Экстренная выдача карты"
+                      r-title="Бесплатно"
+                      popover-text='Информация об ошибке. Короткий обьясняющий текст. И <a href="#">ссылка</a>, если это нужно'
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Служба поддержки"
+                      r-title="Платно"
+                      r-text="Весь срок действия карты"
+                      popover-text='Информация об ошибке. Короткий обьясняющий текст. И <a href="#">ссылка</a>, если это нужно'
+              }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Section 3-->
+      <div class="pricing__section">
+        <div class="pricing__header">
+          <span class="pricing__title">Валюта</span>
+        </div>
+        <div class="pricing__content">
+          <ul class="pricing__list">
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Курс покупки валюты"
+                      r-title="Курс покупки валюты"
+                      r-text="Как правило, предлагаемый банком курс является лучший курс на рынке."
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Курс продажи валюты"
+                      r-title="Обычный курс"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Лимит покупки валюты"
+                      r-title="Без ограничений"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Лимит продажи валюты"
+                      r-title="Без ограничений"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Примечание"
+                      r-title="Специальнй курс"
+                      r-text="Специальный курс распространяется только на операции по безналичным расчетам с использованием карты"
+              }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Section 4-->
+      <div class="pricing__section">
+        <div class="pricing__header">
+          <span class="pricing__title">Скидки</span>
+        </div>
+        <div class="pricing__content">
+          <ul class="pricing__list">
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Размер скидок"
+                      r-title="от 5 до 25%"
+                      r-text="Более 1200 партнеров по всему миру"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>blocks/common/ft-row
+                      l-title="Условие предоставления скидки"
+                      r-title="Оплата товаров или услуг картой"
+              }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Section 5-->
+      <div class="pricing__section pricing__section--files">
+        <div class="pricing__header">
+          <span class="pricing__title">Документы</span>
+        </div>
+        <div class="pricing__content">
+          <ul class="pricing__list">
+            <li class="pricing__item">
+              {{>components/file-download
+                      color="red"
+                      label="Условия использования"
+                      small="Doc, 753 KB"
+                      file-icon="files--pdf"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>components/file-download
+                      color="red"
+                      label="Рекомендации держателям карт"
+                      small="Doc, 753 KB"
+                      file-icon="files--pdf"
+              }}
+            </li>
+            <li class="pricing__item">
+              {{>components/file-download
+                      color="red"
+                      label="Тариф зарплатного счета"
+                      small="Doc, 753 KB"
+                      file-icon="files--pdf"
+              }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

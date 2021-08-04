@@ -1,0 +1,108 @@
+.icon-down {
+  &::before {
+    content: '';
+    @include sprite('expand-down-white');
+    display: block;
+  }
+}
+
+.icon-next {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  i {
+    display: block;
+    height: 2px;
+    width: 18px;
+    background-color: $color-primary;
+    border-radius: 5px;
+    @include transition;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10px;
+    background-color: $color-primary;
+    border-radius: 5px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    transform-origin: 70% 50%;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    transform-origin: 70% 50%;
+  }
+}
+
+.icon-close {
+  position: relative;
+  z-index: z(default) + 1;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: -5px;
+  border-radius: 4px;
+  cursor: pointer;
+  @include transition(all, 300ms, linear);
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: $color-gray-100;
+    }
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    display: block;
+    width: #{diagonal(16)}px;
+    height: 1.8px;
+    border-radius: 5px;
+    background-color: $color-gray-60;
+    @include transition;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.icon-info {
+  display: inline-flex;
+  appearance: none;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: $color-gray-60;
+  border-radius: 50%;
+  background-color: $color-gray-10;
+  @include transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  .icon {
+    max-width: 7px;
+    max-height: 11px;
+    margin-top: -1px;
+  }
+}

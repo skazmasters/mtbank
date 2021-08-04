@@ -1,0 +1,18 @@
+<section class="section section--no-pt">
+  <div class="container">
+    <header class="section__header">
+      <span class="section__title">Уведомления</span>
+    </header>
+    <div class="section__content">
+      <ul class="notifications-list">
+        {{#each home.notifications}}
+          <li class="notifications-list__item">
+            <a href="#" class="notifications-list__link">
+              {{label}} {{>ui/icon next=true}}
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

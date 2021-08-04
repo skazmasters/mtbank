@@ -1,0 +1,21 @@
+{{! Страхование / Список }}
+
+{{> layout/head page-title="Страхование / Список"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+{{> blocks/common/page-header-filters
+        title="Страхование"
+        button-1="Путешествия"
+        button-2="Имущество"
+        button-3="По вкладам"
+        button-4="По картам"
+        button-5="Инвестиционное страхование"
+        button-6="Вкладка"
+        button-7="Еще одна вкладка"
+        button-8="Вкладка"
+}}
+
+{{> blocks/insurance/list/content}}
+
+{{> layout/footer }}

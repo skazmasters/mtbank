@@ -1,0 +1,55 @@
+<div class="page-filters js-filters">
+  <div class="container">
+    <div class="page-filters__content">
+
+      <div class="page-filters__header">
+        <div class="page-filters__header-left">
+          <span class="page-filters__mobile-title">Вклады (Депозиты)</span>
+        </div>
+        <div class="page-filters__header-right">
+          {{>components/button-filter js-mod="js-filters__toggle"}}
+        </div>
+      </div>
+
+      <div class="page-filters__body js-filters__body">
+        <div class="page-filters__inner page-filters__inner--mobile-reverse">
+          <div class="page-filters__inner-left">
+            <div class="page-filters__list js-filters__list">
+              <div class="page-filters__section">
+                <div class="page-filters__section-item">
+                  {{> form/tab-checkbox id="currency_byn" label="BYN"}}
+                </div>
+                <div class="page-filters__section-item">
+                  {{> form/tab-checkbox id="currency_usd" label="USD"}}
+                </div>
+                <div class="page-filters__section-item">
+                  {{> form/tab-checkbox id="currency_eur" label="EUR"}}
+                </div>
+              </div>
+
+              <div class="page-filters__section">
+                <div class="page-filters__section-item">
+                  {{> form/tab-checkbox id="mode_01" label="Отзывный"}}
+                </div>
+                <div class="page-filters__section-item">
+                  {{> form/tab-checkbox id="mode_02" label="Безотзывный"}}
+                </div>
+              </div>
+
+              <div class="page-filters__section page-filters__section--amount">
+                {{> form/input-money label="Сумма вклада" value=55}}
+              </div>
+              <div class="page-filters__section">
+                {{#> form/select border=true label="На срок"}}
+                  <option value="12" selected>12 месяцев</option>
+                  <option value="18">18 месяцев</option>
+                  <option value="24">2 года</option>
+                {{/form/select}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

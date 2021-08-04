@@ -1,0 +1,45 @@
+.payokay-banner {
+  padding-top: 60px;
+
+  @include media(mobile) {
+    padding-top: 50px;
+  }
+
+  .banner-debit {
+    &__content {
+      @include media(tablet, up) {
+        margin-left: 110px;
+      }
+
+      @include media(mobile) {
+        padding: 20px 20px 30px;
+      }
+    }
+
+    &__image {
+      @include media(mobile) {
+        margin: 15px -20px 0;
+      }
+    }
+
+    &__title,
+    &__text {
+      @include media(mobile) {
+        max-width: initial;
+        text-align: left;
+      }
+    }
+
+    &__text {
+      @include media(tabletSmall, up) {
+        margin-top: 0;
+      }
+    }
+
+    &__bulleted-list {
+      @include media(tabletSmall, up) {
+        margin-top: 37px;
+      }
+    }
+  }
+}

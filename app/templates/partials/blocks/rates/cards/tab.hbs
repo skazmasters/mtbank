@@ -1,0 +1,139 @@
+<div class="rates-table rates-table--normal">
+  <div class="rates-table__thead">
+    <div class="rates-table__cell rates-table__cell--name">
+      <span class="rates-table__th">Карта</span>
+    </div>
+    <div class="rates-table__cell rates-table__cell--value">
+      <span class="rates-table__th">1 Доллар США</span>
+    </div>
+    <div class="rates-table__cell rates-table__cell--value">
+      <span class="rates-table__th">1 Евро</span>
+    </div>
+    <div class="rates-table__cell rates-table__cell--value">
+      <span class="rates-table__th">100 Российских рублей</span>
+    </div>
+    <div class="rates-table__cell rates-table__cell--update">
+      <span class="rates-table__th">Обновлено</span>
+    </div>
+  </div>
+  <div class="rates-table__tbody">
+    <div class="rates-table__row js-rates-row">
+      <div class="rates-table__cell rates-table__cell--name">
+        <span class="rates-table__name">Основной курс</span>
+      </div>
+      <div class="rates-table__cell rates-table__cell--value">
+        {{> widgets/rates-card icon="usd" buy="2,645" buy-mod="up" sell="2,645" sell-mod="up"}}
+        <div class="rates-table__conversion">
+          <span class="rates-table__conversion-label">USD/RUB</span>
+          {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+        </div>
+        <div class="rates-table__convertor">
+          <button class="rates-table__convertor-link js-rates-row__toggle">Курс конверсии</button>
+        </div>
+      </div>
+      <div class="rates-table__cell rates-table__cell--value">
+        {{> widgets/rates-card icon="eur" buy="2,645" buy-mod="up" sell="2,645" sell-mod="down"}}
+        <div class="rates-table__conversion">
+          <span class="rates-table__conversion-label">USD/RUB</span>
+          {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+        </div>
+      </div>
+      <div class="rates-table__cell rates-table__cell--value">
+        {{> widgets/rates-card icon="rub" buy="2,645" buy-mod="up" sell="2,645" sell-mod="down"}}
+        <div class="rates-table__conversion">
+          <span class="rates-table__conversion-label">USD/RUB</span>
+          {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+        </div>
+      </div>
+      <div class="rates-table__cell rates-table__cell--update">
+        <div class="rates-table__select">
+          {{#> form/select border=true}}
+            <option value="10:05">10:05</option>
+            <option value="10:10">10:10</option>
+            <option value="10:15">10:15</option>
+            <option value="10:20">10:20</option>
+          {{/form/select}}
+        </div>
+      </div>
+    </div>
+    <div class="rates-table__row">
+      <div class="rates-table__cell rates-table__cell--name">
+        {{#if text}}
+          <span class="rates-table__name">PayOkay <i>*</i></span>
+        {{else}}
+          <span class="rates-table__name">Курсы Visa Business</span>
+        {{/if}}
+      </div>
+      <div class="rates-table__cell rates-table__cell--value">
+        {{#if text}}
+          {{> widgets/rates-card icon="usd" sell="2,645" sell-mod="up"}}
+        {{else}}
+          {{> widgets/rates-card icon="usd" sell="2,645" sell-mod="up" buy="2,645" buy-mod="up"}}
+        {{/if}}
+
+        <div class="rates-table__conversion">
+          <span class="rates-table__conversion-label">USD/RUB</span>
+          {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+        </div>
+
+        <div class="rates-table__convertor">
+          <button class="rates-table__convertor-link js-rates-row__toggle">Курс конверсии</button>
+        </div>
+      </div>
+      <div class="rates-table__cell rates-table__cell--value">
+        {{#if text}}
+          {{> widgets/rates-card icon="eur" sell="2,645" sell-mod="up"}}
+        {{else}}
+          {{> widgets/rates-card icon="eur" sell="2,645" sell-mod="up" buy="2,645" buy-mod="down"}}
+        {{/if}}
+        <div class="rates-table__conversion">
+          <span class="rates-table__conversion-label">USD/RUB</span>
+          {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+        </div>
+      </div>
+      <div class="rates-table__cell rates-table__cell--value">
+        {{#if text}}
+          {{> widgets/rates-card icon="rub" sell="2,645" sell-mod="up"}}
+        {{else}}
+          {{> widgets/rates-card icon="rub" sell="2,645" sell-mod="up" buy="2,645" buy-mod="down"}}
+        {{/if}}
+        <div class="rates-table__conversion">
+          <span class="rates-table__conversion-label">USD/RUB</span>
+          {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+        </div>
+      </div>
+      <div class="rates-table__cell rates-table__cell--update">
+        <div class="rates-table__select">
+          {{#> form/select border=true}}
+            <option value="10:05">10:05</option>
+            <option value="10:10">10:10</option>
+            <option value="10:15">10:15</option>
+            <option value="10:20">10:20</option>
+          {{/form/select}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{#if text}}
+  <div class="rates-content">
+    <p class="rates-content__note"><i>*</i> PayOkay курс применим только при расчетах заграницей</p>
+    <p class="rates-content__small">
+      Курс продажи, применяемый по операциям, совершенным с использованием банковских платежных карточек может быть
+      увеличен на 1 (Один) процент (за исключением корпоративных карточек и карточек, выпущенных в рамках Тарифных
+      планов: «Банковская платежная карточка «PayOkay», «Visa Infinite», «Visa Platinum», «Hello, world!», «Платежное
+      кольцо»).<br/>
+      Подробнее с порядком проведения конвертации с использованием платежных карточек Вы можете ознакомиться здесь
+      Обращаем внимание, что при совершении операции по карточкам "PayOkay" в USD итоговой расчет будет производиться
+      с применением кросс-курса EUR/USD MasterCard Worldwide (далее- МПС)
+      <a target="_blank" href="https://www.mastercard.us/en-us/consumers/get-support/convert-currency.html">https://www.mastercard.us/en-us/consumers/get-support/convert-currency.html</a>
+      и курса PayOkay, установленного к EUR.
+      Формула расчета:<br/>
+      • 1 этап: блокировка - сумма покупки в USD / кросс-курс EUR/USD МПС * курс PayOkay EUR/BYN (курсы на дату
+      совершения покупки)<br/>
+      • 2 этап: списание - сумма покупки в USD * курс PayOkay USD/BYN (курсы на момент обработки операции по счету
+      клиента)
+    </p>
+  </div>
+{{/if}}

@@ -1,0 +1,149 @@
+.header-main {
+  background-color: var(--color-white-100);
+  box-shadow: 1px 4px 9px rgba(48, 66, 117, .13);
+  position: relative;
+
+  @include tablet-and-mobile {
+    padding-bottom: 64px;
+  }
+
+  @include tablet-and-mobile{
+    .header--no-menu-mobile &{
+      padding-bottom: 0;
+    }
+  }
+
+  &--hide_mobile {
+    @include media(mobile) {
+      padding-bottom: 0;
+    }
+
+    .header-main__center {
+      @include media(mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 94px;
+
+    @include desktop{
+      overflow: hidden;
+    }
+
+    @include mobile {
+      height: 66px;
+    }
+
+    .fixed &{
+      @include tablet{
+        height: 66px;
+      }
+    }
+
+    @include landscapeMobile {
+      .mobile-opened & {
+        display: block;
+        height: auto;
+      }
+    }
+  }
+
+  &__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include tablet-and-mobile {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include landscapeMobile {
+      .mobile-opened & {
+        height: 67px;
+        border-bottom: 1px solid $color-gray-40;
+        margin: 0 -15px;
+        padding: 0 15px;
+        width: auto;
+
+        .header-burger {
+          left: 15px;
+        }
+      }
+    }
+  }
+
+  &__center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    margin: 0 20px 0 70px;
+
+    @include desktop {
+      max-width: calc(100% - 500px);
+      overflow: hidden;
+    }
+
+  @include tablet-and-mobile{
+      .header--no-menu-mobile &{
+        display: none;
+      }
+    }
+
+    @include desktop-small{
+      margin: 0 35px;
+    }
+
+    @include tablet-and-mobile {
+      border-top: 1px solid $color-gray-40;
+      position: absolute;
+      margin: 0;
+      height: 64px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    @include landscapeMobile {
+      .header.mobile-opened & {
+        position: static;
+        height: calc(var(--vh, 1vh) * 100 - 104px);
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 0;
+        overflow: hidden;
+
+      }
+    }
+  }
+
+  &__right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+
+    @include landscapeMobile {
+      .header.mobile-opened & {
+        visibility: hidden;
+      }
+    }
+
+    @include tablet-and-mobile {
+      position: absolute;
+      right: 20px;
+    }
+
+    @include mobile {
+      right: 15px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="container">
+    <div class="section__header section__header--simple">
+      <h2 class="section__title">{{title}}</h2>
+      <p class="section__description">{{text}}</p>
+    </div>
+    <div class="section__content">
+      {{>widgets/cashback-banner
+              has-more-filters=has-more-filters
+              white=true
+              calc-title="Сумма расходов в месяц"
+              card-title="Ваша прибыль в год"
+              card-img=card-image
+              card-ext=card-image-ext
+              card-value="50"
+              card-currency="BYN"
+              card-text="Вы заработаете за год"
+              card-value-2="106"
+              card-currency-2="%"
+              card-text-2="Возврат от стоимости карты"
+      }}
+    </div>
+  </div>
+</section>

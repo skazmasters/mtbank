@@ -1,0 +1,31 @@
+<div class="base-card {{#if small}}base-card--small{{/if}} {{#if outlined}} base-card--outline{{/if}}{{#if
+        static}} base-card--static{{/if}} {{#if
+        no-border}}base-card--no-border{{/if}}  {{#if mobile-center}}base-card--mobile-center{{/if}} {{#if
+        mobile-block}}base-card--mobile-block{{/if}}">
+  {{#if outlined}}<a href="{{href}}" class="base-card__link"></a>{{/if}}
+  <div class="base-card__container">
+    {{#if img}}
+      <div class="base-card__image">
+        {{#if ext}}
+          {{>components/image img=img ext=ext}}
+        {{else}}
+          {{>components/image img=img ext="png"}}
+        {{/if}}
+      </div>
+    {{/if}}
+    <div class="base-card__inner">
+      <p class="base-card__title">{{title}}</p>
+      <p class="base-card__text">{{{text}}}</p>
+      {{#if button-label}}
+        {{#if button-no-small}}
+          <div class="base-card__btn">{{>ui/btn label=button-label}}</div>
+        {{else}}
+          <div class="base-card__btn">{{>ui/btn label=button-label size="small"}}</div>
+        {{/if}}
+      {{/if}}
+      {{#if label}}
+        <div class="base-card__action">{{>ui/btn label=label btn-mode="simple"}}</div>
+      {{/if}}
+    </div>
+  </div>
+</div>

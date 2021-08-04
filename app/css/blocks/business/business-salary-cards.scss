@@ -1,0 +1,26 @@
+.business-salary-cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 -22px;
+
+  @include mobile {
+    display: block;
+    margin: 0;
+  }
+
+  &__cell {
+    padding: 0 22px;
+    flex: 1 1 1px;
+    max-width: 402px + 22px * 2;
+
+    @include mobile {
+      max-width: none;
+      margin-top: 20px;
+      padding: 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

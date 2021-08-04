@@ -1,0 +1,23 @@
+<div class="banner banner--background banner--white banner--image-simple banner--mobile-left">
+  <div class="banner__container">
+    <div class="banner__inner">
+      <div class="banner__image">
+        {{> components/image  img=image ext="png" img-mobile=image-mobile}}
+      </div>
+
+      <div class="banner__content">
+        <span class="banner__title">{{title}}</span>
+
+        <ul class="banner__list banner__list--simple">
+          <li class="banner__list-item">{{item-1}}</li>
+          <li class="banner__list-item">{{item-2}}</li>
+          <li class="banner__list-item">{{item-3}}</li>
+        </ul>
+
+        <div class="banner__actions">
+          {{> widgets/button-and-more label=button-label}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

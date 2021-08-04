@@ -1,0 +1,34 @@
+{{! Бизнесу / Корпоративные карты }}
+
+{{> layout/head page-title="Бизнесу / Корпоративные карты" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+<div class="hero-menu-block">
+  {{> hero/business-card }}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Тарифы и условия"
+          item-3="Как работает"
+          item-4="Вопрос-ответ"
+  }}
+</div>
+
+{{> blocks/business/cards/01_cards }}
+{{> blocks/business/cards/02_features }}
+
+{{> blocks/common/card-overview img="business/cards/overview"
+        ext="png"
+        title="Оплачивайте легко с картой МТБанка"
+        button-label="Оформить карту"
+        feature-1="Оплачивайте таможенные пошлины"
+        feature-2="Командировочные расходы"
+        feature-3="Товары, работы и услуги, приобретаемые ИП за пределами страны"
+        feature-4="Расходы, связанные с хозяйственной деятельностью"
+        feature-5="Налоги"
+}}
+
+{{> forms/business-card }}
+
+{{> layout/footer business=true }}

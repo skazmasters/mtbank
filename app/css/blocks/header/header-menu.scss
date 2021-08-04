@@ -1,0 +1,126 @@
+.header-menu {
+  height: 100%;
+
+  .select__dropdown {
+    top: 37px;
+    box-shadow: 3px 15px 30px rgba(48, 66, 117, 0.1);
+  }
+
+  &__mobile {
+    height: 100%;
+    align-items: center;
+
+    display: none;
+    @include mobile {
+      display: flex;
+      margin-left: -20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-left: 31px;
+    position: relative;
+    height: 100%;
+
+    @include smallTablet {
+      margin-left: 19px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      .header-menu__dropdown {
+        display: block;
+      }
+
+      .header-menu__link {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-white-70;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+
+    @include smallTablet {
+      font-size: 14px;
+    }
+
+    &--active {
+      color: $color-white;
+    }
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__dropdown {
+    @include header-dropdown;
+
+    padding: 24px 50px 24px 30px;
+    left: -30px;
+    width: 454px;
+
+    &-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      flex-basis: 50%;
+      min-width: 50%;
+      padding-right: 20px;
+
+      &:first-child, &:nth-child(2) {
+        margin-top: 0;
+      }
+
+      &:nth-child(2n) {
+        padding-left: 40px;
+      }
+
+      a {
+        font-size: 15px;
+        line-height: 140%;
+        padding: 6px 0;
+        display: inline-block;
+        align-items: center;
+        letter-spacing: -0.04em;
+        color: $color-gray-100;
+        white-space: nowrap;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .select {
+    &__input {
+      color: $color-white-70;
+    }
+  }
+}

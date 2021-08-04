@@ -1,0 +1,31 @@
+{{! Бизнесу / Кредиты / Список }}
+
+{{> layout/head page-title="Бизнесу / Кредиты / Список" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+<div class="hero-menu-block">
+  {{> hero/business-credits}}
+  {{> blocks/common/page-header title="Кредиты"
+          item-1="Среднему и малому бизнесу"
+          item-1-active=true
+          item-2="Крупному бизнесу"
+  }}
+</div>
+
+{{> blocks/business/credits/01_growth }}
+{{> blocks/business/credits/02_fast }}
+{{> blocks/common/product-carousel title="Лизинг" description="Лизинг от МТБанка это от ставка от 6,5%, и другие выгодные условия."
+        img-1="business/credits/leasing_01" img-1-ext="jpg" title-1="Быстрый лизинг" text-1="Оформляйте новую и бу автотехнику на сумму до 120 000 USD (без учета НДС и авансового платежа)" button-1="Подробнее"
+        img-2="business/credits/leasing_02" img-2-ext="jpg" title-2="Лизинг основных средств" text-2="Машины, оборудование, транспортные средства, сооружения производственного назначения." button-2="Подробнее"
+        img-3="business/credits/leasing_03" img-3-ext="jpg" title-3="Лизинг автотранспорта и спецтехники от 0,0001%" text-3="Более 20-ти партнерских программ по приобретению автотранспорта в лизинг от 0,0001% годовых" button-3="Подробнее"
+        img-4="business/credits/leasing_04" img-4-ext="jpg" title-4="Лизинг оборудования от 0,0001%" text-4="Лизинг оборудования для Вашего бизнеса под 0,0001% только с МТБанком" button-4="Подробнее"
+}}
+{{> blocks/business/credits/04_molotok }}
+{{> blocks/business/credits/05_trade }}
+{{> blocks/business/credits/06_warranty }}
+{{> blocks/business/credits/07_special }}
+{{> blocks/business/credits/08_banners }}
+
+{{> forms/business-credit }}
+{{> layout/footer business=true }}

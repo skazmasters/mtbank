@@ -1,0 +1,60 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="debits-services__header">
+      <h3 class="debits-services__title">Онлайн-сервисы</h3>
+      <p class="debits-services__text">Инструменты для управления денежными средствами</p>
+    </div>
+    <div class="debits-services">
+      <div class="debits-services__banner">
+        {{> banners/denegram}}
+
+      </div>
+      <div class="debits-services__cards">
+        <div class="debits-services__cards-inner">
+          <ul class="debits-services__cards-grid">
+            <li class="debits-services__cards-item">
+              {{> widgets/service-card
+                      card-mode="small service-card--title-link"
+                      icon="mtb-tickets"
+                      title="Билеты MTB tickets"
+                      text="Билеты на рейсы любых авиакомпаний по&nbsp;низким&nbsp;ценам с кэшбэком до 5%."
+                      link-label="Выбрать путешествие"
+                      action-link-label="Только в браузере"
+              }}
+            </li>
+            <li class="debits-services__cards-item">
+              {{> widgets/service-card
+                      card-mode="small service-card--title-link"
+                      icon="banking"
+                      title="Мобильный банк"
+                      text="Все сервисы, ваши карты, счета, оплата и многое другое в вашем  смартфоне."
+                      link-label="Подробнее"
+                      app-stores=common.app-stores
+              }}
+            </li>
+            <li class="debits-services__cards-item">
+              {{> widgets/service-card
+                      card-mode="small service-card--title-link"
+                      icon="mt-forex"
+                      title="MTBankFX"
+                      text="Быстрый ввод и вывод средств на вашу карту течение 24 часов. И что то еще."
+                      link-label="Подробнее"
+                      app-stores=common.app-stores
+              }}
+            </li>
+            <li class="debits-services__cards-item">
+              {{> widgets/service-card
+                      card-mode="small service-card--title-link"
+                      icon="x-cart"
+                      title="ИКС карта"
+                      text="Заказывайте в приложении виртуальные карты со скидкой на первый год обслуживания:"
+                      link-label="Подробнее"
+                      app-stores=common.app-stores
+              }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

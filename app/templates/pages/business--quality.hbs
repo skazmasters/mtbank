@@ -1,0 +1,26 @@
+{{! Бизнесу / Гарант качества }}
+
+{{> layout/head page-title="Бизнесу / Гарант качества" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true no-menu-mobile=true active-header-menu="business"}}
+{{> hero/business-quality }}
+
+{{> blocks/business/quality/01_how }}
+{{> blocks/business/quality/02_cases }}
+
+{{> blocks/common/card-overview img="business/quality/overview" gray=true
+        ext="png"
+        title="Индивидуальные случаи"
+        button-label="Скачать заявление"
+        html="МТБанк может рассмотреть заявления  по нарушениям, которые формально отсутствуют в настоящих Стандартах (п.1-13). По данным нарушениям клиенту может быть предоставлена скидка в случаях, которые будут признаны банком случаем некачественного обслуживания Клиента.
+        <ul><li>Размер скидки в данном случае составит -50% вознаграждения
+за обслуживание текущего (расчетного) счета или вознаграждения
+по тарифному плану.</li><li>Пункт Стандарта распространяется на Клиентов, находящихся
+на расчетно-кассовом обслуживании в ЗАО «МТБанк».</li></ul>"
+        button-icon="download"
+}}
+
+{{> blocks/business/quality/04_documents }}
+{{> blocks/business/quality/05_offers }}
+
+{{> layout/footer business=true }}

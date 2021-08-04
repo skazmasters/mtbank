@@ -1,0 +1,13 @@
+<div class="leadership-quote">
+  <div class="leadership-quote__left">
+    {{#each person-data}}
+      {{> widgets/person no-btn=true mode="quote"}}
+    {{/each}}
+  </div>
+  <div class="leadership-quote__right">
+    <div class="leadership-quote__content">
+      <span class="leadership-quote__title">{{title}}</span>
+      <p class="leadership-quote__text">{{text}}</p>
+    </div>
+  </div>
+</div>

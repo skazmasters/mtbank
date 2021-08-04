@@ -1,0 +1,90 @@
+.packages-row {
+
+  @include tablet {
+    margin: 0 -20px -20px;
+  }
+
+  @include no-smallTablet {
+    margin-bottom: -20px;
+    position: relative;
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  @include smallTablet-and-mobile {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__inner {
+    @include tablet {
+      overflow: auto;
+      padding: 0 15px;
+    }
+
+    @include smallTablet-and-mobile {
+      padding: 0;
+    }
+
+    @include no-smallTablet {
+      display: flex;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__cell {
+    @include no-smallTablet {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+
+      min-width: 430px;
+    }
+
+    .packages-row--4 & {
+      @include no-smallTablet {
+        min-width: 315px;
+        width: 315px;
+
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child{
+          width: 325px;
+          min-width: 325px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+
+    @include tablet {
+      &:last-child {
+        padding-right: 15px;
+        min-width: 445px;
+      }
+    }
+
+    @include smallTablet {
+      &:last-child {
+        padding-right: 0;
+        min-width: 430px;
+      }
+    }
+
+    @include smallTablet-and-mobile {
+      margin: 10px 0 0 0;
+      padding: 0;
+      max-width: 100%;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

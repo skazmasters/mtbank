@@ -1,0 +1,38 @@
+{{! Сервисы / Интернет-Банк }}
+
+{{> layout/head page-title="Сервисы / Интернет-Банк"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+<div class="hero-menu-block">
+  {{> hero/internet-bank}}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Безопасность"
+          item-3="Вопрос-ответ"
+          sticky-mobileapps=true
+  }}
+</div>
+
+{{> blocks/services/internet-bank/01_advantages }}
+
+{{> blocks/common/product-features
+        title="Возможности"
+        video=true image="services/internet-bank/video"
+        tab-1="Доступ к продуктам банка"
+        tab-2="Переводы"
+        tab-3="Платежи"
+        tab-4="Счета и карта"
+        item-1="Оформление любой карты без посещения банка"
+        item-2="Информация о курсах валют по платежным картам"
+        item-3="Список финансовых операций"
+        item-4="Подключение карт онлайн"
+        item-5="Выписка со счетов и карт"
+}}
+
+{{> blocks/services/internet-bank/03_start }}
+{{> blocks/services/internet-bank/04_faq }}
+{{> blocks/common/help-messengers no-bg=true}}
+
+{{> layout/footer }}

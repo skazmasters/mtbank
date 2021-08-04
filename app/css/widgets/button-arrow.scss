@@ -1,0 +1,19 @@
+.button-arrow {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: $color-gray-80;
+  display: inline-flex;
+  @include transition;
+  white-space: nowrap;
+
+  svg {
+    margin-right: 12px;
+    @include transition;
+  }
+
+  &:hover {
+    color: $color-gray-100;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="range-slider js-range-slider" data-currency="{{#if currency}}{{currency}}{{else}}BYN{{/if}}" data-min="100"
+     data-max="10000" data-step="10">
+  {{#if name}}<input type="hidden" name="{{name}}" value="2000" class="js-range-slider__input"/> {{/if}}
+  <div class="range-slider__container">
+    <div class="range-slider__top">
+      <span class="range-slider__label">{{label}}</span>
+      <span class="range-slider__value js-range-slider__value"></span>
+    </div>
+    <div class="range-slider__bottom">
+      <div class="js-range-slider__content"></div>
+    </div>
+  </div>
+</div>

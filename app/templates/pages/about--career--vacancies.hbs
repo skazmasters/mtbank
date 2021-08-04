@@ -1,0 +1,18 @@
+{{!О Банке / Работа / Вакансии}}
+
+{{> layout/head page-title="О Банке / Работа / Вакансии"}}
+
+{{> layout/header active-header-menu="about"}}
+
+{{> blocks/common/page-header title="Вакансии"
+        item-1="Преимущества"
+        item-2="Вакансии"
+        item-2-active=true
+        item-3="Студентам"
+}}
+
+{{>blocks/internal/about-career/vacancies/01_filters}}
+{{>blocks/internal/about-career/vacancies/02_content}}
+{{> forms/career }}
+
+{{> layout/footer }}

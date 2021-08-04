@@ -1,0 +1,109 @@
+.business-card {
+  min-height: 310px;
+  position: relative;
+
+  @include transition;
+  &:hover{
+    transform: translateY(-5px);
+  }
+
+  &__link {
+    @include fill;
+    z-index: z(default);
+  }
+
+  &__inner {
+    background: #F2F4F8;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 310px;
+
+    @include tablet-and-mobile {
+      width: 265px;
+      display: block;
+      min-height: auto;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__image {
+    width: 307px;
+    flex-basis: 307px;
+    display: flex;
+    align-items: flex-end;
+
+    @include tablet-and-mobile {
+      width: auto;
+      height: 160px;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    padding: 45px 30px;
+
+    @include tablet-and-mobile {
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    max-width: 300px;
+
+    @include tablet-and-mobile {
+      font-size: 17px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      max-width: none;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    margin-top: 5px;
+    display: block;
+    max-width: 270px;
+    color: $color-gray-80;
+
+    @include tablet-and-mobile {
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__action {
+    margin-top: 15px;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+
+    &-link {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: $color-primary;
+
+      &:hover{
+        color: $color-primary-hover;
+      }
+
+      @include tablet-and-mobile {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+      }
+    }
+  }
+}

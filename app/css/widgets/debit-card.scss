@@ -1,0 +1,180 @@
+.debit-card {
+  height: 100%;
+  min-width: 346px;
+
+  @include tablet{
+    min-width: 310px;
+  }
+
+  @include mobile{
+    min-width: 0;
+  }
+
+  &__container {
+    height: 100%;
+    padding: 23px 25px 25px;
+    border: 1px solid $color-gray-40;
+    border-radius: 15px;
+    box-shadow: 0 0 0 0 transparent;
+    @include transition;
+    cursor: default;
+
+    .debit-card--white &{
+      border: 0 none;
+      background: $color-white;
+      box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+
+      &:hover{
+        box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+      }
+    }
+
+    &:hover {
+      border-color: transparent;
+      @include shadow(xl);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h4;
+    @include transition;
+    text-align: center;
+    color: $color-gray-100;
+
+    a {
+      @include transition;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 10px 0 0;
+    @include text-caption;
+    text-align: center;
+    color: $color-gray-80;
+
+    @include media(mobile) {
+      font-size: 12px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    @include shadow(md);
+    background-color: $color-gray-10;
+    border-radius: 10px;
+
+    @include media(mobile) {
+      max-width: 250px;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      padding-top: 61%;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+    padding-bottom: 33px;
+
+    @include media(mobile) {
+      margin-top: 22px;
+      padding-bottom: 27px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 13px;
+      margin-top: 8px;
+      @include text-body-2;
+      color: $color-gray-80;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: #{(21 / 2) - 2}px;
+        left: 0;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: $color-primary;
+        border-radius: 50%;
+
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  &__cta-item {
+    @include media(mobile, up) {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__cta-link {
+    padding: 14px 16px;
+    @include text-button-s;
+    background-color: transparent;
+    border-radius: 100px;
+    @include transition;
+
+    &:hover {
+      background-color: $color-gray-20;
+    }
+  }
+
+  .btn {
+    @include shadow(lg);
+  }
+}

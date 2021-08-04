@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include media(mobile) {
+    padding: 0 15px;
+  }
+
+  &:first-child > *:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .container-880 {
+    padding: 0;
+    max-width: 880px;
+  }
+}
+
+.container-1210 {
+  @extend .container;
+  max-width: 1250px;
+}
+
+.container-1100 {
+  @extend .container;
+  max-width: 1140px;
+}
+
+.container-880 {
+  @extend .container;
+  max-width: 920px;
+}
+
+.container-770 {
+  @extend .container;
+  max-width: 810px;
+}

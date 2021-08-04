@@ -1,0 +1,42 @@
+{{! Бизнесу / Эквайринг / Карточка }}
+
+{{> layout/head page-title="Бизнесу / Эквайринг / Карточка" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+<div class="hero-menu-block">
+  {{> hero/business-acquiring-single}}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Тарифы и условия"
+          item-3="Вопрос-ответ"
+  }}
+</div>
+
+{{> blocks/common/features-row size="big"  title="Сделай свой бизнес лучше" assets-folder="business/acquiring-single"
+        title-1="Бесплатное подключение к тарифному плану SmartPOS"
+        text-1="Сюда нужно описание по кол-ву символов схожим с другими."
+        title-2="Комиссия от оборота - 2%"
+        text-2="Сюда нужно описание по кол-ву символов схожим с другими."
+        title-3="Экономия времени"
+        text-3="Вы получите настроенную кассу в банке"
+        title-4="Безопасность"
+        text-4="Данные предоставляются в ИМНС онлайн"
+}}
+
+{{> blocks/business/acquiring/params}}
+
+{{> blocks/common/terms-section block=true
+        title="Подключить МТКассу просто"
+        term-1="Оформите онлайн-заявку"
+        term-1-text="Укажите основную информацию о компании"
+        term-1-link="Оформить заявку"
+        term-2="Подготовить документы,"
+        term-2-text="Подготовить документы, необходимые для подключения эквайринга."
+        term-2-link="Смотреть перечень документов"
+        term-3="Передайте документы в банк"
+        term-3-text="Предоставить сформированный пакет документов в Банк онлайн или в отделении."
+}}
+
+{{> layout/footer business=true }}

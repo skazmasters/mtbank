@@ -1,0 +1,29 @@
+.documents-row {
+  display: flex;
+  margin: 0 -15px;
+
+  @include smallTablet-and-mobile{
+    margin: 0;
+    display: block;
+  }
+
+  &__cell {
+    padding: 0 15px;
+    flex: 1 1 1px;
+
+    @include smallTablet-and-mobile {
+      margin-top: 10px;
+      padding: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .file-download{
+    @include tablet{
+      height: 100%;
+      align-items: center;
+    }
+  }
+}

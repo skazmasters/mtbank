@@ -1,0 +1,23 @@
+<div class="account-form">
+  <div class="account-form__header">
+    <span class="account-form__title">Выбор тарифного плана</span>
+  </div>
+  <div class="account-form__main">
+    <div class="account-form__row">
+      {{#> form/select label="Ваш тариф"}}
+        <option value="1" selected>Первый счет</option>
+        <option value="2">Второй счет</option>
+        <option value="3">Третий счет</option>
+        <option value="4">Четвертый счет</option>
+      {{/form/select}}
+    </div>
+  </div>
+  <div class="account-form__submit">
+    <div class="account-form__submit-left">
+      {{> widgets/button-arrow label="Назад"}}
+    </div>
+    <div class="account-form__submit-right">
+      {{> ui/btn label="Открыть счет" size="large" color="primary"}}
+    </div>
+  </div>
+</div>

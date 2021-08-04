@@ -1,0 +1,39 @@
+<div class="calculator">
+  <div class="calculator__inner">
+    <div class="credit-calc">
+      <div class="credit-calc__inner">
+        <div class="credit-calc__left">
+          <span class="credit-calc__title">Рассчитайте условия</span>
+          <p class="credit-calc__text">Расчет носит информационный характер и не является публичной офертой.</p>
+          <div class="credit-calc__inputs">
+            <div class="credit-calc__input">
+              {{> form/input-money label="Сумма кредита" value=1000}}
+            </div>
+            <div class="credit-calc__input">
+              {{#> form/select border=true label="Срок"}}
+                <option value="12" selected>12 месяцев</option>
+                <option value="18">18 месяцев</option>
+                <option value="24">2 года</option>
+              {{/form/select}}
+            </div>
+          </div>
+        </div>
+        <div class="credit-calc__right">
+          <div class="credit-calc__results">
+            <div class="credit-calc__result">
+              <span class="credit-calc__result-label">Ежемесячный платеж</span>
+              <span class="credit-calc__result-value">90,05 BYN</span>
+            </div>
+          </div>
+          <div class="credit-calc__submit">
+            <button class="btn btn--primary btn--large">Оформить кредит</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="calculator__note">
+    <span class="calculator__note-star">*</span>
+    Пример расчета носит исключительно информационный характер
+  </div>
+</div>

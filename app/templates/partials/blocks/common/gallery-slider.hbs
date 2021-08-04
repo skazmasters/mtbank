@@ -1,0 +1,25 @@
+<div class="gallery-slider">
+  <div class="swiper-container js-gallery-static">
+    <!--Content-->
+    <div class="swiper-wrapper">
+      {{#each gallery-content}}
+        <div class="swiper-slide">
+          <div class="gallery-slider__slide">
+            {{>components/image no-lazy=true
+                img=this.image
+                img-mobile=this.image-mobile
+                ext=ext
+            }}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <!--Pagination-->
+    <div class="swiper-pagination"></div>
+    <!--Navigation-->
+    <div class="gallery-slider__nav">
+      {{> components/gallery-nav }}
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,35 @@
+.tab-checkbox {
+  display: flex;
+  align-items: center;
+  height: 52px;
+
+  &__label {
+    color: #363C4E;
+    height: 52px;
+    border-radius: 100px;
+    border: 1px solid $color-gray-20;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .tab-checkbox__label {
+      border-color: $color-gray-40;
+    }
+  }
+
+  input:checked + .tab-checkbox__label {
+    border-color: $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      border-color: $color-primary;
+    }
+  }
+}

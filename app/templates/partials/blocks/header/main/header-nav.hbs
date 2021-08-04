@@ -1,0 +1,29 @@
+<nav class="header-nav">
+  <div class="header-nav__mobile js-header__sub">
+    <button class="header-nav__mobile-back js-header__sub_back">
+      {{>ui/svg name="header--back-big"}}
+    </button>
+    <span class="header-nav__mobile-title js-header__sub_title"></span>
+    <button class="header-nav__mobile-search js-header__sub_search">
+      {{>ui/svg name="header--search-big"}}
+    </button>
+  </div>
+
+  <ul class="header-nav__list">
+    {{#ifCond menu 'main'}}
+      {{> blocks/header/main/header-nav--main}}
+    {{/ifCond}}
+    {{#ifCond menu 'about'}}
+      {{> blocks/header/main/header-nav--about}}
+    {{/ifCond}}
+    {{#ifCond menu 'business'}}
+      {{> blocks/header/main/header-nav--business}}
+    {{/ifCond}}
+    {{#ifCond menu 'corporation'}}
+      {{> blocks/header/main/header-nav--corporation}}
+    {{/ifCond}}
+    {{#ifCond menu 'investments'}}
+      {{> blocks/header/main/header-nav--investments}}
+    {{/ifCond}}
+  </ul>
+</nav>

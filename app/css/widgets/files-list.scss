@@ -1,0 +1,8 @@
+.files-list {
+  &__item {
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

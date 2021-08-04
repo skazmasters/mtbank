@@ -1,0 +1,76 @@
+{{! Карты / Halva MixMax}}
+
+{{> layout/head page-title="Карты / Halva MixMax" theme-color='halva-max'}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main" header-main-hide_mobile=true header-nav-active="cards"}}
+
+<div class="hero-menu-block">
+{{> hero/halva }}
+{{> blocks/common/page-header mobile-dropdown=true title="Обзор"
+        item-1="Обзор"
+        item-1-active=true
+        item-2="Халва MIX"
+        item-3="Халва MAX"
+        item-4="Тарифы и условия"
+        item-5="Как работает"
+        item-6="Вопрос-ответ"
+        sticky-button=true
+}}
+</div>
+
+{{> blocks/products/common/card-advantages
+        feature-1-icon="cards/mixmax/icons/01"
+        feature-1-title="0% рассрочка"
+        feature-1-text="Покупки в рассрочку без первого взноса и переплат."
+        feature-2-icon="cards/mixmax/icons/02"
+        feature-2-title="28000+ магазинов - партнёров"
+        feature-2-text="Покупки в крупнейшей партнёрской сети."
+        feature-3-icon="cards/mixmax/icons/03"
+        feature-3-title="Рассрочка на оплату коммунальных услуг в ЕРИП"
+        feature-3-text="Оплачивайте услуги в пару кликов."
+        feature-4-icon="cards/mixmax/icons/04"
+        feature-4-title="Мани-бэк за покупки своими деньгами"
+        feature-4-text="Возвращайте о 5% за покупки."
+}}
+
+{{> blocks/products/mixmax/main/cards }}
+
+{{> blocks/products/common/partners
+        title="27 000+ магазинов-партнёров"
+        text="С картами Халва MIX и Халва MAX вы сможете купить в рассрочку все, что надо — от продуктов до строительных материалов и не платить проценты"
+        feature-1-value="0%"
+        feature-1-label="Без переплаты"
+        feature-2-value="до 24 месяцев"
+        feature-2-label="Любой товар в рассрочку"
+        feature-3-value="Мгновенно"
+        feature-3-label="Оплата покупки в рассрочку"
+        button-label="Каталог партнеров"
+        mobile-block=true
+}}
+
+{{> blocks/products/common/card-benefits
+        background="#e7edf5"
+        title="Преимущества карт"
+        text="С картой Халва MIX и Халва MAX еще больше выгоды при покупках."
+        image="cards/mixmax/benefits/bg"
+        feature-1-title="Сладкие предложения"
+        feature-1-text="У нас всегда отличные акции и специальные предложения для владельцев Халва MIX, халва MAX и Халва Плюс."
+        feature-1-icon="cards/mixmax/icons/05"
+        feature-2-title="Рассрочка без переплат"
+        feature-2-text="Покупайте в рассрочку без первого взноса и переплат в крупнейшей сети партнеров."
+        feature-2-icon="cards/mixmax/icons/06"
+        feature-3-title="Каталог партнёров"
+        feature-3-text="Совершайте покупки в сети магазинов-партнёров по всей стране."
+        feature-3-icon="cards/mixmax/icons/07"
+}}
+
+{{> blocks/common/terms-section no-number=true
+        title="Условия оформления"
+        term-1="Без справки о доходах"
+        term-2="Баз залога и поручительства"
+        term-3="Рассрочка до 21 месяца"
+}}
+
+{{> forms/mixmax}}
+
+{{> layout/footer }}

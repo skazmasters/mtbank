@@ -1,0 +1,59 @@
+<section class="section">
+  <div class="container">
+    <div class="js-tab-content js-accordion" data-tab-content="physical">
+      {{# each internal.about-pricing.items}}
+        {{#>blocks/common/accordion-item
+                title=this.title
+                text=this.category
+                text-date=this.date}}
+          <div class="pricing-item">
+            <ul class="files-list">
+              <li class="files-list__item">
+                {{>components/file-download color="red"
+                        label="Платы, установленные по операциям юридических лиц и индивидуальных предпринимателей"
+                        small="Doc, 753 KB" file-icon="files--pdf"}}
+              </li>
+              <li class="files-list__item">
+                {{>components/file-download color="red"
+                        label="Приложение 6. Платы, установленные за обслуживание по торговому эквайрингу"
+                        small="Doc, 753 KB" file-icon="files--pdf"}}
+              </li>
+              <li class="files-list__item">
+                {{>components/file-download color="red"
+                        label="Порядок обслуживания клиентов - организаций торговли и сервиса по торговому эквайрингу, в том числе по тарифным планам торгового эквайринга"
+                        small="Doc, 753 KB" file-icon="files--pdf"}}
+              </li>
+              <li class="files-list__item">
+                {{>components/file-download color="red"
+                        label="Приложение 5. Условия обслуживания юридических лиц и индивидуальных предпринимателей по тарифным планам РКО"
+                        small="Doc, 753 KB" file-icon="files--pdf"}}
+              </li>
+              <li class="files-list__item">
+                {{>components/file-download color="red"
+                        label="Порядок обслуживания клиентов по тарифным планам для юридических лиц и индивидуальных предпринимателей"
+                        small="Doc, 753 KB" file-icon="files--pdf"}}
+              </li>
+            </ul>
+          </div>
+        {{/blocks/common/accordion-item}}
+      {{/each}}
+    </div>
+
+    <div class="js-tab-content js-accordion" data-tab-content="legal">
+      {{# each internal.about-pricing.items}}
+        {{#>blocks/common/accordion-item
+                title=(concat 'Закрытые - ' this.title)
+                text=this.category
+                text-date=this.date}}
+          <ul class="files-list">
+            <li class="files-list__item">
+              {{>components/file-download color="red"
+                      label="Платы, установленные по операциям юридических лиц и индивидуальных предпринимателей"
+                      small="Doc, 753 KB" file-icon="files--pdf"}}
+            </li>
+          </ul>
+        {{/blocks/common/accordion-item}}
+      {{/each}}
+    </div>
+  </div>
+</section>

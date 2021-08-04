@@ -1,0 +1,96 @@
+<div class="package-card">
+  <a href="#" class="package-card__link"></a>
+  <div class="package-card__inner">
+    <span class="package-card__title">{{title}}</span>
+    <div class="package-card__image">
+      {{> components/image img=img ext="png"}}
+    </div>
+    {{#if plus-img}}
+      <div class="package-card__plus">
+        <div class="package-card__plus-image">
+          {{> components/image img=plus-img ext="png"}}
+        </div>
+        <div class="package-card__plus-content">
+          <span class="package-card__plus-title">Совершенно бесплатно</span>
+          <span class="package-card__plus-name">{{plus-title}}</span>
+        </div>
+      </div>
+    {{/if}}
+    <div class="package-card__params">
+      {{#if param-1}}
+        <div class="package-card__param">
+          {{#if param-1-value}}
+            <span class="package-card__param-value">{{param-1-value}}</span>
+          {{else}}
+            <span class="package-card__param-value package-card__param-value--check"></span>
+          {{/if}}
+          <span class="package-card__param-label">{{param-1}}</span>
+        </div>
+      {{/if}}
+      {{#if param-2}}
+        <div class="package-card__param">
+          {{#if param-2-value}}
+            <span class="package-card__param-value">{{param-2-value}}</span>
+          {{else}}
+            <span class="package-card__param-value package-card__param-value--check"></span>
+          {{/if}}
+          <span class="package-card__param-label">{{param-2}}</span>
+        </div>
+      {{/if}}
+      {{#if param-3}}
+        <div class="package-card__param">
+          {{#if param-3-value}}
+            <span class="package-card__param-value">{{param-3-value}}</span>
+          {{else}}
+            <span class="package-card__param-value package-card__param-value--check"></span>
+          {{/if}}
+          <span class="package-card__param-label">{{param-3}}</span>
+        </div>
+      {{/if}}
+      {{#if param-4}}
+        <div class="package-card__param">
+          {{#if param-4-value}}
+            <span class="package-card__param-value">{{param-4-value}}</span>
+          {{else}}
+            <span class="package-card__param-value package-card__param-value--check"></span>
+          {{/if}}
+          <span class="package-card__param-label">{{{param-4}}}</span>
+        </div>
+      {{/if}}
+      {{#if param-5}}
+        <div class="package-card__param">
+          {{#if param-5-value}}
+            <span class="package-card__param-value">{{param-5-value}}</span>
+          {{else}}
+            <span class="package-card__param-value package-card__param-value--check"></span>
+          {{/if}}
+          <span class="package-card__param-label">{{{param-5}}}</span>
+        </div>
+      {{/if}}
+      {{#if param-6}}
+        <div class="package-card__param">
+          {{#if param-6-value}}
+            <span class="package-card__param-value">{{param-6-value}}</span>
+          {{else}}
+            <span class="package-card__param-value package-card__param-value--check"></span>
+          {{/if}}
+          <span class="package-card__param-label">{{{param-6}}}</span>
+        </div>
+      {{/if}}
+    </div>
+    {{#if tick-1}}
+      <ul class="package-card__features">
+        <li class="package-card__feature">{{tick-1}}</li>
+        {{#if tick-2}}
+          <li class="package-card__feature">{{tick-2}}</li>{{/if}}
+        {{#if tick-3}}
+          <li class="package-card__feature">{{tick-3}}</li>{{/if}}
+      </ul>
+    {{/if}}
+    {{#if button-label}}
+      <div class="package-card__actions">
+        {{> ui/btn size="large" color="primary" label=button-label}}
+      </div>
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.vacancy-list {
+  padding-bottom: 30px;
+  @include mobile {
+    padding-bottom: 20px;
+  }
+
+  &__item {
+    padding: 41px 0;
+    border-top: 1px solid $color-gray-40;
+
+    @include media(mobile) {
+      padding: 30px 0;
+    }
+
+    &:first-child {
+      border-top: unset;
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__add-btn {
+    margin-top: 60px;
+
+    @include media(mobile) {
+      margin-top: 40px;
+    }
+
+    .btn {
+      @include shadow(lg);
+
+      @include media(mobile, up) {
+        @include btn-large;
+      }
+    }
+  }
+}
+
+.section-vacancies {
+  @include desktop {
+    padding: 60px 0 110px;
+  }
+}

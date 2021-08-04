@@ -1,0 +1,10 @@
+<i class="map-marker {{mix}} {{#if closed}}timer{{/if}}" data-color="{{mod}}">
+  {{#if closed}}
+    <i class="map-marker__timer">
+      {{> ui/svg name="map--timer" }}
+    </i>
+  {{/if}}
+  <i class="map-marker__inner">
+    {{> ui/svg name=icon }}
+  </i>
+</i>

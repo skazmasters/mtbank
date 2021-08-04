@@ -1,0 +1,21 @@
+{{! Бизнесу }}
+
+{{> layout/head page-title="Бизнесу / Главная страница" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+{{> hero/business }}
+{{> blocks/business/home/01_products }}
+{{> blocks/business/home/02_progress }}
+{{> blocks/business/home/03_bank }}
+{{> blocks/home/05_notifications }}
+{{> blocks/common/news-section img="home/news/bg" gray=true
+        label-1="Продукты" title-1="Обновить автопарк поможет быстрый лизинг от МТБанка!"
+        label-2="Банк" title-2="День рождения банка – время подарков для клиентов!"
+        label-3="Бизнес" title-3="Специальное предложение для начинающего бизнеса."
+}}
+{{> blocks/home/07_blog }}
+{{> blocks/business/home/04_features }}
+{{> forms/business step=1 }}
+
+{{> layout/footer business=true }}

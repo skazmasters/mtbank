@@ -1,0 +1,23 @@
+.calculator {
+  &__inner {
+    border-radius: 15px;
+    background: $color-gray-20;
+  }
+
+  &__note {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-60;
+
+    &-star {
+      color: $color-primary;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

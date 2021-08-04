@@ -1,0 +1,14 @@
+<div class="ft-row">
+  <div class="ft-row__container">
+    <div class="ft-row__left">
+      <span class="ft-row__left-title">{{l-title}}</span>
+      <div class="ft-row__popover">
+        {{#if popover-text}} {{>ui/popover text=popover-text}}{{/if}}
+      </div>
+    </div>
+    <div class="ft-row__right">
+      {{#if r-title}}<span class="ft-row__right-title">{{r-title}}</span>{{/if}}
+      {{#if r-text}}<span class="ft-row__right-text">{{r-text}}</span>{{/if}}
+    </div>
+  </div>
+</div>

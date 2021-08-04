@@ -1,0 +1,20 @@
+<div class="promotions-banner{{#if banner-mode}} promotions-banner--{{banner-mode}}{{/if}}">
+  <div class="promotions-banner__container">
+    <div class="promotions-banner__image">
+      {{>components/image img=(concat 'internal/about-promotions/' img) ext=ext}}
+    </div>
+    <div class="promotions-banner__content">
+      <span class="promotions-banner__title"><a href="about--promotions-single.html">{{{title}}}</a></span>
+      <p class="promotions-banner__text">{{{text}}}</p>
+      <div class="promotions-banner__btn">
+        {{>ui/btn color="white" href="about--promotions-single.html" label="Подробнее"}}
+      </div>
+    </div>
+    <div class="promotions-banner__aside">
+      <div class="promotions-banner__aside-container">
+        <p class="promotions-banner__time-left">{{{time-left}}}</p>
+        {{#if period}}<p class="promotions-banner__period">{{{period}}}</p>{{/if}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+.search-item {
+  display: flex;
+  border-bottom: 1px solid $color-gray-40;
+  padding: 21px 0;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__left {
+    flex-basis: 250px;
+    margin-right: 25px;
+    min-width: 250px;
+    @include mobile {
+      margin-right: 0;
+      min-width: 0;
+    }
+  }
+
+  &__right {
+    flex: 1 1 auto;
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
+
+  &__category {
+    color: $color-primary;
+    font-size: 15px;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include mobile {
+      font-size: 15px;
+      line-height: 140%;
+    }
+
+    mark {
+      font-weight: 600;
+      background: none;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    display: block;
+
+    @include mobile {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+}

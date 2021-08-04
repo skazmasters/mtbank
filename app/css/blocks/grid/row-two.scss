@@ -1,0 +1,99 @@
+.row-two {
+
+  &__inner {
+    display: flex;
+    margin: 0 -20px;
+
+    @include desktop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__cell {
+    padding: 0 20px;
+    @include desktop {
+      flex-basis: 50%;
+      width: 50%;
+      margin-top: 40px;
+      &:first-child, &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    &-content {
+      margin-top: 22px;
+    }
+
+    .section__title {
+      @include tablet {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &.row-two--mobile-column {
+    @include tablet-and-mobile {
+      .row-two {
+        &__inner {
+          display: block;
+          margin: 0;
+        }
+
+        &__cell {
+          margin: 25px 0 0 0;
+          padding: 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          .product-banner{
+            width: 100%;
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
+
+  &:not(.row-two--mobile-column) {
+    @include tablet-and-mobile {
+      @include reset-slider-container;
+
+      .row-two__inner {
+        margin: 0;
+      }
+
+      .row-two__cell {
+
+        @include mobile {
+          min-width: 265px;
+          flex: 0;
+          &:last-child {
+            min-width: 280px;
+          }
+        }
+
+        padding: 0;
+        margin-left: 20px;
+
+        &:last-child{
+          padding-right: 20px;
+
+          @include mobile{
+            padding-right: 15px;
+          }
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+
+  .contact-card__content {
+    max-width: 440px;
+  }
+}

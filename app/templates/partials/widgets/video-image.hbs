@@ -1,0 +1,20 @@
+{{#if no-link}}
+  <div class="video-image {{#if small}}video-image--small{{/if}} {{#if top}}video-image--top{{/if}} {{#if
+          bottom}}video-image--bottom{{/if}}">
+    {{#if ext}}
+      {{> components/image img=img ext=ext}}
+    {{else}}
+      {{> components/image img=img ext="jpg"}}
+    {{/if}}
+  </div>
+{{else}}
+  <a href="https://www.youtube.com/watch?v=ze_ie8Ctp60" class="js-video-link video-image {{#if small}}video-image--small{{/if}} {{#if top}}video-image--top{{/if}} {{#if
+          bottom}}video-image--bottom{{/if}}" data-video-youtube-id="ze_ie8Ctp60">
+    {{#if ext}}
+      {{> components/image img=img ext=ext}}
+    {{else}}
+      {{> components/image img=img ext="jpg"}}
+    {{/if}}
+  </a>
+{{/if}}
+

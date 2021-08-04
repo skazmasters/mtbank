@@ -1,0 +1,303 @@
+.section-cards-form {
+  margin-bottom: 0;
+  padding: 70px 0;
+  @include mobile {
+    padding: 30px 0 40px;
+    margin-bottom: 0;
+  }
+}
+
+.cards-form {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+
+  &__form {
+    max-width: 330px;
+    @include mobile {
+      max-width: none;
+      width: 100%;
+
+      .form-checkbox__label-text {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  &__left {
+    flex-basis: 605px;
+    width: 605px;
+    min-width: 605px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    @include mobile {
+      position: static;
+    }
+
+    @include tablet {
+      width: auto;
+      min-width: 0;
+      flex: 1 1 1px;
+    }
+
+    &:after {
+      content: '';
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 443px;
+      max-height: 100%;
+      background: $color-gray-40;
+      position: absolute;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      width: auto;
+      flex-basis: auto;
+      min-width: 0;
+      display: block;
+      padding-top: 30px;
+    }
+  }
+
+  &__right {
+    flex: 1 1 auto;
+    padding-left: 145px;
+    display: flex;
+
+    @include tablet {
+      flex: 1 1 1px;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include tablet-and-mobile {
+      padding-left: 0;
+    }
+
+    @include mobile {
+      border-bottom: 1px solid $color-gray-40;
+      padding-bottom: 28px;
+    }
+  }
+
+  &__cards, &__benefits-list {
+    @include media(mobile, up) {
+      order: 1;
+      width: 330px;
+    }
+  }
+
+  @include mobile {
+    &.cards-form--radio-2 .page-form__inner {
+      padding-top: 250px;
+    }
+    &.cards-form--radio-3 .page-form__inner {
+      padding-top: 375px;
+    }
+    &.cards-form--radio-4 .page-form__inner {
+      padding-top: 500px;
+    }
+  }
+
+  &__header, &__fields-container {
+    @include media(mobile, up) {
+      order: 2;
+      width: 330px;
+    }
+
+    @include media(tabletSmall, only) {
+      width: 44%;
+    }
+  }
+
+  &__cards {
+
+    .cards-form--radio-2 & {
+      @include mobile {
+        position: absolute;
+        top: 50px;
+        left: $mobileGutter;
+        right: $mobileGutter;
+      }
+    }
+
+    &--radio {
+      @include media(mobile, up) {
+        width: 380px;
+        max-width: 100%;
+      }
+
+      @include smallTablet {
+        width: 310px;
+        + .cards-form__benefits-list {
+          width: 310px;
+          margin-top: 25px !important;
+        }
+      }
+    }
+  }
+
+  &__header {
+    @include media(mobile) {
+      order: -1;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2;
+  }
+
+  &__fields-container {
+    margin-top: 23px;
+
+    @include media(mobile) {
+      max-width: calc(100% - 25px);
+      margin: 20px auto 0;
+    }
+  }
+
+  &__field {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &--action {
+      margin-top: 35px;
+    }
+
+    &--submit {
+      margin-top: 23px;
+    }
+  }
+
+  &__benefits-list {
+    margin-top: 35px;
+
+    .cards-form__cards--radio + & {
+      margin-top: 25px;
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+
+    @include media(mobile) {
+      margin-top: 25px;
+    }
+
+    li {
+      position: relative;
+      margin-top: 15px;
+      padding-left: 32px;
+      @include text-h5;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: #{(27 - 21) / 2}px;
+        left: 0;
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background-color: $color-primary;
+        border-radius: 50%;
+
+        @include smallTablet-and-mobile {
+          top: 0;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        top: 11px;
+        left: 11px;
+        content: '';
+        @include sprite('tick-small-white');
+        transform: translate(-50%);
+
+        @include smallTablet-and-mobile {
+          top: 8px;
+        }
+      }
+    }
+  }
+
+  &__cards-item {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @include mobile {
+      border: 0 none;
+    }
+  }
+
+  &__cards-image {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    filter: drop-shadow(3px 15px 30px rgba(48, 66, 117, 0.1));
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 63.7%;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .btn {
+    @include media(mobile, up) {
+      @include btn-large;
+      @include shadow(lg);
+    }
+  }
+
+  &--mixmax {
+    @include media(tablet, up) {
+      min-height: 535px;
+    }
+
+    .cards-form__container {
+      @include media(tablet, up) {
+        margin-left: 55px;
+      }
+
+      @include media(mobile, up) {
+        max-width: 1024px;
+      }
+    }
+
+    .cards-form__header {
+      @include media(tablet, up) {
+        margin-top: 18px;
+      }
+    }
+  }
+}

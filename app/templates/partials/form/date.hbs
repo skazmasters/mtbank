@@ -1,0 +1,5 @@
+<div class="form-input {{#if
+        border}}form-input--border{{/if}} form-input--small form-input--date form-input--placeholder">
+  <input type="date" autocomplete="off"
+         {{#if default}}value="2021-01-21"{{else}}placeholder="дд.мм.гггг"{{/if}} {{#if disabled-last-14}}min="2021-01-10" max="2021-01-21"{{/if}} class="js-datepicker form-input__input"/>
+</div>

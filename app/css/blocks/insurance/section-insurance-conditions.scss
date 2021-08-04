@@ -1,0 +1,35 @@
+.insurance-conditions {
+  margin-top: 22px;
+  @include mobile {
+    margin-top: 25px;
+  }
+
+  display: flex;
+  @include smallTablet-and-mobile {
+    display: block;
+  }
+
+  &__cell {
+    flex: 1 1 1px;
+    padding-right: 30px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @include smallTablet-and-mobile {
+      margin-top: 22px;
+      padding-right: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__item {
+    max-width: 360px;
+    @include tablet-and-mobile {
+      max-width: none;
+    }
+  }
+}

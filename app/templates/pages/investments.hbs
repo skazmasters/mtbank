@@ -1,0 +1,26 @@
+{{!Инвестиции}}
+
+{{> layout/head page-title="Инвестиции"}}
+{{> layout/header no-menu-mobile=true active-header-menu="investments" }}
+{{> hero/investments }}
+
+<div class="js-tabs">
+  {{> blocks/common/page-tabs tab-1="Для частных лиц" tab-2="Для бизнеса"}}
+
+  <div class="js-tab-content tab-1 active">
+    {{> blocks/investments/main/physical}}
+    {{> blocks/investments/main/03_services}}
+    {{> blocks/common/news-section img="investments/main/news"
+            label-1="Продукты" title-1="Обновить автопарк поможет быстрый лизинг от МТБанка!"
+            label-2="Банк" title-2="День рождения банка – время подарков для клиентов!"
+            label-3="Бизнес" title-3="Специальное предложение для начинающего бизнеса."
+    }}
+    {{> forms/investments }}
+  </div>
+  <div class="js-tab-content tab-2 theme-business">
+    {{> blocks/investments/main/business}}
+    {{> forms/investments }}
+  </div>
+</div>
+
+{{> layout/footer }}

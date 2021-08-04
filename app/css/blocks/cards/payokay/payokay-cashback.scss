@@ -1,0 +1,29 @@
+.payokay-cashback {
+  padding: 90px 0 0;
+
+  @include media(mobile) {
+    padding: 55px 0 0;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2
+  }
+
+  &__text {
+    display: block;
+    max-width: 600px;
+    margin: 4px 0 0;
+    @include text-body-1;
+    color: $color-gray-80;
+  }
+
+  &__content {
+    margin-top: 25px;
+  }
+
+  .cashback-banner__bg {
+    background: linear-gradient(265.84deg, #6D34E7 0.65%, #615EFB 99.38%);
+  }
+}

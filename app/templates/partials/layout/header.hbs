@@ -1,0 +1,49 @@
+<header class="page__header header js-header {{#if no-menu-mobile}}header--no-menu-mobile{{/if}}">
+
+  <div class="header-top">
+    {{> blocks/header/top/header-download}}
+
+    <div class="page__container">
+      <div class="header-top__inner">
+        <div class="header-top__left">
+          {{> blocks/header/top/header-menu active=active-header-menu}}
+        </div>
+        <div class="header-top__right">
+          {{> blocks/header/top/header-actions}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-main {{#if header-main-hide_mobile}} header-main--hide_mobile{{/if}}">
+    <div class="page__container">
+      <div class="header-main__inner">
+        <div class="header-main__left">
+          {{> blocks/header/main/header-burger}}
+          {{> blocks/header/main/header-logo no-clickable=no-clickable-logo}}
+        </div>
+
+        <div class="header-main__center">
+          {{#if active-header-menu}}
+            {{> blocks/header/main/header-nav menu=active-header-menu active=header-nav-active}}
+          {{else}}
+            {{> blocks/header/main/header-nav menu="main" active=header-nav-active}}
+          {{/if}}
+        </div>
+
+        <div class="header-main__right">
+          {{#ifCond active-header-menu 'corporation'}}
+            {{> blocks/header/main/header-language}}
+            {{> blocks/header/main/header-buttons hidden=true}}
+          {{else}}
+            {{> blocks/header/main/header-buttons}}
+          {{/ifCond}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-overlay js-header__overlay"></div>
+</header>
+
+<main class="page__content">

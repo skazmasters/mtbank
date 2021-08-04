@@ -1,0 +1,13 @@
+.payokay-benefits {
+  background: linear-gradient(90.78deg, #9849E6 0.56%, #98A1F8 98.87%);
+
+  .cards-benefits__text {
+    margin-top: 8px;
+  }
+
+  .cards-benefits__content {
+    @include media(mobile, up) {
+      margin-top: 50px;
+    }
+  }
+}

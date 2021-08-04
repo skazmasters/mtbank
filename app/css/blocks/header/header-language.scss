@@ -1,0 +1,12 @@
+.header-language {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-left: 10px;
+  }
+
+  @include tablet-and-mobile {
+    display: none;
+  }
+}

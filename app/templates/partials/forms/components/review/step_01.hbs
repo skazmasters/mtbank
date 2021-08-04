@@ -1,0 +1,41 @@
+<div class="account-form account-form--review">
+  <div class="account-form__header">
+    <span class="account-form__title">Контактные данные</span>
+  </div>
+  <div class="account-form__main">
+
+    <div class="account-form__field">
+      {{> form/tabs-radio name="type" option-1="Физ. лицо" option-2="Юр. лицо"}}
+    </div>
+
+    <div class="account-form__field">
+      {{> form/input label="Фамилия Имя Отчество *" mod="js-input-name" placeholder="Подсказка"}}
+    </div>
+    <div class="account-form__field account-form__field--50">
+      {{#> form/select label="Город" placeholder="Любой город" empty-value=true search=true
+                       search-empty="Городов не найдено"}}
+        {{> blocks/selects/cities empty=true}}
+      {{/form/select}}
+    </div>
+    <div class="account-form__field account-form__field--50">
+      {{#> form/select label="Отделение" placeholder="Любое отделение" empty-value=true search=true
+                       search-empty="Отделения не найдено"}}
+        {{> blocks/selects/offices}}
+      {{/form/select}}
+    </div>
+    <div class="account-form__field account-form__field--50">
+      {{> form/input label="E-mail" placeholder="Подсказка"}}
+    </div>
+    <div class="account-form__field account-form__field--50">
+      {{> form/input label="Номер телефона *" placeholder="Подсказка"}}
+    </div>
+  </div>
+  <div class="account-form__submit account-form__submit--mobile-block">
+    <div class="account-form__submit-left">
+      {{>widgets/agreement-checkbox}}
+    </div>
+    <div class="account-form__submit-right">
+      {{>ui/btn button=true disabled=true type="submit" size="large" label="Продолжить" color="primary" arrow=true}}
+    </div>
+  </div>
+</div>

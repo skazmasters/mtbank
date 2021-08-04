@@ -1,0 +1,48 @@
+.service-advantages {
+  margin: 42px 109px 0 0;
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  &__row {
+    margin: -35px -56px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+      margin: 0 -10px;
+    }
+
+    @include mobile {
+      display: block;
+      margin: 25px 0 0 0;
+    }
+  }
+
+  &__cell {
+    padding: 0 56px;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    margin-top: 25px;
+
+
+    @include tablet {
+      padding: 0 10px;
+    }
+
+    @include mobile {
+      padding: 0;
+      margin-top: 35px;
+      max-width: 100%;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include mobile {
+    margin: 0;
+  }
+
+}

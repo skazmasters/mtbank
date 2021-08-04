@@ -1,0 +1,31 @@
+<section class="page-filters page-filters--fixed">
+  <div class="container">
+    <div class="page-filters__content">
+      <div class="page-filters__body page-filters__body--no-js">
+        <div class="page-filters__inner">
+          <div class="page-filters__inner-left">
+            <ul class="page-filters__list">
+              <li class="page-filters__list-item">
+                {{> form/date border=true default=true}}
+              </li>
+              <li class="page-filters__list-item page-filters__list-item--no-mobile">
+                {{#> form/select border=true}}
+                  <option value="1">В отделениях</option>
+                  <option value="2">На улице</option>
+                {{/form/select}}
+              </li>
+              <li class="page-filters__list-item">
+                {{#> form/select border=true}}
+                  <option value="10:05">10:05</option>
+                  <option value="10:10">10:10</option>
+                  <option value="10:15">10:15</option>
+                  <option value="10:20">10:20</option>
+                {{/form/select}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

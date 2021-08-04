@@ -1,0 +1,103 @@
+<section class="section">
+  <div class="container">
+    {{>widgets/leadership-quote
+            person-data=internal.about-leadership.banner
+            title="Главная ценность банка — Клиент"
+            text="От доверия клиентов зависит успех нашей деятельности. Постоянный диалог с клиентами, внимание к его
+            проблемам и нуждам, оперативное принятие решений, гибкость и открытость — основа нашей клиентской политики.
+            Это не «один из» приоритетов — это основополагающий принцип, на этом строится вся работа банка."
+    }}
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="leadership-list js-tabs">
+      <div class="leadership-list__header">
+        <div class="leadership-list__header-inner">
+          <div class="leadership-list__header-left">
+            <span class="leadership-list__title">Руководство</span>
+          </div>
+          <div class="leadership-list__header-right">
+            <div class="leadership-list__tabs">
+              <div class="leadership-list__tab">
+                <button class="leadership-list__tab-link js-tab" data-target=".js-tab-content--persons-1">Правление
+                </button>
+              </div>
+              <div class="leadership-list__tab">
+                <button class="leadership-list__tab-link js-tab" data-target=".js-tab-content--persons-2">Наблюдательный
+                  совет
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="leadership-list__content js-tab-content js-tab-content--persons-1">
+        <ul class="persons-grid">
+          {{#each internal.about-leadership.persons}}
+            <li class="persons-grid__item">
+              {{> widgets/person popup=this.popup}}
+              {{> popups/person id=this.popup}}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="leadership-list__content js-tab-content js-tab-content--persons-2">
+        <div class="static">
+          <h2>H2 Настало время прислушаться к своим истинным желаниям и пожить в свое удовольствие.</h2>
+
+          <p>Настало время прислушаться к своим истинным желаниям и пожить в свое удовольствие. Балуйте себя приятными
+            покупками, наслаждайтесь культурными мероприятиями, открывайте мир заново, а новая карта для получателей
+            пенсий
+            и пособий <a href="#">«ДЛЯ СЕБЯ»</a> от МТБанка позаботится, чтобы все ваши расчеты были удобными,
+            безопасными и выгодными:</p>
+
+          <blockquote>
+            <p>«Настало время прислушаться к своим истинным желаниям и пожить в свое удовольствие.Настало время
+              прислушаться
+              к своим истинным желаниям и пожить в свое удовольствие. Балуйте себя приятными покупками, наслаждайтесь
+              культурными мероприятиями»</p>
+            <footer>Иванов Олег Валерьянович</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="files-grid">
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация о банковском холдинге" small="Doc, 753 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация об акционерах компании" small="Doc, 948 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация о банковском холдинге" small="Doc, 753 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация об акционерах компании" small="Doc, 948 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация о банковском холдинге" small="Doc, 753 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация об акционерах компании" small="Doc, 948 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация о банковском холдинге" small="Doc, 753 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация об акционерах компании" small="Doc, 948 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация о банковском холдинге" small="Doc, 753 KB" file-icon="files--pdf"}}
+      </div>
+      <div class="files-grid__item">
+        {{> components/file-download color="red" label="Информация об акционерах компании" small="Doc, 948 KB" file-icon="files--pdf"}}
+      </div>
+    </div>
+  </div>
+</section>

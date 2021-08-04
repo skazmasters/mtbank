@@ -1,0 +1,38 @@
+<div class="promotion-breadcrumbs">
+  <div class="container">
+    {{>blocks/common/page-breadcrumbs
+        label="Назад к акциям"
+        icon="action--arrow-left"
+    }}
+  </div>
+</div>
+
+<section class="promotion-hero promotion-hero--purple">
+  <div class="promotion-hero__bg"></div>
+  <div class="container">
+    <div class="promotion-hero__container">
+      <div class="promotion-hero__image">
+        {{>components/image
+            img="internal/about-promotions/single/desktop"
+            img-mobile="internal/about-promotions/single/mobile"
+            ext="jpg"
+            ext-mobile="jpg"
+        }}
+      </div>
+
+      <div class="promotion-hero__content">
+        <div class="promotion-hero__breadcrumbs">
+          {{>blocks/common/page-breadcrumbs
+              label="Назад к акциям"
+              icon="action--arrow-left"
+          }}
+        </div>
+        <h1 class="promotion-hero__title">Халва Плюс ищет новых друзей — 10 приветственных баллов!</h1>
+        <p class="promotion-hero__text">Оформи сейчас и получи +10 бонусных баллов на свои покупки</p>
+        <div class="promotion-hero__btn">
+          {{>ui/btn label="Оформить онлайн" color="white"}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

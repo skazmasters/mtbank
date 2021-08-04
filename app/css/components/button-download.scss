@@ -1,0 +1,32 @@
+.button-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  @include text-button-s;
+  border: 1px solid $color-gray-40;
+  border-radius: 100px;
+  @include transition;
+
+  &:hover {
+    border-color: $color-gray-100;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+      color: $color-primary;
+      background-color: $color-white;
+      border-color: $color-primary;
+    }
+  }
+}

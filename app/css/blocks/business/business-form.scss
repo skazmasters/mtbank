@@ -1,0 +1,97 @@
+.business-form {
+
+  @include mobile{
+    margin-top: 20px;
+  }
+
+  &__note {
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    display: block;
+    color: $color-primary;
+    margin-top: 20px;
+
+    @include mobile {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+  &__content {
+    margin-top: 40px;
+    @include tablet-and-mobile {
+      margin-top: 20px;
+    }
+    box-shadow: 3px 15px 30px rgba(48, 66, 117, 0.1);
+    border-radius: 15px;
+    background: $color-white;
+
+    padding: 50px 0;
+    @include tablet-and-mobile {
+      padding: 30px 0 45px;
+    }
+
+    &--account{
+      padding: 0;
+    }
+  }
+
+  &__form {
+    max-width: 440px;
+    margin: 0 auto;
+    margin-top: -14px;
+
+    @include mobile {
+      width: auto;
+      padding: 0 30px;
+    }
+  }
+
+  &__field {
+    margin-top: 22px;
+    @include mobile {
+      margin-top: 30px;
+    }
+  }
+
+  &__bottom {
+    margin-top: 45px;
+    display: flex;
+
+    @include mobile {
+      display: block;
+      margin-top: 30px;
+    }
+
+    &-submit {
+      @include mobile {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-aggreement {
+      flex: 1 1 1px;
+      margin-right: 22px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    text-align: center;
+    margin-bottom: 55px;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 35px;
+    }
+  }
+}

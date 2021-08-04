@@ -1,0 +1,32 @@
+<div class="rates-table__row js-rates-row">
+  <div class="rates-table__cell rates-table__cell--currency">
+    {{ label }}
+  </div>
+  <div class="rates-table__cell rates-table__cell--quantity">
+    <span class="rates-table__label">Кол-во</span>
+    <span class="rates-table__value">{{ count }}</span>
+  </div>
+  <div class="rates-table__cell rates-table__cell--rate">
+    <div class="rates-table__double">
+      <div class="rates-table__double-cell">
+        <span class="rates-table__double-label">Покупка</span>
+        <span class="rates-table__double-value">2,645</span>
+      </div>
+      <div class="rates-table__double-cell">
+        <span class="rates-table__double-label">Продажа</span>
+        <span class="rates-table__double-value">2,645</span>
+      </div>
+    </div>
+    <div class="rates-table__conversion">
+      <span class="rates-table__conversion-label">USD/RUB</span>
+      {{> widgets/rates-card label=false buy="70,7" sell="73,4" sell-mod="down"}}
+    </div>
+    <div class="rates-table__convertor">
+      <button class="rates-table__convertor-link  js-rates-row__toggle">Курс конверсии</button>
+    </div>
+  </div>
+  <div class="rates-table__cell rates-table__cell--nbrb">
+    <span class="rates-table__label">курс НБРБ</span>
+    <span class="rates-table__value">2.3856</span>
+  </div>
+</div>

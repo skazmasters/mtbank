@@ -1,0 +1,28 @@
+.mixmax-cards {
+  &__list {
+    @include media(tabletSmall, up) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    @include media(tabletSmall, up) {
+      flex: 1 1 100%;
+      margin-left: 50px;
+    }
+
+    @include media(tabletSmall) {
+      margin-top: 25px;
+    }
+
+    &:first-child {
+      @include media(tabletSmall, up) {
+        margin-left: 0;
+      }
+
+      @include media(tabletSmall) {
+        margin-top: 0;
+      }
+    }
+  }
+}

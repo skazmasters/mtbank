@@ -1,0 +1,52 @@
+<div class="calculator">
+  <div class="calculator__inner">
+    <div class="deposit-calc">
+      <div class="deposit-calc__inner">
+        <div class="deposit-calc__left">
+          <span class="deposit-calc__title">Размер вашего вклада</span>
+          <div class="deposit-calc__form">
+            <div class="deposit-calc__form-field">
+              {{> form/input-money label="Сумма вклада" value=1000 step=10}}
+            </div>
+            <div class="deposit-calc__form-field">
+              {{#> form/select border=true label="Срок"}}
+                <option value="12" selected>12 месяцев</option>
+                <option value="18">18 месяцев</option>
+                <option value="24">2 года</option>
+              {{/form/select}}
+            </div>
+            <div class="deposit-calc__form-field">
+              {{> form/input-money label="Ежемесячный дополнительный взнос"}}
+            </div>
+          </div>
+        </div>
+        <div class="deposit-calc__right">
+          <span class="deposit-calc__title">Доход от вклада</span>
+
+          <div class="deposit-calc__results">
+            <div class="deposit-calc__result">
+              <span class="deposit-calc__result-value">13%</span>
+              <span class="deposit-calc__result-label">Процентная ставка</span>
+            </div>
+            <div class="deposit-calc__result">
+              <span class="deposit-calc__result-value">90,05 BYN</span>
+              <span class="deposit-calc__result-label">Доходность по вкладу</span>
+            </div>
+          </div>
+
+          <div class="deposit-calc__option">
+            {{> form/checkbox-extended id="check" title="Застраховать вклад" text="Для вашей суммы вклада единовременная оплата страхового взноса 18,8 BYN"}}
+          </div>
+
+          <div class="deposit-calc__submit">
+            {{> widgets/button-and-more label="Оформить через интернет-банк" link-label="Получить консультацию" link-with-dots=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="calculator__note">
+    <span class="calculator__note-star">*</span>
+    Пример расчета носит исключительно информационный характер
+  </div>
+</div>

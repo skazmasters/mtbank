@@ -1,0 +1,97 @@
+.career-advantages {
+  margin-top: 50px;
+  @include media(mobile) {
+    margin-top: 30px;
+  }
+
+  padding-bottom: 50px;
+  @include mobile {
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    @include mobile {
+      margin-top: 30px;
+    }
+
+    @include media(tabletSmall) {
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    flex: 0 1 200px;
+
+    @include media(tabletSmall, up) {
+      margin-left: 60px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @include media(tabletSmall) {
+      flex: 1 1 35%;
+      margin-top: 40px;
+
+      &:nth-child(even) {
+        margin-left: 40px;
+      }
+
+      &:nth-child(-n + 2) {
+        margin-top: 0;
+      }
+    }
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+  &__number {
+    display: block;
+    margin: 0;
+    color: $color-primary;
+
+    @include media(tabletSmall, up) {
+      @include text-h1;
+    }
+
+    @include media(tabletSmall) {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 10px 0 0;
+    @include text-body-2;
+    color: $color-gray-80;
+
+    @include media(mobile) {
+      margin: 1px 0 0;
+    }
+  }
+}

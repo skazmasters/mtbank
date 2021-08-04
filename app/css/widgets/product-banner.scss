@@ -1,0 +1,275 @@
+.product-banner {
+  border-radius: 15px;
+  @include tablet-and-mobile {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  background: $color-gray-20;
+  padding: 30px;
+  min-height: 279px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+
+  &:not(.product-banner--full) {
+    @include tablet-and-mobile{
+      max-width: 266px;
+      min-width: 266px;
+    }
+  }
+
+  &--investments {
+    @include desktop {
+      min-height: 300px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--small {
+    @include desktop {
+      min-height: 280px;
+    }
+  }
+
+  &--dark {
+    color: $color-white;
+  }
+
+  @include tablet-and-mobile {
+    min-height: auto;
+    padding: 0;
+  }
+
+  &:not(.product-banner--full) {
+    @include mobile {
+      min-width: 265px;
+      max-width: 265px;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+
+    @include desktop {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-height: 100%;
+    }
+
+    @include desktop-small {
+      img {
+        max-width: 300px;
+      }
+    }
+
+    @include tablet-and-mobile {
+      min-height: 148px;
+      background: #E0E4EB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mobile {
+      min-height: auto;
+      padding-top: 56.24%;
+      position: relative;
+
+      img {
+        @include fill;
+        max-width: none;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+
+    @include desktop {
+      height: 100%;
+    }
+
+    @include tablet-and-mobile {
+      flex: 1 1 1px;
+    }
+
+    @include mobile {
+      display: block;
+    }
+
+    .product-banner--small & {
+      max-width: 310px;
+
+      @include tablet-and-mobile {
+        max-width: none;
+      }
+    }
+
+    &--wide {
+      max-width: 332px !important;
+      @include tablet-and-mobile {
+        max-width: none;
+      }
+    }
+
+    @include tablet-and-mobile {
+      max-width: none;
+      padding: 20px 15px 30px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    max-width: 355px;
+
+    @include tablet-and-mobile {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  &__list {
+    margin-top: 15px;
+
+
+    &-item {
+      color: $color-gray-80;
+      font-size: 15px;
+      line-height: 140%;
+      position: relative;
+      @include desktop {
+        letter-spacing: -0.04em;
+      }
+      margin-top: 8px;
+      padding-left: 19px;
+
+      @include tablet-and-mobile {
+        margin-top: 2px;
+        padding-left: 13px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 4px;
+        height: 4px;
+        display: block;
+        border-radius: 100%;
+        background: $color-primary;
+
+        @include mobile {
+          top: 7px;
+        }
+      }
+
+      .product-banner__list--big & {
+        padding-left: 23px;
+        color: $color-gray-80;
+
+        @include mobile {
+          margin-top: 5px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        &:before {
+          width: 8px;
+          height: 8px;
+          top: 6px;
+
+          @include mobile {
+            width: 6px;
+            height: 6px;
+            top: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    padding-top: 20px;
+    margin-top: auto;
+
+    &--no-bottom {
+      @include desktop {
+        margin-top: 0;
+      }
+    }
+
+    @include tablet-and-mobile {
+      padding-top: 25px;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-80;
+    display: block;
+    margin-top: 15px;
+
+    .product-banner--dark & {
+      color: $color-white-70;
+    }
+
+    @include tablet-and-mobile {
+      margin-top: 10px;
+    }
+  }
+
+  &__link {
+    margin-top: 15px;
+
+    a {
+      color: $color-primary;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+
+      @include tablet-and-mobile {
+        font-size: 14px;
+        line-height: 100%;
+      }
+
+      .product-banner--small & {
+        font-size: 14px;
+        line-height: 100%;
+        font-weight: 600;
+      }
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+
+      .product-banner--dark & {
+        color: $color-white;
+
+        &:hover {
+          color: $color-white-70;
+        }
+      }
+    }
+  }
+}

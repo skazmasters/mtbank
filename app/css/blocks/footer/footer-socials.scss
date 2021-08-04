@@ -1,0 +1,26 @@
+.footer-socials {
+  display: flex;
+
+  &__item {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background: $color-white-10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+
+    &:hover{
+      background: $color-white-20;
+    }
+  }
+}

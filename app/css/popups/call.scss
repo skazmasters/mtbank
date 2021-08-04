@@ -1,0 +1,67 @@
+.popup-call {
+  padding: 40px 66px 50px;
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    display: block;
+  }
+
+  &__text {
+    display: block;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: #717784;
+    margin-top: 9px
+  }
+
+  &__submit {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__normal {
+    margin: 0 45px;
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  &__success, &__failure {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 40px;
+    width: 330px;
+    max-width: 100%;
+  }
+
+  &__input {
+    margin-top: 20px;
+
+    @include mobile {
+      margin-top: 10px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

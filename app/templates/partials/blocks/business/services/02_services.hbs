@@ -1,0 +1,24 @@
+<section class="section section--gray section--no-mb">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3" data-mobile-slider="1" data-scroll-count="1">
+      <div class="carousel-slider">
+        <div class="carousel-slider__nav">
+          {{> components/slider-nav small=true dark=true}}
+        </div>
+        <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide carousel-slider__slide">
+              {{> widgets/service-links-card title="Мобильный банк" image="business/services/service_01" text="Совершайте и быстро повторяйте платежи с телефона. Актуальная информация о счетах и операциях." ios=true android=true }}
+            </div>
+            <div class="swiper-slide carousel-slider__slide">
+              {{> widgets/service-links-card title="Клиент-Банк" image="business/services/service_02" text="Сервис, который позволяет оплачивать товары, работы и услуги, обмениваться с банком платежными, финансовыми и другими документами не выходя из офиса." }}
+            </div>
+            <div class="swiper-slide carousel-slider__slide">
+              {{> widgets/service-links-card title="Регистрация бизнеса" image="business/services/service_03" text="Подготовка документов, онлайн передача, помощь на всех этапах регистрации."}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

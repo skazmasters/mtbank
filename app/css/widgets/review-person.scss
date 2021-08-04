@@ -1,0 +1,27 @@
+.review-person {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    flex: 0 0 65px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    @include shadow(lg);
+  }
+
+  &__content {
+    margin-left: 30px;
+    flex: 0 1 311px;
+  }
+
+  &__text {
+    @include text-body-2;
+    color: $color-gray-80;
+
+    span {
+      color: $color-gray-100;
+    }
+  }
+}

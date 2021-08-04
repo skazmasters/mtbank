@@ -1,0 +1,19 @@
+{{!Курсы валют / Иные валюты }}
+{{> layout/head page-title="Курсы валют / Иные валюты"}}
+{{> layout/header }}
+{{> blocks/common/page-header title="Иные валюты"
+        item-1="Наличный"
+        item-1-mobile-hidden=true
+        item-2="Безналичный"
+        item-2-mobile-hidden=true
+        item-3="По картам"
+        item-3-mobile-hidden=true
+        item-4="Индивидуальный"
+        item-5="НБРБ"
+        item-6="Иные валюты"
+        item-6-active=true
+}}
+{{> blocks/rates/other/01_filters}}
+{{> blocks/rates/other/02_content}}
+{{> blocks/rates/convertor}}
+{{> layout/footer }}

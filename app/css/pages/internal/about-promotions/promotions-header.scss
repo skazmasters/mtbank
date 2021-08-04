@@ -1,0 +1,63 @@
+.promotions-header {
+  border-bottom: 1px solid $color-gray-40;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 32px 0 31px;
+
+    @include media(mobile) {
+      padding: 20px 0 19px;
+    }
+  }
+
+  &__icon {
+    width: 27px;
+    height: 27px;
+
+    @include media(mobile) {
+      width: 31px;
+      height: 30px;
+    }
+
+    img {
+      display: block;
+      width: 27px;
+      height: 27px;
+
+      @include media(mobile) {
+        width: 31px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    @include media(mobile) {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+
+  &__terms {
+    display: block;
+    margin: 0;
+    @include text-h6;
+  }
+
+  &__period {
+    display: block;
+    margin: 0 0 0 auto;
+    @include text-body-2;
+    color: $color-gray-80;
+
+    @include media(mobile) {
+      margin-top: 2px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<template id="tpl-object-marker">
+  <i class="map-marker {% if properties.isActive %}active{% endif %}" data-container>
+    <i class="map-marker__timer" data-timer>
+      {{> ui/svg name="map--timer" }}
+    </i>
+    <i class="map-marker__inner" data-content>
+      <svg class="icon icon-[[iconName]]">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+             xlink:href="../assets/images/spriteInline.svg#[[iconName]]"></use>
+      </svg>
+    </i>
+  </i>
+</template>

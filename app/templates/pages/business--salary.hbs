@@ -1,0 +1,51 @@
+{{! Бизнесу / Зарплатный проект }}
+
+{{> layout/head page-title="Бизнесу / Зарплатный проект" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+<div class="hero-menu-block">
+  {{> hero/business-salary }}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Условия и документы"
+          item-3="Как оформить"
+          item-4="Вопрос-ответ"
+  }}
+</div>
+{{> blocks/common/card-overview img="business/salary/overview"
+        ext="png"
+        title="Преимущества для бизнеса:"
+        button-label="Заполнить заявку"
+        feature-1="Простые и понятные тарифы"
+        feature-2="Заключение договора за 1 визит в банк"
+        feature-3="Оформление зарплатного проекта без открытия счета в МТБанке"
+        feature-4="Возможность проведения презентации и оформления пакета услуг в вашем офисе. По договоренности с менеджером банка"
+}}
+{{> blocks/products/common/card-benefits dark=true arrows-white=true
+        background="linear-gradient(85.35deg, #1B57B4 -4.37%, #4789EF 96.11%);"
+        title="Преимущества для сотрудников"
+        image="business/salary/benefits"
+        feature-1-title="Бесплатный выпуск карт"
+        feature-1-text="Раскрытие преимущества. Размер описания около 15 слов. Можно в 2 или 3 или 4 строки."
+        feature-1-icon="business/salary/feature_01"
+        feature-2-title="Бесплатное снятие наличных"
+        feature-2-text="Во всех банкоматах Республики Беларусь"
+        feature-2-icon="business/salary/feature_02"
+        feature-3-title="Без посещения банка"
+        feature-3-text="Возможность получить карты прямо в офисе, без необходимости посещения отделений банка."
+        feature-3-icon="business/salary/feature_03"
+}}
+{{> blocks/business/salary/03_cards }}
+{{> blocks/common/terms-section block=true
+        title="Оформить зарплатный проект просто"
+        term-1="Оформите онлайн-заявку"
+        term-1-text="Укажите основную информацию о компании.<br/>Мы свяжемся с вами в течении часа."
+        term-2="Подготовьте пакет документов"
+        term-2-text="Для заключения договора на выплату сотрудникам заработной платы и для выпуска зарплатных карт"
+        term-3="Получите карты"
+        term-3-text="Сотрудник организации может забрать свою зарплатную карту после получения смс-уведомления в отделении Банка, которое он указал в Анкете."
+}}
+{{> forms/business-salary }}
+
+{{> layout/footer business=true }}

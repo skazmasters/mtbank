@@ -1,0 +1,44 @@
+.press-service {
+  &__item {
+    margin-top: 17px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    display: block;
+  }
+
+  &__position {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-60;
+  }
+
+  &__phone {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    display: inline-block;
+  }
+
+  &__mail {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: $color-primary;
+    display: inline-block;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+  }
+}

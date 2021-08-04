@@ -1,0 +1,38 @@
+<section class="section js-carousel-slider" data-slides-count="2">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Другие виды страхования</h2>
+      <div class="section__header-right">
+        {{> components/slider-nav small=true}}
+      </div>
+    </header>
+    <div class="section__content">
+      <div class="carousel-slider">
+        <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+          <div class="swiper-wrapper">
+            {{#times 3}}
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/product-banner
+                        img="insurance/single/carousel_01"
+                        img-mobile="insurance/single/carousel_01-mobile"
+                        title="Другие виды страхования"
+                        text="Страхование домов и строений. Добровольное страхование домов и строений поможет решить все ваши страховые вопросы одним договором."
+                        link-label="Подробнее"
+                }}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/product-banner
+                        img="insurance/single/carousel_02"
+                        img-mobile="insurance/single/carousel_01-mobile"
+                        title="Комплексное страхование недвижимости"
+                        text="Полная защита квартиры, загородного дом или дачи, имущества в них и ответственности перед соседями в одном договоре страхования"
+                        link-label="Подробнее"
+                }}
+              </div>
+            {{/times}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

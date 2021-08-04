@@ -1,0 +1,60 @@
+<div class="map-filters map-filters--full map-side__filters-full js-filters-full">
+  <div class="map-filters__overlay" data-close></div>
+  <div class="map-filters__content">
+    <div class="map-filters__header">
+      <span class="map-filters__title">Фильтр</span>
+      <button class="map-filters__close-button" type="button" data-close>
+        {{> ui/svg name="map--close" }}
+      </button>
+    </div>
+    <div class="map-filters__body">
+      <div class="map-filters__list">
+        <div class="map-filters__item">
+          {{#> form/select
+            border=true
+            search=true
+            search-empty="Городов не найдено"
+            dataset="data-select"
+            name="param0"
+            no-gutters=true
+          }}
+            <option data-coords="1, 1" value="Минск" selected>Минск</option>
+            <option data-coords="1, 1" value="Брест">Брест</option>
+            <option data-coords="1, 1" value="Гомель">Гомель</option>
+            <option data-coords="1, 1" value="Могилев">Могилев</option>
+            <option data-coords="1, 1" value="Витебск">Витебск</option>
+            <option data-coords="1, 1" value="Гродно">Гродно</option>
+          {{/form/select}}
+        </div>
+        <div class="map-filters__item">
+          <label class="map-filters__option">
+            <input hidden class="visibility-hidden" data-checkbox type="checkbox" name="param1" value="now">
+            <span class="map-filters__label">Работает сейчас</span>
+          </label>
+        </div>
+        <div class="map-filters__item" data-hidden>
+          <label class="map-filters__option">
+            <input hidden class="visibility-hidden" data-checkbox type="checkbox" name="param2" value="now">
+            <span class="map-filters__label">Физ. лицам</span>
+          </label>
+        </div>
+        <div class="map-filters__item" data-hidden>
+          <label class="map-filters__option">
+            <input hidden class="visibility-hidden" data-checkbox type="checkbox" name="param3" value="now">
+            <span class="map-filters__label">Юр. лицам</span>
+          </label>
+        </div>
+        <div class="map-filters__item" data-hidden>
+          <label class="map-filters__option">
+            <input hidden class="visibility-hidden" data-checkbox type="checkbox" name="param4" value="now">
+            <span class="map-filters__label">Сначала ближайшие</span>
+          </label>
+        </div>
+        <div class="map-filters__item" data-hidden>
+          <input type="hidden" name="COORD_X" value="53.123">
+          <input type="hidden" name="COORD_Y" value="27.123">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

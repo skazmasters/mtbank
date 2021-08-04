@@ -1,0 +1,33 @@
+.debits-intro {
+  padding-top: 15px;
+
+  @include media(mobile) {
+    padding-top: 10px;
+  }
+
+  &__banner-featured {
+    margin: 50px 0 0;
+  }
+
+  &__cards {
+    margin-top: 45px;
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+  &__promotions {
+    margin-top: 65px;
+
+    @include media(mobile) {
+      margin-top: 40px;
+    }
+  }
+
+  .banner-features__list {
+    @include media(mobile, up) {
+      max-width: 550px;
+    }
+  }
+}

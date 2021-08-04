@@ -1,0 +1,119 @@
+.card-benefits {
+  &__inner {
+    @include desktop {
+      max-width: 940px;
+    }
+  }
+
+  position: relative;
+
+  padding: 50px 0 80px;
+  @include mobile {
+    padding: 30px 0 30px;
+  }
+
+  @include tablet-and-mobile {
+    max-width: none;
+    min-height: 0;
+
+    .section__header-right {
+      display: none;
+    }
+  }
+
+  .section__header {
+    max-width: 940px;
+  }
+
+  .section__content {
+    max-width: 940px;
+    margin-top: 40px;
+
+    @include media(desktop) {
+      max-width: initial;
+    }
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    bottom: 0;
+    max-width: 445px;
+    width: 100%;
+    @include transition;
+
+    @media (max-width: 1420px) {
+      transform: scale(0.76);
+    }
+
+    @include media(desktop) {
+      display: none;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .carousel-slider {
+    margin: -35px -20px;
+
+    @include media(tablet) {
+      margin: 0;
+    }
+
+    &__inner {
+      padding: 35px 20px;
+
+      @include media(tablet) {
+        padding: 0;
+        margin: -20px;
+      }
+
+      @include mobile {
+        margin: -15px;
+      }
+    }
+
+    &__slide {
+      @include media(desktop) {
+        flex: 0 0 297px;
+      }
+
+      @include media(mobile) {
+        flex: 0 0 267px;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    @include media(tablet) {
+      padding: 20px
+    }
+    @include mobile{
+      padding: 20px 15px;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  &--dark {
+    .section__title {
+      color: $color-white;
+    }
+
+    .section__description {
+      color: $color-white-70;
+    }
+  }
+}

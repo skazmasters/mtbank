@@ -1,0 +1,7 @@
+.tenders-main {
+  .page-filters {
+    @include media(mobile) {
+      margin-bottom: 0;
+    }
+  }
+}

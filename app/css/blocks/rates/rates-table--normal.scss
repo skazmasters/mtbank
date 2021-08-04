@@ -1,0 +1,119 @@
+.rates-table--normal {
+
+  @include desktop {
+    margin-bottom: -50px;
+  }
+
+  .rates-table__thead {
+    @include tablet-and-mobile {
+      display: none;
+    }
+  }
+
+  .rates-table__row {
+    align-items: flex-start;
+    padding-bottom: 50px;
+    padding-top: 40px;
+
+    @include mobile {
+      display: block;
+    }
+
+    @include tablet-and-mobile {
+      padding: 25px 0 20px;
+      flex-wrap: wrap;
+      position: relative;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    @include smallTablet {
+      padding-bottom: 80px;
+      &:last-child {
+        padding-bottom: 80px;
+      }
+    }
+
+    @include mobile {
+      padding-bottom: 70px;
+      &:last-child {
+        padding-bottom: 70px;
+      }
+    }
+  }
+
+  .rates-table__cell {
+    &--name {
+      flex-basis: 30%;
+
+      @include tablet-and-mobile {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    &--value {
+      @include no-mobile {
+        flex: 1 1 1px;
+      }
+
+      @include mobile {
+        margin-top: 15px;
+        width: 100%;
+      }
+
+      @include smallTablet {
+        &:nth-child(2), &:nth-child(4) {
+          flex-basis: 30%;
+          max-width: 30%;
+        }
+        &:nth-child(3) {
+          flex: 1 1 1px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+
+          .rates-card {
+            min-width: 211px;
+          }
+        }
+      }
+
+      @include no-smallTablet {
+        padding-bottom: 30px;
+      }
+
+      @include no-smallTablet {
+        position: relative;
+      }
+    }
+
+    &--update {
+      flex-basis: 120px;
+      justify-content: flex-end;
+      text-align: right;
+
+      @include smallTablet-and-mobile {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+      }
+    }
+  }
+
+  .rates-table__convertor {
+    position: absolute;
+    left: 57px;
+
+    @include smallTablet-and-mobile {
+      left: 0;
+      bottom: 25px;
+    }
+
+    @include mobile {
+      bottom: 30px;
+    }
+  }
+
+}

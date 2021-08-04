@@ -1,0 +1,44 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="2">
+      <header class="section__header">
+        <h2 class="section__title section__title--small">Документарные операции</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 3}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/subpage-banner border=true
+                          title="ИНКАССО"
+                          text="Инкассо – расчетные операции, осуществляемые банками на основании полученных инструкций с документами"
+                          image="business/open/operation_01"
+                          img-mobile="business/open/operation_01-mobile"
+                          ext="png"
+                          size="big"
+                          link-label="Подробнее"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/subpage-banner border=true
+                          title="Аккредитивы"
+                          text="Аккредитив – это обязательство банка осуществить платеж бенефициару (продавцу) против документов, представленных в соответствии с условиями аккредитива"
+                          image="business/open/operation_02"
+                          img-mobile="business/open/operation_02-mobile"
+                          ext="png"
+                          size="big"
+                          link-label="Подробнее"
+                  }}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

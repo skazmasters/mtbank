@@ -1,0 +1,30 @@
+.search-filters {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__query {
+    flex: 1 1 auto;
+    margin-right: 20px;
+
+    .form-field__placeholder {
+      display: none;
+    }
+
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+
+  &__category {
+    flex-basis: 220px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}

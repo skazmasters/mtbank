@@ -1,0 +1,12 @@
+<div class="form-checkbox {{#if error}}_error{{/if}} {{#if field-class}} {{field-class}}{{/if}}">
+  <label class="form-checkbox__label" {{#if field-id}}for="{{field-id}}"{{/if}}>
+    <input type="checkbox"
+           class="form-checkbox__input"
+      {{#if field-id}} id="{{field-id}}"{{/if}}
+      {{#if checked}} checked{{/if}}
+      {{#if aria-label}} aria-label="{{aria-label}}"{{/if}}
+      {{#if disabled}} disabled aria-disabled="true"{{/if}}>
+    <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+    <span class="form-checkbox__label-text">{{{label}}}</span>
+  </label>
+</div>

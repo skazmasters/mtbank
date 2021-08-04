@@ -1,0 +1,161 @@
+.exchange-item {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    $val: 52px;
+
+    flex: 0 0 $val;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $val;
+    height: $val;
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: 50%;
+    @include shadow(lg);
+
+    @include media(mobile) {
+      $val: 42px;
+
+      flex: 0 0 $val;
+      width: $val;
+      height: $val;
+
+      .icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    margin-left: 15px;
+    padding-top: 5px;
+
+    @include tablet-and-mobile {
+      display: flex;
+      align-items: center;
+      padding-top: 0;
+    }
+
+    @include media(tablet) {
+      flex-wrap: nowrap;
+      flex: 1 1 100%;
+      max-width: 440px;
+    }
+
+    > * {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin: 0 0 7px;
+    color: $color-gray-80;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    @include tablet-and-mobile {
+      font-size: 14px;
+    }
+
+    @include media(tablet) {
+      margin: 0 30px 0 0;
+      flex: 1 1 240px;
+      text-transform: none;
+    }
+
+    @include media(mobile) {
+      line-height: 140%;
+      letter-spacing: -0.04em;
+    }
+
+    @include mobile320 {
+      margin-right: 10px;
+    }
+  }
+
+  &__value {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include media(tablet) {
+      flex: 1 1 140px;
+    }
+
+    @include media(mobile) {
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    &::after {
+      margin-left: 8px;
+    }
+
+    &--up {
+      &::after {
+        display: inline-block;
+        content: '';
+        @include sprite('expand-up')
+      }
+    }
+
+    &--down {
+      &::after {
+        display: inline-block;
+        content: '';
+        @include sprite('expand-down')
+      }
+    }
+
+    + * {
+      margin-left: 25px;
+    }
+  }
+
+  &--simple {
+    .exchange-item {
+      &__content {
+        padding: 0;
+        margin-left: 20px;
+
+        @include media(mobile) {
+          margin-left: 15px;
+        }
+      }
+
+      &__label {
+        display: block;
+        margin: 0;
+        @include text-body-2;
+        text-transform: unset;
+      }
+
+      &__value {
+        display: block;
+        margin: 0;
+        @include text-h3;
+
+        @include media(mobile) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

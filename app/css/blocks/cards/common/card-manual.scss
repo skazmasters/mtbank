@@ -1,0 +1,22 @@
+.card-manual {
+  display: flex;
+
+  margin: 20px -23px 0;
+
+  &__cell {
+    padding: 0 23px;
+
+    @include tablet-and-mobile {
+      padding: 0;
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include tablet-and-mobile {
+    margin: 20px 0 0 0;
+    display: block;
+  }
+}

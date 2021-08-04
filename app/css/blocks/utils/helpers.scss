@@ -1,0 +1,178 @@
+.bg-primary {
+  color: $color-white-70;
+  background-color: $color-primary;
+}
+
+.bg-gray-20 {
+  background-color: $color-gray-20;
+}
+
+.text-h1 {
+  display: block;
+  margin: 0;
+  @include text-h1;
+}
+
+.text-h2 {
+  display: block;
+  margin: 0;
+  @include text-h2;
+}
+
+.text-h3 {
+  display: block;
+  margin: 0;
+  @include text-h3;
+}
+
+.text-h4 {
+  display: block;
+  margin: 0;
+  @include text-h4;
+}
+
+.text-h5 {
+  display: block;
+  margin: 0;
+  @include text-h5;
+}
+
+.text-h6 {
+  display: block;
+  margin: 0;
+  @include text-h6;
+}
+
+.text-body-1 {
+  display: block;
+  margin: 0;
+  @include text-body-1;
+}
+
+.text-body-2 {
+  display: block;
+  margin: 0;
+  @include text-body-2;
+}
+
+.text-caption {
+  display: block;
+  margin: 0;
+  @include text-caption;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-regular {
+  @extend .text-body-1;
+
+  a {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+  }
+}
+
+.text-note {
+  @extend .text-body-2;
+  color: $color-gray-60;
+}
+
+.list-regular {
+  li {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 42px;
+    @include text-body-1;
+
+    @include media(mobile, up) {
+      line-height: 26px;
+    }
+
+    @include media(mobile) {
+      padding-left: 35px;
+    }
+
+    &::before {
+      position: absolute;
+      top: #{(25 / 2)}px;
+      left: 0;
+      transform: translateY(-50%);
+
+      @include media(tabletSmall) {
+        top: #{(19 / 2)}px;
+      }
+    }
+  }
+
+  b {
+    display: block;
+    margin: 0;
+    @include text-h5;
+  }
+
+  a {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+  }
+
+  &--small {
+    li {
+      padding-left: 32px;
+
+      @include media(mobile) {
+        padding-left: 18px;
+      }
+    }
+  }
+}
+
+ol.list-regular {
+  @include digital_list;
+
+  li {
+    &::before {
+      width: auto;
+      color: $color-primary;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+
+      @include media(tabletSmall) {
+        font-size: 15px;
+        line-height: 1.4;
+        letter-spacing: -0.05em;
+      }
+
+      @include media(mobile) {
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+}
+
+ul.list-regular {
+  li {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $color-primary;
+
+      @include media(mobile) {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}

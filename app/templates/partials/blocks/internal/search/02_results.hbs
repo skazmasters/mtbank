@@ -1,0 +1,16 @@
+<section class="section">
+  <div class="container-770">
+    <div class="search-results">
+      {{# each internal.search}}
+        {{> widgets/search-item category=this.category title=this.title text=this.content}}
+      {{/each}}
+      {{# each internal.search}}
+        {{> widgets/search-item category=this.category title=this.title text=this.content}}
+      {{/each}}
+
+      <div class="search-results__button">
+        {{>ui/btn label="Показать еще"  button=true}}
+      </div>
+    </div>
+  </div>
+</section>

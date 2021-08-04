@@ -1,0 +1,31 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3">
+      <header class="section__header">
+        <h2 class="section__title">На что тратить баллы</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--3">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/bonus-card img="business/loyalty/icon_01" title="Скидки по кредиту"}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/bonus-card img="business/loyalty/icon_02" title="Скидки на РКО"}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/bonus-card img="business/loyalty/icon_03" title="Скидки на валютные переводы"}}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

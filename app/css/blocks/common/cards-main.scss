@@ -1,0 +1,12 @@
+.cards-main {
+  @include media(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-header {
+    @include media(mobile) {
+      order: -1;
+    }
+  }
+}

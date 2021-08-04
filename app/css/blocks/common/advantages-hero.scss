@@ -1,0 +1,431 @@
+.advantages-hero {
+  position: relative;
+  overflow: hidden;
+
+  @include media(mobile, up) {
+    min-height: 560px;
+  }
+
+  &__bg {
+    @include fill;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    @media (max-width: 979px) {
+      background: #E7E8FF;
+      backdrop-filter: blur(50px);
+
+      .advantages-hero--deposit &, .advantages-hero--credit & {
+        background: #F2F7FE;
+      }
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      @media (max-width: 979px) {
+        display: none;
+      }
+    }
+  }
+
+  &__container {
+    @extend .container;
+    display: flex;
+
+    @media (max-width: 979px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__image {
+    position: relative;
+    z-index: z(default) + 1;
+    flex: 0 0 550px;
+    width: 100%;
+    max-width: 550px;
+
+    @media (max-width: 979px) {
+      flex: 1 1 100%;
+      position: relative;
+      max-width: initial;
+      margin: 0 -20px;
+    }
+
+    @include smallTablet {
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    @include media(mobile) {
+      margin: 0 -15px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 101.82%;
+
+      @media (max-width: 979px) {
+        padding-top: 56%;
+      }
+
+      @include smallTablet {
+        display: none;
+      }
+    }
+
+    img {
+
+      @include no-smallTablet {
+        @include fill;
+        width: 100%;
+        height: 100%;
+      }
+
+      @include mobile {
+        @include fill;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
+  &__content {
+    flex: 0 1 590px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 590px;
+    margin-left: 55px;
+    padding-top: 40px;
+
+    @include media(desktop) {
+      margin-left: 110px;
+      margin-right: 15px;
+    }
+
+
+    .advantages-hero--deposit &, .advantages-hero--credit & {
+      @include desktop {
+        padding-top: 60px;
+      }
+    }
+
+
+    @include media(tablet) {
+      flex: 0 1 495px;
+      height: 560px;
+      max-width: 495px;
+      padding-top: 60px;
+      margin-left: auto;
+      margin-right: 30px;
+    }
+
+    @media (max-width: 979px) {
+      flex: 1 1 100%;
+      height: auto;
+      max-width: initial;
+      padding: 30px 0 50px;
+      margin: 0;
+    }
+  }
+
+  &__title,
+  &__cta {
+    position: relative;
+    z-index: z(default);
+    flex: 1 1 100%;
+  }
+
+  &__title {
+    align-self: flex-end;
+    display: block;
+    max-width: 580px;
+    margin: 0;
+    @include text-h1;
+
+    @include media(desktop) {
+      max-width: 550px;
+      @include text-h2;
+    }
+
+    .advantages-hero--deposit & {
+      @include desktop {
+        margin-left: 55px;
+      }
+    }
+
+    .advantages-hero--credit & {
+      @include desktop {
+        margin-left: 60px;
+      }
+    }
+
+    @include media(tablet, only) {
+      align-self: unset;
+      margin-top: auto;
+      font-size: 30px;
+      line-height: 130%;
+    }
+
+    @media (max-width: 979px) {
+      @include text-h1;
+      max-width: initial;
+    }
+  }
+
+  &__cta {
+    align-self: flex-start;
+    margin-top: 30px;
+
+    @include desktop {
+      .advantages-hero--deposit &, .advantages-hero--credit & {
+        margin-left: 55px;
+        margin-top: 25px;
+      }
+    }
+
+    @include media(tablet) {
+      align-self: unset;
+      margin-bottom: auto;
+    }
+
+    @media (max-width: 979px) {
+      order: 1;
+    }
+  }
+
+  &__btn {
+    @include btn-base;
+    @include btn-primary;
+    @include shadow(lg);
+
+    @include media(tabletSmall, up) {
+      @include btn-large;
+    }
+
+    @include media(tabletSmall) {
+      @include btn-regular;
+    }
+  }
+
+  &__list {
+    flex: 1 1 100%;
+    align-self: flex-end;
+    margin-top: 40px;
+
+    @media (max-width: 979px) {
+      margin-top: 20px;
+    }
+
+    @include media(mobile) {
+      margin-top: 25px;
+    }
+  }
+
+  &__list-container {
+    margin: 0 -100vw 0 -220px;
+
+    @include media(desktop) {
+      margin: 0 -35px 0 -190px;
+    }
+
+    @include media(tablet) {
+      margin: 0 -50px 0 -235px;
+    }
+
+    @media (max-width: 979px) {
+      margin: 0;
+    }
+  }
+
+  &__list-wrapper {
+    display: inline-block;
+  }
+
+  &__grid {
+    position: relative;
+    z-index: z(default) + 1;
+
+    @include desktop {
+      .advantages-hero--deposit &, .advantages-hero--credit & {
+        padding-left: 70px;
+      }
+    }
+
+    @media (min-width: 980px) {
+      height: 260px;
+      padding: 40px 85px 0;
+      background-color: $color-white-70;
+      backdrop-filter: blur(50px);
+
+      .advantages-hero--deposit &, .advantages-hero--credit & {
+        padding-top: 0;
+        height: 227px;
+      }
+    }
+
+    @include media(desktop) {
+      justify-content: center;
+      padding: 40px 0 0 30px;
+    }
+
+    @media (max-width: 979px) {
+      padding: 0;
+      height: auto;
+    }
+
+    &-wrapper {
+      display: inline-block;
+      height: 100%;
+      @include smallTablet-and-mobile {
+        display: block;
+      }
+    }
+
+    &-inner {
+      display: flex;
+      align-items: flex-start;
+      height: 100%;
+
+      .advantages-hero--deposit &, .advantages-hero--credit & {
+        align-items: center;
+      }
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+
+    .advantages-hero--deposit &, .advantages-hero--credit & {
+      padding: 80px 0 80px 70px;
+      height: auto;
+
+      @include smallTablet-and-mobile {
+        padding: 0;
+        .advantage-card__inner {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  &__item {
+    flex: 0 1 220px;
+    width: 100%;
+    max-width: 220px;
+    margin-left: 80px;
+
+    @include media(desktop) {
+      margin-left: 30px;
+    }
+
+    @media (max-width: 979px) {
+      flex: 0 1 345px;
+      max-width: 345px;
+      margin-left: 0;
+      margin-top: 17px;
+    }
+
+    @include mobile {
+      max-width: none;
+    }
+
+    @include smallTablet {
+      margin-top: 0;
+
+      .advantages-hero--deposit &, .advantages-hero--credit & {
+        max-width: none;
+      }
+
+      &:first-child .advantage-card__inner {
+        margin-left: 0;
+      }
+    }
+
+
+    &:first-child {
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .advantages-hero__grid--deposit & {
+      flex-basis: auto;
+      max-width: none;
+    }
+  }
+
+  .advantage-card {
+    &__container {
+      @media (max-width: 979px) {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+
+    &__image {
+      @media (max-width: 979px) {
+        flex: 0 0 50px;
+        max-width: 50px;
+      }
+    }
+
+    &__inner {
+      @media (max-width: 979px) {
+        flex: 1 1 10%;
+        margin-left: 15px;
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      @include text-h5;
+
+      @media (max-width: 979px) {
+        @include text-h5;
+      }
+    }
+  }
+
+  &--deposit, &--credit {
+    .advantage-card__title {
+      @include desktop {
+        font-size: 24px;
+        white-space: nowrap;
+      }
+    }
+
+    .advantage-card__text {
+      white-space: nowrap;
+      font-size: 17px;
+      line-height: 150%;
+    }
+
+    .advantages-hero__content {
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    .advantages-hero__item {
+      @include desktop {
+        margin-left: 82px;
+        max-width: none;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.package-card {
+  position: relative;
+  height: 100%;
+  @include transition;
+  padding: 5px 10px 20px;
+
+  min-width: 402px;
+  max-width: 100%;
+
+  @include mobile375{
+    min-width: 0;
+  }
+
+  @include desktop {
+    &:hover {
+      transform: translateY(-5px);
+
+      .package-card-inner {
+        @include shadow(xl);
+      }
+    }
+  }
+
+  &__link {
+    @include fill;
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    padding: 20px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: $color-white;
+    border-radius: 15px;
+    @include shadow(md);
+
+    @include mobile {
+      padding: 15px 20px 30px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    letter-spacing: -0.04em;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 114px;
+    overflow: hidden;
+
+    img {
+      max-height: 114px;
+      display: block;
+      filter: drop-shadow(3px 15px 30px rgba(48, 66, 117, 0.1));
+      border-radius: 10px;
+    }
+
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
+
+  &__plus {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    padding-left: 24px;
+    position: relative;
+    margin-left: 44px;
+    justify-content: center;
+
+    &-image {
+      width: 53px;
+      position: relative;
+
+      &:before {
+        content: '+';
+        position: absolute;
+        left: -30px;
+        @include align(false, true);
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+      }
+    }
+
+    &-content {
+      margin-left: 14px;
+    }
+
+    &-title {
+      font-size: 12px;
+      line-height: 100%;
+      display: block;
+      letter-spacing: -0.02em;
+      color: $color-gray-80;
+
+      @include mobile {
+        font-size: 11px;
+        line-height: 120%;
+      }
+    }
+
+    &-name {
+      font-size: 15px;
+      display: block;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__params {
+    margin-top: 30px;
+    @include mobile {
+      margin-top: 25px;
+    }
+  }
+
+  &__param {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid $color-gray-40;
+
+    &:first-child {
+      border-top: 0 none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    &-label {
+      display: block;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      color: $color-gray-80;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+
+    &-value {
+      display: block;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: $color-gray-100;
+
+      &--check {
+        @include sprite('package-tick');
+        margin-bottom: 8px;
+      }
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__features {
+    margin-top: 30px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__feature {
+    margin-top: 16px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    padding-left: 36px;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 22px;
+      height: 22px;
+      background: $color-primary;
+      border-radius: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 7px;
+      @include sprite('circle-22-tick');
+    }
+  }
+
+  &__actions {
+    margin-top: auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+}

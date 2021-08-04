@@ -1,0 +1,37 @@
+.tabs-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__label{
+    cursor: pointer;
+    margin: 0 5px;
+    &:hover{
+      .tabs-radio__text{
+        color: $color-black;
+      }
+    }
+  }
+
+  &__text{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $color-gray-80;
+    border-radius: 100px;
+    padding: 0 15px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    @include transition;
+  }
+
+  input{
+    display: none;
+
+    &:checked + .tabs-radio__text{
+      background: $color-gray-20;
+      color: $color-black;
+    }
+  }
+}

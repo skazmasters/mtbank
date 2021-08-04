@@ -1,0 +1,40 @@
+.account-form-error {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 82px 0 82px;
+  text-align: center;
+  position: relative;
+
+  &__icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    color: $color-gray-80;
+    margin-top: 10px;
+    letter-spacing: -0.04em;
+    display: block;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+}

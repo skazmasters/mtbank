@@ -1,0 +1,66 @@
+.salary-content {
+  display: flex;
+  align-items: center;
+
+  @include smallTablet-and-mobile {
+    display: block;
+  }
+
+  &__image {
+    width: 440px;
+    flex-basis: 440px;
+    max-width: 440px;
+
+    @include smallTablet-and-mobile {
+      max-width: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    margin-left: 90px;
+    max-width: 550px;
+
+    @include smallTablet-and-mobile {
+      margin-left: 0;
+      margin-top: 25px;
+      max-width: none;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+
+    @include smallTablet-and-mobile {
+      font-size: 21px;
+      line-height: 120%;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    display: block;
+    margin-top: 15px;
+
+    @include smallTablet-and-mobile {
+      font-size: 15px;
+      line-height: 140%;
+    }
+  }
+
+  &__actions {
+    margin-top: 30px;
+    @include smallTablet-and-mobile {
+      margin-top: 25px;
+    }
+  }
+}

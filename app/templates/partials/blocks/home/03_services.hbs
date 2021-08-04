@@ -1,0 +1,76 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">Лучшие онлайн-сервисы</h2>
+    </div>
+    <div class="section__content">
+      <div class="home-services">
+        <ul class="home-services__list">
+          <li class="home-services__list-item">
+            {{> widgets/service-card
+                    bg-mode="primary"
+                    card-mode="big"
+                    icon="banking"
+                    title="MTBank Moby"
+                    text="Банк на кончиках пальцев"
+                    image="01"
+                    image-mobile="01-mobile"
+                    link-label="Узнать подробнее"
+                    app-stores=common.app-stores
+            }}
+          </li>
+          <li class="home-services__list-item home-services__list-item--slider">
+            <div class="home-services__slider">
+              <div class="home-services__slider-inner">
+                <div class="home-services__slide">
+                  {{> widgets/service-card
+                          card-mode="small"
+                          icon="denegram"
+                          title="Онлайн переводы"
+                          text="Любой банк РБ и в 61 страну мира.&nbsp;Бесплатно для карты МТБанка."
+                          link-label="Перевести онлайн"
+                          app-stores=common.app-stores
+                  }}
+                </div>
+                <div class="home-services__slide">
+                  {{> widgets/service-card
+                          card-mode="small"
+                          icon="wi-fi"
+                          title="Бесконтактная оплата"
+                          text="Оплачивай с Apple pay, Samsung Pay и HCE."
+                          link-label="Подробнее"
+                          app-stores=common.app-stores
+                  }}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="home-services__list-item">
+            {{> widgets/service-card
+                    card-mode="big"
+                    icon="mtb-tickets"
+                    title="Билеты MTB tickets"
+                    text="Билеты на рейсы любых авиакомпаний по&nbsp;низким&nbsp;ценам с кэшбэком до 5%."
+                    image="02"
+                    image-mobile="02-mobile"
+                    link-label="Выбрать путешествие"
+                    action-link-label="Только в браузере"
+            }}
+          </li>
+          <li class="home-services__list-item">
+            {{> widgets/service-card
+                    card-mode="big"
+                    icon="mt-forex"
+                    title="MTBankFX"
+                    text="Быстрый ввод и вывод средств на вашу карту течение 24 часов. И что то еще."
+                    image="03"
+                    image-mobile="03-mobile"
+                    link-label="Подробнее"
+                    app-stores=common.app-stores
+            }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

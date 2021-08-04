@@ -1,0 +1,44 @@
+.button-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 15px 13px;
+  @include text-button-s;
+  border: 1px solid $color-gray-40;
+  border-radius: 100px;
+  @include transition;
+  position: relative;
+  letter-spacing: -0.04em;
+
+
+  &:hover {
+    border-color: $color-gray-100;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    display: block;
+    @include mobile{
+      margin-left: 8px;
+    }
+  }
+
+  &.active {
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    svg{
+      opacity: 0;
+    }
+
+    i{
+      @include cross(12px, $color-white);
+      position: absolute;
+      right: 17px;
+      @include align(false, true);
+    }
+  }
+}

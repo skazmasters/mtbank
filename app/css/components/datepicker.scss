@@ -1,0 +1,54 @@
+.qs {
+  &-datepicker-container {
+    font-family: Inter, -apple-system, BlickMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    border-radius: 8px;
+    border: 1px solid $color-gray-40;
+
+  }
+
+  &-controls {
+    background: $color-white;
+    border-bottom: 1px solid $color-gray-40;
+    padding: 5px;
+  }
+
+  &-month-year {
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 0 none;
+    cursor: default;
+
+    &:hover {
+      border-bottom: 0 none;
+    }
+  }
+
+  &-square {
+    height: 1.7625em;
+  }
+
+  &-day {
+    color: $color-gray-100;
+    font-weight: 500;
+  }
+
+  &-num {
+    color: $color-gray-80;
+
+    &:hover {
+      background: none !important;
+      color: $color-primary;
+    }
+  }
+
+  &-current {
+    text-decoration: none;
+    color: $color-gray-80;
+  }
+
+  &-active {
+    color: $color-primary !important;
+    background: none;
+    font-weight: 600;
+  }
+}

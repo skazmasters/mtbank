@@ -1,0 +1,46 @@
+.map {
+  display: flex;
+  height: calc(var(--vh, 1vh) * 100 - 139px);
+
+  @include tablet-and-mobile {
+    height: calc(var(--vh, 1vh) * 100 - 203px);
+  }
+
+  @include smallTablet-and-mobile {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    height: calc(var(--vh, 1vh) * 100 - 167px);
+  }
+
+  @media (max-height: 525px) {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  &__sidebar {
+    width: 445px;
+    flex-shrink: 0;
+
+    @include tablet-and-mobile {
+      width: 385px;
+    }
+
+    @include smallTablet-and-mobile {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    flex: 1 1 auto;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include smallTablet-and-mobile {
+      width: 100%;
+    }
+  }
+}

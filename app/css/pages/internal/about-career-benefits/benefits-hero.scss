@@ -1,0 +1,99 @@
+.benefits-hero {
+  min-height: auto;
+
+  &__container {
+    @include media(mobile, up) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__image {
+    position: relative;
+    flex: 0 1 550px;
+
+    @include media(mobile) {
+      margin: 0 -15px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+
+      @include media(mobile, up) {
+        padding-top: 89.1%;
+      }
+
+      @include media(mobile) {
+        padding-top: 56%;
+      }
+    }
+
+    img {
+      display: block;
+      @include fill;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: darken;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: z(default);
+    max-width: 495px;
+    margin-left: auto;
+
+    @include desktop {
+      margin-right: 55px;
+    }
+
+    @include media(mobile, up) {
+      flex: 0 1 auto;
+      position: relative;
+      z-index: 0;
+      margin-left: 55px;
+    }
+
+    @include media(tabletSmall, only) {
+      max-width: 50%;
+    }
+
+    @include media(mobile) {
+      margin-top: 30px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__title {
+    @include text-h1;
+    margin: 0;
+  }
+
+  &__text {
+    margin: 15px 0 0;
+    @include text-body-1;
+    color: $color-gray-80;
+
+    @include media(mobile) {
+      margin-top: 10px;
+    }
+  }
+
+  &__btn {
+    margin: 45px 0 0;
+
+    @include media(tabletSmall) {
+      margin-top: 30px;
+    }
+  }
+
+  .btn {
+    @include shadow(lg);
+
+    @include media(tabletSmall, up) {
+      @include btn-large;
+    }
+  }
+}

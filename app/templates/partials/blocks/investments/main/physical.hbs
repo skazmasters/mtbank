@@ -1,0 +1,37 @@
+<section class="section">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Инвестиционные решения для каждого</h2>
+    </header>
+    <div class="section__content">
+      {{> banners/investment-physical}}
+
+      <div class="grid-row grid-two grid-two--mobile-row">
+        <div class="grid-two__inner">
+          <div class="grid-two__cell">
+            {{> widgets/product-banner mod="investments" small=true png=true
+                    img="investments/main/banner_01"
+                    img-mobile="investments/main/banner_01-mobile"
+                    title="Накопительное страхование"
+                    item-1="от 100 BYN"
+                    item-2="BYN, USD, EUR"
+                    item-3="от 5 лет"
+                    button-label="Узнать больше"
+            }}
+          </div>
+          <div class="grid-two__cell">
+            {{> widgets/product-banner mod="investments" small=true png=true
+                    img="investments/main/banner_02"
+                    img-mobile="investments/main/banner_01-mobile"
+                    title="Доверительное управление"
+                    item-1="от 700 BYN и 300 $/€"
+                    item-2="BYN, USD, EUR"
+                    item-3="на любой срок"
+                    button-label="Узнать больше"
+            }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+.deposit-choice {
+
+  padding: 45px 0 48px;
+  @include smallTablet-and-mobile {
+    padding: 30px 0;
+  }
+
+  .section__title {
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    @include smallTablet-and-mobile {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+
+  &__center {
+    text-align: center;
+
+    @include desktop {
+      margin-left: -20px;
+
+      .btn {
+        margin-left: 40px;
+        margin-top: -2px;
+      }
+    }
+
+    @include smallTablet-and-mobile {
+      order: 3;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    &-image {
+      margin-bottom: 10px;
+
+      @include smallTablet-and-mobile {
+        display: none;
+      }
+    }
+
+  }
+
+  &__right {
+    @include smallTablet-and-mobile {
+      order: 2;
+      margin-top: 20px;
+    }
+  }
+
+  &__offer {
+    max-width: 385px;
+
+    @include tablet {
+      max-width: 300px;
+    }
+
+    @include smallTablet-and-mobile {
+      max-width: 100%;
+    }
+  }
+}

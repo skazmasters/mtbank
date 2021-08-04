@@ -1,0 +1,28 @@
+<section class="section section--gray">
+  <div class="container-880">
+    <header class="section__header">
+      <h2 class="section__title section__title--center section__title--mob-center">Поблагодарить</h2>
+    </header>
+    <div class="section__content">
+      <div class="business-form">
+        <div class="business-form__progress">
+          {{> widgets/form-progress count=4 step=step}}
+        </div>
+        <div class="business-form__content business-form__content--account">
+          {{#ifCond step 1}}
+            {{> forms/components/review/step_01 }}
+          {{/ifCond}}
+          {{#ifCond step 2}}
+            {{> forms/components/review/step_02 }}
+          {{/ifCond}}
+          {{#ifCond step 3}}
+            {{> forms/components/review/step_03 }}
+          {{/ifCond}}
+          {{#ifCond step 4}}
+            {{> forms/components/review/step_04 }}
+          {{/ifCond}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

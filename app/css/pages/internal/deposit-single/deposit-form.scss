@@ -1,0 +1,10 @@
+.section-deposit-form{
+  padding: 50px 0 72px;
+  @include mobile{
+    padding: 14px 0 50px;
+  }
+
+  .number-step__content{
+    max-width: 305px;
+  }
+}

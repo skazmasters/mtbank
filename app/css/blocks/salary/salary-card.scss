@@ -1,0 +1,62 @@
+.salary-card {
+  padding-top: 70px;
+  @include mobile {
+    padding-top: 30px;
+  }
+
+  .overview-card__image{
+    box-shadow: none;
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 60px;
+    @include mobile {
+      margin-top: 50px;
+    }
+
+    @include smallTablet{
+      margin-top: 40px;
+    }
+
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @include mobile {
+      margin-left: 0;
+      margin-right: 0;
+      display: block;
+    }
+
+    &-cell {
+      flex-basis: 25%;
+      padding: 0 20px;
+      width: 25%;
+
+      @include smallTablet{
+        width: 50%;
+        flex-basis: 50%;
+        margin-top: 24px;
+      }
+
+      @include mobile {
+        margin-top: 20px;
+        width: 100%;
+        &:first-child {
+          margin-top: 0;
+        }
+
+        padding: 0;
+      }
+    }
+  }
+
+  &__conditions {
+    margin-top: 80px;
+    @include mobile {
+      margin-top: 60px;
+    }
+  }
+}

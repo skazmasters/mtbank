@@ -1,0 +1,212 @@
+.promotions-banner {
+
+  &__container {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    @include shadow(lg);
+    @include transition;
+    cursor: default;
+
+    @include media(mobile) {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 25px 0 20px 15px;
+      border-radius: unset;
+    }
+
+    @include desktop {
+      &:hover {
+        bottom: 5px;
+        @include shadow(xl);
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    flex: 0 1 385px;
+
+    @include media(mobile) {
+      flex: 1 1 125px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 75%;
+      min-height: 289px;
+
+      @include media(mobile) {
+        padding-top: 72%;
+        min-height: auto;
+      }
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+    flex: 1 1 605px;
+    margin-left: 55px;
+
+    @include media(mobile) {
+      order: -1;
+      flex: 1 1 calc(100% - 125px);
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    color: $color-white;
+
+    @include media(mobile, up) {
+      @include text-h3;
+    }
+
+    @include media(mobile) {
+      @include text-h2;
+    }
+
+    a {
+      @include transition;
+
+      @include desktop {
+        &:hover {
+          color: $color-white-70;
+        }
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 10px 0 0;
+    color: $color-white-70;
+
+    @include media(mobile, up) {
+      @include text-body-2;
+    }
+
+    @include media(mobile) {
+      margin-top: 5px;
+      @include text-caption;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: z(default);
+    margin: 30px 0 0;
+
+    @include media(mobile) {
+      margin-top: 20px;
+
+      .btn {
+        min-width: 165px;
+      }
+    }
+  }
+
+  &__aside {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+    padding: 20px;
+    text-align: center;
+    flex: 0 1 220px;
+    border-left: 1px solid $color-white-20;
+
+    @include media(mobile) {
+      display: block;
+      flex: 1 1 100%;
+      margin-left: 0;
+      border: unset;
+      padding: 0;
+      margin-top: 25px;
+    }
+  }
+
+  &__aside-container {
+    max-width: 155px;
+    margin: 0 auto;
+
+    @include media(mobile) {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  &__time-left {
+    display: block;
+    margin: 0;
+    color: $color-white;
+
+    @include media(mobile, up) {
+      @include text-h4;
+    }
+
+    @include media(mobile) {
+      @include text-caption;
+    }
+  }
+
+  &__period {
+    display: block;
+    margin: 15px 0 0;
+    color: $color-white-50;
+
+    @include media(mobile, up) {
+      @include text-button-s;
+    }
+
+    @include media(mobile) {
+      @include text-caption;
+      margin: 0 0 0 15px;
+    }
+  }
+
+  &--purple {
+    .promotions-banner__container {
+      background-color: #545DC5;
+    }
+  }
+
+  &--green {
+    .promotions-banner__container {
+      background-color: #094A69;
+    }
+  }
+
+  &--blue {
+    .promotions-banner__container {
+      background-color: #4288CC;
+    }
+  }
+
+  &--black {
+    .promotions-banner__container {
+      background-color: $color-black;
+    }
+  }
+
+  &--yellow {
+    .promotions-banner__container {
+      background-color: #F1A026;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<section class="section section--background">
+  <div class="section__bg">
+    {{>components/image no-webp=true img="deposits/deposit-single/choice/bg" ext="jpg"}}
+  </div>
+
+  <div class="container">
+    <div class="deposit-choice">
+      <h2 class="section__title">Выберите удобный депозит</h2>
+      <div class="deposit-choice__inner">
+        <div class="deposit-choice__left">
+          <div class="deposit-choice__offer">
+            {{> widgets/deposit-offer
+                    title="Выгодное предложение"
+                    value="12%"
+                    text="Безотзывный вклад в белорусских рублях на 14 месяцев"
+                    button-label="Оформить вклад"
+                    color="blue"
+            }}
+          </div>
+        </div>
+        <div class="deposit-choice__center">
+          <div class="deposit-choice__center-image">
+            {{>components/image no-webp=true img="deposits/deposit-single/choice/image" ext="png"}}
+          </div>
+          {{>ui/btn label="Сравнить все варианты" outline=true}}
+        </div>
+        <div class="deposit-choice__right">
+          <div class="deposit-choice__offer">
+            {{> widgets/deposit-offer
+                    title="Оптимальное предложение"
+                    value="6.21%"
+                    text="Отзывный вклад в белорусских рублях на 3 месяца"
+                    button-label="Оформить вклад"
+                    color="red"
+            }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

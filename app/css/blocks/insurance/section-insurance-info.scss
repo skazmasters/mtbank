@@ -1,0 +1,45 @@
+.insurance-info {
+  margin-top: 10px;
+
+  @include mobile{
+    margin-top: 5px;
+  }
+
+  .accordion-item__title {
+    font-size: 20px;
+    line-height: 130%;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  .accordion-item__button{
+    padding: 20px 0;
+    @include mobile{
+      padding: 15px 0;
+    }
+  }
+
+  .accordion-item__inner {
+    width: auto;
+    margin-left: 83px;
+    max-width: 770px;
+
+    .static ul li {
+      padding-left: 30px;
+
+      &:before {
+        width: 6px;
+        height: 6px;
+        top: 11px;
+      }
+    }
+
+    @include smallTablet-and-mobile {
+      max-width: none;
+      margin-left: 0;
+      padding-bottom: 25px;
+    }
+  }
+}

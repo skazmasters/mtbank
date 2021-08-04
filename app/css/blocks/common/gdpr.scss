@@ -1,0 +1,115 @@
+.gdpr {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  z-index: 22;
+  width: 1320px;
+  max-width: calc(100% - 40px);
+  background: $color-white;
+  border: 2px solid $color-primary;
+  box-sizing: border-box;
+  box-shadow: 3px 15px 30px rgba(48, 66, 117, 0.1);
+  border-radius: 15px;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  @include transition(opacity, 0.3s);
+
+  @include tablet-and-mobile {
+    border-radius: 8px;
+  }
+
+  @include media(mobile) {
+    max-width: calc(100% - 30px);
+  }
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.hidden {
+    opacity: 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    padding: 24px 30px 24px 38px;
+
+    @include tablet-and-mobile{
+      padding: 12px;
+    }
+
+    @include smallTablet-and-mobile{
+      display: block;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 30px;
+
+    @include smallTablet-and-mobile{
+      justify-content: center;
+      margin: 20px 0 0 0;
+      padding-left: 0;
+    }
+
+    &-item {
+      margin-left: 25px;
+
+      white-space: nowrap;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .btn:not(.btn--simple) {
+      min-width: 185px;
+
+      @include mobile{
+        min-width: 0;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+
+    @include mobile{
+      font-size: 14px;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+
+    br {
+      @include tablet-and-mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    @extend .btn;
+    @include btn-primary;
+
+    @include media(tablet, up) {
+      @include btn-large;
+      min-width: 185px;
+    }
+  }
+}

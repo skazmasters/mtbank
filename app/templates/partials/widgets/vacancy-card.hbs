@@ -1,0 +1,17 @@
+<div class="vacancy-card">
+  <a href="/about--career--vacancies-single.html" class="vacancy-card__link" aria-label="Перейти на страницу вакансии."></a>
+  <div class="vacancy-card__content">
+    <p class="vacancy-card__title">{{title}}</p>
+    <p class="vacancy-card__category">{{category}}</p>
+    <p class="vacancy-card__description">{{description}}</p>
+    <div class="vacancy-card__labels">
+      <ul class="vacancy-card__grid">
+        <li class="vacancy-card__label">{{>ui/svg name="ui--location"}} {{city}}</li>
+        <li class="vacancy-card__label">{{>ui/svg name="additional--case"}} {{direction}}</li>
+        {{#if no-exp}}
+          <li class="vacancy-card__label vacancy-card__label--green">Без опыта</li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</div>

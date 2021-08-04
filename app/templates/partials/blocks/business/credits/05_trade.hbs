@@ -1,0 +1,45 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3">
+      <header class="section__header">
+        <h2 class="section__title">Торговое финансирование</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--3">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/background-card img="business/credits/bg_01" ext="jpg" title="Финансирование импорта"
+                          feature-1="Низкая стоимость с привлечением средств ИКФИ"
+                          feature-2="Мани-бэк 2% за любые покупки"
+                          button-label="Подробнее"  button-dark=true
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/background-card img="business/credits/bg_02" ext="jpg" title="Финансирование экспорта"
+                          feature-1="Низкая стоимость с привлечением средств ИКФИ"
+                          feature-2="Широкий выбор инструментов финансирования"
+                          button-label="Подробнее"  button-dark=true
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/background-card img="business/credits/bg_03" ext="jpg" title="Программы поддержки внешнеторговых операций"
+                          feature-1="ЕБРР"
+                          feature-2="МФК"
+                          feature-3='АО "Росэксимбанк"(РФ)"'
+                          feature-4='Bank Gospodarstwa Krajowego (Польша)'
+                          button-label="Подробнее"  button-dark=true
+                  }}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+.footer-buttons {
+  display: flex;
+
+  &__item {
+    margin-left: 24px;
+    color: $color-white;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+    @include transition;
+
+    &:hover {
+      color: $color-white-70;
+    }
+  }
+
+  .icon-ui--location {
+    width: 21px;
+    height: 21px;
+  }
+}

@@ -1,0 +1,44 @@
+<section class="section section--gray section--gray-bt-desktop {{#if with-border}}section--border-top{{/if}}" id="v-form">
+  <div class="container-770">
+    <form>
+      <div class="promotion-form">
+        <div class="promotion-form__header">
+          <span class="promotion-form__title">Заявка на участие в акции</span>
+          <p class="promotion-form__text">Посоветуйте карту для себя, другу и гарантировано
+            получите по 10 рублей каждый!
+          </p>
+        </div>
+
+        <div class="promotion-form__section">
+          <span class="promotion-form__subtitle">Ваши данные</span>
+          <div class="promotion-form__field">
+            {{> form/input label="Фамилия Имя Отчество *" placeholder="Подсказка"}}
+          </div>
+          <div class="promotion-form__field">
+            {{> form/input label="Телефон *" placeholder="Подсказка"}}
+          </div>
+        </div>
+
+        <div class="promotion-form__section">
+          <span class="promotion-form__subtitle">Данные друга</span>
+          <div class="promotion-form__field">
+            {{> form/input label="Фамилия Имя Отчество *" placeholder="Подсказка"}}
+          </div>
+          <div class="promotion-form__field">
+            {{> form/input label="Телефон *" placeholder="Подсказка"}}
+          </div>
+        </div>
+
+        <div class="promotion-form__submit">
+          <div class="promotion-form__btn">
+            <button class="btn btn--primary btn--large" type="submit">Отправить заявку</button>
+          </div>
+          <p class="promotion-form__agreement">
+            Даю <a href="#">согласие</a> на обработку персональных данных и соглашаетесь с политикой
+            конфиденциальности.
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

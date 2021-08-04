@@ -1,0 +1,40 @@
+<div class="advantage-card{{#if outline}} advantage-card--outline{{/if}}{{#if size}} advantage-card--{{size}}{{/if}}">
+  <div class="advantage-card__container {{#if text}}{{else}}{{#if feature-1}}{{else}}advantage-card__container--no-text{{/if}}{{/if}}">
+    {{#if img}}
+      <div class="advantage-card__image {{#if big-image}}advantage-card__image--big{{/if}}">
+        {{#if ext}}
+          {{>components/image img=img ext=ext}}
+        {{else}}
+          {{>components/image img=img ext="png"}}
+        {{/if}}
+      </div>
+    {{/if}}
+    <div class="advantage-card__inner">
+      <p class="advantage-card__title">{{title}}</p>
+      {{#if text}}
+        <p class="advantage-card__text">{{{text}}}</p>
+      {{/if}}
+
+      {{#if feature-1}}
+        <ul class="advantage-card__list">
+          <li class="advantage-card__list-item">{{feature-1}}</li>
+          {{#if feature-2}}
+            <li class="advantage-card__list-item">{{feature-2}}</li>{{/if}}
+          {{#if feature-3}}
+            <li class="advantage-card__list-item">{{feature-3}}</li>{{/if}}
+        </ul>
+      {{/if}}
+
+      {{#if label}}
+        <div class="advantage-card__btn">
+          {{>ui/btn label=label btn-mode="simple"}}
+        </div>
+      {{/if}}
+      {{#if link}}
+        <div class="advantage-card__link">
+          <a href="#">{{link}}</a>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

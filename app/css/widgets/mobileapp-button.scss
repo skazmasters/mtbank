@@ -1,0 +1,167 @@
+.mobileapp-button {
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0px 9px 20px rgba(48, 66, 117, 0.13);
+  color: $color-white;
+  border-radius: 100px;
+  position: relative;
+  white-space: nowrap;
+  letter-spacing: -0.04em;
+
+
+  background: $color-gray-100;
+
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  @include mobile {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  &:hover {
+    background: $color-gray-100-70;
+  }
+
+  &--light {
+    background: $color-gray-20;
+
+    &:hover {
+      background: $color-gray-40;
+    }
+  }
+
+  &--white {
+    background: $color-white-10;
+
+    &:hover {
+      background: $color-white-20;
+    }
+  }
+
+  height: 52px;
+  min-width: 52px;
+
+  @include mobile {
+    height: 42px;
+    min-width: 42px;
+  }
+
+  &--middle {
+    height: 42px;
+    min-width: 42px;
+  }
+
+  &--small {
+    height: 33px;
+    min-width: 33px;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: normal;
+  }
+
+  &--label {
+    padding-left: 54px;
+    padding-right: 20px;
+
+    &.mobileapp-button--small {
+      padding-left: 33px;
+      padding-right: 12px;
+    }
+
+    @include mobile {
+      width: 204px;
+      padding-left: 40px;
+      padding-right: 0;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    @include align(true, true);
+  }
+
+  &.mobileapp-button--label {
+    &:before {
+      @include align(false, true);
+      left: 23px;
+
+      @include mobile {
+        left: 14px;
+      }
+    }
+
+    &.mobileapp-button--small:before {
+      left: 13px;
+    }
+  }
+
+  &.mobileapp-button--label.mobileapp-button--appstore {
+    @include mobile {
+      padding-left: 45px;
+      &:before {
+        left: 22px;
+      }
+    }
+  }
+
+
+  &.mobileapp-button--googleplay:before {
+    margin-left: 1px;
+  }
+
+  &.mobileapp-button--appstore {
+    &:before {
+      @include sprite('appstore-middle-desktop');
+      @include mobile {
+        @include sprite('appstore-middle-mobile');
+      }
+    }
+
+    &.mobileapp-button--small:before {
+      @include sprite('appstore-small');
+    }
+  }
+
+  &.mobileapp-button--googleplay {
+    &:before {
+      @include sprite('googleplay-middle-desktop');
+      @include mobile {
+        @include sprite('googleplay-middle-mobile');
+      }
+    }
+
+    &.mobileapp-button--small:before {
+      @include sprite('googleplay-small');
+    }
+  }
+
+  &.mobileapp-button--light {
+    &.mobileapp-button--appstore:before {
+      @include sprite('appstore-gray');
+    }
+
+    &.mobileapp-button--android:before {
+      @include sprite('android-gray');
+    }
+  }
+
+  &.mobileapp-button--white {
+    &.mobileapp-button--appstore:before {
+      @include sprite('appstore-white');
+      @include mobile {
+        @include sprite('appstore-white-mobile');
+      }
+    }
+
+    &.mobileapp-button--android:before {
+      @include sprite('android-white');
+      @include mobile {
+        @include sprite('android-white-mobile');
+      }
+    }
+  }
+}

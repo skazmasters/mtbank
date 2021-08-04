@@ -1,0 +1,52 @@
+<section class="section section--gray">
+  <div class="container">
+    <header class="section__header section__header--center">
+      <h2 class="section__title">Карты для ваших сотрудников</h2>
+    </header>
+    <div class="section__content">
+      <div class="js-tabs">
+        <div class="block-tabs">
+          <button class="block-tabs__item js-tab active" data-target=".tab-1">Стандартные</button>
+          <button class="block-tabs__item js-tab" data-target=".tab-2">Премиальные</button>
+        </div>
+        {{#times 2}}
+          <div class="js-tab-content tab-{{this}} {{#ifCond this 1}}active{{/ifCond}}">
+            <div class="packages-row js-packages-row ps ps--active-x">
+              <div class="packages-row__inner">
+                {{# times 5}}
+                  <div class="packages-row__cell">
+                    {{> widgets/package-card title="Simple"
+                            img="business/salary/card-01"
+                            button-label="Узнать больше"
+                            param-1="Срок действия" param-1-value="3 года"
+                            param-2="Снятие наличных в банкоматах страны без комиссии"
+                            param-3="Moneyback - 0,5% от суммы безналичных операций"
+                            param-4="Стоимость СМС-информирования в месяц"
+                            param-4-value="2,3 BYN"
+                            param-5="Выпускается бесплатно без взимания платы за обслуживание"
+                            param-5-value="Бесплатное обслуживание"
+                    }}
+                  </div>
+                  <div class="packages-row__cell">
+                    {{> widgets/package-card title="Gold"
+                            img="business/salary/card-02"
+                            button-label="Узнать больше"
+                            param-1="Срок действия" param-1-value="3 года"
+                            param-2="Снятие наличных в банкоматах страны без комиссии"
+                            param-3="Бесплатное СМС-информирование"
+                            param-4="Moneyback - 0,6% от суммы безналичных операций"
+                            param-5="Уведомления без дополнительной платы"
+                            param-5-value="Бесплатное смс информирование"
+                            param-6="При покупках на сумму не менее 500  руб. в&nbsp;месяц"
+                            param-6-value="Бесплатное обслуживание"
+                    }}
+                  </div>
+                {{/times}}
+              </div>
+            </div>
+          </div>
+        {{/times}}
+      </div>
+    </div>
+  </div>
+</section>

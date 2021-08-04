@@ -1,0 +1,50 @@
+.button-tab {
+  padding: 13px 16px;
+  color: $color-gray-80;
+  @include text-button-s;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  @include transition;
+  display: block;
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-gray-100;
+  }
+
+  &.active {
+    color: $color-gray-100;
+    background-color: $color-gray-20;
+    border-color: $color-gray-20;
+  }
+
+  &--outline {
+    border-color: $color-gray-20;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $color-gray-60;
+    }
+
+    &.active {
+      color: $color-primary;
+      background-color: transparent;
+      border-color: $color-primary;
+    }
+  }
+
+  &--primary {
+    color: $color-gray-100;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &.active {
+      color: $color-white;
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+}

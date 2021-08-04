@@ -1,0 +1,166 @@
+.carousel-slider {
+
+  &__nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+
+    @include no-desktop{
+      display: none;
+    }
+  }
+
+  @include media(tablet, up) {
+    margin: -20px;
+  }
+
+  &__inner {
+    @include media(tablet, up) {
+      padding: 20px;
+    }
+  }
+
+  &:not(.carousel-slider--mobile-block) {
+    .carousel-slider__inner {
+      @include tablet-and-mobile {
+        @include reset-slider-container;
+        margin-bottom: -10px;
+      }
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+
+    .swiper-container-initialized & {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+
+  .swiper-wrapper {
+    @include desktop {
+      margin: 0 -22.5px;
+      width: auto;
+    }
+    @include tablet-and-mobile {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @include desktop {
+    .swiper-container-initialized .swiper-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__slide {
+
+    @include desktop {
+      flex-basis: 25%;
+      width: 25%;
+      padding: 0 22.5px;
+
+      .js-carousel-slider[data-slides-count="3"] & {
+        width: 33.3333%;
+        flex-basis: 33.3333%;
+      }
+
+      .js-carousel-slider[data-slides-count="2"] & {
+        width: 50%;
+        flex-basis: 50%;
+      }
+
+      .js-carousel-slider[data-slides-count] .swiper-container-initialized & {
+        flex-basis: auto;
+        width: auto;
+        padding: 0
+      }
+
+      .swiper-container-initialized & {
+        flex-basis: auto;
+        width: auto;
+        padding: 0
+      }
+    }
+
+    @include tablet-and-mobile {
+      flex: 0;
+      margin-left: 20px;
+      padding: 0 0 10px;
+      height: auto;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .product-card {
+      @include tablet-and-mobile {
+        width: 204px;
+
+        .carousel-slider--3 & {
+          width: 266px;
+        }
+      }
+    }
+  }
+
+  &--3 {
+    .swiper-container:not(.swiper-container-initialized) {
+      @include desktop {
+        .swiper-wrapper {
+          margin: 0 -20px;
+          width: auto;
+        }
+
+        .swiper-slide {
+          flex-basis: 33.3333%;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  &--5{
+    .swiper-container:not(.swiper-container-initialized) {
+      @include desktop {
+        .swiper-wrapper {
+          margin: 0 -20px;
+          width: auto;
+        }
+
+        .swiper-slide {
+          flex-basis: 20%;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  &--mobile-block {
+    @include tablet-and-mobile {
+      .carousel-slider__inner {
+        margin: 0;
+      }
+      .swiper-wrapper {
+        display: block;
+        padding-left: 0;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .swiper-slide {
+        margin: 20px 0 0 0;
+        padding: 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

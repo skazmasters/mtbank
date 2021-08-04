@@ -1,0 +1,32 @@
+<section class="section section--overflow">
+  <div class="container">
+    <div class="achievement-history js-achievement-slider">
+      <header class="section__header">
+        <h2 class="section__title">История достижений</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+
+      <div class="section__content">
+        <div class="achievement-history__inner">
+          <div class="carousel-slider">
+            <div class="swiper-container" data-slider="slider">
+              <div class="swiper-wrapper">
+                {{#each internal.about-us.achievements}}
+                  <div class="swiper-slide">
+                    {{> widgets/achievement-card popup=(concat "achievement_" this.title) title=this.title text=this.text}}
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{#each internal.about-us.achievements}}
+    {{> popups/achievement id=(concat "achievement_" this.title) year=this.title}}
+  {{/each}}
+</section>

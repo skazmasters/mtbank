@@ -1,0 +1,16 @@
+{{!О Банке / Акции / Список}}
+
+{{> layout/head page-title="О Банке / Акции / Список"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+{{> blocks/common/page-header title="Акции"
+        item-1="Для жизни"
+        item-1-active=true
+        item-2="Бизнесу"
+}}
+
+{{>blocks/internal/about-promotions/main/01_filters}}
+{{>blocks/internal/about-promotions/main/02_content}}
+
+{{> layout/footer }}

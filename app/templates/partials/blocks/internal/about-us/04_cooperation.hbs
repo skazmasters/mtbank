@@ -1,0 +1,16 @@
+<section class="section section--primary">
+  <div class="container">
+    <div class="cooperation-about">
+      <h2 class="cooperation-about__title">МТБанк активно сотрудничает с ОАО «Банк развития Республики Беларусь» и
+        международными финансовыми институтами, как Европейский банк реконструкции и развития</h2>
+
+      <ul class="cooperation-about__grid">
+        {{#each  internal.about-us.cooperation}}
+          <li class="cooperation-about__item">
+            {{>widgets/partner}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

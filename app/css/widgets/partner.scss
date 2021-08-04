@@ -1,0 +1,40 @@
+.partner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__image {
+    flex: 1 1 auto;
+    height: 60px;
+    max-height: 60px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+
+    @include media(mobile) {
+      align-items: flex-start;
+      max-height: 50px;
+    }
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &__content {
+    margin-top: 15px;
+    max-width: 200px;
+
+    @include media(mobile) {
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    @include text-button-m;
+
+    @include media(mobile) {
+      @include text-body-2;
+    }
+  }
+}

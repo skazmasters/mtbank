@@ -1,0 +1,13 @@
+.section-applepay-about{
+  .section__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+
+    @include mobile{
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+}

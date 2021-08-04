@@ -1,0 +1,14 @@
+<div class="contact-card">
+  <div class="contact-card__icon">
+    {{> components/image img=icon ext="png"}}
+  </div>
+  <div class="contact-card__content {{#if title}}{{else}}contact-card__content--no-title{{/if}}">
+    {{#if title}}
+      <span class="contact-card__title">{{title}}</span>
+    {{/if}}
+    <span class="contact-card__text">{{text}}</span>
+    <div class="contact-card__action">
+      <a href="#" class="contact-card__link">{{link}}</a>
+    </div>
+  </div>
+</div>

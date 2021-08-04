@@ -1,0 +1,79 @@
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 393px;
+
+  @include tablet-and-mobile {
+    height: 353px;
+  }
+
+  &__link {
+    position: relative;
+    bottom: 0;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px;
+    border-radius: 15px;
+    overflow: hidden;
+    @include transition;
+
+    @include mobile{
+      padding: 15px 15px 25px;
+    }
+
+    @include desktop {
+      &:hover {
+        bottom: 5px;
+        @include shadow(lg);
+
+        .blog-card__title {
+          color: $color-white-70;
+        }
+      }
+    }
+  }
+
+  &__bg {
+    @include fill;
+
+    &::after {
+      content: '';
+      @include fill;
+      background: linear-gradient(180deg, rgba(26, 70, 138, 0) 40.47%, rgba(20, 34, 56, 0.91) 79.53%);
+    }
+  }
+
+  &__content {
+    position: relative;
+    flex: 1 1 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__label {
+    display: inline-block;
+    padding: 6px 12px;
+    color: $color-white;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+
+  &__title {
+    flex: 1 1 100%;
+    margin: auto 0 0;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    @include transition;
+  }
+}

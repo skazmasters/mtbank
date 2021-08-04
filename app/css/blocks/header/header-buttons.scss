@@ -1,0 +1,37 @@
+.header-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &--hidden {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--desktop {
+      @include tablet-and-mobile {
+        display: none;
+      }
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .button-chat {
+      @include media(mobile) {
+        padding: 8px;
+        margin: -8px;
+      }
+    }
+  }
+}

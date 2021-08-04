@@ -1,0 +1,55 @@
+<div class="overview-card {{#if no-padding}}overview-card--no-padding{{/if}} {{#if mod}}overview-card--{{mod}}{{/if}} {{#if
+        big-left}}overview-card--big-left{{/if}}">
+  <div class="overview-card__container">
+    <div class="overview-card__image">
+      {{>components/image img=img img-mobile=img-mobile ext=ext no-lazy=true}}
+    </div>
+    <div class="overview-card__content {{#if content-small}}overview-card__content--small{{/if}}">
+      <span class="overview-card__title">{{title}}</span>
+
+      {{#if html}}
+        <div class="overview-card__html">{{{html}}}</div>
+      {{else}}
+        {{#if text}}
+          <p class="overview-card__text">{{{text}}}</p>
+        {{else}}
+          {{#if feature-1}}
+            <ul class="overview-card__list">
+              <li class="overview-card__list-item">{{feature-1}}</li>
+              {{#if feature-2}}
+                <li class="overview-card__list-item">{{feature-2}}</li>{{/if}}
+              {{#if feature-3}}
+                <li class="overview-card__list-item">{{feature-3}}</li>{{/if}}
+              {{#if feature-4}}
+                <li class="overview-card__list-item">{{feature-4}}</li>{{/if}}
+              {{#if feature-5}}
+                <li class="overview-card__list-item">{{feature-5}}</li>{{/if}}
+            </ul>
+          {{/if}}
+        {{/if}}
+      {{/if}}
+      <div class="overview-card__cta">
+        {{#if button-2-label}}
+          <div class="overview-card__buttons">
+            <div class="overview-card__button">
+              {{> ui/btn color="primary" size="large" label=button-label}}
+            </div>
+            <div class="overview-card__button">
+              {{> ui/btn size="large" icon=button-2-icon label=button-2-label}}
+            </div>
+          </div>
+        {{else}}
+          {{#if link-label}}
+            {{> widgets/button-and-more label=button-label label-2=button-2-label label-2-icon=button-2-icon link-label=link-label}}
+          {{else}}
+            {{#if button-icon}}
+              {{> ui/btn icon=button-icon label=button-label label-2=button-2-label label-2-icon=button-2-icon color="primary" size="large"}}
+            {{else}}
+              {{> widgets/button-and-more label=button-label label-2=button-2-label label-2-icon=button-2-icon no-link=true}}
+            {{/if}}
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

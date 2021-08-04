@@ -1,0 +1,19 @@
+{{!Курсы валют / По картам}}
+{{> layout/head page-title="Курсы валют / По картам"}}
+{{> layout/header }}
+{{> blocks/common/page-header title="По картам"
+        item-1="Наличный"
+        item-2="Безналичный"
+        item-3="По картам"
+        item-3-active=true
+        item-4="Индивидуальный"
+        item-5="НБРБ"
+        item-6="Иные валюты"
+}}
+<div class="js-tabs">
+  {{> blocks/rates/cards/01_filters}}
+  {{> blocks/rates/cards/02_content}}
+</div>
+
+{{> blocks/rates/convertor}}
+{{> layout/footer }}

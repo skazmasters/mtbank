@@ -1,0 +1,31 @@
+<section class="section">
+  <div class="container">
+    <div class="home-blog js-carousel-slider">
+      <header class="section__header">
+        <span class="section__title">МТБлог</span>
+
+        <div class="section__header-link">
+          {{> components/link-arrow label="Перейти в блог" mobile-hidden=true}}
+        </div>
+
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+
+      <div class="section__content">
+        <div class="carousel-slider">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#each home.blog}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/blog-card img=(concat 'home/blog/' this.image) label=this.label title=this.title}}
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

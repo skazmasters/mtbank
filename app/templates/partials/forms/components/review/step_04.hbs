@@ -1,0 +1,19 @@
+<div class="account-form account-form--review-message">
+  <div class="account-form__header">
+    <span class="account-form__title">Ваш комментарий</span>
+    <span class="account-form__intro">Вы можете отправить без комментария</span>
+  </div>
+  <div class="account-form__main">
+    <div class="account-form__field">
+      {{> form/textarea label="Текст комментария *" placeholder="Подсказка"}}
+    </div>
+  </div>
+  <div class="account-form__submit">
+    <div class="account-form__submit-left">
+      {{> widgets/button-arrow label="Назад"}}
+    </div>
+    <div class="account-form__submit-right">
+      {{>ui/btn button=true type="submit" size="large" label="Отправить" color="primary"}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.zoom-control {
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(48, 66, 117, 0.2);
+  overflow: hidden;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #535353;
+    background: #ffffff;
+    transition: background .2s ease;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{{#if button}}
+  <button type="{{#if type}}{{type}}{{else}}button{{/if}}"
+          class="btn{{#if size}} {{#if arrow}}btn--arrow{{/if}} btn--{{size}}{{/if}} {{#if w-100}}btn--w100 {{/if}}{{#if
+                  color}} btn--{{color}}{{/if}}{{#if
+                  outline}} btn--{{outline}}-outline{{/if}}{{#if icon}} btn--icon{{/if}}{{#if
+                  btn-mode}} btn--{{btn-mode}}{{/if}}{{#if popup}} js-popup-open{{/if}}{{#if
+                  tab}} js-tab{{/if}}{{#if mode}} {{mode}}{{/if}}{{#if scroll-to}} js-scroll-to{{/if}} {{mix}}"
+    {{#if popup}} data-popup="{{popup}}"{{/if}}
+    {{#if aria-label}} aria-label="{{aria-label}}"{{/if}}
+    {{#if disabled}} disabled aria-disabled="true"{{/if}}
+    {{#if tab}} data-target="{{tab}}"{{/if}}
+    {{#if scroll-to}} data-scroll-target="{{scroll-to}}"{{/if}}
+    {{{attr}}}>{{#if icon}} {{>ui/svg name=icon}}{{/if}}{{label}}</button>
+{{else}}
+  <a href="{{#if href}}{{href}}{{else if scroll-to}}{{scroll-to}}{{else}}#{{/if}}"
+     class="btn{{#if size}} btn--{{size}}{{/if}} {{#if w-100}}btn--w100 {{/if}} {{#if color}} btn--{{color}}{{/if}}{{#if
+             outline}} btn--{{outline}}-outline{{/if}}{{#if icon}} btn--icon{{/if}}{{#if
+             btn-mode}} btn--{{btn-mode}}{{/if}}{{#if popup}} js-popup-open{{/if}}{{#if
+             tab}} js-tab{{/if}}{{#if mode}} {{mode}}{{/if}}{{#if scroll-to}} js-scroll-to{{/if}} {{mix}}"
+    {{#if popup}} data-popup="{{popup}}"{{/if}}
+    {{#if aria-label}} aria-label="{{aria-label}}"{{/if}}
+    {{#if disabled}} disabled aria-disabled="true"{{/if}}
+    {{#if tab}} data-target="{{tab}}"{{/if}}
+    {{#if target}} target="{{target}}"{{/if}}
+    {{{attr}}}>{{#if icon}} {{>ui/svg name=icon}}{{/if}}{{label}}</a>
+{{/if}}

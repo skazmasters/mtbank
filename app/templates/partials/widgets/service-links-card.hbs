@@ -1,0 +1,19 @@
+<div class="service-links-card">
+  <a href="#" class="service-links-card__link"></a>
+  <div class="service-links-card__inner">
+    <span class="service-links-card__title">{{title}}</span>
+    <div class="service-links-card__image">
+      {{> components/image img=image ext="png"}}
+    </div>
+    <p class="service-links-card__text">{{text}}</p>
+    <div class="service-links-card__actions">
+      {{> ui/btn color="primary" label="Подробнее"}}
+      {{#if ios}}
+        {{> widgets/mobileapp-button light=true size="middle" appstore=true android=false}}
+      {{/if}}
+      {{#if android}}
+        {{> widgets/mobileapp-button light=true size="middle" android=true appstore=false}}
+      {{/if}}
+    </div>
+  </div>
+</div>

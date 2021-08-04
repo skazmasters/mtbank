@@ -1,0 +1,68 @@
+<section class="section js-tabs-slider">
+  <div class="container">
+    <div class="section__header section__header--tabs">
+      <span class="section__title">Продукты для бизнеса</span>
+
+      <div class="section-tabs">
+        <div class="section-tabs__inner">
+          <button class="section-tabs__item active js-tabs-slider__tab" data-filter="*">Всем</button>
+          <button class="section-tabs__item js-tabs-slider__tab" data-filter=".filter-1">Финансирование</button>
+          <button class="section-tabs__item js-tabs-slider__tab" data-filter=".filter-2">Новому бизнесу</button>
+        </div>
+      </div>
+
+      <div class="section__header-right">
+        {{> components/slider-nav small=true}}
+      </div>
+    </div>
+
+    <div class="section__content">
+      <div class="tabs-slider__container">
+        <div class="tabs-slider__slider swiper-container js-tabs-slider__slider">
+          <div class="tabs-slider__slides swiper-wrapper">
+            <div class="swiper-slide tabs-slider__slide js-tabs-slider__slide" data-filter=".filter-1">
+              {{> widgets/product-card
+                      title="Регистрация бизнеса"
+                      text="Подготовка документов, онлайн передача, помощь на всех этапах регистрации."
+                      img="business/home/product_01"
+                      button-label="Оформить онлайн"
+              }}
+            </div>
+            <div class="swiper-slide tabs-slider__slide js-tabs-slider__slide" data-filter=".filter-1">
+              {{> widgets/product-card
+                      title="Эквайринг и онлайн кассы"
+                      text="Торговый, мобильный и инновационный мини mPOS для микробизнеса."
+                      img="business/home/product_02"
+                      button-label="Выбрать"
+              }}
+            </div>
+            <div class="swiper-slide tabs-slider__slide js-tabs-slider__slide" data-filter=".filter-2">
+              {{> widgets/product-card
+                      title="Зарплатный проект"
+                      text="Бесплатно для компании и сотрудников. Выгодные условия."
+                      img="business/home/product_03"
+                      button-label="Подключить"
+              }}
+            </div>
+            <div class="swiper-slide tabs-slider__slide js-tabs-slider__slide" data-filter=".filter-1">
+              {{> widgets/product-card
+                      title="Валютная площадка"
+                      text="Онлайн-сервис для валютно-обменных операций на выгодных условиях."
+                      img="business/home/product_04"
+                      button-label="Подключить"
+              }}
+            </div>
+            <div class="swiper-slide tabs-slider__slide js-tabs-slider__slide" data-filter=".filter-2">
+              {{> widgets/product-card
+                      title="Валютная площадка 2"
+                      text="Онлайн-сервис для валютно-обменных операций на выгодных условиях."
+                      img="business/home/product_04"
+                      button-label="Подключить"
+              }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  @include transition;
+
+  .icon-next {
+    margin-left: 11px;
+    @include transition;
+  }
+
+  &:hover {
+    color: $color-primary;
+
+    .icon-next {
+      margin-left: 18px;
+
+      i {
+        width: 25px;
+      }
+    }
+  }
+
+  &--no-mobile {
+    @include mobile {
+      .icon-next {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<section class="section">
+  <div class="container-880">
+    <div class="faq">
+      <div class="faq__section">
+        <div class="faq__header">
+          <span class="faq__title">Условия</span>
+        </div>
+        <div class="faq__content">
+          <ul class="faq__list js-accordion">
+            <li class="faq__item">
+              {{#>blocks/common/accordion-item title="Список устройств, которые поддерживает Apple Pay"}}
+                {{> blocks/services/apple-pay-faq/faq-item}}
+              {{/blocks/common/accordion-item}}
+            </li>
+            <li class="faq__item">
+              {{#>blocks/common/accordion-item title="Список карт, которые поддерживает Apple Pay" }}
+                {{> blocks/services/apple-pay-faq/faq-item}}
+              {{/blocks/common/accordion-item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="faq__section">
+        <div class="faq__header">
+          <span class="faq__title">Установка и оплата</span>
+        </div>
+        <div class="faq__content">
+          <ul class="faq__list js-accordion">
+            <li class="faq__item">
+              {{#>blocks/common/accordion-item title="Как добавить карту?"}}
+                {{> blocks/services/apple-pay-faq/faq-item}}
+              {{/blocks/common/accordion-item}}
+            </li>
+            <li class="faq__item">
+              {{#>blocks/common/accordion-item title="Как платить Apple Pay iPhone c Face ID" }}
+                {{> blocks/services/apple-pay-faq/faq-item}}
+              {{/blocks/common/accordion-item}}
+            </li>
+            <li class="faq__item">
+              {{#>blocks/common/accordion-item title="Как платить с Apple Pay iPhone c Touch ID"}}
+                {{> blocks/services/apple-pay-faq/faq-item}}
+              {{/blocks/common/accordion-item}}
+            </li>
+            <li class="faq__item">
+              {{#>blocks/common/accordion-item title="Оплата в интернете" }}
+                {{> blocks/services/apple-pay-faq/faq-item}}
+              {{/blocks/common/accordion-item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

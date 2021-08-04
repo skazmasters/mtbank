@@ -1,0 +1,138 @@
+.ibank-card {
+  border-radius: 15px;
+  @include mobile {
+    border-radius: 8px;
+  }
+
+  @include transition;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__link {
+    @include fill;
+    z-index: z(default);
+  }
+
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include no-mobile{
+    min-width: 600px;
+  }
+
+  color: $color-gray-100;
+
+  &--dark {
+    color: $color-white;
+  }
+
+  background: $color-gray-20;
+
+  &__inner {
+    padding: 40px 0 40px 30px;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+
+    .ibank-card--big & {
+      min-height: 310px;
+    }
+
+    @include mobile {
+      display: block;
+      text-align: center;
+      min-height: auto;
+      padding: 20px 20px 25px;
+    }
+  }
+
+  &__bg {
+    @include fill;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    max-width: 311px;
+
+    @include mobile {
+      font-size: 21px;
+      line-height: 120%;
+      max-width: none;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+
+    color: $color-gray-80;
+
+    .ibank-card--dark & {
+      color: $color-white-70;
+    }
+
+    max-width: 311px;
+    margin-top: 10px;
+    display: block;
+
+    @include mobile {
+      font-size: 14px;
+      max-width: none;
+    }
+  }
+
+  &__button {
+    margin-top: auto;
+    padding-top: 20px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+
+    .ibank-card--big & {
+      @include no-mobile {
+        margin-top: 30px;
+        padding-top: 20px;
+      }
+    }
+
+    @include mobile {
+      margin-top: 30px;
+      padding-top: 0;
+    }
+
+    &--no-bottom {
+      margin-top: 0;
+      @include mobile {
+        margin-top: 37px;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    @include align(false, true);
+
+    @include mobile {
+      position: static;
+      transform: none;
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

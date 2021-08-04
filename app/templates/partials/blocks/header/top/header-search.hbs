@@ -1,0 +1,29 @@
+<div class="header-search js-header-search">
+  <button class="header-actions__link header-actions__link--no-text js-header-search__open" type="button"
+          aria-label="Воспользоваться поиском.">
+    {{>ui/svg name="header--search"}}
+  </button>
+
+  <div class="header-search__opened js-header-search__dropdown">
+    <form>
+      <div class="header-search__header">
+        <div class="header-search__icon">
+          <button class="header-search__icon-search">
+            {{>ui/svg name="header--search"}}
+          </button>
+          <button class="header-search__icon-back js-header-search__back">
+            {{>ui/svg name="header--back"}}
+          </button>
+        </div>
+        <div class="header-search__input">
+          <input type="search" class="js-header-search__input" name="q" autocomplete="off" placeholder="Введите фразу для поиска...">
+        </div>
+        <button class="header-search__close js-header-search__close"></button>
+      </div>
+      <div class="header-search__dropdown js-header-search__results">
+        {{> blocks/header/top/header-search-intro}}
+        {{> blocks/header/top/header-search-results}}
+      </div>
+    </form>
+  </div>
+</div>

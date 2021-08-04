@@ -1,0 +1,63 @@
+<section class="section section--gray section-cards-form" id="form">
+  <div class="container">
+    <div class="cards-form  {{#if cards-choice}}cards-form--radio-2{{/if}}">
+      <div class="cards-form__left">
+        <div class="card-form__inner">
+          {{#if cards-choice}}
+            <ul class="cards-form__cards cards-form__cards--radio">
+              <li class="cards-form__cards-item">
+                {{>form/radio-card
+                        img="cards/mixmax/card/max"
+                        ext="jpg"
+                        title="Халва MAX"
+                        text="до 5000 BYN"
+                        checked=true
+                        name="card-form"
+                        mode="max"
+                }}
+              </li>
+              <li class="cards-form__cards-item">
+                {{>form/radio-card
+                        img="cards/mixmax/card/mix"
+                        ext="jpg"
+                        title="Халва MIX"
+                        text="до 1000 BYN"
+                        name="card-form"
+                        mode="mix"
+                }}
+              </li>
+            </ul>
+          {{else}}
+            <ul class="cards-form__cards">
+              <li class="cards-form__cards-item">
+                <div class="cards-form__cards-image">
+                  {{>components/image img=card-image ext=card-image-ext}}
+                </div>
+              </li>
+            </ul>
+          {{/if}}
+          <div class="cards-form__benefits-list">
+            <ul>
+              <li>Ответ на заявку течение 2 часов</li>
+              <li>Оформление карты за 5-10 минут</li>
+              <li>Бесплатное оформление</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cards-form__right">
+        <div class="cards-form__form">
+          {{> blocks/common/page-form
+                  title=title
+                  button-submit-label=submit-label
+                  has-package-select=has-package-select
+                  has-cards-select=has-cards-select
+                  field-1="Фамилия *"
+                  field-2="Имя *"
+                  field-3="Номер телефона *"
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

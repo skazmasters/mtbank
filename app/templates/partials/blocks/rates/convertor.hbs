@@ -1,0 +1,38 @@
+<section class="section section--gray section--no-padding">
+  <div class="rates-convertor js-rates-convertor">
+    <div class="container">
+      <div class="rates-convertor__inner">
+        <div class="rates-convertor__left">
+          <span class="rates-convertor__title">Конвертер валюты</span>
+          <span class="rates-convertor__text">Обновлено 26 марта 2020, в 10:05</span>
+        </div>
+        <div class="rates-convertor__right">
+          {{> widgets/exchange-convertor}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{#if developer}}
+    <div class="rates-convertor rates-convertor--developer">
+      <div class="container">
+        <div class="rates-convertor__inner">
+          <div class="rates-convertor__left">
+            <span class="rates-convertor__title">Курсы XML для веб-разработчиков</span>
+            <span class="rates-convertor__text">Получать курсы валют можно через сервис XML:</span>
+          </div>
+          <div class="rates-convertor__right">
+            <ul class="rates-convertor__links">
+              <li class="rates-convertor__links-item">
+                <a href="#" class="rates-convertor__link rates-convertor__link--blank">www.mtbank.by/currxml.php?d=28.01.2012</a>
+              </li>
+              <li class="rates-convertor__links-item">
+                <a href="#" class="rates-convertor__link rates-convertor__link--blank">www.mtbank.by/currxml.php?d=28.01.2012</a>
+                (за текущий день)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+</section>

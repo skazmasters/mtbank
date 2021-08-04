@@ -1,0 +1,46 @@
+<div class="header-actions">
+  <div class="header-actions__item">
+    <a class="header-actions__link js-responsive-text" href="#" data-tablet-mobile-text="Отделения">
+      {{>ui/svg name="ui--location"}}
+      <span class="header-actions__text">Отделения и банкоматы</span>
+    </a>
+  </div>
+
+  <div class="header-actions__item header-actions__item--call">
+    <span class="header-actions__link">
+      {{>ui/svg name="ui--phone"}}
+      Позвонить в банк
+    </span>
+    <div class="header-actions__dropdown">
+      <div class="header-call">
+        <div class="header-call__item">
+          <div class="header-call__phone">
+            <a href="tel:+375291810000" class="header-call__phone-link">
+              +375 29 181 00 00
+            </a>
+            <span class="header-call__phone-note">
+              Круглосуточная поддержка
+            </span>
+          </div>
+        </div>
+        <div class="header-call__item">
+          <div class="header-call__phone">
+            <a href="tel:+375291810000" class="header-call__phone-link">
+              +375 29 181 00 00
+            </a>
+            <span class="header-call__phone-note">
+              Обслуживание карт
+            </span>
+          </div>
+        </div>
+        <div class="header-call__item header-call__item--button">
+          {{>ui/btn label="Заказать звонок" outline=true icon="ui--call" btn-mode="w100" popup="call"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-actions__item header-actions__item--search">
+    {{> blocks/header/top/header-search}}
+  </div>
+</div>

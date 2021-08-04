@@ -1,0 +1,35 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3" data-mobile-slider="1">
+      <header class="section__header">
+        <div class="section__header-left section__header-left--block">
+          <h2 class="section__title">Привяжите любую карту МТБанка к Apple Pay</h2>
+          <p class="section__description">Apple Pay работает с любыми картами МТБанка платежных систем Visa или
+            Mastercard.</p>
+        </div>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true dark=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{# times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> cards/car white=true}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> cards/imkliva  white=true}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> cards/halva-plus  white=true}}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

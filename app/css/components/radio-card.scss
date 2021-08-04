@@ -1,0 +1,105 @@
+.radio-card {
+  position: relative;
+
+  &__label {
+    display: block;
+    cursor: pointer;
+  }
+
+  &__input {
+    @include fill;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 0 none;
+
+    &:hover {
+      + * {
+        border-color: $color-gray-60;
+
+        .radio-card__icon {
+          border-color: $color-gray-60;
+        }
+      }
+    }
+
+    &:checked {
+      + * {
+        background-color: $color-white;
+        border-color: transparent;
+        @include shadow(lg);
+
+        .radio-card__icon {
+          border: 5px solid $color-primary;
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 11px 10px 10px;
+    border: 2px solid $color-gray-40;
+    border-radius: 15px;
+    @include transition;
+  }
+
+  &__image {
+    position: relative;
+    flex: 0 0 122px;
+    width: 100%;
+    @include shadow(sm);
+    border-radius: 8px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 64%;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    margin-left: 25px;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h4;
+  }
+
+  &__text {
+    display: block;
+    margin: 0;
+    @include text-body-2;
+    color: $color-gray-80;
+  }
+
+  &__icon {
+    $radio-value: 23px;
+
+    display: block;
+    margin-left: auto;
+    width: $radio-value;
+    height: $radio-value;
+    border: 2px solid $color-gray-40;
+    border-radius: 50%;
+    @include transition;
+  }
+
+  &--max {
+    @extend .theme-halva-max;
+  }
+
+  &--mix {
+    @extend .theme-halva-mix;
+  }
+}

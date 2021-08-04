@@ -1,0 +1,64 @@
+.debits-promotions {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-left {
+    display: flex;
+    align-items: center;
+
+    @include media(mobile) {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    @include mobile320{
+      align-items: flex-end;
+    }
+  }
+
+  &__header-right {
+    @include media(tablet) {
+      display: none;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h3;
+  }
+
+  &__cta {
+    margin-left: 30px;
+
+    @include media(mobile) {
+      margin-left: 15px;
+    }
+  }
+
+  &__header-link {
+    padding: 14px 16px;
+    @include text-button-s;
+    color: $color-primary;
+    white-space: nowrap;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+  }
+
+  &__content {
+    margin-top: 25px;
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+  .carousel-slider__slide {
+    min-width: auto;
+  }
+}

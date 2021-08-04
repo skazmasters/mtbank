@@ -1,0 +1,17 @@
+{{!О Банке / Тарифы}}
+
+{{> layout/head page-title="О Банке / Тарифы"}}
+
+{{> layout/header active-header-menu="about" }}
+
+{{> blocks/common/page-header title="Тарифы"
+        item-1="Тарифы"
+        item-1-active=true
+        item-2="Документы"
+}}
+<div class="js-tabs">
+  {{>blocks/internal/about-pricing/01_filters}}
+  {{>blocks/internal/about-pricing/02_body}}
+</div>
+
+{{> layout/footer }}

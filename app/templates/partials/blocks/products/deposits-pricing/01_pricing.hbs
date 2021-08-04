@@ -1,0 +1,35 @@
+<section class="section">
+  <div class="container container-880">
+    <div class="deposit-pricing">
+      <span class="deposit-pricing__title">Отзывный</span>
+      <div class="deposit-pricing__content">
+        {{#> blocks/products/deposits-pricing/deposit-table }}
+          {{> blocks/products/deposits-pricing/pricing-row period="3 месяца" percent="6.21% СКО* – 3.54 п.п." percent-tooltip=true}}
+          {{> blocks/products/deposits-pricing/pricing-row period="5 месяцев" percent="6.21% СКО* – 3.54 п.п." percent-tooltip=true}}
+        {{/blocks/products/deposits-pricing/deposit-table}}
+      </div>
+    </div>
+    <div class="deposit-pricing">
+      <span class="deposit-pricing__title">Безотзывной</span>
+      <div class="deposit-pricing__content">
+        {{#> blocks/products/deposits-pricing/deposit-table }}
+          {{> blocks/products/deposits-pricing/pricing-row period="3 месяца" percent="9.22% СКО* – 0.53 п.п." percent-tooltip=true}}
+          {{> blocks/products/deposits-pricing/pricing-row period="5 месяцев" percent="9.22% СКО* – 0.53 п.п." percent-tooltip=true}}
+        {{/blocks/products/deposits-pricing/deposit-table}}
+
+        {{#> blocks/products/deposits-pricing/deposit-table no-header=true }}
+          {{> blocks/products/deposits-pricing/pricing-row period="7 месяцев" percent="9.74% СКО* – 0.01 п.п." percent-tooltip=true}}
+          {{> blocks/products/deposits-pricing/pricing-row period="9 месяцев" percent="12%"}}
+        {{/blocks/products/deposits-pricing/deposit-table}}
+
+
+        {{#> blocks/products/deposits-pricing/deposit-table no-header=true }}
+          {{> blocks/products/deposits-pricing/pricing-row period="12 месяцев" percent="12%"}}
+          {{> blocks/products/deposits-pricing/pricing-row period="13 месяцев" percent="12%"}}
+          {{> blocks/products/deposits-pricing/pricing-row period="14 месяцев" percent="12%"}}
+          {{> blocks/products/deposits-pricing/pricing-row period="16 месяцев" percent="13%"}}
+        {{/blocks/products/deposits-pricing/deposit-table}}
+      </div>
+    </div>
+  </div>
+</section>

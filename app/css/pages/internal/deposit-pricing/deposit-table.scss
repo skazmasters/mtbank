@@ -1,0 +1,74 @@
+.deposit-table {
+  width: 100%;
+
+  &__thead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid $color-gray-60;
+
+    &--no-header {
+      display: none;
+      @include smallTablet-and-mobile {
+        display: flex;
+      }
+    }
+  }
+
+  &__tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-gray-40;
+  }
+
+  &__td {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    padding: 27px 0;
+
+    @include smallTablet-and-mobile {
+      padding: 20px 0;
+    }
+
+    &--percent {
+      font-weight: bold;
+    }
+  }
+
+  &__th {
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $color-gray-80;
+    padding-bottom: 17px;
+  }
+
+  &__th, &__td {
+    &--amount {
+      width: 159px + 43px;
+    }
+
+    &--add {
+      width: 134px + 68px;
+    }
+
+    &--period {
+      width: 85px + 60px;
+    }
+
+    &--percent {
+      width: 169px + 50px;
+
+      display: inline-flex;
+      .popover {
+        margin-left: 10px;
+      }
+    }
+
+    &--button {
+      margin-left: auto;
+    }
+  }
+}

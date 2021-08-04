@@ -1,0 +1,55 @@
+.achievement-card {
+  position: relative;
+
+  &__button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include fill;
+    z-index: z(default);
+
+    &:hover {
+      + .achievement-card__container {
+        @include shadow(lg);
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__container {
+    padding: 25px 25px 50px;
+    background-color: $color-white;
+    border-radius: 8px;
+    border: 1px solid $color-gray-40;
+    box-shadow: 0 0 0 transparent;
+    @include transition;
+  }
+
+  &__title {
+    @include text-h1;
+    color: $color-primary;
+  }
+
+  &__content {
+    margin-top: 25px;
+  }
+
+  &__text {
+    position: relative;
+    @include text-body-1;
+  }
+
+  &--hide-text {
+    .achievement-card__container {
+      &::after {
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+        left: 5px;
+        min-height: 120px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 65.32%);
+      }
+    }
+  }
+}

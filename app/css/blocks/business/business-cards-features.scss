@@ -1,0 +1,33 @@
+.business-cards-features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -35px;
+
+  margin-top: 10px;
+  @include smallTablet-and-mobile {
+    margin-top: 0;
+  }
+
+  @include smallTablet-and-mobile {
+    margin: 0;
+    display: block;
+  }
+
+  &__cell {
+    padding: 0 35px;
+    flex: 1 1 33.3333%;
+    width: 33.333%;
+    max-width: 33.333%;
+    margin-top: 35px;
+
+    @include smallTablet-and-mobile {
+      margin: 20px 0 0 0;
+      width: auto;
+      max-width: none;
+      padding: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

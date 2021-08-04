@@ -1,0 +1,147 @@
+<section class="inner-header {{#if no-border}}inner-header--no-border{{/if}} {{#if
+        no-simple}}{{else}}inner-header--simple{{/if}} {{#if mobile-dropdown}}inner-header--mobile-dropdown{{/if}} js-inner-header">
+  <div class="container">
+    <div class="inner-header__inner js-inner-header__content">
+      <div class="inner-header__content">
+        <div class="inner-header__left">
+          <span class="inner-header__title">{{title}}</span>
+        </div>
+        <div class="inner-header__right js-inner-header__container">
+          <ul class="inner-header__list">
+            {{#if item-1}}
+              <li class="inner-header__item {{#if
+                      item-1-mobile-hidden}}inner-header__item--no-mobile{{/if}} js-inner-header__item">
+                {{#if tab-1}}
+                  <a href="#"{{#if tab-1}}data-target="{{tab-1}}"{{/if}}
+                     class="{{#if tab-1}}js-tab active {{/if}}inner-header__link">{{item-1}}</a>
+                {{else}}
+                  {{#if item-1-active}}
+                    <span class="inner-header__link active">{{item-1}}</span>
+                  {{ else}}
+                    <a href="#"{{#if tab-1}}data-target="{{tab-1}}"{{/if}}
+                       class="{{#if tab-1}}js-tab active {{/if}}inner-header__link">{{item-1}}</a>
+                  {{/if}}
+                {{/if}}
+              </li>
+            {{/if}}
+
+            {{#if item-2}}
+              <li class="inner-header__item {{#if
+                      item-2-mobile-hidden}}inner-header__item--no-mobile{{/if}} js-inner-header__item">
+                {{#if item-2-active}}
+                  <span class="inner-header__link active">{{item-2}}</span>
+                {{ else}}
+                  <a href="#"{{#if tab-2}}data-target="{{tab-2}}"{{/if}}
+                     class="{{#if tab-2}}js-tab {{/if}}inner-header__link">{{item-2}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+
+            {{#if item-3}}
+              <li class="inner-header__item {{#if
+                      item-3-mobile-hidden}}inner-header__item--no-mobile{{/if}} js-inner-header__item">
+                {{#if item-3-active}}
+                  <span class="inner-header__link active">{{item-3}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-3}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+
+            {{#if item-4}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-4-active}}
+                  <span class="inner-header__link active">{{item-4}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-4}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+
+            {{#if item-5}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-5-active}}
+                  <span class="inner-header__link active">{{item-5}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-5}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+
+            {{#if item-6}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-6-active}}
+                  <span class="inner-header__link active">{{item-6}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-6}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+            {{#if item-7}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-7-active}}
+                  <span class="inner-header__link active">{{item-7}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-7}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+            {{#if item-8}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-8-active}}
+                  <span class="inner-header__link active">{{item-8}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-8}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+            {{#if item-9}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-9-active}}
+                  <span class="inner-header__link active">{{item-9}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-9}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+            {{#if item-10}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-10-active}}
+                  <span class="inner-header__link active">{{item-10}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-10}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+            {{#if item-11}}
+              <li class="inner-header__item js-inner-header__item">
+                {{#if item-11-active}}
+                  <span class="inner-header__link active">{{item-11}}</span>
+                {{ else}}
+                  <a href="#" class="inner-header__link">{{item-11}}</a>
+                {{/if}}
+              </li>
+            {{/if}}
+          </ul>
+
+          {{#if sticky-mobileapps}}
+            <div class="inner-header__button inner-header__button--apps">
+              {{> widgets/mobileapp-button appstore=true size="small" label="Скачать"}}
+              {{> widgets/mobileapp-button googleplay=true size="small" label="Скачать"}}
+            </div>
+          {{/if}}
+
+          {{#if sticky-button}}
+            <div class="inner-header__button">
+              {{#if sticky-button-label}}
+                {{>ui/btn label=sticky-button-label color="primary" size="small" scroll-to='#form'}}
+              {{else}}
+                {{>ui/btn label="Оформить карту" color="primary" size="small" scroll-to='#form'}}
+              {{/if}}
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

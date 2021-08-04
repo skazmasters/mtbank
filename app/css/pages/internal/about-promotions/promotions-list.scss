@@ -1,0 +1,13 @@
+.promotions-list {
+  &__item {
+    margin: 40px 0 0;
+
+    @include media(mobile) {
+      margin: 20px -15px 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.button-toggle {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  display: inline-block;
+
+  &:hover {
+    color: $color-primary-hover;
+  }
+
+  svg {
+    margin-left: 11px;
+    transition: all 0.3s ease;
+  }
+
+  &.opened, .opened & {
+    svg {
+      transform: rotate(180deg) translateY(1px);
+    }
+  }
+}

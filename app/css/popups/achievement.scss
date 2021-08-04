@@ -1,0 +1,37 @@
+.popup-achievement {
+  width: 700px;
+  max-width: 100%;
+  padding: 40px 75px 70px;
+  margin-top: 0;
+
+  @include mobile {
+    padding: 20px 17px 30px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+
+    @include mobile {
+      font-size: 21px;
+      line-height: 120%;
+    }
+  }
+
+  &__content {
+    @include text-body-1;
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include mobile {
+      font-size: 15px;
+      line-height: 140%;
+      margin-top: 10px;
+    }
+  }
+}

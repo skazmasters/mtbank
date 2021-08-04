@@ -1,0 +1,40 @@
+.service-sections {
+  background: $color-gray-20;
+}
+
+.section-services {
+  margin: 0;
+
+  &:first-child {
+    padding: 50px 0 0 0;
+  }
+
+  padding: 46px 0 0 0;
+  @include mobile {
+    padding: 50px 0 0 0;
+  }
+
+  &:last-child {
+    padding-bottom: 70px;
+    @include mobile {
+      padding-bottom: 50px;
+    }
+  }
+
+  .section__title {
+    padding-bottom: 17px;
+  }
+
+  .banner + .services-row {
+    padding-top: 46px;
+
+    @include desktop {
+      margin: -15px 0;
+    }
+
+    @include smallTablet-and-mobile {
+      padding-top: 20px;
+    }
+  }
+}
+

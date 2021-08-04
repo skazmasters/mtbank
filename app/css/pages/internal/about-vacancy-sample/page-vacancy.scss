@@ -1,0 +1,91 @@
+.vacancy-single {
+  margin-top: 65px;
+  @include mobile {
+    margin-top: 50px;
+  }
+
+  @include desktop {
+    padding-bottom: 55px;
+  }
+
+
+  &__section {
+    margin-top: 125px;
+    @include mobile {
+      margin-top: 50px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    li {
+      position: relative;
+      margin-top: 15px;
+      padding-left: 42px;
+      @include text-body-1;
+
+      @include media(tabletSmall, up) {
+        line-height: 26px;
+      }
+
+      @include tablet-and-mobile {
+        padding-left: 21px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        content: '';
+        left: 0;
+        top: 7px;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: $color-primary;
+
+        @include media(mobile) {
+          top: 9px;
+        }
+      }
+    }
+  }
+
+  &__section-title {
+    @include text-h2;
+    color: $color-gray-100;
+
+    @include media(mobile) {
+      margin-left: -0.04em;
+    }
+  }
+
+  &__section-content {
+    margin-top: 37px;
+
+    @include desktop {
+      padding-left: 220px;
+      margin-right: -55px;
+    }
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 80px;
+    @include mobile {
+      margin-bottom: 50px;
+    }
+    @include text-h3;
+    color: $color-gray-100;
+
+    @include tablet-and-mobile {
+      margin-top: 50px;
+    }
+  }
+}

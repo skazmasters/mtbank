@@ -1,0 +1,37 @@
+<section class="section {{#if no-bg}}{{else}}section--gray{{/if}}">
+  <div class="container{{#if center}}{{else}}-{{#if width}}{{width}}{{else}}880{{/if}}{{/if}}">
+    <div class="help-messengers {{#if center}}help-messengers--center{{/if}}">
+      <div class="help-messengers__header">
+        {{#if loyalty}}
+          <span class="help-messengers__title">Так же помощь удобных для вас мессенджерах</span>
+          <p class="help-messengers__text">Наши специалисты подробнее расскажут об уловиях программы лояльности.</p>
+        {{else}}
+          <span class="help-messengers__title">Помощь специалистов в удобных для вас мессенджерах</span>
+          <p class="help-messengers__text">Наши специалисты подробнее расскажут акциях и уникальных уловиях банка.</p>
+        {{/if}}
+      </div>
+      <div class="help-messengers__content">
+        <ul class="help-messengers__list">
+          <li class="help-messengers__item">
+            {{> components/chat-icon icon="viber"}}
+          </li>
+          <li class="help-messengers__item">
+            {{> components/chat-icon icon="skype"}}
+          </li>
+          <li class="help-messengers__item">
+            {{> components/chat-icon icon="fb"}}
+          </li>
+          <li class="help-messengers__item">
+            {{> components/chat-icon icon="tg"}}
+          </li>
+          <li class="help-messengers__item">
+            {{> components/chat-icon icon="vk"}}
+          </li>
+          <li class="help-messengers__item">
+            {{> components/chat-icon icon="chat"}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+.page-breadcrumbs {
+  &__link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: $color-primary;
+    @include text-button-s;
+
+    @include media(mobile) {
+      @include text-h6;
+    }
+
+    &:hover {
+      color: $color-primary-hover;
+
+      .icon {
+        margin-right: 8px;
+
+        @include media(mobile) {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  .icon {
+    display: block;
+    margin-right: 12px;
+    width: 10px;
+    height: 10px;
+    @include transition(margin-right);
+
+    @include media(mobile) {
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+    }
+  }
+
+  + * {
+    margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 30px;
+    }
+  }
+}

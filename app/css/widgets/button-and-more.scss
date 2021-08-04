@@ -1,0 +1,97 @@
+.button-and-more {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -22px;
+
+  .btn, .mobileapp-button {
+    margin-right: 30px;
+    margin-top: 22px;
+
+    + .btn {
+      @include desktop {
+        margin-left: -10px;
+      }
+    }
+
+    .button-and-more--small & {
+      margin-right: 25px;
+    }
+
+    @include mobile {
+      margin-right: 16px;
+
+      + .btn {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &.button-and-more--no-link {
+    .btn, .mobileapp-button {
+      margin-right: 0 !important;
+    }
+  }
+
+  .mobileapp-button {
+    margin-right: 14px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .btn + .mobileapp-button {
+    margin-left: -8px;
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: $color-gray-100;
+    letter-spacing: -0.04em;
+    margin-top: 22px;
+    white-space: nowrap;
+
+    &--dots{
+      border-bottom: 1px dashed $color-gray-100;
+    }
+
+    .button-and-more--small & {
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: $color-gray-80;
+      border-bottom-color: $color-gray-80;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 100%;
+      font-weight: 600;
+    }
+
+    .button-and-more--link-white & {
+      color: $color-white;
+
+      &:hover {
+        color: $color-white-70;
+      }
+    }
+  }
+
+  &--white {
+    .button-and-more__link {
+      color: $color-white;
+
+      &:hover {
+        color: $color-white-70;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<div class="cashback-banner {{#if white}}cashback-banner--white{{/if}}">
+  <div class="cashback-banner__container">
+    <div class="cashback-banner__bg"></div>
+    <div class="cashback-banner__calc">
+      <span class="cashback-banner__calc-title">{{calc-title}}</span>
+      <div class="cashback-banner__calc-content">
+        <div class="cashback-banner__calc-item">{{>widgets/range-slider name="range_01" label="Любые товары и услуги"}}</div>
+        <div class="cashback-banner__calc-item">{{>widgets/range-slider name="range_02" label="Партнерские программы"}}</div>
+      </div>
+      {{#if has-more-filters}}
+        <div class="cashback-banner__calc-filters">
+          <div class="cashback-banner__accordion js-accord" data-disabled-scroll>
+            <div class="cashback-banner__accordion-header">
+              <button class="cashback-banner__accordion-button js-accord__toggle">
+                <span class="cashback-banner__accordion-title">Больше фильтров</span>
+                <div class="cashback-banner__accordion-icon">
+                  {{>ui/svg name="action--expand-down"}}
+                </div>
+              </button>
+            </div>
+            <div class="cashback-banner__accordion-content js-accord__body">
+              <div class="cashback-banner__accordion-inner">
+                {{>widgets/range-slider label="Дополнительно" currency="USD"}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/if}}
+    </div>
+    <div class="cashback-banner__card">
+      <span class="cashback-banner__card-title">{{card-title}}</span>
+      <div class="cashback-banner__card-container">
+        <div class="cashback-banner__card-image">{{>components/image img=card-img ext=card-ext}}</div>
+        <div class="cashback-banner__card-content">
+          <div class="cashback-banner__card-item">
+            <p class="cashback-banner__card-value">{{card-value}}</p>
+            <p class="cashback-banner__card-currency">{{card-currency}}</p>
+            <p class="cashback-banner__card-text">{{card-text}}</p>
+          </div>
+          <div class="cashback-banner__card-item">
+            <p class="cashback-banner__card-value">{{card-value-2}}</p>
+            <p class="cashback-banner__card-currency">{{card-currency-2}}</p>
+            <p class="cashback-banner__card-text">{{card-text-2}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cashback-banner__note">* Пример расчета носит исключительно информационный характер</div>
+</div>

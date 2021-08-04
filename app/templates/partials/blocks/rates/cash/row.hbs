@@ -1,0 +1,43 @@
+<div class="rates-table__row js-rates-row">
+  <div class="rates-table__cell rates-table__cell--name">
+    <span class="rates-table__category">{{ name }}</span>
+    <span class="rates-table__name">{{ address }}</span>
+    <a href="#" class="rates-table__map">Смотреть на карте</a>
+  </div>
+  <div class="rates-table__cell rates-table__cell--value">
+    {{> widgets/rates-card icon="usd" sell="2,645" sell-mod="up" buy="2,645" buy-mod="up"}}
+
+    <div class="rates-table__conversion">
+      <span class="rates-table__conversion-label">EUR/USD</span>
+      {{> widgets/rates-card sell="1,076" sell-mod="up" buy="1,086" buy-mod="up"}}
+    </div>
+
+    <div class="rates-table__convertor">
+      <button class="rates-table__convertor-link js-rates-row__toggle">Курс конверсии</button>
+    </div>
+  </div>
+  <div class="rates-table__cell rates-table__cell--value">
+    {{> widgets/rates-card icon="eur" sell="2,645" sell-mod="up" buy="2,645" buy-mod="down"}}
+    <div class="rates-table__conversion">
+      <span class="rates-table__conversion-label">EUR/RUB</span>
+      {{> widgets/rates-card buy="76,6" sell="79,1" sell-mod="down"}}
+    </div>
+  </div>
+  <div class="rates-table__cell rates-table__cell--value">
+    {{> widgets/rates-card icon="rub" sell="2,645" sell-mod="up" buy="2,645" buy-mod="down"}}
+    <div class="rates-table__conversion">
+      <span class="rates-table__conversion-label">USD/RUB</span>
+      {{> widgets/rates-card buy="70,7" sell="73,4" sell-mod="down"}}
+    </div>
+  </div>
+  <div class="rates-table__cell rates-table__cell--update">
+    <div class="rates-table__select">
+      {{#> form/select border=true}}
+        <option value="10:05">10:05</option>
+        <option value="10:10">10:10</option>
+        <option value="10:15">10:15</option>
+        <option value="10:20">10:20</option>
+      {{/form/select}}
+    </div>
+  </div>
+</div>

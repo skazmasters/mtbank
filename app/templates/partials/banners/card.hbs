@@ -1,0 +1,37 @@
+<div class="banner banner--background banner--card">
+  <div class="banner__bg js-mobile-background" style="background: {{background}}"
+       {{#if mobile-background}}data-mobile-background="{{mobile-background}}"{{/if}}></div>
+  <div class="banner__container">
+    <div class="banner__inner">
+      <span class="banner__title">{{{title}}}</span>
+      <div class="banner__image">
+        {{> components/image ext="png" img=img}}
+      </div>
+
+      <div class="banner__features">
+        <div class="banner__feature">
+          <span class="banner__feature-value">0 BYN</span>
+          <span class="banner__feature-label">За обслуживание карты</span>
+        </div>
+        <div class="banner__feature">
+          <span class="banner__feature-value">Карта для всех валют</span>
+          <span class="banner__feature-label">USD, BYN, EUR, RUB</span>
+        </div>
+        <div class="banner__feature">
+          <span class="banner__feature-value">Мани-бэк до 5%</span>
+          <span class="banner__feature-label">За покупки онлайн</span>
+        </div>
+      </div>
+
+      <ul class="banner__list banner__list--tick">
+        <li class="banner__list-item">Безналичные расчеты по карте без комиссий</li>
+        <li class="banner__list-item">Проведение расчетов по карте в любой точке мира круглосуточно</li>
+        <li class="banner__list-item">Онлайн-бронирования гостиниц, билеты (авиа, ЖД, авто) и др.</li>
+      </ul>
+
+      <div class="banner__actions">
+        {{> widgets/button-and-more white=true label="Оформить карту" link-label="Подробнее"}}
+      </div>
+    </div>
+  </div>
+</div>

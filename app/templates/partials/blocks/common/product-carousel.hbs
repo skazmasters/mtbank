@@ -1,0 +1,52 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider">
+      <header class="section__header">
+        <div class="section__header-left section__header-left--block">
+          <span class="section__title">{{title}}</span>
+          {{#if description}}
+            <p class="section__description">{{description}}</p>
+          {{/if}}
+        </div>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+
+      <div class="section__content">
+        <div class="carousel-slider">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/product-card img=img-1 ext=img-1-ext title=title-1 text=text-1 button-label=button-1}}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/product-card img=img-2 ext=img-2-ext title=title-2 text=text-2 button-label=button-2}}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/product-card img=img-3 ext=img-3-ext title=title-3 text=text-3 button-label=button-3}}
+              </div>
+              {{#if title-4}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/product-card img=img-4 ext=img-4-ext title=title-4 text=text-4 button-label=button-4}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/product-card img=img-1 ext=img-1-ext title=title-1 text=text-1 button-label=button-1}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/product-card img=img-2 ext=img-2-ext title=title-2 text=text-2 button-label=button-2}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/product-card img=img-3 ext=img-3-ext title=title-3 text=text-3 button-label=button-3}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/product-card img=img-4 ext=img-4-ext title=title-4 text=text-4 button-label=button-4}}
+                </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

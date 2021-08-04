@@ -1,0 +1,29 @@
+.search-results {
+  margin-top: 58px;
+
+  @include mobile {
+    margin-top: 30px;
+  }
+
+  .container {
+    max-width: 770px + 40px;
+  }
+
+  &__button {
+    margin-top: 40px;
+    margin-left: 275px;
+    @include mobile {
+      margin-top: 20px;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+  .search-item {
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}

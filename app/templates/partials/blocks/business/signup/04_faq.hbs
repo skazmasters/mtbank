@@ -1,0 +1,45 @@
+<section class="section">
+  <div class="container">
+    <hr class="section__splitter"/>
+    <div class="container-880">
+      <header class="section__header">
+        <h2 class="section__title">Часто задаваемые вопросы</h2>
+      </header>
+      <div class="section__content">
+        <div class="service-faq faq">
+          <div class="faq__section">
+            <div class="faq__content">
+              <ul class="faq__list js-accordion">
+                <li class="faq__item">
+                  {{#>blocks/common/accordion-item title="Что нужно знать про ИП?" }}
+                    {{> blocks/common/faq-answer }}
+                  {{/blocks/common/accordion-item}}
+                </li>
+                <li class="faq__item">
+                  {{#>blocks/common/accordion-item title="Что нужно знать про ООО?" }}
+                    {{> blocks/common/faq-answer }}
+                  {{/blocks/common/accordion-item}}
+                </li>
+                <li class="faq__item">
+                  {{#>blocks/common/accordion-item title="В чем отличие ООО от ЧУП?" }}
+                    {{> blocks/common/faq-answer }}
+                  {{/blocks/common/accordion-item}}
+                </li>
+                <li class="faq__item">
+                  {{#>blocks/common/accordion-item title="Какой минимальный размер уставного фонда ООО?" }}
+                    {{> blocks/common/faq-answer }}
+                  {{/blocks/common/accordion-item}}
+                </li>
+                <li class="faq__item">
+                  {{#>blocks/common/accordion-item title="Может ли директор ООО вести Бухгалтерский учет?" }}
+                    {{> blocks/common/faq-answer }}
+                  {{/blocks/common/accordion-item}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

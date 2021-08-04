@@ -1,0 +1,8 @@
+.career-benefits {
+  &__title {
+    display: block;
+    margin: 0 auto;
+    max-width: 770px;
+    @include text-h2;
+  }
+}

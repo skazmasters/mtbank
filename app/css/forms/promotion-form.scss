@@ -1,0 +1,114 @@
+.promotion-form {
+  padding-top: 30px;
+
+  @include smallTablet-and-mobile {
+    padding: 35px 30px 50px;
+    background-color: $color-gray-20;
+    border-radius: 15px;
+  }
+
+  @include mobile {
+    margin-top: -10px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+
+    @include mobile {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    margin-top: 20px;
+    display: block;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    margin-bottom: -20px;
+    display: block;
+
+    @include mobile {
+      font-size: 17px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      margin-bottom: -10px;
+    }
+  }
+
+  &__section {
+    margin-top: 60px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
+  }
+
+  &__submit {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      display: block;
+      margin-top: 30px;
+
+      .btn{
+        width: 100%;
+      }
+    }
+
+  }
+
+  &__field {
+    margin-top: 40px;
+
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
+
+  &__agreement {
+    margin-left: 30px;
+    max-width: 313px;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $color-gray-60;
+
+    @include mobile {
+      margin-top: 15px;
+      max-width: none;
+      margin-left: 0;
+      text-align: center;
+      font-size: 11px;
+      line-height: 120%;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+}

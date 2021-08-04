@@ -1,0 +1,24 @@
+.applepay-help {
+  .feature-tabs {
+    margin-top: 20px;
+  }
+
+  &__slide {
+    margin-top: 46px;
+    @include mobile {
+      margin-top: 40px;
+    }
+  }
+
+  &__section {
+    margin-top: 60px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @include mobile {
+      margin-top: 50px;
+    }
+  }
+}

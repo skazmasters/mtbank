@@ -1,0 +1,39 @@
+<div class="calculator">
+  <div class="calculator__inner">
+    <div class="business-calc">
+      <div class="business-calc__left">
+        <span class="business-calc__title">Обслуживание</span>
+        <p class="business-calc__text">Плата за обслуживание зависит от количества совершенных платежей</p>
+        <div class="business-calc__form">
+          <div class="business-calc__form-left">
+            {{#> form/select border=true label="Платежей в месяц"}}
+              <option value="12" selected>41-70</option>
+              <option value="18">80-100</option>
+              <option value="24">120+</option>
+            {{/form/select}}
+          </div>
+          <div class="business-calc__form-right">
+            <span class="business-calc__value">65 BYN</span>
+            <span class="business-calc__label">в месяц</span>
+          </div>
+        </div>
+      </div>
+      <div class="business-calc__right">
+        <span class="business-calc__title">В тариф включено</span>
+        <div class="business-calc__features">
+          <div class="business-calc__feature">
+            <span class="business-calc__feature-name">Бесплатное информирование</span>
+            <p class="business-calc__feature-text">о движении по всем банковским счетам</p>
+          </div>
+          <div class="business-calc__feature">
+            <span class="business-calc__feature-name">4 бонуса</span>
+            <p class="business-calc__feature-text">на продвижение в интернете ваших товаров и услуг!</p>
+          </div>
+        </div>
+        <div class="business-calc__actions">
+          {{> widgets/button-and-more label="Открыть счет" link-label="Подробнее о тарифах"}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,307 @@
+.cashback-banner {
+  &__container {
+    position: relative;
+    display: flex;
+    padding: 30px 55px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    @include shadow(lg);
+    background: var(--color-cashback-calc-background);
+
+    @include media(tablet) {
+      padding: 25px 35px;
+    }
+
+    @include media(tabletSmall) {
+      display: block;
+      padding: 22px 17px;
+    }
+  }
+
+  &__bg {
+    @include fill;
+    z-index: z(backdrop);
+    background-color: $color-gray-40;
+  }
+
+  &__calc {
+    flex: 0 1 495px;
+    padding: 15px 110px 10px 0;
+    border-right: 1px solid $color-white-20;
+
+    @include media(tablet) {
+      padding: 0 55px 0 0;
+    }
+
+    @include media(tabletSmall) {
+      padding: 0 0 35px;
+      border-bottom: 1px solid $color-white-20;
+      border-right: unset;
+    }
+  }
+
+  &__calc-title {
+    display: block;
+    margin: 0;
+    @include text-h3;
+  }
+
+  &__calc-filters {
+    margin-top: 40px;
+    margin-left: -5px;
+
+    @include media(tabletSmall) {
+      margin-top: 25px;
+    }
+  }
+
+  &__calc-content {
+    margin-top: 40px;
+
+    @include media(tabletSmall) {
+      margin-top: 32px;
+    }
+  }
+
+  &__calc-item {
+    margin-top: 22px;
+
+    @include media(tabletSmall) {
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  //&__accordion {
+  //
+  //}
+  //
+  //&__accordion-header {
+  //
+  //}
+
+  &__accordion-button {
+    position: relative;
+    display: inline-flex;
+    padding: 10px 33px 10px 12px;
+    border: 1px solid $color-white-20;
+    border-radius: 100px;
+
+    @include smallTablet-and-mobile {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 12px;
+    }
+
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &__accordion-title {
+    display: inline-block;
+    margin: 0;
+    @include text-caption;
+  }
+
+  &__accordion-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+
+    @include smallTablet-and-mobile{
+      position: static;
+      margin-left: 5px;
+      transform: none;
+      top: 0;
+    }
+
+    .icon {
+      width: 12px;
+      height: 12px;
+      transition: 0.3s transform ease;
+
+      .js-accord.opened & {
+        transform: rotate(180deg) translateY(-1px);
+      }
+    }
+  }
+
+  &__accordion-content {
+    display: none;
+
+    .opened & {
+      display: block;
+    }
+
+    &.animate {
+      position: relative;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      transition: height .32s ease;
+    }
+  }
+
+  &__accordion-inner {
+    padding-top: 20px;
+    margin-left: 5px;
+  }
+
+  &__card {
+    flex: 1 1 640px;
+    margin-left: 55px;
+
+    @include media(tablet, up) {
+      padding: 15px 0 10px;
+    }
+
+    @include media(tabletSmall) {
+      margin: 30px 0 0;
+    }
+  }
+
+  &__card-title {
+    display: block;
+    margin: 0;
+    @include text-h3;
+  }
+
+  &__card-container {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+
+    @include media(tabletSmall) {
+      margin-top: 15px;
+    }
+  }
+
+  &__card-image {
+    position: relative;
+    flex: 0 1 276px;
+    width: 100%;
+    border-radius: 10px;
+    @include shadow(lg);
+    overflow: hidden;
+
+    @include media(tabletSmall) {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 63.05%;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__card-content {
+    flex: 1 1 auto;
+    margin-left: 164px;
+
+    @include media(tablet) {
+      margin-left: 100px;
+    }
+
+    @include media(tabletSmall) {
+      display: flex;
+      margin: 0;
+    }
+  }
+
+  &__card-item {
+    position: relative;
+    margin-top: 29px;
+
+    @include media(tablet) {
+      margin-top: 20px;
+    }
+
+    @include media(tabletSmall) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 0;
+      margin-left: 30px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+
+      @include media(tabletSmall) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__card-value {
+    display: block;
+    margin: 0;
+    @include text-h1;
+
+    @include media(tablet) {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.3;
+      letter-spacing: -0.04em;
+    }
+
+    @include media(tabletSmall, up) {
+      position: absolute;
+      top: 0;
+      right: calc(100% + 15px);
+      text-align: right;
+    }
+  }
+
+  &__card-currency {
+    display: block;
+    margin: 0;
+    @include text-h4;
+
+    @include media(tabletSmall) {
+      margin-left: 5px;
+    }
+  }
+
+  &__card-text {
+    display: block;
+    margin: 0;
+    @include text-body-2;
+    color: $color-gray-80;
+
+    @include media(tabletSmall) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__note {
+    display: block;
+    margin: 15.5px 0 0;
+    @include text-body-2;
+    color: $color-gray-80;
+  }
+
+  &--white {
+    color: $color-white;
+
+    .cashback-banner__card-text {
+      color: $color-white-70;
+    }
+  }
+}

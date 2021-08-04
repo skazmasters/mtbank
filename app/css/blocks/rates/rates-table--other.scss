@@ -1,0 +1,87 @@
+.rates-table--other {
+  .rates-table__row {
+    @include mobile {
+      flex-wrap: wrap;
+      padding: 25px 0 52px;
+      align-items: flex-start;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 27px;
+
+        .rates-table__convertor {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .rates-table__conversion {
+    margin-left: 0;
+  }
+
+  .rates-table__cell {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    &--currency {
+      flex-basis: 28%;
+      @include tablet {
+        flex-basis: 35%;
+      }
+
+      @include mobile {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--quantity {
+      flex-basis: 18%;
+
+      .rates-table__value {
+        min-width: 60px;
+        text-align: center;
+        display: inline-block;
+
+        @include mobile {
+          text-align: left;
+          min-width: 0;
+          display: block;
+        }
+      }
+
+      @include mobile {
+        flex-basis: auto;
+      }
+    }
+
+    &--rate {
+      flex-basis: 25%;
+      @include smallTablet {
+        flex-basis: 30%;
+      }
+      @include mobile {
+        margin-left: 30px;
+        flex-basis: auto;
+      }
+    }
+
+    &--nbrb {
+      flex: 1 1 1px;
+      @include mobile {
+        margin-left: 30px;
+        flex-basis: auto;
+      }
+    }
+  }
+
+  .rates-table__convertor {
+    @include mobile {
+      position: absolute;
+      left: 0;
+      bottom: 22px;
+    }
+  }
+}

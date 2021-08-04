@@ -1,0 +1,21 @@
+{{! Бизнесу / Сервисы / Список }}
+
+{{> layout/head page-title="Бизнесу / Сервисы / Список" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+{{> blocks/common/page-header-filters title="Сервисы"
+        button-1="Счета" button-2="Документы"
+}}
+
+{{> blocks/business/services/01_banner}}
+{{> blocks/business/services/02_services}}
+{{> blocks/business/services/03_other}}
+
+{{> blocks/common/features-row size="small" small-title=true title="Легкость в управлении счетами" assets-folder="business/services"
+        title-1="Удобные онлайн-сервисы"
+        title-2="Помощь в подготовке документов для регистрации бизнеса"
+        title-3="Электронный документооборот по валютным операциям"
+}}
+
+{{> layout/footer business=true }}

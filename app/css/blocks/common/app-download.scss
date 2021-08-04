@@ -1,0 +1,50 @@
+.app-download {
+  background: $color-gray-20;
+
+  display: none;
+  @include mobile {
+    display: block;
+    .mobile-opened &{
+      display: none;
+    }
+  }
+
+  height: 68px;
+  overflow: hidden;
+  @include transition(height, 0.4s);
+
+  &.hidden {
+    height: 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    min-height: 68px;
+  }
+
+  &__left {
+    margin-right: 10px;
+    min-width: 50px;
+  }
+
+  &__image {
+    display: block;
+    margin-left: -10px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+  }
+
+  &__center {
+    flex: 1 1 auto;
+  }
+
+  &__right {
+    padding-left: 20px;
+  }
+}

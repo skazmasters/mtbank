@@ -1,0 +1,99 @@
+.upload-doc {
+  background: #FFFFFF;
+  border: 1px dashed $color-gray-80;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px 60px 20px 20px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    @include align(false, true);
+    @include sprite('upload-doc-plus');
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    display: block;
+    color: $color-gray-100;
+  }
+
+  &:hover:not(.uploaded) {
+    .upload-doc__label {
+      color: $color-gray-80;
+    }
+
+    &:before {
+      opacity: .85;
+    }
+  }
+
+
+  &__filename {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    display: none;
+    margin-top: 2px;
+  }
+
+  &__reset {
+    content: '';
+    position: absolute;
+    right: 20px;
+    @include align(false, true);
+    @include sprite('upload-doc-reset');
+    @include transition;
+    display: none;
+
+    &:hover{
+      opacity: 0.85;
+    }
+  }
+
+  &.uploaded {
+    padding: 12px 60px 11px 56px;
+    background: $color-gray-20;
+    border-radius: 8px;
+    border: 1px solid $color-gray-20;
+
+    .upload-doc {
+      &__filename, &__reset {
+        display: block;
+      }
+
+      &__label {
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: $color-gray-80;
+        font-weight: normal;
+      }
+    }
+
+    &:before {
+      content: '';
+      left: 15px;
+      @include align(false, true);
+      @include circle(26px);
+      background: none;
+      background-color: $color-green-100;
+    }
+
+    &:after {
+      content: '';
+      left: 20px;
+      @include align(false, true);
+      @include sprite('upload-doc-tick');
+    }
+  }
+}

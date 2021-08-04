@@ -1,0 +1,29 @@
+.app-stores {
+  display: flex;
+  align-items: center;
+
+  > * + * {
+    margin-left: 20px;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    display: flex;
+    color: $color-gray-40;
+
+    &:hover,
+    &:focus {
+      color: $color-gray-60;
+    }
+  }
+
+  .icon {
+    $icon-value: 26px;
+
+    width: $icon-value;
+    height: $icon-value;
+  }
+}

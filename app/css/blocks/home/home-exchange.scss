@@ -1,0 +1,158 @@
+.home-exchange {
+  //Header
+  &__last-update {
+
+  }
+
+  &__header {
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    margin-right: -8px;
+    @include tablet-and-mobile {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      margin-top: 20px;
+    }
+
+    &-btn {
+      margin-left: 13px;
+
+      .btn{
+        white-space: nowrap;
+      }
+
+      @include media(tablet) {
+        margin-left: 20px;
+      }
+
+      @include mobile320{
+        margin-left: 10px;
+
+        .btn{
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+      }
+
+      @include mobile {
+        flex: 1 1 0%;
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .btn {
+      &.active {
+        display: none;
+      }
+
+      @include media(tablet) {
+        color: $color-gray-100;
+        border-color: transparent;
+        background-color: $color-gray-20;
+
+        &:hover,
+        &:focus {
+          color: $color-gray-100;
+          border-color: transparent;
+          background-color: transparent;
+        }
+      }
+
+      @include media(mobile) {
+        font-size: 12px;
+        line-height: 100%;
+
+        .icon {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  //Content
+  &__tab {
+    flex: 0 1 auto;
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include media(tablet) {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    @include tablet-and-mobile {
+      display: block;
+    }
+  }
+
+  &__item {
+    margin-left: 75px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin: 20px 0 0 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    @include tablet-and-mobile {
+      margin: 19px 0 0 0;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+
+    @include tablet-and-mobile {
+      position: static;
+      margin-top: 30px;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,105 @@
+.service-links-card {
+  height: 100%;
+  position: relative;
+  min-width: 250px;
+
+  &__link {
+    @include fill;
+    z-index: z(default);
+  }
+
+  @include desktop {
+    &:hover,
+    &:focus {
+      .service-links-card__link {
+        ~ .service-links-card__inner {
+          bottom: 5px;
+          @include shadow(xl);
+
+          @include media(mobile) {
+            @include shadow(lg);
+          }
+        }
+      }
+    }
+  }
+
+  &__inner {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    @include shadow(md);
+    border-radius: 15px;
+    background-color: $color-white;
+    @include transition;
+    cursor: pointer;
+    padding: 20px 25px 34px;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    @include mobile {
+      padding: 25px 17px 30px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+
+    @include mobile {
+      font-size: 17px;
+    }
+  }
+
+  &__image {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+
+    @include mobile {
+      margin-top: 36px;
+      height: 141px;
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-80;
+    padding: 0 25px;
+
+    @include tablet-and-mobile{
+      padding: 0;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__actions {
+    margin-top: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    .btn {
+      margin-right: 6px;
+      box-shadow: none;
+    }
+
+    .mobileapp-button {
+      margin-left: 9px;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{{! Продукты / Депозиты }}
+
+{{> layout/head page-title="Продукты / Депозиты"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main" header-nav-active="cards"}}
+
+{{> blocks/common/page-header title="Вклады (Депозиты)"
+        item-1="Список вкладов"
+        item-1-active=true
+        item-2="Гарантии"
+}}
+
+{{> blocks/products/deposits/01_filters }}
+{{> blocks/products/deposits/02_content }}
+
+{{> layout/footer no-clickable-logo=true }}

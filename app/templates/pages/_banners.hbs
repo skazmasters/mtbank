@@ -1,0 +1,80 @@
+{{! Баннеры }}
+
+{{> layout/head page-title="Баннеры"}}
+
+{{> layout/header active-header-menu="about"}}
+
+<section class="section section--gray">
+  <div class="container">
+    {{> banners/mobile-bank }}<br/><br/>
+    {{> banners/credit-online }}<br/><br/>
+    {{> banners/denegram }}<br/><br/>
+    {{> banners/x-card }}<br/><br/>
+    {{> banners/business }}<br/><br/>
+    {{> banners/payokay-services }}<br/><br/>
+    {{> banners/salary-services }}<br/><br/>
+    {{> banners/investment-physical}}<br/><br/>
+    {{> banners/investment-business}}<br/><br/>
+    {{> banners/partners
+            title="6 000+ магазинов-партнёров"
+            text="На сайте в описании каждого партнера вы увидите, сколько процентов от суммы покупки вернется вам на карту бонусными баллами."
+            feature-1-value="Зарабатывайте баллы"
+            feature-1-label="В магазинах-партнерах"
+            feature-2-value="Оплачивайте бонусами"
+            feature-2-label="Любые покупки"
+            button-label="Полный список магазинов"
+    }}<br/><br/>
+    {{> banners/partners-molotok}}<br/><br/>
+    {{> banners/career}}<br/><br/>
+    {{> banners/payment}}<br/><br/>
+    {{> banners/insurance
+            img="01"
+            img-mobile="01-mobile"
+            title="Страхование домашнего имущества и гражданской ответственности"
+            text="Страхование домашнего имущества, отделки квартиры и гражданской ответственности перед соседями – все это в одном договоре!"
+            feature-1-label="Страховой взнос"
+            feature-1-value="6,25 BYN в квартал"
+            feature-2-label="Макс. страховая сумма"
+            feature-2-value="до 168 000 BYN"
+            feature-3-value="1 год"
+            feature-3-value="Срок страхования"
+    }}<br/><br/>
+    {{> banners/deposit
+            img="deposits/deposit-card/01"
+            img-mobile="deposits/deposit-card/01-mobile"
+            currency-1="BYN"
+            title="МТБелки Online"
+            text="Ваша белка, только став МТБелкой, может принести и удачу и прибыль!"
+            feature-1-value="до 13,00%"
+            feature-1-label="Процентная ставка"
+            feature-2-value="50 BYN"
+            feature-2-label="Мин. сумма вклада"
+            feature-3-value="до 36 месяцев"
+            feature-3-label="Срок вклада"
+            button-label="Открыть онлайн"
+    }}<br/><br/>
+    {{> banners/card
+            background="linear-gradient(268.55deg, #4F4F4F -8.67%, #AAAAAA 103.33%), linear-gradient(275.64deg, #DFE5EF 25.6%, #EDF2F9 61.54%);"
+            img="business/cards/card_01"
+            title="Visa Platinum Business"
+    }}<br/><br/>
+    {{> banners/molotok
+            image="business/molotok/01"
+            image-mobile="business/molotok/01-mobile"
+            title="Для партнеров"
+            item-1="Вы избавитесь от дебиторской задолженности."
+            item-2="Увеличите свою клиентскую базу за счет предоставления отсрочки платежей."
+            item-3="Сможете предоставлять отсрочку платежа новым и имеющимся клиентам."
+            button-label="Стать партнером"
+    }}<br/><br/>
+    {{> banners/acquiring img="business/acquiring/01" img-mobile="business/acquiring/01-mobile"
+            title="MTkassa — касса и терминал в одном устройстве"
+            item-1="Оптимизация затрат: МТКасса — это 1 устройство вместо 4"
+            item-2="Экономия времени: Вы получите настроенную кассу в банке"
+            item-3="Безопасность: данные передаются в ИМНС онлайн."
+            item-4="Доступ ко всей необходимой аналитике из личного кабинета"
+    }}
+  </div>
+</section>
+
+{{> layout/footer }}

@@ -1,0 +1,85 @@
+<section class="section">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Другие сервисы</h2>
+    </header>
+    <div class="section__content">
+      <div class="services-row services-row--carousel carousel-slider js-carousel-slider" data-slides-count="4"
+           data-space-between="0" data-scroll-count="1">
+        <div class="services-row__nav">
+          {{> components/slider-nav small=true dark=true}}
+        </div>
+        <div class="swiper-container services-row__carousel js-carousel-slider__slider">
+          <div class="services-row__inner swiper-wrapper">
+            <div class="services-row__cell swiper-slide">
+              <div class="services-row__item">
+                {{>widgets/base-card
+                        img="services/main/other_01"
+                        outlined=true no-border=true mobile-block=true
+                        title="USSD-банкинг"
+                        text="Получить информацию о текущем балансе по карте. Осуществляйте блокировку и разблокировку, активацию банковской платежной карточки."
+                        label="Подробнее"
+                }}
+              </div>
+            </div>
+            <div class="services-row__cell swiper-slide">
+              <div class="services-row__item">
+                {{>widgets/base-card
+                        img="services/main/other_02"
+                        outlined=true no-border=true mobile-block=true
+                        title="3D Secure"
+                        text="Технология безопасных расчетов в интернете. Теперь каждая карта МТБанка защищена технологией 3D Secure."
+                        label="Подробнее"
+                }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container  js-carousel-slider" data-slides-count="4" data-space-between="0" data-scroll-count="1">
+    <header class="section__header">
+      <h2 class="section__title">Другие сервисы</h2>
+      <div class="services-row__nav">
+        {{> components/slider-nav small=true dark=true}}
+      </div>
+    </header>
+    <div class="section__content">
+      <div class="services-row services-row--carousel carousel-slider">
+        <div class="swiper-container services-row__carousel js-carousel-slider__slider">
+          <div class="services-row__inner swiper-wrapper">
+            {{# times 3}}
+              <div class="services-row__cell swiper-slide">
+                <div class="services-row__item">
+                  {{>widgets/base-card
+                          img="services/main/other_01"
+                          outlined=true no-border=true mobile-block=true
+                          title="USSD-банкинг"
+                          text="Получить информацию о текущем балансе по карте. Осуществляйте блокировку и разблокировку, активацию банковской платежной карточки."
+                          label="Подробнее"
+                  }}
+                </div>
+              </div>
+              <div class="services-row__cell swiper-slide">
+                <div class="services-row__item">
+                  {{>widgets/base-card
+                          img="services/main/other_02"
+                          outlined=true no-border=true mobile-block=true
+                          title="3D Secure"
+                          text="Технология безопасных расчетов в интернете. Теперь каждая карта МТБанка защищена технологией 3D Secure."
+                          label="Подробнее"
+                  }}
+                </div>
+              </div>
+            {{/times}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

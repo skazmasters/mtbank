@@ -1,0 +1,62 @@
+.button-chat {
+  $main-value: 52px;
+  $icon-value: 24px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: $main-value;
+  height: $main-value;
+  color: $color-primary;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 50%;
+  border: 1px solid $color-primary;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  @include media(tabletSmall) {
+    width: auto;
+    height: auto;
+    border-radius: unset;
+    border: unset;
+
+    &:hover {
+      color: $color-blue-70-50;
+      background-color: unset;
+      border-color: unset;
+    }
+  }
+
+  .icon {
+    width: $icon-value;
+    height: $icon-value;
+  }
+
+  //Theme
+  &--white {
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+      color: $color-white-70;
+      background-color: transparent;
+      border-color: $color-white-70;
+    }
+  }
+
+  //State
+  &--simple {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: unset;
+  }
+}

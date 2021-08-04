@@ -1,0 +1,158 @@
+.product-params {
+  display: flex;
+
+  @include tablet-and-mobile{
+    margin-top: -30px !important;
+  }
+
+  @include tablet-and-mobile {
+    display: block;
+  }
+
+  &__image {
+    flex-basis: 440px;
+    width: 440px;
+
+    @include tablet-and-mobile {
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    margin-left: 110px;
+
+    @include tablet{
+      margin-top: 50px;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__cell {
+    flex: 1 1 1px;
+
+    &:last-child {
+      padding-left: 55px;
+
+      @include mobile {
+        padding: 30px 0 0 0;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    min-height: 62px;
+
+    @include mobile{
+      min-height: 0;
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  &__label{
+    display: block;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-80;
+    margin-top: 5px;
+    max-width: 294px;
+
+    @include mobile{
+      max-width: none;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__value{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+
+    @include mobile{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    @include mobile{
+      margin-top: 15px;
+    }
+
+    &-item{
+      margin-top: 28px;
+      @include mobile{
+        margin-top: 15px;
+      }
+      &:first-child{
+        margin-top: 0;
+      }
+
+      padding-left: 36px;
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        background-color: $color-primary;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 9px;
+
+        @include sprite('circle-22-tick');
+      }
+
+      .product-params__list--light &{
+        &:before{
+          background: $color-gray-40;
+        }
+        &:after{
+          @include sprite('circle-22-tick-primary');
+        }
+      }
+    }
+  }
+}

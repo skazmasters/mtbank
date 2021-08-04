@@ -1,0 +1,26 @@
+.award-card {
+  min-width: 266px;
+
+  &__image {
+    height: 222px;
+    @include tablet-and-mobile {
+      height: 144px;
+    }
+  }
+
+  &__content {
+    margin-top: 10px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include tablet-and-mobile {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+}

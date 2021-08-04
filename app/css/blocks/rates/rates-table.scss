@@ -1,0 +1,279 @@
+.rates-table {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  margin-bottom: -30px;
+
+  @include tablet-and-mobile {
+    font-size: 16px;
+  }
+
+  &__thead {
+    display: flex;
+    justify-content: space-between;
+    @include desktop {
+      margin-bottom: 15px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+    .rates-table__cell {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__cell {
+    @include desktop {
+      position: relative;
+    }
+  }
+
+  &__conversion {
+    margin-left: 57px;
+    padding-top: 30px;
+    display: none;
+
+    &-label {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      margin-bottom: 9px;
+      display: block;
+
+      @include mobile {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+
+    ._conversion-opened & {
+      display: block;
+    }
+
+    @include mobile {
+      padding-top: 5px;
+      margin-left: 67px;
+    }
+  }
+
+  &__th {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+    border-bottom: 1px solid $color-gray-40;
+
+    &:first-child {
+      padding-top: 15px;
+    }
+
+    &:last-child {
+      border-bottom: 0 none;
+    }
+
+    @include desktop {
+      .rates-card__icon {
+        transition: 0.3s all ease;
+      }
+
+      &:before {
+        transition: 0.3s all ease;
+        content: '';
+        position: absolute;
+        left: -1000px;
+        right: -1000px;
+        background: $color-gray-20;
+        z-index: 0;
+        top: -1px;
+        bottom: 0;
+        opacity: 0;
+      }
+
+      &:hover {
+        border-bottom-color: transparent;
+
+        &:before {
+          opacity: 1;
+        }
+
+        .select2-selection__rendered {
+          background: $color-gray-20;
+        }
+
+        .rates-card__icon {
+          background: $color-primary;
+
+          &--usd:before {
+            @include sprite('rates-usd-white');
+          }
+
+          &--eur:before {
+            @include sprite('rates-eur-white');
+          }
+
+          &--rub:before {
+            @include sprite('rates-rub-white');
+          }
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+
+    font-size: 11px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $color-gray-80;
+    margin-bottom: 5px;
+  }
+
+  &__category {
+    display: block;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    margin-bottom: 5px;
+    color: $color-gray-80;
+  }
+
+  &__name {
+    display: block;
+
+    @include mobile {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 130%;
+    }
+  }
+
+  &__map {
+    display: inline-flex;
+    margin-top: 13px;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: -0.04em;
+    padding-left: 24px;
+    position: relative;
+    align-items: center;
+    height: 21px;
+    font-weight: normal;
+
+    &:before {
+      content: '';
+      left: 2px;
+      top: 2px;
+      position: absolute;
+      @include sprite('rates-map');
+    }
+
+    &:hover {
+      color: $color-primary;
+
+      &:before {
+        @include sprite('rates-map-blue');
+      }
+    }
+  }
+
+  &__double {
+    display: flex;
+
+    &-cell {
+      margin-left: 45px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &-label {
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: $color-gray-80;
+      display: block;
+      font-weight: normal;
+
+      @include mobile {
+        font-size: 11px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        color: $color-gray-80;
+      }
+    }
+
+    &-value {
+      margin-top: 5px;
+      display: block;
+    }
+  }
+
+  &__convertor {
+    margin-top: 10px;
+
+    &-link {
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      padding-right: 20px;
+      position: relative;
+      font-weight: normal;
+
+      @include mobile {
+        font-size: 14px;
+        padding-right: 18px;
+      }
+
+      &:before {
+        content: '';
+        @include sprite('convertor-arrow');
+        right: 0;
+        @include align(false, true);
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        color: $color-primary;
+
+        &:before {
+          @include sprite('convertor-arrow-blue');
+        }
+      }
+
+      ._conversion-opened & {
+        color: $color-primary;
+
+        &:before {
+          @include sprite('convertor-arrow-blue');
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__name {
+    i {
+      color: $color-primary;
+    }
+  }
+
+  &__select {
+    display: inline-block;
+  }
+}

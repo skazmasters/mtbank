@@ -1,0 +1,56 @@
+<section class="section {{#if background}}section--background{{else}}section--gray{{/if}}"
+         {{#if background}}style="background: {{background}}"{{/if}}>
+  <div class="container">
+    <div class="card-benefits {{#if dark}}card-benefits--dark{{/if}}  js-benefits-slider">
+      <div class="card-benefits__inner">
+        <div class="section__header">
+          <div class="section__header-left section__header-left--block">
+            <span class="section__title">{{title}}</span>
+            <span class="section__description">{{text}}</span>
+          </div>
+          <div class="section__header-right">
+            {{#if arrows-white}}
+              {{>components/slider-navigation mode="white"}}
+            {{else}}
+              {{>components/slider-navigation mode="black"}}
+            {{/if}}
+          </div>
+        </div>
+
+        <div class="section__content">
+          <div class="carousel-slider">
+            <div class="swiper-container carousel-slider__inner js-benefits-slider__slider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/benefits-card img=feature-1-icon ext="png" title=feature-1-title text=feature-1-text}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/benefits-card img=feature-2-icon ext="png" title=feature-2-title text=feature-2-text}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/benefits-card img=feature-3-icon ext="png" title=feature-3-title text=feature-3-text}}
+                </div>
+
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/benefits-card img=feature-1-icon ext="png" title=feature-1-title text=feature-1-text}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/benefits-card img=feature-2-icon ext="png" title=feature-2-title text=feature-2-text}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/benefits-card img=feature-3-icon ext="png" title=feature-3-title text=feature-3-text}}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-benefits__image">
+        {{>components/image img=image ext="png"}}
+      </div>
+    </div>
+  </div>
+</section>

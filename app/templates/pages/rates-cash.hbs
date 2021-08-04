@@ -1,0 +1,18 @@
+{{!Курсы валют / Наличный}}
+{{> layout/head page-title="Курсы валют / Наличный"}}
+{{> layout/header }}
+{{> blocks/common/page-header title="Наличный курс"
+        item-1="Наличный"
+        item-1-active=true
+        item-2="Безналичный"
+        item-3="По картам"
+        item-4="Индивидуальный"
+        item-5="НБРБ"
+        item-6="Иные валюты"
+}}
+
+{{> blocks/rates/cash/01_filters}}
+{{> blocks/rates/cash/02_content}}
+
+{{> blocks/rates/convertor developer=true}}
+{{> layout/footer }}

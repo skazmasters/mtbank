@@ -1,0 +1,38 @@
+.deposit-documents {
+  margin-top: 40px;
+
+  .accordion-item:last-child {
+    border-bottom: 1px solid $color-gray-40;
+
+    &.opened {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .accordion-item__inner {
+    padding-bottom: 32px;
+  }
+
+  .accordion-item__button {
+    padding: 26px 0 24px;
+  }
+
+  .accordion-item__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+  }
+
+  .files-list{
+    margin-top: 5px;
+  }
+
+  .files-list__item {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

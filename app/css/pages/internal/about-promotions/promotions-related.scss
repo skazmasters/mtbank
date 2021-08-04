@@ -1,0 +1,65 @@
+.promotions-related {
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    @include media(mobileSmall) {
+      white-space: nowrap;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2;
+  }
+
+  &__header-btn {
+    margin-left: 30px;
+
+    @include media(mobile) {
+      margin-left: 5px;
+    }
+  }
+
+  &__content {
+    margin-top: 50px;
+
+    @include media(mobile) {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    margin-top: 30px;
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      .related-promotion__content {
+        padding-bottom: 0;
+        border-bottom: unset;
+      }
+    }
+  }
+
+  .btn {
+    border-color: transparent;
+
+    &:hover {
+      background: transparent;
+      color: $color-primary-hover;
+    }
+
+    @include media(mobileSmall) {
+      @include btn-small;
+    }
+  }
+}

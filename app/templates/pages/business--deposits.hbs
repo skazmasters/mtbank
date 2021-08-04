@@ -1,0 +1,36 @@
+{{! Бизнесу / Депозиты / Список }}
+
+{{> layout/head page-title="Бизнесу / Список депозитов" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+<div class="hero-menu-block">
+  {{> hero/business-deposits}}
+  {{> blocks/common/page-header no-border=true title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Тарифы и условия"
+          item-3="Как оформить"
+          item-4="Вопрос-ответ"
+  }}
+</div>
+
+{{> blocks/business/deposits/01_content }}
+{{> blocks/common/features-grid title="Преимущества депозита от МТБанка" assets-folder="business/deposits"
+        title-1="Срок размещения"
+        text-1="Возможность размещения вклада сроком от 3 до 36 месяцев."
+        title-2="Онлайн оформление"
+        text-2="Заключение депозитного договора не выходя из Вашего офиса."
+        title-3="Любая валюта"
+        text-3="Размещение денежных средств в любой валюте: белорусские рубли, доллары США, евро или российские рубли."
+        title-4="Индивидуальные условия"
+        text-4="Возможность согласования индивидуальных условий по депозиту."
+        title-5="Напоминания"
+        text-5="Напоминания об окончании срока действия депозитного договора на указанный Вами адрес электронной почты либо номер телефона."
+        title-6="Выгодные процентные ставки"
+        text-6="Ставки точно в рынке"
+}}
+{{> blocks/business/deposits/03_steps }}
+
+{{> forms/business-deposit }}
+{{> layout/footer business=true }}

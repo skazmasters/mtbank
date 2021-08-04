@@ -1,0 +1,54 @@
+.insurance-facts {
+  margin-top: 24px;
+  @include smallTablet-and-mobile {
+    margin-top: 20px;
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -20px;
+
+    @include no-mobile {
+      margin-top: -40px;
+      flex-wrap: wrap;
+    }
+
+    @include tablet {
+      margin: 0 -10px;
+      margin-top: -20px;
+    }
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  @include reset-slider-container-mobile;
+
+  &__cell {
+
+    @include no-mobile {
+      flex-basis: 33.3333%;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+
+    @include tablet {
+      padding: 0 10px;
+      margin-top: 20px;
+    }
+
+    @include mobile {
+      margin-left: 20px;
+      min-width: 266px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        min-width: 266px + 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{{! Сервисы / Apple Pay }}
+
+{{> layout/head page-title="Сервисы / Apple Pay"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+<div class="hero-menu-block">
+  {{> hero/apple-pay}}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Вопрос-ответ"
+          sticky-mobileapps=true
+  }}
+</div>
+
+{{> blocks/services/apple-pay/01_about}}
+{{> blocks/services/apple-pay/02_banner}}
+{{> blocks/services/apple-pay/03_features}}
+{{> blocks/services/apple-pay/04_cards}}
+{{> blocks/services/apple-pay/05_help}}
+
+{{> blocks/common/help-messengers}}
+
+{{> layout/footer }}

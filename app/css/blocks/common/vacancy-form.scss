@@ -1,0 +1,242 @@
+.vacancy-form {
+
+  @include desktop {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  @include smallTablet-and-mobile {
+    padding: 35px 30px 50px;
+    background-color: $color-gray-20;
+    border-radius: 15px;
+  }
+
+  &__title {
+    font-size: 44px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    @include mobile {
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    margin-top: 20px;
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
+
+  &--state {
+    .vacancy-form {
+      &__icon {
+        position: relative;
+        width: 86px;
+        height: 80px;
+        margin: 0 auto;
+
+        img {
+          @include fill;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &__title {
+        @include text-h2;
+        max-width: 425px;
+        margin: 30px auto 0;
+        text-align: center;
+      }
+
+      &__text {
+        color: $color-gray-80;
+        @include text-body-1;
+        max-width: 425px;
+        margin: 10px auto 0;
+        text-align: center;
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .btn {
+          width: auto;
+          @include shadow(lg);
+
+          @include media(mobile, up) {
+            @include btn-large;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 60px;
+    @include mobile {
+      margin-top: 45px;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-top: 20px;
+    padding-right: 40px;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    &--bold {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+    }
+
+    @include mobile {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+
+  &__header {
+    + .vacancy-form__content {
+      @include media(mobile, up) {
+        margin-top: 65px;
+      }
+
+      @include media(mobile) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px 0 0 -110px;
+
+    @include media(mobile) {
+      margin: 0;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+
+  &__item {
+    flex: 1 1 100%;
+    margin: 40px 0 0 110px;
+
+    max-width: calc(100% - 110px);
+
+    &--action {
+      margin-top: 35px;
+    }
+
+    @include media(mobile) {
+      margin: 20px 0 0 0;
+      max-width: 100%;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    &--50 {
+      flex: 1 1 330px;
+      max-width: initial;
+    }
+
+    &--submit {
+      @include media(mobile, up) {
+        display: flex;
+        align-items: center;
+        margin-top: 45px;
+      }
+    }
+  }
+
+  &__btn {
+    flex: 0 0 auto;
+
+    .btn {
+      width: 100%;
+      @include shadow(lg);
+
+      @include media(mobile, up) {
+        @include btn-large;
+      }
+    }
+  }
+
+  &__credits {
+    flex: 1 1 1px;
+    @include text-caption;
+    color: $color-gray-80;
+
+    @include media(mobile, up) {
+      margin-left: 30px;
+    }
+
+    @include media(mobile) {
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+
+  .select {за и
+    &__input {
+      width: 100%;
+      color: $color-gray-60;
+      padding: 14px 0 4px;
+      @include text-body-1;
+      border: none;
+      outline: none;
+      border-radius: 0;
+      background-color: transparent;
+      border-bottom: 2px solid $color-gray-60;
+      @include transition;
+      cursor: pointer;
+
+      @include media(mobile) {
+        padding: 14px 0 9px;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $color-gray-80;
+      }
+    }
+
+    &.open {
+      .select__input {
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+  }
+}

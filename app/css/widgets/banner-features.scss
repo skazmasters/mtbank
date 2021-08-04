@@ -1,0 +1,281 @@
+.banner-features {
+  position: relative;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 55px;
+    min-height: 360px;
+    border-radius: 15px;
+    background-color: $color-gray-10;
+    @include transition;
+    overflow: hidden;
+
+    @include media(tabletSmall) {
+      min-height: auto;
+    }
+
+    @include media(mobile) {
+      text-align: left;
+      padding: 20px 20px 25px;
+      min-height: 500px;
+    }
+  }
+
+  &__image {
+    @include fill;
+
+    &::after {
+      @include media(mobile) {
+        @include fill;
+        content: '';
+        background: linear-gradient(180deg,
+          rgba(235, 238, 245, 0.5) 9.58%,
+          rgba(235, 238, 245, 0) 30.62%,
+          rgba(235, 238, 245, 0.5) 73.45%);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2;
+
+    a {
+      @include transition;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 5px 0 0;
+    color: $color-gray-80;
+    @include text-body-2;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 670px;
+
+    @include media(tablet) {
+      max-width: 570px;
+    }
+
+    > * + * {
+      margin-top: 16px;
+
+      @include media(mobile, up) {
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      flex: 1 1 49%;
+      @include text-h5;
+
+      @include media(mobile) {
+        flex: 1 1 100%;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        margin-right: 10px;
+        @include sprite('banner-bullet');
+      }
+    }
+  }
+
+  &__title,
+  &__text {
+    max-width: 500px;
+  }
+
+  &__icon,
+  &__title,
+  &__text,
+  &__list {
+    position: relative;
+    z-index: z(default);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+
+    @include media(tabletSmall) {
+      margin-top: 40px;
+    }
+
+    @include media(mobile) {
+      align-items: flex-start;
+    }
+
+    &-image {
+      max-width: 52px;
+      max-height: 52px;
+
+      @include media(mobile) {
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-content {
+      margin-left: 20px;
+    }
+
+    &-title {
+      display: block;
+      margin: 0;
+      @include text-h5;
+    }
+
+    &-text {
+      display: block;
+      margin: 2px 0 0;
+      color: $color-gray-80;
+      @include text-body-2;
+
+      @include media(mobile) {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &__btn-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+
+    @include mobile {
+      margin-top: auto;
+      padding-top: 30px;
+    }
+
+    > * {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__btn-primary {
+    @include btn-primary;
+  }
+
+  &__btn-secondary {
+    @include btn-gray-simple;
+  }
+
+  &__btn-link {
+    position: relative;
+    z-index: z(default) + 1;
+    display: inline-block;
+    padding: 16.5px 20px;
+    @include text-button-m;
+    color: $color-gray-100;
+
+    @include media(mobile) {
+      padding: 14px 16px;
+      @include text-button-s;
+    }
+
+    &:hover {
+      color: $color-gray-80;
+    }
+  }
+
+  .btn {
+    position: relative;
+    z-index: z(default) + 1;
+
+    &:not(.banner-features__btn-secondary) {
+      @include shadow(lg);
+    }
+
+    @include media(mobile) {
+      padding: 13px 16px;
+      @include text-button-s;
+    }
+  }
+
+  &--debit-card {
+    .banner-features {
+      &__content {
+        @include media(mobile, up) {
+          padding: 34px 55px;
+          min-height: 350px;
+        }
+
+        @include media(tabletSmall) {
+          min-height: auto;
+        }
+
+
+        @include media(mobile) {
+          background: linear-gradient(174.11deg, #ECEFF6 4.67%, #E7EBF2 73.25%);
+          min-height: 544px;
+          padding-bottom: 40px;
+        }
+      }
+
+      &__list {
+        @include media(tabletSmall) {
+          max-width: 400px;
+        }
+
+        @include media(mobile) {
+          margin-bottom: 0;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(100px, max-content));
+          grid-gap: 13px 8px;
+        }
+
+        @include media(mobileSmall, only) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &__list-item {
+        @include media(mobile) {
+          align-items: flex-start;
+          margin: 0;
+          white-space: nowrap;
+
+          &::before {
+            flex: 0 0 22px;
+            margin-right: 4px;
+            min-width: 16px;
+            transform: scale(0.7);
+          }
+        }
+      }
+    }
+  }
+}

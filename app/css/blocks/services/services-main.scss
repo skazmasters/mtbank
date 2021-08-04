@@ -1,0 +1,31 @@
+.services-main {
+  .section:first-child {
+    margin-top: 0;
+  }
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section {
+    margin-bottom: 50px;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .banner {
+    margin-bottom: 45px;
+  }
+
+  .section__header + .section__content {
+    margin-top: 16px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}

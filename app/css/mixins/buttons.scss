@@ -1,0 +1,84 @@
+@mixin btn-base() {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid $color-primary;
+  border-radius: 100px;
+  cursor: pointer;
+  @include transition;
+}
+
+@mixin btn-small() {
+  padding: 9px 12px;
+  @include text-caption;
+}
+
+@mixin btn-regular() {
+  padding: 13px 16px;
+  @include text-button-s;
+}
+
+@mixin btn-large() {
+  padding: 15px 20px 16px;
+  @include text-button-m;
+}
+
+@mixin btn-primary() {
+  color: $color-white;
+  border-color: $color-primary;
+  background-color: $color-primary;
+
+  &:hover {
+    color: $color-white;
+    border-color: $color-primary-hover;
+    background-color: $color-primary-hover;
+  }
+}
+
+@mixin btn-primary-outline() {
+  color: $color-primary;
+  border-color: $color-primary;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-white;
+    border-color: $color-primary;
+    background-color: $color-primary;
+  }
+}
+
+@mixin btn-gray() {
+  color: $color-gray-100;
+  border-color: transparent;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-gray-100;
+    border-color: transparent;
+    background-color: $color-gray-20;
+  }
+}
+
+@mixin btn-gray-outline() {
+  color: $color-gray-100;
+  background-color: transparent;
+  border-color: $color-gray-40;
+
+  &:hover {
+    color: $color-gray-100;
+    border-color: $color-gray-20;
+    background-color: $color-gray-20;
+  }
+}
+
+@mixin btn-gray-simple() {
+  color: $color-gray-100;
+  border-color: transparent;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-gray-80;
+    border-color: transparent;
+    background-color: transparent;
+  }
+}

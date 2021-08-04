@@ -1,0 +1,40 @@
+.promotions-single {
+  @include media(mobile) {
+    padding-bottom: 45px;
+  }
+
+  .static {
+    h3 {
+      margin-top: 50px;
+
+      @include media(mobile) {
+        margin-top: 30px;
+      }
+    }
+
+    ul, ol {
+      margin-top: 20px;
+
+      @include media(mobile) {
+        margin-top: 15px;
+      }
+
+      + h3 {
+        margin-top: 60px;
+
+        @include media(mobile) {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      @include text-body-1;
+
+      @include media(mobile) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

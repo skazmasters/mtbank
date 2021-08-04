@@ -1,0 +1,877 @@
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.slider-nav'}}
+    {{> components/slider-nav fill=false small=false}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.slider-nav--small'}}
+    {{> components/slider-nav fill=false small=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.slider-nav--fill' background=true}}
+    {{> components/slider-nav fill=true small=false}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.slider-nav--small .slider-nav--fill' background=true}}
+    {{> components/slider-nav fill=true small=true}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.product-card' width=300}}
+    {{> widgets/product-card title="Заголовок" text="Текст" img="home/recommended/01" button-label="Кнопка"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.product-card (video)' width=300}}
+    {{> widgets/product-card video=true title="Заголовок" text="Текст" img="home/recommended/01" button-label="Кнопка"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.bonus-card' width=430}}
+    {{> widgets/bonus-card img="business/loyalty/icon_03" title="Скидки на валютные переводы"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.award-card' width=300}}
+    {{> widgets/award-card img="corporation/common/award_03" title="SME Banking Club"}}
+  {{/core/ui-kit/blocks/widget}}
+
+
+  {{#> core/ui-kit/blocks/widget title='.blog-card' width=300}}
+    {{> widgets/blog-card img="home/blog/01" label="Категория" title="Заголовок"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.news-card' width=300}}
+    {{> widgets/news-card label="Категория" title="Заголовок"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.exchange-item' width=300}}
+    {{> widgets/exchange-item icon="currency--usd" label="1 Доллар США" acceptance="2,645" sale="2,645"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.search-item' width=700}}
+    {{> widgets/search-item category="Категория" title="Заголовок <mark>Поиск</mark>" text="Текст"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.need-step' width=300}}
+    {{> widgets/need-step title="Прийти в отделение" text="В отделении мы оформим карту, и откроем нужный вклад." link="Отделения МТБанка"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.need-step--simple' width=300}}
+    {{> widgets/need-step simple=true text="Опись имущества и предварительный осмотр жилья не требуется."}}
+  {{/core/ui-kit/blocks/widget}}
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.deposit-offer' width=400}}
+    {{> widgets/deposit-offer
+      title="Выгодное предложение"
+      value="12%"
+      color="blue"
+      text="Безотзывный вклад в белорусских рублях на 14 месяцев"
+      button-label="Оформить вклад"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.number-step' width=400}}
+    {{> widgets/number-step number="2" title="Дождитесь нашего звонка" text="Мы свяжемся с вами, чтобы помочь открыть вклад быстро и просто."}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.button-toggle' width=400}}
+    {{> widgets/button-toggle label="Дополнительные условия"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.vacancy-card' width=700}}
+    {{> widgets/vacancy-card
+      title="Юрисконсульт сектора юридического сопровождения процедур взыскания проблемной задолженности"
+      category="Информационные технологии"
+      description="Высшее юридическое образование; Опыт претензионно-исковой работы не менее 2-х лет; Уверенное знание гражданского, процессуального законодательства..."
+      city="Гродно"
+      direction="Сервистный чентр"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.exchange-input' width=500}}
+    {{> widgets/exchange-input}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.button-bank' width=200}}
+    {{> components/button-bank}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.button-filter' width=200}}
+    {{> components/button-filter}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.button-filter.active' width=200}}
+    {{> components/button-filter active=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.app-card' width=200}}
+    {{> widgets/app-card img="common/apps/banking" category="Мобильный банкинг" name="Мой банк"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.link-arrow' width=200}}
+    {{> components/link-arrow label="Мой банк"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.file-attach' width=400}}
+    {{> form/file id="demo-attach" label="Прикрепить файл"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.button-and-more' width=500}}
+    {{> widgets/button-and-more label="Открыть вклад" }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.subpage-banner' width=600}}
+    {{>widgets/subpage-banner
+      title="О нас"
+      text="Современный коммерческий банк, предоставляющий комплекс услуг бизнес и частным клиентам."
+      image="internal/about-main/01"
+      ext="png"
+      label="Подробнее о банке"
+      size="big"
+      btn-color="primary"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.subpage-banner--small' width=300}}
+    {{>widgets/subpage-banner
+      title="Пресс-центр"
+      text="Самые актуальные новости и события."
+      image="internal/about-main/03"
+      ext="png"
+      label="Смотреть новости"
+      btn-mode="simple"
+      size="small"
+      small=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.button-nav' width=300}}
+    {{>components/button-nav label="Тендеры"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.file-download .file-download--red' width=300}}
+    {{> components/file-download color="red" label="Приложение 2" small="Doc, 753 KB" file-icon="files--pdf"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.file-download .file-download--green' width=300}}
+    {{>components/file-download color="green" label="Приложение 2" small="Excel, 753 KB" file-icon="files--pdf"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.file-download .file-download--blue' width=300}}
+    {{>components/file-download color="blue" label="Приложение 2" small="Excel, 753 KB" file-icon="files--pdf"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.gallery-slider' width=1000}}
+    {{>blocks/common/gallery-slider gallery-content=internal.about-us.slider}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.leadership-quote' width=1200}}
+    {{>widgets/leadership-quote
+      person-data=internal.about-leadership.banner
+      title="Главная ценность банка — Клиент"
+      text="От доверия клиентов зависит успех нашей деятельности. Постоянный диалог с клиентами, внимание к его
+            проблемам и нуждам, оперативное принятие решений, гибкость и открытость — основа нашей клиентской политики.
+            Это не «один из» приоритетов — это основополагающий принцип, на этом строится вся работа банка."
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.person' width=300}}
+    {{#each ui.content.persons}}
+      {{> widgets/person popup=this.popup}}
+      {{> popups/person id=this.popup}}
+    {{/each}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.person .person--popup' width=400}}
+    {{#each ui.content.persons}}
+      {{> widgets/person mode="popup"}}
+    {{/each}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.person .person--quote' width=400}}
+    {{#each ui.content.persons}}
+      {{> widgets/person mode="quote"}}
+    {{/each}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.article-brief' width=500}}
+    {{>widgets/article-brief label="Банк участник ООН" title="Также с 2006 года МТБанк является первым банком-участником Глобального Договора ООН в Беларуси" text="В 2006 году МТБанк стал первым банком-участником Глобального Договора ООН в Беларуси – общепризнанной инициативы ООН в области корпоративной социальной ответственности." file-color="blue" file-label="Архив файлов отчетности об участии в Глобальном договоре ООН." file-small="Doc, 753 KB"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.achievement-card' width=500}}
+    {{#each ui.content.achievements}}
+      {{> widgets/achievement-card popup=(concat "achievement_" this.title) title=this.title text=this.text}}
+    {{/each}}
+    {{#each ui.content.achievements}}
+      {{> popups/achievement id=(concat "achievement_" this.title) year=this.title}}
+    {{/each}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.offer-card' width=400}}
+    {{>widgets/offer-card
+      image="internal/about-career-benefits/offers/offer-01"
+      title="Официальная зарплата"
+      text="Для работы в офисе заключаем трудовой договор."
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.offer-card--block' width=400}}
+    {{>widgets/offer-card mobile-block=true
+      image="internal/about-career-benefits/offers/offer-01"
+      title="Официальная зарплата"
+      text="Для работы в офисе заключаем трудовой договор."
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+
+  {{#> core/ui-kit/blocks/widget title='.product-banner' width=400}}
+    {{> widgets/product-banner
+      img="insurance/single/carousel_01"
+      img-mobile="insurance/single/carousel_01-mobile"
+      title="Другие виды страхования"
+      text="Страхование домов и строений. Добровольное страхование домов и строений поможет решить все ваши страховые вопросы одним договором."
+      link-label="Подробнее"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.product-banner' width=400}}
+    {{> widgets/product-banner small=true
+      img="business/leasing/05"
+      img-mobile="business/credits/05-mobile"
+      title="Возвратный лизинг"
+      text="Текст описание раздела. Текст может быть в несколько строк."
+      button-label="Подробнее" button-primary=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+
+
+  {{#> core/ui-kit/blocks/widget title='.product-banner' width=400}}
+    {{> widgets/product-banner
+      img="business/credits/growth_01"
+      img-mobile="business/credits/growth_01-mobile"
+      title="Кредит в текущую деятельность"
+      item-1="Для пополнения оборотных активов"
+      item-2="До 48 месяцев"
+      item-3="Индивидуальный подход"
+      button-label="Подробнее"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+
+  {{#> core/ui-kit/blocks/widget title='.fact-card' width=400}}
+    {{> widgets/fact-card title="Заливы занимают первое место в статистике страховых случаев" text="До 80% обращений клиентов связаны именно с повреждениями имущества водой."}}
+
+  {{/core/ui-kit/blocks/widget}}
+
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.review-person' width=400}}
+    {{>blocks/common/review-person
+      image="common/reviews/person-01"
+      name="Иван Иванов"
+      text="Начальник управления системного администрирования"
+      ext="png"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.base-card' width=300}}
+    {{>widgets/base-card
+      title="Без опыта"
+      text="Билеты на рейсы любых авиакомпаний по&nbsp;низким&nbsp;ценам с кэшбэком до 5%."
+      label="Смотреть вакансии"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.base-card' width=300}}
+    {{>widgets/base-card small=true mobile-block=true outlined=true no-border=true
+      img="business/credits/warranty_03" ext="png"
+      title="Тендерная гарантия"
+      text="Обеспечивает исполнение обязательств  клиентом, который подал заявку на участие в конкурсе (тендере)."
+      button-label="Подробнее"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.base-card--small' width=300}}
+    {{>widgets/base-card outlined=true small=true
+      img="business/open/business_01" ext="png"
+      title="Онлайн-сервисы"
+      text="Системы Интернет-банк  и Клиент-банк"
+      label="Узнать больше"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.base-card.base-card--no-border' width=300}}
+    {{>widgets/base-card no-border=true
+      title="Без опыта"
+      text="Билеты на рейсы любых авиакомпаний по&nbsp;низким&nbsp;ценам с кэшбэком до 5%."
+      label="Смотреть вакансии"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.base-card.base-card--mobile-center' width=300}}
+    {{>widgets/base-card mobile-center=true
+      title="Без опыта"
+      text="Билеты на рейсы любых авиакомпаний по&nbsp;низким&nbsp;ценам с кэшбэком до 5%."
+      label="Смотреть вакансии"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.base-card .base-card--outlined' width=400}}
+    {{>widgets/base-card
+      img="internal/about-career-benefits/vacancies/01"
+      ext="png"
+      title="Без опыта"
+      text="Работа в физ отделении банка. С такими продуктами как и тут перечисление."
+      label="Смотреть вакансии"
+      outlined=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.base-card .base-card--outlined .base-card--mobile-center' width=400}}
+    {{>widgets/base-card
+      mobile-center=true
+      img="internal/about-career-benefits/vacancies/01"
+      ext="png"
+      title="Без опыта"
+      text="Работа в физ отделении банка. С такими продуктами как и тут перечисление."
+      label="Смотреть вакансии"
+      outlined=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.base-card .base-card--outlined .base-card--mobile-block' width=400}}
+    {{>widgets/base-card
+      mobile-block=true
+      img="internal/about-career-benefits/vacancies/01"
+      ext="png"
+      title="Без опыта"
+      text="Работа в физ отделении банка. С такими продуктами как и тут перечисление."
+      label="Смотреть вакансии"
+      outlined=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.btn-outline' width=300}}
+    {{>components/btn-outline label="Показать прошедшие"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.btn-outline .btn-outline--gray' width=400}}
+    {{>components/btn-outline color="gray" label="Показать прошедшие"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.promotions-banner .promotions-banner--purple' width=1200}}
+    {{>widgets/promotions-banner
+      banner-mode="purple"
+      img="01"
+      ext="png"
+      title="Халва Плюс ищет новых друзей — <br> 10 приветственных баллов!"
+      text="Скидки и сезонные распродажи – это прекрасно, но они, скорее, исключение, чем правило, а зарабатывать на покупках хочется постоянно."
+      time-left="Действует еще 12 дней"
+      period="с 19.07.20 по 25.07.20"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.promotions-banner .promotions-banner--purple' width=1200}}
+    {{>widgets/related-promotion
+      img="1"
+      title="Сократи расходы на авто с Автокартой!"
+      text="Какой автовладелец не мечтает об идеальном состоянии машины, а заодно о небольших расходах на его поддержание?"
+      label="Действует еще 3 дня"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.promotions-card' width=400}}
+    {{#each ui.content.debits.promotions}}
+      {{> widgets/promotions-card img=img title=title tag=tag}}
+    {{/each}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.service-card .service-card--title-link' width=400}}
+    {{> widgets/service-card
+      title-link=true
+      card-mode="small service-card--title-link"
+      icon="mtb-tickets"
+      title="Билеты MTB tickets"
+      text="Билеты на рейсы любых авиакомпаний по&nbsp;низким&nbsp;ценам с кэшбэком до 5%."
+      link-label="Выбрать путешествие"
+      action-link-label="Только в браузере"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.service-card .service-card--title-link' width=400}}
+    {{> widgets/service-card
+      title-link=true
+      card-mode="small service-card--title-link"
+      icon="banking"
+      title="Мобильный банк"
+      text="Все сервисы, ваши карты, счета, оплата и многое другое в вашем  смартфоне."
+      link-label="Подробнее"
+      app-stores=common.app-stores
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.debit-card' width=400}}
+    {{#>widgets/debit-card img="01" title="Автокарта" text="Автолюбителю"}}
+      <ul>
+        <li>Мани-бэк 10% в СТО наших партнеров</li>
+        <li>Мани-бэк 2% за любые покупки</li>
+        <li>Мани-бэк 5% на АЗС партнеров</li>
+      </ul>
+    {{/widgets/debit-card}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.debit-card--whitee' width=400}}
+    {{#>widgets/debit-card white=true img="01" title="Автокарта" text="Автолюбителю"}}
+      <ul>
+        <li>Мани-бэк 10% в СТО наших партнеров</li>
+        <li>Мани-бэк 2% за любые покупки</li>
+        <li>Мани-бэк 5% на АЗС партнеров</li>
+      </ul>
+    {{/widgets/debit-card}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.ft-row' width=880}}
+    {{>blocks/common/ft-row
+      l-title="Экстренная блокировка"
+      r-title="Бесплатно"
+      popover-text='Информация об ошибке. Короткий обьясняющий текст. И <a href="#">ссылка</a>, если это нужно'
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.advantage-card' width=300}}
+    {{>widgets/advantage-card
+      img="cards/mixmax/icons/01"
+      ext="png"
+      title="0% рассрочка"
+      text="Покупки в рассрочку без первого взноса и переплат."
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.include-card' width=300}}
+    {{> widgets/include-card title="Бесплатное пользованиие" text="одной из систем: «Интернет-банк» или «Клиент-банк»"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.pricing-card' width=300}}
+    {{> widgets/pricing-card
+      title="Первый счет"
+      text="Специальное предложение для тех, кто начинает свой бизнес"
+      param-1="обслуживание"
+      param-1-value="9,9 BYN в месяц"
+      param-2="1 BYN за платеж сверх включенных"
+      param-2-value="0 BYN - 5 платежей в месяц"
+      param-3="карточки для получения личного дохода ИП и 1 корпоративной Visa Business"
+      param-3-value="0 BYN выпуск и обслуживание"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.pagination' width=400}}
+    {{>ui/pagination}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget contain=true block=true title='.pricing-table' width=900}}
+    <div class="pricing-table">
+      <span class="pricing-table__title">Тарифы</span>
+
+    <div class="pricing-table__container">
+    <div class="pricing-table__content">
+      <table class="pricing-table__table" valign="top">
+        <tbody>
+        <!--Row 1-->
+        <tr class="pricing-table__item">
+          <td rowspan="4">8.11.1.</td>
+          <td colspan="2">Выпуск/перевыпуск в связи с истечением срока действия карточки:</td>
+          <td>0 BYN</td>
+        </tr>
+        <tr class="pricing-table__subitem">
+          <td>8.11.1.1.</td>
+          <td>основной</td>
+          <td>—</td>
+        </tr>
+        <tr class="pricing-table__subitem">
+          <td>8.11.1.2.</td>
+          <td>дополнительной</td>
+          <td>0 BYN</td>
+        </tr>
+        <tr class="pricing-table__subitem">
+          <td>8.11.1.3.</td>
+          <td>Ежемесячное обслуживание основной или дополнительной карточки</td>
+          <td>4,90 BYN <small>(минимум 2,00 BYN)</small></td>
+        </tr>
+        <!--Row 2-->
+        <tr class="pricing-table__item">
+          <td rowspan="4">8.11.1.</td>
+          <td colspan="2">
+            Ежедневное начиcление бонусов в рамках программы лояльности, реализуемой Партнером, по
+            квалифицируемым
+            транзакциям, совершенным Клиентом по карточке, выпущенной в рамках пакета услуг (настоящий пункт
+            указан
+            информационно без обязательств.
+          </td>
+          <td>0 BYN</td>
+        </tr>
+        <tr class="pricing-table__subitem">
+          <td>8.11.1.1.</td>
+          <td>основной</td>
+          <td>—</td>
+        </tr>
+        <tr class="pricing-table__subitem">
+          <td>8.11.1.2.</td>
+          <td>дополнительной</td>
+          <td>0 BYN</td>
+        </tr>
+        <tr class="pricing-table__subitem">
+          <td>8.11.1.3.</td>
+          <td>Ежемесячное обслуживание основной или дополнительной карточки</td>
+          <td>4,90 BYN <small>(минимум 2,00 BYN)</small></td>
+        </tr>
+        </tbody>
+      </table>
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.terms-list' width=1200}}
+    {{> widgets/terms-list
+      term-1="Без справки о доходах"
+      term-2="Баз залога и поручительства"
+      term-3="Рассрочка до 21 месяца"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.terms-list--block' width=1200}}
+    {{> widgets/terms-list block=true
+      term-1="Без справки о доходах"
+      term-2="Баз залога и поручительства"
+      term-3="Рассрочка до 21 месяца"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.terms-list' width=900}}
+    {{> blocks/common/terms-section
+      title="Процесс открытия счета" small-title=true
+      term-1="Оформите заявку"
+      term-1-text="Укажите основную информацию о компании"
+      term-2="Дождитесь нашего звонка"
+      term-2-text="Мы свяжемся с вами, чтобы уточнить удобные для вас офис и время визита для открытия счёта"
+      term-3="Приходите в офис"
+      term-3-text="В выбранное время приходите оформлять счёт, обязательно возьмите паспорт"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget block=true title='.radio-card' width=500}}
+    {{>form/radio-card
+      img="cards/mixmax/card/max"
+      ext="jpg"
+      title="Халва MAX"
+      text="до 5000 BYN"
+      checked=true
+      name="card-form"
+      mode="max"
+    }}
+      <br>
+    {{>form/radio-card
+      img="cards/mixmax/card/mix"
+      ext="jpg"
+      title="Халва MIX"
+      text="до 1000 BYN"
+      name="card-form"
+      mode="mix"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.advantage-card' width=300}}
+    {{>widgets/advantage-card
+      img="cards/mixmax/icons/01"
+      ext="png"
+      title="0% рассрочка"
+      text="Покупки в рассрочку без первого взноса и переплат."
+      size="big"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.contact-card' width=300}}
+    {{> widgets/contact-card icon="business/salary/form_01" title="Контакт-центр" text="Получить дополнительную информацию подепозитам вы можете по телефону:" link="+375 (29) 699-34-38"}}
+
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.business-card'}}
+    {{> widgets/business-card
+      title='Валютная площадка "МТБанк-экспресс"'
+      text="Онлайн-сервис для валютно-обменных операций."
+      image="business/open/more_01"
+      image-mobile="business/open/more_01-mobile"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.overview-card' width=900}}
+    {{>widgets/overview-card
+      img="common/cards/payokay/payokay"
+      ext="jpg"
+      title="Деньги возвращаются!"
+      text="В течение месяца вы пользуетесь картой PayOkay. По итогам месяца МТБанк возвращает вам часть потраченных средств деньгами на счет вашей карты."
+      button-label="Оформить карту онлайн"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.ibank-card' width=750}}
+    {{> widgets/ibank-card dark=true bg-color="linear-gradient(93.43deg, #00A2FD -0.4%, #1B74FD 99.74%)"
+      title="Интернет-банк для жизни"
+      text="Все сервисы, ваши карты, счета, оплата и многое другое онлайн в интернет-банке."
+      image="services/internet-bank/start"
+      image-mobile="services/internet-bank/start-mobile"
+      button-label="Войти в интернет-банк"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.ibank-card--business' width=750}}
+    {{> widgets/ibank-card dark=true bg-color="linear-gradient(101.07deg, #3E579D 2.97%, #192F6D 97.37%)"
+      title="Интернет-банк для&nbsp;бизнеса"
+      text="Инструмент для вашего бизнеса всегда под рукой в вашем компьютере."
+      image="services/internet-bank/start"
+      image-mobile="services/internet-bank/start-mobile"
+      button-label="Войти в интернет-банк"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.ibank-card--business' width=750}}
+    {{> widgets/ibank-card dark=true
+      title="Интернет банк"
+      text="Работает на всех устройствах и без ЭЦП, высокий уровень безопасности."
+      background="business/home/bank_01-bg"
+      image="business/home/bank_01-image"
+      image-mobile="business/home/bank_01-mobile"
+      button-label="Войти"
+      link-label="Подробнее"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.ibank-card--business' width=750}}
+    {{> widgets/ibank-card
+      title="Мобильный банк"
+      text="Совершайте и быстро повторяйте платежи с телефона. Актуальная информация о счетах и операциях"
+      background="business/home/bank_02-bg"
+      image="business/home/bank_02-image"
+      image-mobile="business/home/bank_02-mobile"
+      button-label="Подробнее"
+      mobile-apps=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.service-links-card' width=750}}
+    {{> widgets/service-links-card title="Икс карта" image="services/main/checkout_02" text="Все карты в одной. Рассрочка Халвы, бонусы Халвы+, выгодный курс PayOkay, мани-бэк Автокарты и другие сверхспособности карт банка." ios=true android=true }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-progress' width=300}}
+    {{> widgets/form-progress }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.mobileapp-button' width=60}}
+    {{> widgets/mobileapp-button appstore=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.mobileapp-button' width=60}}
+    {{> widgets/mobileapp-button googleplay=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.mobileapp-button--light' width=60}}
+    {{> widgets/mobileapp-button light=true appstore=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.mobileapp-button--light' width=60}}
+    {{> widgets/mobileapp-button light=true  googleplay=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.mobileapp-button' width=300}}
+    {{> widgets/mobileapp-button appstore=true label="Скачать в App Store"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.mobileapp-button' width=300}}
+    {{> widgets/mobileapp-button googleplay=true label="Скачать в Google Play"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--instagram' width=150}}
+    {{> widgets/social-button social="instagram"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--vkontakte' width=150}}
+    {{> widgets/social-button social="vkontakte"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--youtube' width=150}}
+    {{> widgets/social-button social="youtube"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--facebook' width=150}}
+    {{> widgets/social-button social="facebook"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--instagram' width=150 background=true}}
+    {{> widgets/social-button social="instagram" white=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--vkontakte' width=150 background=true}}
+    {{> widgets/social-button social="vkontakte" white=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--youtube' width=150 background=true}}
+    {{> widgets/social-button social="youtube" white=true}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.social-button--facebook' width=150 background=true}}
+    {{> widgets/social-button social="facebook" white=true}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.video-image' width=400}}
+    {{> widgets/video-image img="services/apple-pay/about_01" ext="jpg"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.video-image--small' width=400}}
+    {{> widgets/video-image small=true img="services/apple-pay/about_01" ext="jpg"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.video-image--top' width=200}}
+    {{> widgets/video-image small=true top=true  img="services/apple-pay/about_01" ext="jpg"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.video-image--bottom' width=200}}
+    {{> widgets/video-image small=true bottom=true img="services/apple-pay/about_01"  ext="jpg"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.background-card' width=400}}
+    {{> widgets/background-card img="business/home/progress_01" title="Кредитование стартапов"
+      feature-1="Мани-бэк 10% в СТО наших партнеров"
+      feature-2="Мани-бэк 2% за любые покупки"
+      feature-3="Мани-бэк 5% на АЗС партнеров"
+      button-label="Получить кредит"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.background-card' width=400}}
+    {{> widgets/background-card img="business/credits/bg_03" ext="jpg" title="МТБ-юани"
+      feature-1="Финансирование импорта инвестиционных и промежуточных товаров из КНР"
+      feature-2="Валюта расчета - юани"
+      feature-3="Срок оборачиваемости до 360 дней"
+      button-label="Подробнее"  button-dark=true
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.video-manual' width=800}}
+    {{> widgets/video-manual
+      image="services/apple-pay/video_01" ext="jpg"
+      title="В приложении Мой Банк"
+      item-1="Откройте приложение Мой банк"
+      item-2="В разделе «Продукты» нажмите на блок «Apple Pay» вверху экрана, а затем — «Начать»."
+      item-3="Нажмите «Добавить в Apple Wallet». Все поля заполнятся сами.<br/>Затем примите пользовательское соглашениеи дождитесь подтверждения в Apple Wallet."
+    }}  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.manual-card' width=800}}
+    {{> widgets/manual-card
+      title="Зарабатывайте"
+      image="cards/halvaplus/manual_01"
+      item-1="До 10% от суммы покупки возвращается бонусными баллами на карту за расчёты в магазинах - партнёрах."
+      item-2="10 приветственных баллов при оформлении карты."
+      item-3="До 1 % от суммы покупки возвращаются за расчёты в остальных магазинах."
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.package-card' width=800}}
+    {{> widgets/package-card title="Platinum"
+      img="salary/package_01"
+      plus-img="salary/package_01-plus" plus-title="MasterCard Black Edition"
+      button-label="Оформить пакет"
+      param-1="Срок действия" param-1-value="3 года"
+      param-2="Снятие наличных в банкоматах страны без комиссии"
+      param-3="Бесплатное СМС-информирование"
+      param-4="Овердрафт со ставкой в грейс-периоде 0,000001%"
+      param-5="Бесплатные посещения бизнес-залов lounge key"
+      param-5-value="2 посещения"
+      param-6="При покупках не менее 10000  руб. в месяц."
+      param-6-value="Бесплатное обслуживание"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.rates-card' width=300}}
+    {{> widgets/rates-card label="1 Доллар США" icon="usd" value="2,645"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.rates-card' width=300}}
+    {{> widgets/rates-card icon="eur" sell="2,645" sell-mod="up"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.rates-card' width=400}}
+    {{> widgets/rates-card icon="eur" sell="2,645" sell-mod="up" buy="2,645" buy-mod="down"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.chat-icon .chat-icon--viber' width=100}}
+    {{> components/chat-icon icon="viber"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.chat-icon .chat-icon--skype' width=100}}
+    {{> components/chat-icon icon="skype"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.chat-icon .chat-icon--fb' width=100}}
+    {{> components/chat-icon icon="fb"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.chat-icon .chat-icon--tg' width=100}}
+    {{> components/chat-icon icon="tg"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.chat-icon .chat-icon--vk' width=100}}
+    {{> components/chat-icon icon="vk"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.chat-icon .chat-icon--chat' width=100}}
+    {{> components/chat-icon icon="chat"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+

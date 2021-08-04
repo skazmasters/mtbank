@@ -1,0 +1,40 @@
+{{! Продукты / Депозиты - Обзор }}
+
+{{> layout/head page-title="Продукты / Депозиты - Обзор"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main" header-nav-active="cards"}}
+
+<div class="js-tabs js-tabs--page">
+
+  <div class="hero-menu-block">
+    {{> hero/deposit }}
+    {{> blocks/common/page-header title="Обзор"
+            mobile-dropdown=true
+            item-1="Обзор"
+            item-1-active=true
+            item-2="Тарифы и вклады"
+            item-3="Гарантии"
+            item-4="Вопрос-Ответ"
+            tab-1=".main"
+            tab-2=".test"
+            sticky-button=true
+            sticky-button-label="Открыть вклад"
+    }}
+  </div>
+
+  <div class="js-tab-content main active">
+    {{> blocks/products/deposits-single/02_calculator }}
+    {{> blocks/products/deposits-single/03_features }}
+    {{> blocks/products/deposits-single/04_banner }}
+    {{> blocks/products/deposits-single/05_cards }}
+    {{> blocks/products/deposits-single/06_what_need }}
+  </div>
+
+  <div class="js-tab-content test">
+    Test
+  </div>
+</div>
+
+{{> forms/deposit}}
+
+{{> layout/footer no-clickable-logo=true }}

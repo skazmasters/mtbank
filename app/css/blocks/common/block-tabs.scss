@@ -1,0 +1,38 @@
+.block-tabs {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 48px;
+  @include mobile{
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    margin: 0 28px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+
+    @include mobile{
+      font-size: 17px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      margin: 0 15px;
+    }
+
+    color: $color-gray-100;
+    &:hover {
+      color: $color-gray-80;
+    }
+
+    border-bottom: 3px solid transparent;;
+    &.active {
+      border-bottom: 3px solid $color-primary;
+
+      &:hover {
+        color: $color-gray-100;
+      }
+    }
+  }
+}

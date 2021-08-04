@@ -1,0 +1,22 @@
+.rates-nbrb {
+  display: flex;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__cell {
+    margin-left: 118px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin: 35px 0 0 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

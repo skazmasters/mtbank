@@ -1,0 +1,45 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3">
+      <header class="section__header">
+        <h2 class="section__title">Специальные программы для малого и среднего бизнеса</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--3">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/background-card img="business/credits/bg_01" ext="jpg" title="Программы с Банком развития Республики Беларусь "
+                          feature-1="Программы в евро"
+                          feature-2="Программы в долларах США"
+                          button-label="Подробнее"  button-dark=true
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/background-card img="business/credits/bg_02" ext="jpg" title="Финансирование под поручительство БФФПП"
+                          feature-1="Под 1.25% годовых"
+                          feature-2="До 60% от суммы кредита"
+                          feature-3="До 50 000 BYN только под поручительство"
+                          button-label="Подробнее"  button-dark=true
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/background-card img="business/credits/bg_03" ext="jpg" title="МТБ-юани"
+                          feature-1="Финансирование импорта инвестиционных и промежуточных товаров из КНР"
+                          feature-2="Валюта расчета - юани"
+                          feature-3="Срок оборачиваемости до 360 дней"
+                          button-label="Подробнее"  button-dark=true
+                  }}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

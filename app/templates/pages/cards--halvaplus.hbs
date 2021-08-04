@@ -1,0 +1,74 @@
+{{! Дебетовые карты / Halva Plus }}
+
+{{> layout/head page-title="Дебетовые карты / Halva Plus" theme-color="halva-plus"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+<div class="hero-menu-block">
+{{> hero/halva-plus }}
+{{> blocks/common/page-header mobile-dropdown=true title="Обзор"
+        item-1="Обзор"
+        item-1-active=true
+        item-2="Тарифы и условия"
+        item-3="Как работает"
+        item-4="Вопрос-ответ"
+        sticky-button=true
+}}
+</div>
+
+{{> blocks/common/card-overview
+        img="cards/halvaplus/card"
+        ext="png"
+        title="Халва плюс"
+        text="Узнайте сколько у вас накопленных баллов через интернет-банк, по телефону 509-99-99 или в чеках после покупки в магазинах-партнеров."
+        button-label="Оформить карту онлайн"
+        link-label="Частные вопросы"
+}}
+
+{{> blocks/products/halvaplus/manual}}
+
+{{> blocks/products/common/partners
+        title="6 000+ магазинов-партнёров"
+        text="На сайте в описании каждого партнера вы увидите, сколько процентов от суммы покупки вернется вам на карту бонусными баллами."
+        feature-1-value="Зарабатывайте баллы"
+        feature-1-label="В магазинах-партнерах"
+        feature-2-value="Оплачивайте бонусами"
+        feature-2-label="Любые покупки"
+        button-label="Полный список магазинов"
+}}
+
+{{> blocks/products/common/card-benefits
+        dark=false
+        background="#E5E8EC"
+        title="От покупок одни плюсы!"
+        text="Больше покупок – больше баллов на ваши удовольствия."
+        image="cards/halvaplus/plus"
+        feature-1-title="Пополняйте без комиссии"
+        feature-1-text="Не беспокойтесь о получении страховки перед выездом за границу, получите страховку онлайн и бесплатно."
+        feature-1-icon="cards/halvaplus/plus_icon_01"
+        feature-2-title="Тратьте баллы на новые покупки"
+        feature-2-text="Любой банк РБ и в 61 страну мира. Бесплатно для карты МТБанка."
+        feature-2-icon="cards/halvaplus/plus_icon_02"
+        feature-3-title="Расплачивайтесь за мгновение"
+        feature-3-text="Теперь не стоит беспокоится о потере карты за рубежом. Восстановление за 2 часа."
+        feature-3-icon="cards/halvaplus/plus_icon_03"
+}}
+
+{{> blocks/products/common/calculator
+        title="Рассчитайте свои бонусы"
+        text="Возвращайте до 40% от прибыли в год с картой “Название карты”"
+        has-more-filters=false
+        card-image="cards/halvaplus/card"
+        card-image-ext="png"
+}}
+
+{{> blocks/common/terms-section
+        title="Оформить карту просто"
+        term-1="Заполните и отправьте нам анкету на сайте"
+        term-2="Заберите вашу карту в одном из отделений МТБанка или по почте"
+        term-3="Текст будет правиться. Сейчас рыбный текст."
+}}
+
+{{> forms/halvaplus}}
+
+{{> layout/footer }}

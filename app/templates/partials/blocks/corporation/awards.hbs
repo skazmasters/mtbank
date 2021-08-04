@@ -1,0 +1,31 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3">
+      <header class="section__header">
+        <h2 class="section__title">Награды</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--3">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/award-card img="corporation/common/award_01" title="Банк Года 2019,2018"}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/award-card img="corporation/common/award_02" title="The Banker - Bank of the Year 2019"}}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{> widgets/award-card img="corporation/common/award_03" title="SME Banking Club"}}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

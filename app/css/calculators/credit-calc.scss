@@ -1,0 +1,199 @@
+.section-credit-calc {
+  padding: 0;
+  margin: 50px 0 80px;
+
+  @include mobile {
+    margin: 30px 0 50px;
+  }
+}
+
+.credit-calc {
+
+  .form-field-money{
+    @include mobile{
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    padding: 35px 55px;
+    display: flex;
+    align-items: center;
+
+    @include smallTablet-and-mobile {
+      display: block;
+      padding: 30px 20px 40px;
+    }
+  }
+
+  &__left {
+    width: 645px;
+    flex-basis: 645px;
+    padding-right: 50px;
+    border-right: 1px solid $color-gray-40;
+    padding-bottom: 40px;
+
+    @include tablet {
+      width: 500px;
+      flex-basis: 500px;
+    }
+
+    @include smallTablet-and-mobile {
+      padding-right: 0;
+      width: auto;
+      border-right: 0 none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__right {
+    padding-left: 70px;
+
+    @include desktop{
+      margin-top: -17px;
+    }
+
+    @include smallTablet-and-mobile {
+      padding-left: 0;
+      margin-top: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+
+    @include mobile {
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 120%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    margin-top: 7px;
+    color: $color-gray-80;
+    display: block;
+
+    @include mobile {
+      font-size: 15px;
+      line-height: 140%;
+      text-align: center;
+      margin-top: 8px;
+    }
+  }
+
+  &__inputs {
+    margin-top: 55px;
+    display: flex;
+
+    @include smallTablet-and-mobile {
+      margin-top: 30px;
+    }
+
+    @include mobile {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+
+  &__input {
+    width: 270px;
+    margin-left: 35px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include smallTablet-and-mobile {
+      width: auto;
+      flex: 1 1 1px;
+    }
+
+    @include mobile {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  &__note {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-60;
+
+    &-star {
+      color: $color-primary;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &__results {
+    display: flex;
+
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__result {
+    text-align: center;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-label {
+      display: block;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+      color: $color-gray-80;
+
+      @include mobile {
+        order: 2;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+
+    &-value {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+      color: $color-primary;
+      @include mobile {
+        font-size: 24px;
+        line-height: 120%;
+        order: 1;
+      }
+    }
+  }
+
+  &__submit {
+    margin-top: 45px;
+
+    @include tablet-and-mobile {
+      margin-top: 27px;
+      display: flex;
+      align-items: center;
+      .btn {
+        margin: 0 auto;
+      }
+    }
+  }
+}

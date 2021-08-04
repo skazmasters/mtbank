@@ -1,0 +1,11 @@
+<section class="section">
+  <div class="container">
+    <ul class="brief-about">
+      {{#each internal.about-us.brief}}
+        <li class="brief-about__item">
+          {{> widgets/article-brief}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<div class="map-side map__sidebar js-tabs">
+  <div class="map-side__block">
+    {{> widgets/map/sidebar/tabs }}
+  </div>
+  <div class="map-side__block map-side__filters js-filters">
+    {{> widgets/map/sidebar/filters-full }}
+    {{> widgets/map/sidebar/filters-short }}
+  </div>
+  <div class="map-side__block map-side__content">
+    <div class="tab-1 map-side__content-tab js-tab-content">
+      {{> widgets/map/sidebar/objects/offices }}
+    </div>
+    <div class="tab-2 map-side__content-tab js-tab-content">
+      {{> widgets/map/sidebar/objects/atms }}
+    </div>
+    <div class="tab-3 map-side__content-tab js-tab-content">
+      {{> widgets/map/sidebar/objects/terminals }}
+    </div>
+  </div>
+  <div class="map-side__block js-preview">
+    {{> widgets/map/sidebar/preview-tab }}
+    {{> widgets/map/sidebar/preview-popup }}
+  </div>
+</div>

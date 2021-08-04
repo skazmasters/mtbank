@@ -1,0 +1,60 @@
+.radio-row {
+  padding: 15px 0;
+
+  input {
+    display: none;
+  }
+
+
+  &__label {
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    padding-right: 60px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    @include mobile{
+      font-size: 15px;
+      line-height: 140%;
+    }
+
+    &:before {
+      content: '';
+      border: 2px solid $color-gray-40;
+      border-radius: 100px;
+      width: 23px;
+      height: 23px;
+      display: block;
+      position: absolute;
+      right: 0;
+      @include transition;
+    }
+
+    &:after{
+      content: '';
+      width: 13px;
+      height: 13px;
+      border-radius: 100%;
+      right: 5px;
+      top: 5px;
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      @include transition;
+      background: $color-white;
+    }
+
+    input:checked + & {
+      &:before {
+        background: $color-primary;
+        border-color: $color-primary;
+      }
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+}

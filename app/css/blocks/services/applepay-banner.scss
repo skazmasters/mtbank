@@ -1,0 +1,38 @@
+.applepay-banner {
+  padding: 239px 0;
+  color: $color-white;
+  margin: 0;
+
+  @include mobile {
+    padding: 95px 0;
+  }
+
+  .section__title {
+    color: $color-white;
+    max-width: 550px;
+  }
+
+  .section__description {
+    margin-top: 20px;
+    max-width: 550px;
+    color: $color-white;
+    line-height: 155%;
+  }
+
+  .applepay-banner__logos {
+    margin-top: 43px;
+    display: flex;
+
+    @include mobile {
+      margin-top: 30px;
+    }
+
+    img {
+      margin-left: 31px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

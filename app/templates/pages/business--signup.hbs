@@ -1,0 +1,29 @@
+{{! Бизнесу / Регистрация бизнеса }}
+
+{{> layout/head page-title="Бизнесу / Регистрация бизнеса" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+{{> hero/business-signup }}
+{{> blocks/common/terms-section
+        title="Как это работает"
+        term-1="Оформите заявку"
+        term-1-text="Заполните онлайн-анкету на нашем сайте"
+        term-2="Получите документы"
+        term-2-text="Получите готовый пакет документов на ваш e-mail"
+        term-3="Зарегистрируйте бизнес"
+        term-3-text="Распечатайте документы и зарегистрируйте бизнес в исполкоме"
+        term-4="Откройте счёт в банке"
+        term-4-text="Мы предложим Вам выгодные условия расчетно-кассового обслуживания"
+}}
+{{> blocks/business/signup/02_pricing }}
+{{> blocks/common/product-carousel title="Наши преимущества"
+        img-1="business/signup/product_01" img-1-ext="jpg" title-1="Большой выбор" text-1="Предлагаем широкую линейку банковских продуктов" button-1="Узнать подробнее"
+        img-2="business/signup/product_02" img-2-ext="jpg" title-2="Бонусы и скидки" text-2="Предоставляем бонусы и скидки на продукты" button-2="Узнать подробнее"
+        img-3="business/signup/product_03" img-3-ext="jpg" title-3="Свежие решения" text-3="Помогаем строить ваш бизнес в стиле Flex" button-3="Узнать подробнее"
+        img-4="business/signup/product_04" img-4-ext="jpg" title-4="Качество" text-4="Гарантируем качество нашего обслуживания" button-4="Узнать подробнее"
+}}
+{{> blocks/business/signup/04_faq }}
+{{> forms/business-signup }}
+
+{{> layout/footer business=true }}

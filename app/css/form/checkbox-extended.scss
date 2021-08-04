@@ -1,0 +1,63 @@
+.form-checkbox--extended {
+  display: block;
+
+  .form-checkbox {
+
+    &__icon {
+      background: $color-white;
+      margin-right: 20px;
+
+      @include mobile {
+        margin-right: 18px;
+      }
+    }
+
+    &__input:checked + .form-checkbox__icon {
+      background-color: $color-primary;
+    }
+
+    &__label {
+      cursor: pointer;
+      padding: 19px 25px;
+      border-radius: 8px;
+      background: $color-gray-40;
+
+      @include mobile {
+        padding: 15px;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: $color-gray-100;
+      display: block;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 100%;
+      margin-top: 4px;
+      letter-spacing: -0.02em;
+      color: $color-gray-100;
+      display: block;
+
+      @include mobile {
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+}
+
+input[type=checkbox]{
+  border: none;
+}

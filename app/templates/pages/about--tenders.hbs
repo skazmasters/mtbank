@@ -1,0 +1,23 @@
+{{!О Банке / Тендеры}}
+
+{{> layout/head page-title="О Банке / Тендеры"}}
+
+{{> layout/header active-header-menu="main" }}
+
+{{> blocks/common/page-header title="Тендеры"
+        item-1="2020"
+        item-1-active=true
+        item-2="2019"
+}}
+
+<div class="tenders-main js-tabs">
+  {{>blocks/internal/about-tenders/01_filters}}
+  <section class="section">
+    <div class="container">
+      {{>blocks/internal/about-tenders/02_content}}
+      {{>blocks/internal/about-tenders/02_content-2}}
+    </div>
+  </section>
+</div>
+
+{{> layout/footer }}

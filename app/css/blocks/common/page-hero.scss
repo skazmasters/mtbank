@@ -1,0 +1,52 @@
+.page-hero {
+  position: relative;
+
+  @include media(mobile, up) {
+    min-height: 490px;
+    overflow: hidden;
+  }
+
+  &__bg {
+    @include fill;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: $color-gray-20;
+
+    &--career {
+      background: #E6E8EB;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      @include media(mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    @include media(mobile, up) {
+      @include fill;
+      z-index: 0;
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+
+    @include media(mobile) {
+      margin: 0 -15px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

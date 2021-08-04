@@ -1,0 +1,9 @@
+.section-card-terms {
+  .section__content {
+    margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 25px;
+    }
+  }
+}

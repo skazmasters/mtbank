@@ -1,0 +1,163 @@
+.investment-calc {
+  display: flex;
+  justify-content: center;
+  padding: 44px 60px 60px 55px;
+
+  @include tablet-and-mobile {
+    padding: 26px 20px 40px;
+  }
+
+  @include mobile {
+    display: block;
+  }
+
+  &__left {
+    width: 330px;
+    min-width: 330px;
+    @include mobile {
+      width: auto;
+      min-width: 0;
+    }
+  }
+
+  &__right {
+    margin-left: 82px;
+    padding-left: 82px;
+    border-left: 1px solid $color-gray-40;
+
+    @include tablet {
+      margin-left: 30px;
+      padding-left: 30px;
+    }
+
+    @include mobile {
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 30px;
+      margin-top: 30px;
+      border-left: 0 none;
+      border-top: 1px solid $color-gray-40;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    margin-bottom: 28px;
+
+    @include smallTablet-and-mobile {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row {
+    margin-top: 15px;
+    display: flex;
+
+    @include mobile {
+      display: block;
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__cell {
+    flex: 1 1 1px;
+
+    @include no-mobile {
+      &:first-child {
+        padding-right: 6px;
+      }
+
+      &:last-child {
+        padding-left: 6px;
+      }
+    }
+
+    @include mobile {
+      margin-top: 20px;
+      padding: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__params {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include smallTablet-and-mobile {
+      display: block;
+    }
+  }
+
+  &__param {
+    flex-basis: 300px;
+    margin-top: 30px;
+
+    &:first-child, &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    @include tablet-and-mobile {
+      margin-top: 20px;
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &-value {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+      display: block;
+
+      @include smallTablet-and-mobile {
+        font-size: 21px;
+        line-height: 120%;
+      }
+    }
+
+    &-label {
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      margin-top: 3px;
+      display: block;
+      color: $color-gray-80;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__buttons {
+    margin-top: 48px;
+
+    @include tablet-and-mobile {
+      margin-top: 30px;
+    }
+  }
+
+  .form-field-money{
+    width: 100%;
+  }
+}

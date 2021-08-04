@@ -1,0 +1,41 @@
+<section class="section section--gray">
+  <div class="container-880">
+    <header class="section__header">
+      <h2 class="section__title section__title--center">Онлайн анкета оформления документов</h2>
+    </header>
+    <div class="section__content">
+      <div class="business-form">
+        <div class="business-form__content">
+          <div class="business-form__form">
+            <div class="business-form__field">
+              {{#> form/select label="Формы бизнеса"}}
+                <option value="ip" selected>ИП</option>
+                <option value="chup">ЧУП</option>
+                <option value="ooo">ООО</option>
+              {{/form/select}}
+            </div>
+            <div class="business-form__field">
+              {{> form/input label="Фамилия и имя*" placeholder="Подсказка" hint="Укажите кириллицей точно как в паспорте"}}
+            </div>
+            <div class="business-form__field">
+              {{> form/input phone=true label="Номер телефона*" placeholder="Подсказка"}}
+            </div>
+            <div class="business-form__field">
+              {{> form/input label="Населенный пункт*" placeholder="Подсказка"}}
+            </div>
+            <div class="business-form__bottom">
+              <div class="business-form__bottom-agreement">
+                {{>form/checkbox label='Я даю согласие на <a href="#">обработку персональных данных</a> и соглашаюсь с&nbsp;<a href="#">условиями пользования сервисом</a>'}}
+              </div>
+              <div class="business-form__bottom-submit">
+                {{>ui/btn disabled=true button=true type="submit" size="large" label="Продолжить" color="primary" arrow=true}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="business-form__note">Юридическая поддержка осуществляется ООО «Юридическая компания ЮКОН», лицензия
+          №02240/1121</p>
+      </div>
+    </div>
+  </div>
+</section>

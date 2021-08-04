@@ -1,0 +1,33 @@
+<div class="deposit-pricing__section">
+  <div class="deposit-pricing__table">
+    <div class="deposit-table">
+      <div class="deposit-table__thead {{#if no-header}}deposit-table__thead--no-header{{/if}}">
+        <div class="deposit-table__th deposit-table__th--amount">Мин. сумма первого взноса</div>
+        <div class="deposit-table__th deposit-table__th--add">Дополнительный взнос</div>
+        <div class="deposit-table__th deposit-table__th--period">Срок депозита</div>
+        <div class="deposit-table__th deposit-table__th--percent">Процентная ставка (годовых)</div>
+        <div class="deposit-table__th deposit-table__th--button"></div>
+      </div>
+
+      {{> @partial-block}}
+    </div>
+  </div>
+
+  <div class="deposit-pricing__more js-accord" data-disabled-scroll>
+    {{> widgets/button-toggle is-accord=true label="Дополнительные условия"}}
+    <div class="deposit-pricing__more-body accordion-item__content js-accord__body">
+      <div class="deposit-pricing__more-inner static">
+        <p>Дополнительные условия Дополнительные условия Дополнительные условия Дополнительные условия Дополнительные
+          условия Дополнительные условия Дополнительные условия Дополнительные условия Дополнительные условия
+          Дополнительные условия Дополнительные условия Дополнительные условия </p>
+        <ul>
+          <li>Паспорт нам не нужен</li>
+          <li>Паспорт нам не нужен</li>
+          <li>Паспорт нам не нужен</li>
+          <li>Паспорт нам не нужен</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

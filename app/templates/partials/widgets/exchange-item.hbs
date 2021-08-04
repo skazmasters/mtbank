@@ -1,0 +1,27 @@
+{{#if simple}}
+  <div class="exchange-item exchange-item--simple">
+    <div class="exchange-item__icon">
+      {{#if image}}
+        <img src="../assets/images/{{image}}.svg"/>
+      {{else}}
+      {{/if}}
+    </div>
+    <div class="exchange-item__content">
+      <span class="exchange-item__label">{{label}}</span>
+      <span class="exchange-item__value">{{value}}</span>
+    </div>
+  </div>
+{{else}}
+  <div class="exchange-item">
+    <div class="exchange-item__icon">
+      {{>ui/svg name=icon}}
+    </div>
+    <div class="exchange-item__content">
+      <span class="exchange-item__label">{{label}}</span>
+      <div class="exchange-item__list">
+        <span class="exchange-item__value exchange-item__value--up">{{acceptance}}</span>
+        <span class="exchange-item__value exchange-item__value--down">{{sale}}</span>
+      </div>
+    </div>
+  </div>
+{{/if}}

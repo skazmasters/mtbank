@@ -1,0 +1,19 @@
+{{! Главная страница}}
+
+{{> layout/head page-title="Для жизни / Главная страница"}}
+
+{{> layout/header no-clickable-logo=true}}
+
+{{> blocks/home/01_intro}}
+{{> blocks/home/02_recommended}}
+{{> blocks/home/03_services}}
+{{> blocks/home/04_exchange}}
+{{> blocks/home/05_notifications}}
+{{> blocks/common/news-section img="home/news/bg" gray=true
+        label-1="Продукты" title-1="Обновить автопарк поможет быстрый лизинг от МТБанка!"
+        label-2="Банк" title-2="День рождения банка – время подарков для клиентов!"
+        label-3="Бизнес" title-3="Специальное предложение для начинающего бизнеса."
+}}
+{{> blocks/home/07_blog}}
+
+{{> layout/footer no-clickable-logo=true gdpr=true }}

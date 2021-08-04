@@ -1,0 +1,109 @@
+:root {
+  --color-primary: var(--color-blue-70);
+  --color-primary-hover: var(--color-blue-80);
+
+  // Blue
+  --color-blue-100: #0038D7;
+  --color-blue-80: #0042FF;
+  --color-blue-70: #1B74FD;
+  --color-blue-70-opacity: #{transparentize(#1B74FD, 0.5)};
+  // Dark Blue
+  --color-dark-blue-100: #283B70;
+  // Gray
+  --color-gray-100: #363C4E;
+  --color-gray-100-overlay: #{transparentize(#363C4E, 0.3)};
+  --color-gray-80: #717784;
+  --color-gray-70: #7B88A5;
+  --color-gray-60: #ADB3C5;
+  --color-gray-40: #DFE3EC;
+  --color-gray-20: #F2F4F8;
+  --color-gray-10: #F6F9FF;
+  // Green
+  --color-green-100: #0BB578;
+  --color-green-10: #D1F8E1;
+  // Red
+  --color-red-100: #ED143B;
+  // White
+  --color-white-100: #FFFFFF;
+  --color-white-80: #{transparentize(#FFFFFF, 0.2)};
+  --color-white-70: #{transparentize(#FFFFFF, 0.3)};
+  --color-white-50: #{transparentize(#FFFFFF, 0.5)};
+  --color-white-20: #{transparentize(#FFFFFF, 0.8)};
+  --color-white-10: #{transparentize(#FFFFFF, 0.9)};
+
+  --color-cashback-calc-background: var(--color-primary);
+}
+
+
+// Gray
+$color-gray-100: var(--color-gray-100);
+$color-gray-100-70: var(--color-gray-100-overlay);
+$color-gray-80: var(--color-gray-80);
+$color-gray-70: var(--color-gray-70);
+$color-gray-60: var(--color-gray-60);
+$color-gray-40: var(--color-gray-40);
+$color-gray-20: var(--color-gray-20);
+$color-gray-10: var(--color-gray-10);
+
+// Blue
+$color-blue-100: var(--color-blue-100);
+$color-blue-80: var(--color-blue-80);
+$color-blue-70: var(--color-blue-70);
+$color-blue-70-50: var(--color-blue-70-opacity);
+
+// Dark Blue
+$color-dark-blue-100: var(--color-dark-blue-100);
+
+// Green
+$color-green-100: var(--color-green-100);
+$color-green-10: var(--color-green-10);
+
+// Red
+$color-red-100: var(--color-red-100);
+
+// Apex
+$color-white: var(--color-white-100);
+$color-white-80: var(--color-white-80);
+$color-white-70: var(--color-white-70);
+$color-white-50: var(--color-white-50);
+$color-white-20: var(--color-white-20);
+$color-white-10: var(--color-white-10);
+$color-black: #000000;
+$color-primary: var(--color-primary);
+$color-primary-hover: var(--color-primary-hover);
+
+$color-business: #1B57B4;
+$color-payokay: #532AD3;
+$color-halva-plus: #D1535E;
+$color-halva-max: #ED5F2C;
+$color-halva-mix: #009CA6;
+
+
+.theme-business {
+  --color-primary: #{$color-business};
+  --color-primary-hover: #{darken($color-business, 10)};
+}
+
+.theme-payokay {
+  --color-primary: #{$color-payokay};
+  --color-primary-hover: #{darken($color-payokay, 10)};
+
+  --color-cashback-calc-background: linear-gradient(265.84deg, #6D34E7 0.65%, #615EFB 99.38%);
+}
+
+.theme-halva-plus {
+  --color-primary: #{$color-halva-plus};
+  --color-primary-hover: #{darken($color-halva-plus, 10)};
+
+  --color-cashback-calc-background: linear-gradient(268.55deg, #C95967 5.04%, #E97078 97.09%);
+}
+
+.theme-halva-max {
+  --color-primary: #{$color-halva-max};
+  --color-primary-hover: #{darken($color-halva-max, 10)};
+}
+
+.theme-halva-mix {
+  --color-primary: #{$color-halva-mix};
+  --color-primary-hover: #{darken($color-halva-mix, 10)};
+}

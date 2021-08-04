@@ -1,0 +1,32 @@
+<div class="account-form">
+  <div class="account-form__header">
+    <span class="account-form__title">Код из СМС</span>
+    <span class="account-form__intro">Введите 4 цфры из смс отправленного на номер +375 33 1020304</span>
+  </div>
+
+  <div class="account-form__sms js-code-input">
+    {{# times 4}}
+      <div class="account-form__sms-item">
+        <input type="text" {{#if ../with-error}}value="{{this}}"{{/if}} class="account-form__sms-input js-numeric-input {{#if ../with-error}}_error{{/if}}" maxlength="1"/>
+      </div>
+    {{/times}}
+    {{#if with-error}}
+      <span class="account-form__sms-error">Код не подходит. Проверьте еще раз</span>
+    {{/if}}
+  </div>
+
+  <div class="account-form__submit">
+    <div class="account-form__submit-left">
+      {{> widgets/button-arrow label="Назад"}}
+    </div>
+    <div class="account-form__submit-right">
+      {{> ui/btn label="Подтвердить" size="large" color="primary"}}
+    </div>
+  </div>
+
+  <div class="account-form__resend">
+    <span class="account-form__resend-label">Код не пришел?</span>
+    <span class="account-form__resend-note">Отправить повторно через 58</span>
+    <a href="#" class="account-form__resend-link">Отправить повторно</a>
+  </div>
+</div>

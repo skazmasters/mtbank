@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="press-center">
+    <div class="news-list">
+      <ul class="news-list__grid">
+        {{#each internal.about-news.tab-1}}
+          <li class="news-list__item">
+            {{>widgets/news-article title=title text=text datetime=datetime time=time}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="section__pagination">
+      {{>ui/pagination}}
+    </div>
+  </div>
+</section>

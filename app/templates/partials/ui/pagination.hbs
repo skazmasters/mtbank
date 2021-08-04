@@ -1,0 +1,15 @@
+<div class="pagination{{#if mode}} pagination--{{mode}}{{/if}}">
+  <button class="pagination__button pagination__button--prev" disabled>
+    {{>ui/svg name="action--arrow-left"}}
+  </button>
+  <ul class="pagination__list">
+    <li><a class="pagination__page pagination__page--active" href="#">1</a></li>
+    <li><a class="pagination__page" href="#">2</a></li>
+    <li><a class="pagination__page" href="#">3</a></li>
+    <li><span class="pagination__page pagination__page--hidden">...</span></li>
+    <li><a class="pagination__page" href="#">20</a></li>
+  </ul>
+  <button class="pagination__button pagination__button--next">
+    {{>ui/svg name="action--arrow-right"}}
+  </button>
+</div>

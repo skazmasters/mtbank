@@ -1,0 +1,27 @@
+<div class="account-form account-form--review">
+  <div class="account-form__header">
+    <span class="account-form__title">Что вам понравилось?</span>
+  </div>
+  <div class="account-form__main">
+    <div class="account-form__check">
+      {{> form/radio-row name="param" value="1" label="Кассы"}}
+    </div>
+    <div class="account-form__check">
+      {{> form/radio-row name="param" value="2" label="Офис (режим работы, опрятность)"}}
+    </div>
+    <div class="account-form__check">
+      {{> form/radio-row name="param" value="3" label="Бизнес-процессы (очереди, АТМ)"}}
+    </div>
+    <div class="account-form__check">
+      {{> form/radio-row name="param" value="4" label="Банковские продукты"}}
+    </div>
+  </div>
+  <div class="account-form__submit">
+    <div class="account-form__submit-left">
+      {{> widgets/button-arrow label="Назад"}}
+    </div>
+    <div class="account-form__submit-right">
+      {{>ui/btn button=true type="submit" size="large" label="Продолжить" color="primary" arrow=true}}
+    </div>
+  </div>
+</div>

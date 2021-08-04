@@ -1,0 +1,13 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="about-banners">
+      <ul class="about-banners__grid">
+        {{#each internal.about-main.content.banners}}
+          <li class="about-banners__item{{#ifCond this.size 'small'}} about-banners__item--small{{/ifCond}}">
+            {{>widgets/subpage-banner}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

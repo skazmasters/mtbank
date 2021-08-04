@@ -1,0 +1,18 @@
+.btn-outline {
+  display: block;
+  margin: 0;
+  padding: 13px 16px;
+  border-radius: 100px;
+  border: 1px solid;
+  @include text-button-s;
+
+  &--gray {
+    @include btn-gray-outline;
+
+    &.active {
+      color: $color-gray-100;
+      border-color: $color-gray-20;
+      background-color: $color-gray-20;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{{#if button}}
+  <button type="{{#if type}}{{type}}{{else}}button{{/if}}"
+          class="button-chat{{#if theme}} button-chat--{{theme}}{{/if}}{{#if state}} button-chat--{{state}}{{/if}}"
+    {{#if aria-label}} aria-label="{{aria-label}}"{{/if}}
+    {{#if disabled}} disabled aria-disabled="true"{{/if}}
+    {{{attr}}}>{{>ui/svg name="ui--chat"}}</button>
+{{else}}
+  <a href="{{#if href}}{{href}}{{else}}#{{/if}}"
+     class="button-chat{{#if theme}} button-chat--{{theme}}{{/if}}{{#if state}} button-chat--{{state}}{{/if}}"
+    {{#if aria-label}} aria-label="{{aria-label}}"{{/if}}
+    {{#if disabled}} disabled aria-disabled="true"{{/if}}
+    {{{attr}}}>{{>ui/svg name="ui--chat"}}</a>
+{{/if}}

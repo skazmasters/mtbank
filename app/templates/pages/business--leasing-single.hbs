@@ -1,0 +1,28 @@
+{{! Бизнесу / Лизинг / Карточка }}
+
+{{> layout/head page-title="Бизнесу / Лизинг / Карточка" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+<div class="hero-menu-block">
+  {{> hero/business-leasing-single}}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Как это работает"
+          item-3="Условия и документы"
+          item-4="Вопросы и ответы"
+  }}
+</div>
+
+{{> blocks/common/conditions-section no-gray=true big=true
+        title="Выгодные условия лизинга" img="business/leasing/car" img-mobile="business/leasing/car-mobile" button-label="Оформить лизинг"
+        label-1="Спецпрограммы" value-1="приобретения с автодилерами"
+        label-2="Быстрое оформление" value-2="в течение 2х дней"
+        label-3="Страхование" value-3="автоКАСКО по минимальным тарифам"
+        label-4="Минимальный пакет документов" value-4="для оформления - от 4х документов"
+        label-5="Минимальная предоплата" value-5="собственное участие от 10% стоимости автомобиля"
+        label-6="Погашение без комиссий" value-6="оплата по курсу НБРБ"
+}}
+{{> blocks/common/map}}
+{{> forms/business-leasing }}
+{{> layout/footer business=true }}

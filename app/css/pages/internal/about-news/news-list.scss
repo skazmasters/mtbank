@@ -1,0 +1,27 @@
+.press-center {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  @include mobile {
+    padding-bottom: 10px;
+  }
+}
+
+.news-list {
+  &__item {
+    padding: 20px 0 30px;
+    border-bottom: 1px solid $color-gray-40;
+
+    @include media(mobile) {
+      padding: 15px 0 25px;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: unset;
+    }
+  }
+}

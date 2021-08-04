@@ -1,0 +1,173 @@
+<section class="section section--no-mt">
+  <div class="js-tabs">
+    <div class="card-tabs">
+      <div class="container">
+        <div class="card-tabs__wrapper">
+          <div class="card-tabs__row">
+            {{# times 2}}
+            <div class="card-tabs__cell">
+              <button class="card-tabs__item js-tab" data-target=".tab-card-02">
+                <div class="card-tabs__item-image">
+                  {{> components/image img="salary/tab_02" ext="png"}}
+                </div>
+                <span class="card-tabs__item-name">Gold</span>
+                <span class="card-tabs__item-text">Статус и возможности</span>
+              </button>
+            </div>
+
+            <div class="card-tabs__cell">
+              <button class="card-tabs__item js-tab" data-target=".tab-card-03">
+                <div class="card-tabs__item-image">
+                  {{> components/image img="salary/tab_03" ext="png"}}
+                </div>
+                <span class="card-tabs__item-name">Platinum</span>
+                <span class="card-tabs__item-text">Доступ к привелегиям</span>
+              </button>
+            </div>
+
+            <div class="card-tabs__cell">
+              <button class="card-tabs__item js-tab" data-target=".tab-card-04">
+                <div class="card-tabs__item-image">
+                  {{> components/image img="salary/tab_04" ext="png"}}
+                </div>
+                <span class="card-tabs__item-name">Platinum Plus</span>
+                <span class="card-tabs__item-text">Cервис по всему миру</span>
+              </button>
+            </div>
+
+            <div class="card-tabs__cell">
+              <button class="card-tabs__item js-tab" data-target=".tab-card-05">
+                <div class="card-tabs__item-image">
+                  {{> components/image img="salary/tab_05" ext="png"}}
+                </div>
+                <span class="card-tabs__item-name">Infinite</span>
+                <span class="card-tabs__item-text">Мир эксклюзивности</span>
+              </button>
+            </div>
+            {{/times}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{# times 5}}
+      <div class="js-tab-content tab-card-0{{this}} {{#ifCond this 1}}active{{/ifCond}}">
+        <div class="container">
+          <div class="salary-card">
+            <div class="salary-card__intro">
+              {{#ifCond this 1}}
+                {{>widgets/overview-card mod="salary"
+                        img="salary/card_01"
+                        img-mobile="salary/card_01-mobile"
+                        ext="png"
+                        title="Simple — просто для людей!"
+                        text='Бесплатный выпуск и обслуживание карт, снятие наличных в любом банкомате Беларуси без комиссий, овердрафт на специальных условиях и другие бонусы получат сотрудники в рамках пакета услуг "Simple".'
+                        button-label="Оформить пакет"
+                        no-lazy=true
+                }}
+              {{/ifCond}}
+
+              {{#ifCond this 2}}
+                {{>widgets/overview-card mod="salary"
+                        img="salary/card_01"
+                        img-mobile="salary/card_01-mobile"
+                        ext="png"
+                        title="Gold — просто для людей!"
+                        text='Бесплатный выпуск и обслуживание карт, снятие наличных в любом банкомате Беларуси без комиссий, овердрафт на специальных условиях и другие бонусы получат сотрудники в рамках пакета услуг "Simple".'
+                        button-label="Оформить пакет"
+                        no-lazy=true
+                }}
+              {{/ifCond}}
+
+
+              {{#ifCond this 3}}
+                {{>widgets/overview-card mod="salary"
+                        img="salary/card_01"
+                        img-mobile="salary/card_01-mobile"
+                        ext="png"
+                        title="Platinum — просто для людей!"
+                        text='Бесплатный выпуск и обслуживание карт, снятие наличных в любом банкомате Беларуси без комиссий, овердрафт на специальных условиях и другие бонусы получат сотрудники в рамках пакета услуг "Simple".'
+                        button-label="Оформить пакет"
+                        no-lazy=true
+                }}
+              {{/ifCond}}
+
+              {{#ifCond this 4}}
+                {{>widgets/overview-card mod="salary"
+                        img="salary/card_01"
+                        img-mobile="salary/card_01-mobile"
+                        ext="png"
+                        title="Platinum Plus — просто для людей!"
+                        text='Бесплатный выпуск и обслуживание карт, снятие наличных в любом банкомате Беларуси без комиссий, овердрафт на специальных условиях и другие бонусы получат сотрудники в рамках пакета услуг "Simple".'
+                        button-label="Оформить пакет"
+                        no-lazy=true
+                }}
+              {{/ifCond}}
+
+              {{#ifCond this 5}}
+                {{>widgets/overview-card mod="salary"
+                        img="salary/card_01"
+                        img-mobile="salary/card_01-mobile"
+                        ext="png"
+                        title="Infinite — просто для людей!"
+                        text='Бесплатный выпуск и обслуживание карт, снятие наличных в любом банкомате Беларуси без комиссий, овердрафт на специальных условиях и другие бонусы получат сотрудники в рамках пакета услуг "Simple".'
+                        button-label="Оформить пакет"
+                        no-lazy=true
+                }}
+              {{/ifCond}}
+
+            </div>
+
+            <div class="salary-card__features">
+              <div class="salary-card__features-cell">
+                {{>widgets/advantage-card size="big"
+                        img="salary/feature_01"
+                        title="Бесплатное снятие наличных"
+                        text="Во всех банкоматах РБ."
+                        no-lazy=true
+                }}
+              </div>
+              <div class="salary-card__features-cell">
+                {{>widgets/advantage-card size="big"
+                        img="salary/feature_02"
+                        title="Овердрафт на специальных условиях"
+                        text="Специальные условия по карте Simple."
+                }}
+              </div>
+              <div class="salary-card__features-cell">
+                {{>widgets/advantage-card size="big"
+                        img="salary/feature_03"
+                        title="Бесплатный выпуск карт"
+                        text="Получите карту в офисе без посещения банка."
+                }}
+              </div>
+              <div class="salary-card__features-cell">
+                {{>widgets/advantage-card size="big"
+                        img="salary/feature_04"
+                        title="Получите карту в офисе без посещения банка"
+                        text="По предварительной договоренности с менеджером банка."
+                }}
+              </div>
+            </div>
+            <div class="salary-card__conditions">
+              {{>widgets/overview-card mod="salary"
+                      img="salary/card_02"
+                      img-mobile="salary/card_02-mobile"
+                      ext="png"
+                      title="Условия по зарплатному проекту Simple"
+                      feature-1="Карта сроком на 3 года;"
+                      feature-2="0 руб - выпуск карт Simple"
+                      feature-3="0 руб - снятие в банкоматах"
+                      feature-4="Moneyback - 0,5% от суммы безналичных операций"
+                      feature-5="СМС-информирование - 2,3 BYN в месяц"
+                      button-label="Оформить бесплатно"
+                      link-label="Тарифы и условия"
+              }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/times}}
+
+  </div>
+</section>

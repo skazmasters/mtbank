@@ -1,0 +1,74 @@
+<div class="section section--gray">
+  {{#if bg}}
+    <div class="section__bg">
+      {{>components/image img=bg ext="jpg"}}
+    </div>
+  {{/if}}
+  <div class="container">
+    <div class="product-features js-tabs">
+      <div class="product-features__inner {{#if small-image}}product-features__inner--small-image{{/if}}">
+        <div class="product-features__header">
+          <h2 class="section__title">{{title}}</h2>
+          <div class="feature-tabs">
+            <div class="feature-tabs__inner">
+              <div class="feature-tabs__tab">
+                <button class="feature-tabs__link active js-tab" data-target=".tab-1">{{tab-1}}</button>
+              </div>
+              <div class="feature-tabs__tab">
+                <button class="feature-tabs__link js-tab" data-target=".tab-2">{{tab-2}}</button>
+              </div>
+              <div class="feature-tabs__tab">
+                <button class="feature-tabs__link js-tab" data-target=".tab-3">{{tab-3}}</button>
+              </div>
+              <div class="feature-tabs__tab">
+                <button class="feature-tabs__link js-tab" data-target=".tab-4">{{tab-4}}</button>
+              </div>
+              {{#if tab-5}}
+                <div class="feature-tabs__tab">
+                  <button class="feature-tabs__link js-tab" data-target=".tab-5">{{tab-5}}</button>
+                </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+
+        {{# times 5}}
+          <div class="js-tab-content tab-{{this}} {{#ifCond this 1}}active{{/ifCond}}">
+            <div class="product-features__slide">
+              <div class="product-features__left">
+                <div class="product-features__image">
+                  {{#if ../video}}
+                    {{> widgets/video-image no-lazy=true img=../image ext="png"}}
+                  {{else}}
+                    {{> components/image no-lazy=true img=../image ext="png"}}
+                  {{/if}}
+                </div>
+              </div>
+              <div class="product-features__body">
+                {{#if ../text}}
+                  <p>{{../text}}</p>
+                {{/if}}
+                <ul>
+                  <li>{{../item-1}} {{#ifCond this 1}}{{else}}{{this}}{{/ifCond}}</li>
+                  <li>{{../item-2}} {{#ifCond this 1}}{{else}}{{this}}{{/ifCond}}</li>
+                  <li>{{../item-3}} {{#ifCond this 1}}{{else}}{{this}}{{/ifCond}}</li>
+                  <li>{{../item-4}} {{#ifCond this 1}}{{else}}{{this}}{{/ifCond}}</li>
+                  <li>{{../item-5}} {{#ifCond this 1}}{{else}}{{this}}{{/ifCond}}</li>
+                </ul>
+                {{#if ../mobile-apps}}
+                  <div class="product-features__links">
+                    {{#if ../button-label}}
+                      {{> widgets/button-and-more label=../button-label no-link=true mobile-apps=true}}
+                    {{else}}
+                      {{> widgets/button-and-more label=false no-link=true mobile-apps=true}}
+                    {{/if}}
+                  </div>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        {{/times}}
+      </div>
+    </div>
+  </div>
+</div>

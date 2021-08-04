@@ -1,0 +1,99 @@
+.form-input--border {
+  padding-bottom: 14px;
+  margin-bottom: -14px;
+
+  .form-input__input {
+    border: 1px solid $color-gray-40;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 52px;
+    padding: 0 20px;
+    background: $color-white;
+
+    &[disabled] {
+      background: $color-gray-20;
+      cursor: default;
+
+      .form-input__placeholder {
+        color: $color-gray-60;
+
+        &:hover {
+          border-color: 1px solid $color-gray-40;
+        }
+      }
+    }
+
+    &:hover {
+      border-color: $color-gray-60;
+    }
+  }
+
+  .form-input__label {
+    padding-top: 0;
+    .form-input__input {
+      padding-top: 10px;
+    }
+  }
+
+  .form-input__label--empty .form-input__input {
+    padding-top: 0 !important;
+  }
+
+  &.form-input--small .form-input__input {
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .form-input__placeholder {
+    left: 22px;
+    top: 6px;
+  }
+
+  .form-input__input:placeholder-shown ~ .form-input__placeholder {
+    top: 14px;
+  }
+
+  .form-input__input:focus ~ .form-input__placeholder {
+    top: 6px;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $color-gray-80;
+  }
+
+  &.form-input--small {
+
+    .form-input__placeholder {
+      left: 21px;
+      top: 4px !important;
+    }
+
+    .form-input__input:placeholder-shown ~ .form-input__placeholder {
+      top: 8px !important;
+      left: 21px;
+    }
+
+    .form-input__input:focus ~ .form-input__placeholder {
+      top: 4px !important;
+      left: 21px;
+    }
+
+    .form-input__error, .form-input__hint {
+      left: 20px;
+    }
+  }
+
+  &.form-input--date:after {
+    right: 15px;
+  }
+
+  &.form-input--error {
+    .form-input__input {
+      border-color: $color-red-100;
+    }
+  }
+
+  .form-input__error, .form-input__hint {
+    left: 20px;
+  }
+}

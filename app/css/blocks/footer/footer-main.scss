@@ -1,0 +1,142 @@
+.footer-main {
+  background: $color-primary;
+  padding: 40px 0;
+
+  @include smallTablet-and-mobile {
+    padding: 30px 0 50px;
+  }
+
+  @include mobile {
+    padding: 30px 0;
+  }
+
+  &__top {
+    display: flex;
+
+    @include smallTablet-and-mobile {
+      display: block;
+    }
+  }
+
+  &__bottom {
+    margin-top: 52px;
+    display: flex;
+
+    @include smallTablet-and-mobile {
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      .footer-main__left {
+        order: 2;
+        margin-top: 20px;
+        flex-basis: 100%;
+      }
+
+      .footer-main__right {
+        order: 1;
+        flex-basis: 100%;
+      }
+    }
+
+    @include mobile {
+      margin-top: 50px;
+    }
+  }
+
+  &__left {
+    flex-basis: 385px;
+    min-width: 385px;
+
+    @include mobile {
+      flex-basis: 0;
+      min-width: 0;
+    }
+  }
+
+  &__right {
+    flex: 1 1 auto;
+  }
+
+  &__logo {
+    display: inline-block;
+    color: $color-white;
+
+    a {
+      display: block;
+      max-height: 100%;
+    }
+
+    @include mobile {
+      width: 122px;
+      height: 40px;
+      svg {
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+
+  &__contacts {
+    padding-bottom: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include tablet {
+      margin-left: -150px;
+    }
+
+    @include smallTablet-and-mobile {
+      margin-top: 25px;
+      padding-bottom: 30px;
+      margin-left: 0;
+    }
+
+    @include mobile{
+      padding-bottom: 0;
+    }
+  }
+
+  &__nav {
+    padding-top: 40px;
+
+    border-top: 1px solid $color-white-20;
+    @include mobile {
+      border-top: 0 none;
+    }
+
+    @include tablet {
+      margin-left: -385px;
+    }
+
+    @include smallTablet-and-mobile {
+      margin-left: 0;
+      padding-top: 30px;
+    }
+  }
+
+  &__bank {
+    @include smallTablet-and-mobile {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    @include no-smallTablet {
+      display: none;
+    }
+  }
+
+  &__actions {
+    @include smallTablet-and-mobile {
+      position: absolute;
+      right: 0;
+      top: -60px;
+    }
+  }
+
+  &__phones {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="map-tabs map-side__tabs">
+  <ul class="map-tabs__inner">
+    <li class="map-tabs__item">
+      <a class="map-tabs__button {{#ifCond activeTab 0}}js-tab active{{/ifCond}}" href="map--offices.html"
+         data-tab data-target=".tab-1" data-value="offices">
+        Отделения
+      </a>
+    </li>
+    <li class="map-tabs__item">
+      <a class="map-tabs__button {{#ifCond activeTab 1}}js-tab active{{/ifCond}}" href="map--atm.html"
+         data-tab data-target=".tab-2" data-value="atms">
+        Банкоматы
+      </a>
+    </li>
+    <li class="map-tabs__item">
+      <a class="map-tabs__button {{#ifCond activeTab 2}}js-tab active{{/ifCond}}" href="map--terminals.html"
+         data-tab data-target=".tab-3" data-value="terminals">
+        Терминалы
+      </a>
+    </li>
+  </ul>
+</div>

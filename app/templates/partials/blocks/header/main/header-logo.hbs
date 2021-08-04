@@ -1,0 +1,11 @@
+<div class="header-logo">
+  {{#if no-clickable}}
+    <div class="header-logo__link">
+      {{>ui/svg name="logo--colored" mode="header-logo__image"}}
+    </div>
+  {{else}}
+    <a class="header-logo__link" href="/home.html">
+      {{>ui/svg name="logo--colored" mode="header-logo__image"}}
+    </a>
+  {{/if}}
+</div>

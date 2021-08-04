@@ -1,0 +1,17 @@
+.career-beginners {
+  &.section {
+    @include desktop {
+      padding-top: 35px !important;
+      padding-bottom: 120px !important;
+    }
+  }
+
+  .section__text-container {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+
+  .beginners-list {
+    margin-top: 40px;
+  }
+}

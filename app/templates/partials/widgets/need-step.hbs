@@ -1,0 +1,8 @@
+<div class="need-step {{#if title}}{{else}}need-step--simple{{/if}}">
+  {{#if title}}<span class="need-step__title">{{title}}</span>{{/if}}
+  <p class="need-step__text">{{text}}</p>
+  {{#if link}}
+    <div class="need-step__link">
+      <a href="#">{{link}}</a>
+    </div>{{/if}}
+</div>

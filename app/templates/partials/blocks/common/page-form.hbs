@@ -1,0 +1,54 @@
+<div class="page-form">
+  <span class="page-form__title">{{{title}}}</span>
+  <div class="page-form__inner">
+
+    {{#if has-cards-select}}
+      <div class="page-form__field">
+        {{#> form/select label="Выберите карту"}}
+          <option value="visa_business" selected>Visa Business</option>
+          <option value="gold">Gold</option>
+          <option value="platinum">Platinum</option>
+          <option value="platinum_plus">Platinum Plus</option>
+          <option value="infinite">Infinite</option>
+        {{/form/select}}
+      </div>
+    {{/if}}
+
+    {{#if has-package-select}}
+      <div class="page-form__field">
+        {{#> form/select label="Выберите пакет"}}
+          <option value="simple" selected>Simple</option>
+          <option value="gold">Gold</option>
+          <option value="platinum">Platinum</option>
+          <option value="platinum_plus">Platinum Plus</option>
+          <option value="infinite">Infinite</option>
+        {{/form/select}}
+      </div>
+    {{/if}}
+
+
+    {{#if field-1}}
+      <div class="page-form__field">
+        {{> form/input label=field-1 placeholder="Подсказка"}}
+      </div>
+    {{/if}}
+    {{#if field-2}}
+      <div class="page-form__field">
+        {{> form/input label=field-2 placeholder="Подсказка"}}
+      </div>
+    {{/if}}
+    {{#if field-3}}
+      <div class="page-form__field">
+        {{> form/input label=field-3 placeholder="Подсказка"}}
+      </div>
+    {{/if}}
+
+    <div class="page-form__agreement">
+      {{>form/checkbox label='Я даю согласие на <a href="#">обработку персональных&nbsp;данных</a>'}}
+    </div>
+
+    <div class="page-form__submit">
+      {{>ui/btn button=true type="submit" size="large" label=button-submit-label color="primary" w-100=true}}
+    </div>
+  </div>
+</div>

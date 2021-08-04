@@ -1,0 +1,97 @@
+.schedule-content {
+  max-width: 887px;
+
+  @include no-mobile {
+    margin-top: 5px;
+  }
+
+  &__table {
+    th {
+      text-align: left;
+      padding-bottom: 18px !important;
+    }
+
+    td {
+      padding: 29px 15px 28px 0 !important;
+
+      @include mobile {
+        padding: 18px 45px 18px 0 !important;
+        white-space: nowrap;
+        font-weight: normal;
+      }
+
+      &:first-child {
+        min-width: 239px;
+        font-weight: bold;
+
+        @include mobile {
+          font-weight: normal;
+        }
+      }
+
+      &:nth-child(2) {
+        min-width: 272px;
+      }
+
+      &:nth-child(3) {
+        white-space: nowrap;
+      }
+
+      &:nth-child(4) {
+        white-space: nowrap;
+        min-width: 120px;
+      }
+    }
+  }
+
+  .content-table {
+    margin-bottom: 70px;
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__contacts {
+    margin-top: 70px;
+
+    @include mobile {
+      margin-top: 50px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    margin-bottom: 30px;
+
+    @include mobile {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 25px;
+    }
+  }
+
+  .static ol {
+    margin-left: 4px;
+    margin-top: 40px;
+
+    li {
+      padding-left: 41px;
+      margin-top: 23px;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+
+      @include mobile {
+        padding-left: 30px;
+        font-size: 15px;
+        line-height: 140%;
+      }
+    }
+  }
+}

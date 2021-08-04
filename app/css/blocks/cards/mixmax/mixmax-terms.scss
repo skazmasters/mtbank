@@ -1,0 +1,13 @@
+.mixmax-terms {
+  padding: 70px 0 50px;
+
+  @include media(mobile) {
+    padding: 50px 0;
+  }
+
+  .section__content {
+    @include media(mobile) {
+      margin-top: 25px;
+    }
+  }
+}

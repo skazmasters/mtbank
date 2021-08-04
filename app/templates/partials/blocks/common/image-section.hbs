@@ -1,0 +1,20 @@
+<section class="section section--gray section--background">
+  <div class="image-section">
+    <div class="image-section__image">
+      {{> components/image img=image ext="png" img-mobile=image-mobile ext-mobile="jpg"}}
+    </div>
+    <div class="container">
+      <div class="image-section__content">
+        <h2 class="image-section__title">{{title}}</h2>
+        <p class="image-section__text">{{text}}</p>
+        <div class="image-section__button">
+          {{#if button-size}}
+            {{> ui/btn label=button-label size="large" color="primary"}}
+          {{else}}
+            {{> ui/btn label=button-label color="primary"}}
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

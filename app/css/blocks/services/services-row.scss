@@ -1,0 +1,316 @@
+.services-row {
+  margin-top: -15px;
+  margin-bottom: -15px !important;
+  position: relative;
+
+  @include mobile {
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+
+    @include hide-scrollbar;
+    @include mobile {
+      margin-top: -10px !important;
+    }
+
+    .services-row__cell:last-child {
+      padding-right: 15px;
+    }
+  }
+
+  &--full {
+    @include mobile {
+      overflow: visible;
+      padding: 0;
+      margin: 0;
+
+      .services-row__cell:last-child {
+        padding-right: 0;
+      }
+    }
+
+    @include no-smallTablet {
+      .services-row__cell {
+        max-width: 50%;
+        width: 50%;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    .js-carousel-slider & {
+      flex-wrap: nowrap;
+    }
+
+    &--center {
+      @include desktop {
+        justify-content: center;
+        .swiper-container-initialized & {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    padding: 15px 0;
+    margin: 0 -23px;
+    @include tablet-and-mobile {
+      margin: 0 -10px;
+    }
+
+    .services-row--full & {
+      margin-top: -40px;
+
+      @include smallTablet-and-mobile {
+        margin: 30px 0 0 0;
+      }
+
+      @include mobile {
+        margin: 30px 0 0 0;
+      }
+
+      @include smallTablet-and-mobile {
+        display: block;
+        padding: 0;
+
+        .service-card__container {
+          min-height: 0;
+        }
+      }
+    }
+  }
+
+  &__cell {
+    padding: 0 23px;
+
+    @include desktop {
+      max-width: 25%;
+      height: auto;
+    }
+
+    &--50 {
+      @include desktop {
+        max-width: 50%;
+      }
+    }
+
+    @include tablet-and-mobile {
+      padding: 0 10px;
+    }
+
+    .services-row--full & {
+
+      margin-top: 20px;
+
+      &--50 {
+        flex-basis: 50%;
+        @include no-smallTablet {
+          max-width: 50%;
+          width: 50%;
+        }
+      }
+
+      &--25 {
+        flex-basis: 25%;
+        @include no-smallTablet {
+          max-width: 25%;
+          width: 50%;
+        }
+      }
+
+      @include smallTablet-and-mobile {
+        padding: 0;
+        margin-top: 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .services-row__inner--center &{
+      @include desktop{
+        max-width: none;
+        flex: 1 1 1px;
+      }
+    }
+
+    .swiper-container-initialized &{
+      @include desktop{
+        max-width: 25%;
+        flex: none;
+      }
+    }
+
+  }
+
+
+  &__item {
+    width: 307px;
+    height: 100%;
+    @include mobile {
+      width: 267px;
+    }
+  }
+
+  .base-card {
+    @include desktop {
+      &__inner {
+        margin-top: 10px;
+      }
+      &__text {
+        margin-top: 3px;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    &__container {
+      padding: 25px 30px 41px;
+      @include mobile {
+        padding: 25px 20px 28px;
+      }
+    }
+
+    &__btn {
+      margin-top: 15px;
+
+      .btn {
+        font-size: 15px;
+      }
+    }
+  }
+
+
+  &--carousel {
+    @include desktop {
+      margin: -15px !important;
+      margin-bottom: -35px !important;
+    }
+
+    @include desktop {
+      margin: 0 -15px;
+
+      .services-row__inner {
+        margin: 0;
+        padding: 0;
+      }
+
+      .services-row__cell {
+        padding: 10px 15px 35px;
+      }
+
+      .service-links-card {
+        padding: 15px;
+        margin: -15px;
+        min-height: 450px;
+      }
+
+      .service-links-card__inner {
+        min-height: 450px;
+      }
+    }
+
+    .slider-nav {
+      margin-right: 15px;
+      @include tablet-and-mobile {
+        display: none;
+      }
+    }
+
+    @include tablet-and-mobile {
+      .services-row__inner {
+        display: flex;
+        margin: 0;
+      }
+      .services-row__cell {
+        width: auto;
+        height: auto;
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .services-row__carousel {
+      @include reset-slider-container;
+    }
+
+    @include tablet {
+      .service-links-card {
+        max-width: 320px;
+      }
+
+      .services-row__cell:last-child {
+        padding-right: 20px;
+
+        .service-links-card {
+          max-width: 330px;
+        }
+      }
+    }
+
+    @include mobile {
+      .service-links-card {
+        max-width: 266px;
+      }
+
+      .services-row__cell:last-child {
+        padding-right: 15px;
+
+        .service-links-card {
+          max-width: 281px;
+        }
+      }
+    }
+  }
+
+  .service-card__container {
+    @include desktop {
+      min-height: 310px;
+      padding: 25px 30px;
+    }
+
+    .service-card__text {
+      display: block;
+      -webkit-line-clamp: none;
+      overflow: visible;
+      max-height: none;
+    }
+  }
+
+  &-carousel {
+    margin-top: -10px;
+
+    &__inner {
+      display: flex;
+    }
+
+    &__cell {
+      padding: 0 23px 20px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    @include tablet-and-mobile {
+      display: none;
+    }
+
+    .section__header & {
+      position: absolute;
+      right: 30px;
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+<div class="mixmax-card mixmax-card--{{card}}">
+  <div class="mixmax-card__container">
+    <div class="mixmax-card__image">{{>components/image img=img ext=ext}}</div>
+    <div class="mixmax-card__list">
+      {{> @partial-block }}
+    </div>
+    <div class="mixmax-card__actions">
+      <div class="mixmax-card__btn">
+        {{>ui/btn color="primary" label="Заказать карту"}}
+      </div>
+      <div class="mixmax-card__btn">
+        <a class="btn btn--simple" href="#">Все характеристики</a>
+      </div>
+    </div>
+  </div>
+</div>

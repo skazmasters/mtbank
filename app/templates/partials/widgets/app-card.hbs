@@ -1,0 +1,21 @@
+<div class="app-card">
+  <div class="app-card__left">
+    <div class="app-card__image">
+      <a href="#">
+        {{> components/image img=img ext="png"}}
+      </a>
+    </div>
+  </div>
+  <div class="app-card__right">
+    <span class="app-card__category">{{category}}</span>
+    <a href="#" class="app-card__name">{{name}}</a>
+    <div class="app-card__links">
+      <a href="#" class="app-card__link" target="_blank">
+        {{>ui/svg name="brands--android"}}
+      </a>
+      <a href="#" class="app-card__link" target="_blank">
+        {{>ui/svg name="brands--apple"}}
+      </a>
+    </div>
+  </div>
+</div>

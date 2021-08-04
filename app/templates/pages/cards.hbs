@@ -1,0 +1,24 @@
+{{! Дебетовые карты }}
+
+{{> layout/head page-title="Дебетовые карты"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main" header-nav-active="cards"}}
+
+{{> blocks/common/page-header title="Дебетовые карты"
+        item-1="Дебетовые"
+        item-1-active=true
+        item-2="Премиальные"
+        item-3="Карты рассрочки"
+        item-4="Кредитные"
+        item-5="Виртуальные"
+        item-6="Зарплатные"
+}}
+
+{{>blocks/debit-cards/main/01_filters}}
+{{>blocks/debit-cards/main/02_banner}}
+{{>blocks/debit-cards/main/03_cards}}
+{{>blocks/debit-cards/main/04_banner}}
+{{>blocks/debit-cards/main/05_promotions}}
+{{>blocks/debit-cards/main/06_services}}
+
+{{> layout/footer no-clickable-logo=true }}

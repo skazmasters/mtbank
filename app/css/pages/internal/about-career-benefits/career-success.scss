@@ -1,0 +1,8 @@
+.career-success {
+  margin-top: 20px;
+
+  padding-bottom: 30px;
+  @include mobile{
+    padding-bottom: 10px;
+  }
+}

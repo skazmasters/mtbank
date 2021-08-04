@@ -1,0 +1,27 @@
+.page-sidebar {
+  display: flex;
+
+  @include tablet-and-mobile{
+    padding-bottom: 50px;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    margin-right: 110px;
+
+    @include tablet-and-mobile {
+      margin-right: 0;
+    }
+  }
+
+  &__sidebar {
+    min-width: 275px;
+    max-width: 275px;
+
+    margin-top: 20px;
+  }
+
+  @include tablet-and-mobile {
+    display: block;
+  }
+}

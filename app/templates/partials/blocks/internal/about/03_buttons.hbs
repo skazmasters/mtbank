@@ -1,0 +1,22 @@
+<section class="section">
+  <div class="container">
+    <div class="about-buttons">
+      <ul class="about-buttons__grid">
+        {{# times 2}}
+          <li class="about-buttons__item">
+            {{>components/button-nav href="about--tenders.html" label="Тендеры"}}
+          </li>
+          <li class="about-buttons__item">
+            {{>components/button-nav href="about--property.html" label="Реализация имущества"}}
+          </li>
+          <li class="about-buttons__item">
+            {{>components/button-nav href="about--pricing.html" label="Тарифы и документы"}}
+          </li>
+          <li class="about-buttons__item">
+            {{>components/button-nav href="about--tenders.html" label="Контакт-центр"}}
+          </li>
+        {{/times}}
+      </ul>
+    </div>
+  </div>
+</section>

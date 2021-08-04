@@ -1,0 +1,87 @@
+.notifications-list {
+  &__item {
+    padding-bottom: 24px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid $color-gray-40;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    align-items: center;
+    letter-spacing: -0.04em;
+    padding: 0 60px 0 30px;
+    color: $color-gray-100;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    @include transition;
+    position: relative;
+
+    @include tablet-and-mobile {
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    @include mobile {
+      padding-right: 0;
+    }
+
+    .icon-next {
+      margin-left: 11px;
+      @include transition;
+      position: absolute;
+      @include align(false, true);
+      right: 8px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: $color-primary;
+
+      .icon-next {
+        margin-left: 18px;
+
+        i {
+          width: 25px;
+        }
+      }
+    }
+
+    &::before {
+      $pseudo-value: 8px;
+
+      content: '';
+      display: block;
+      margin-right: 18px;
+      width: $pseudo-value;
+      height: $pseudo-value;
+      background-color: $color-primary;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+
+      @include tablet-and-mobile {
+        top: 7px;
+      }
+    }
+
+    &:hover {
+      .icon-next {
+        margin-left: auto;
+      }
+    }
+  }
+}

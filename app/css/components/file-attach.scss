@@ -1,0 +1,81 @@
+.file-attach {
+  height: 35px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    cursor: pointer;
+    letter-spacing: -0.04em;
+
+    @include mobile{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+    }
+
+    svg {
+      margin-right: 12px;
+      @include mobile{
+        transform: scale(.8);
+        margin-right: 10px;
+      }
+    }
+
+    &:hover {
+      color: $color-blue-100;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__success {
+    display: none;
+
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &__result {
+    margin-left: 15px;
+    max-width: 100%;
+    padding-right: 10px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    display: block;
+    color: $color-gray-100;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $color-gray-80;
+    margin-top: 4px;
+    display: block;
+  }
+
+  &__reset {
+    margin-top: 6px;
+    @include cross(10px, $color-gray-60);
+
+    &:hover {
+      @include cross(10px, $color-primary);
+    }
+  }
+}

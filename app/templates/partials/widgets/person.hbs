@@ -1,0 +1,16 @@
+<div class="person{{#if mode}} person--{{mode}}{{/if}}">
+  {{#if popup}}
+    <button class="person__button js-popup-open" type="button" data-popup="{{popup}}"></button>
+  {{/if}}
+
+  <div class="person__image">
+    <div class="person__image-container">
+      {{>components/image img=(concat 'common/person/' this.image) ext="jpg"}}
+    </div>
+  </div>
+
+  <div class="person__content">
+    <span class="person__title">{{this.title}}</span>
+    <p class="person__text">{{this.text}}</p>
+  </div>
+</div>

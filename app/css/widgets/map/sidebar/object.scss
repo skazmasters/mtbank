@@ -1,0 +1,91 @@
+.map-object {
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    .map-object {
+      &__title {
+        color: $color-blue-70;
+      }
+    }
+  }
+
+  &__details {
+    flex: 1 1 auto;
+    padding-right: 10px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    transition: color .2s ease;
+  }
+
+  &__location {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-80;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    ._icon {
+      display: inline-flex;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+
+  &__schedule {
+    display: block;
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+
+    &--close {
+      color: $color-gray-60;
+    }
+  }
+
+  &__extra {
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  &__marker {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__currency {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+  }
+
+  &__type {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: $color-gray-80;
+  }
+}

@@ -1,0 +1,85 @@
+.debits-services {
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h3;
+  }
+
+  &__text {
+    display: block;
+    margin: 4px 0 0;
+    color: $color-gray-80;
+    @include text-body-1;
+
+    @include media(mobile) {
+      margin-top: 8px;
+    }
+  }
+
+  &__banner {
+    margin-top: 25px;
+
+    @include media(mobile) {
+      margin-top: 20px;
+    }
+  }
+
+  &__cards {
+    margin-top: 45px;
+
+    @include media(tabletSmall) {
+      margin-top: 35px;
+    }
+  }
+
+  &__cards-inner {
+    display: flex;
+    margin: -30px;
+    overflow: auto;
+    @include hide-scrollbar;
+
+    @include media(desktop) {
+      margin: -20px;
+    }
+
+    @include media(mobile) {
+      margin: -15px;
+    }
+  }
+
+  &__cards-grid {
+    flex: 1 0 100%;
+    display: flex;
+    padding: 30px;
+
+    @include media(desktop) {
+      padding: 20px;
+    }
+
+    @include media(mobile) {
+      padding: 15px;
+    }
+  }
+
+  &__cards-item {
+    flex: 1 1 calc(100% / 4);
+    margin-left: 45px;
+    min-width: 285px;
+
+    @include media(tabletSmall) {
+      margin-left: 20px;
+    }
+
+    @include media(mobile) {
+      min-width: 270px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .app-stores__link:hover {
+    color: $color-primary;
+  }
+}

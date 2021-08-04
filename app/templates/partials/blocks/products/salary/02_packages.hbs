@@ -1,0 +1,104 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="js-tabs">
+      <div class="block-tabs">
+        <button class="block-tabs__item js-tab active" data-target=".tab-1">Стандартные</button>
+        <button class="block-tabs__item js-tab" data-target=".tab-2">Премиальные</button>
+      </div>
+      {{# times 2}}
+        <div class="js-tab-content tab-{{this}} {{#ifCond this 1}}active{{/ifCond}}">
+          <div class="packages-row js-packages-row">
+            <div class="packages-row__inner">
+              <div class="packages-row__cell">
+                {{#ifCond this 1}}
+                  {{> widgets/package-card title="Platinum"
+                          img="salary/package_01"
+                          plus-img="salary/package_01-plus" plus-title="MasterCard Black Edition"
+                          button-label="Оформить пакет"
+                          param-1="Срок действия" param-1-value="3 года"
+                          param-2="Снятие наличных в банкоматах страны без комиссии"
+                          param-3="Бесплатное СМС-информирование"
+                          param-4="Овердрафт со ставкой в грейс-периоде 0,000001%"
+                          param-5="Бесплатные посещения бизнес-залов lounge key"
+                          param-5-value="2 посещения"
+                          param-6="При покупках не менее 10000  руб. в месяц."
+                          param-6-value="Бесплатное обслуживание"
+                  }}
+                {{/ifCond}}
+                {{#ifCond this 2}}
+                  {{> widgets/package-card title="Platinum 2"
+                          img="salary/package_01"
+                          plus-img="salary/package_01-plus" plus-title="MasterCard Black Edition"
+                          button-label="Оформить пакет"
+                          param-1="Срок действия" param-1-value="3 года"
+                          param-2="Снятие наличных в банкоматах страны без комиссии"
+                          param-3="Бесплатное СМС-информирование"
+                          param-4="Овердрафт со ставкой в грейс-периоде 0,000001%"
+                          param-5="Бесплатные посещения бизнес-залов lounge key"
+                          param-5-value="2 посещения"
+                          param-6="При покупках не менее 10000  руб. в месяц."
+                          param-6-value="Бесплатное обслуживание"
+                  }}
+                {{/ifCond}}
+              </div>
+              <div class="packages-row__cell">
+                {{> widgets/package-card title="Platinum Plus"
+                        img="salary/package_02"
+                        plus-img="salary/package_02-plus" plus-title="MasterCard Black Edition"
+                        tick-1="Бонусная программа накопления миль «Hello, world!»."
+                        tick-2="Электронный код для подключения услуги «Роуминг 500 МБ»."
+                        tick-3="Страхование выезжающих за границу на 15 дней. Покрытие 30 000 EUR."
+                        button-label="Оформить пакет"
+                        param-1="Срок действия" param-1-value="3 года"
+                        param-2="Снятие наличных в банкоматах страны без комиссии"
+                        param-3="Бесплатное СМС-информирование"
+                        param-4="Овердрафт со ставкой в грейс-периоде 0,000001%"
+                        param-5="Бесплатные посещения бизнес-залов lounge key"
+                        param-5-value="2 посещения"
+                        param-6="При покупках не менее 10000  руб. в месяц."
+                        param-6-value="Бесплатное обслуживание"
+                }}
+              </div>
+              <div class="packages-row__cell">
+                {{> widgets/package-card title="Infinite"
+                        img="salary/package_03"
+                        plus-img="salary/package_03-plus" plus-title="MasterCard Black Edition"
+                        tick-1="VIP обслуживание."
+                        button-label="Оформить пакет"
+                        param-1="Срок действия" param-1-value="3 года"
+                        param-2="Снятие наличных в банкоматах страны без комиссии"
+                        param-3="Бесплатное СМС-информирование"
+                        param-4="Овердрафт со ставкой в грейс-периоде 0,000001%"
+                        param-5="Бесплатные посещения бизнес-залов lounge key"
+                        param-5-value="2 посещения"
+                        param-6="При покупках не менее 10000  руб. в месяц."
+                        param-6-value="Бесплатное обслуживание"
+                }}
+              </div>
+              {{#ifCond this 1}}
+                {{# times 3}}
+                  <div class="packages-row__cell">
+                    {{> widgets/package-card title="Infinite"
+                            img="salary/package_03"
+                            plus-img="salary/package_03-plus" plus-title="MasterCard Black Edition"
+                            tick-1="VIP обслуживание."
+                            button-label="Оформить пакет"
+                            param-1="Срок действия" param-1-value="3 года"
+                            param-2="Снятие наличных в банкоматах страны без комиссии"
+                            param-3="Бесплатное СМС-информирование"
+                            param-4="Овердрафт со ставкой в грейс-периоде 0,000001%"
+                            param-5="Бесплатные посещения бизнес-залов lounge key"
+                            param-5-value="2 посещения"
+                            param-6="При покупках не менее 10000  руб. в месяц."
+                            param-6-value="Бесплатное обслуживание"
+                    }}
+                  </div>
+                {{/times}}
+              {{/ifCond}}
+            </div>
+          </div>
+        </div>
+      {{/times}}
+    </div>
+  </div>
+</section>

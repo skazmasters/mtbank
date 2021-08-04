@@ -1,0 +1,57 @@
+<div class="map-object {{#ifCond id 0}}{{#if active}}active{{/if}}{{/ifCond}} js-object"
+     {{#if opening-time}}data-closed="true"{{/if}}
+     data-marker-color="{{marker-color}}"
+     data-marker-icon="{{marker-icon}}"
+     data-coords="{{coords}}"
+     data-id="{{id}}"
+     data-container>
+  <div class="map-object__details">
+    <span class="map-object__title">
+      {{title}}
+    </span>
+    <div class="map-object__locations">
+      <span class="map-object__location">
+        {{location1}}
+      </span>
+      <span class="map-object__location">
+        {{#if metro-location}}
+          <i class="_icon">{{> ui/svg name="map--metro" }}</i>
+        {{/if}}{{location2}}
+      </span>
+    </div>
+    {{#if opening-time}}
+      <span class="map-object__schedule map-object__schedule--close">
+        {{opening-time}}
+      </span>
+    {{else if working-hours}}
+      <span class="map-object__schedule">
+        {{working-hours}}
+      </span>
+    {{/if}}
+  </div>
+  <div class="map-object__extra">
+    <div class="map-object__marker">
+      {{#if opening-time}}
+        {{> widgets/map/marker
+          icon=marker-icon
+          mod=marker-color
+          closed=true
+        }}
+      {{else}}
+        {{> widgets/map/marker
+          icon=marker-icon
+          mod=marker-color
+        }}
+      {{/if}}
+    </div>
+    {{#if currency}}
+      <span class="map-object__currency">
+        {{currency}}
+      </span>
+    {{else if type}}
+      <span class="map-object__type">
+        {{type}}
+      </span>
+    {{/if}}
+  </div>
+</div>

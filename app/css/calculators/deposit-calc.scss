@@ -1,0 +1,161 @@
+.section-deposit-calc {
+  padding: 0;
+  margin: 50px 0;
+
+  @include mobile {
+    margin: 60px 0 30px;
+  }
+}
+
+.deposit-calc {
+  margin-top: 22px;
+
+  &__inner {
+    padding: 40px 110px 60px 55px;
+    display: flex;
+
+    @include tablet {
+      padding: 30px 20px;
+    }
+
+    @include mobile {
+      padding: 30px 20px 40px;
+      display: block;
+    }
+  }
+
+  &__left {
+    border-right: 1px solid $color-gray-40;
+    padding-right: 82px;
+    width: 330px + 82px;
+
+    @include tablet {
+      padding-right: 20px;
+    }
+
+    @include mobile {
+      width: auto;
+      padding-bottom: 30px;
+      border-right: 0 none;
+      border-bottom: 1px solid $color-gray-40;
+      padding-right: 0;
+    }
+  }
+
+  &__right {
+    padding-left: 83px;
+    flex: 1 1 auto;
+    @include tablet {
+      padding-left: 30px;
+    }
+    @include mobile {
+      padding-left: 0;
+      padding-top: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    color: $color-gray-100;
+
+    @include mobile {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  &__form {
+    margin-top: 38px;
+
+    &-field {
+      margin-top: 50px;
+
+      .form-field-money{
+        width: 100%;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__results {
+    margin-top: 28px;
+    display: flex;
+
+    @include mobile {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+
+  &__result {
+    margin-left: 50px;
+
+    @include mobile {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-value {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+      display: block;
+      color: $color-primary;
+
+      @include mobile {
+        font-size: 21px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+      }
+    }
+
+    &-label {
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      color: $color-gray-80;
+      margin-top: 3px;
+      display: block;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+
+  &__option {
+    margin-top: 34px;
+    max-width: 660px;
+    @include mobile {
+      margin-top: 30px;
+    }
+  }
+
+  &__submit {
+    margin-top: 35px;
+
+    @include mobile {
+      margin-top: 30px;
+    }
+  }
+}

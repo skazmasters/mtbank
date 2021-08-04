@@ -1,0 +1,47 @@
+<template id="tpl-object-details">
+  <div class="map-details" data-container>
+    <div class="map-details__header">
+      <span class="map-details__title" data-item data-field="name"></span>
+      <span class="map-details__description" data-item data-field="description"></span>
+      <span class="map-details__opening-time" data-item data-field="openingTime">
+        <i class="_icon">{{> ui/svg name="map--clock" }}</i>
+      </span>
+    </div>
+    <ul class="map-details__list">
+      <li class="map-details__item" data-item>
+        <span class="map-details__label">Юр. лица</span>
+        <span class="map-details__value" data-field="legals"></span>
+      </li>
+      <li class="map-details__item" data-item>
+        <span class="map-details__label">Физ. лица</span>
+        <span class="map-details__value" data-field="individuals"></span>
+      </li>
+      <li class="map-details__item" data-item>
+        <span class="map-details__label">Кассы</span>
+        <span class="map-details__value" data-field="cashbox"></span>
+      </li>
+      <li class="map-details__item" data-item>
+        <span class="map-details__label">Адрес</span>
+        <span class="map-details__value" data-field="location1"></span>
+      </li>
+      <li class="map-details__item" data-item>
+        <span class="map-details__label">Метро</span>
+        <span class="map-details__value" data-field="location2">
+          <i class="_icon">{{> ui/svg name="map--metro" }}</i>
+        </span>
+      </li>
+      <li class="map-details__item" data-item>
+        <span class="map-details__label">Телефон</span>
+        <span class="map-details__value" data-phone>
+          <a href="tel:[[phone]]">[[phone]]</a>
+        </span>
+      </li>
+    </ul>
+    {{> ui/btn
+        button=true
+        color="primary"
+        label="Построить маршрут"
+        mix="map-details__route-btn"
+    }}
+  </div>
+</template>

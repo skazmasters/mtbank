@@ -1,0 +1,31 @@
+<section class="section section--overflow-hidden">
+  <div class="container">
+    <div class="rates-table rates-table--normal">
+      <div class="rates-table__thead">
+        <div class="rates-table__cell rates-table__cell--name">
+          <span class="rates-table__th">Отделение</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--value">
+          <span class="rates-table__th">1 Доллар США</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--value">
+          <span class="rates-table__th">1 Евро</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--value">
+          <span class="rates-table__th">100 Российских рублей</span>
+        </div>
+        <div class="rates-table__cell rates-table__cell--update">
+          <span class="rates-table__th">Обновлено</span>
+        </div>
+      </div>
+      <div class="rates-table__tbody">
+        {{# times 4}}
+          {{> blocks/rates/cash/row name='Отделение ЦБУ "Парус"' address="Партизанский пр-т., 6а, 2 этаж"}}
+          {{> blocks/rates/cash/row name='Банкомат МТБанк, ЦБУ №6' address="ул. Бобруйская, 15"}}
+          {{> blocks/rates/cash/row name='Банкомат №241' address="г. Минск, ул. Железнодорожная, 23"}}
+          {{> blocks/rates/cash/row name='ЦБУ "Парус"' address="Партизанский пр-т., 6а, 2 этаж"}}
+          {{> blocks/rates/cash/row name='ЦБУ-3' address="ул. Бобруйская, 15"}}
+        {{/times}}
+      </div>
+    </div>
+</section>

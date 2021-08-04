@@ -1,0 +1,143 @@
+.person {
+  position: relative;
+
+  &__button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include fill;
+    z-index: z(default);
+
+    &:hover {
+      ~ {
+        .person__image-container {
+          opacity: 0.7;
+        }
+
+        .person__content > .person__title {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &__image {
+    &-container {
+      position: relative;
+      padding-top: calc(100% - 12.15%);
+      margin: 0 auto;
+      max-width: calc(100% - 12.15%);
+      @include transition;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  &__content {
+    margin-top: 15px;
+    text-align: center;
+
+    > * + * {
+      margin-top: 5px;
+    }
+  }
+
+  &__title {
+    @include text-h5;
+    @include transition;
+  }
+
+  &__text {
+    @include text-body-2;
+    color: $color-gray-80;
+  }
+
+  &--quote {
+    display: flex;
+    flex: 1 1 100%;
+
+    @include media(tablet, only) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include media(tabletSmall) {
+      flex-wrap: nowrap;
+      justify-content: initial;
+    }
+
+    .person {
+      &__image {
+        flex: 0 0 125px;
+        height: auto;
+        margin: 0 25px 0 0;
+
+        @include media(tablet, only) {
+          margin: 0 0 15px;
+        }
+
+        @include media(tabletSmall) {
+          flex: 0 0 90px;
+          margin: 0 20px 0 0;
+        }
+
+        @include media(tabletSmall) {
+          flex: 0 0 72px;
+          margin: 0 15px 0 0;
+        }
+      }
+
+      &__content {
+        flex: 1 1 220px;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        padding-top: 5px;
+
+        @include media(tablet, only) {
+          flex: 1 1 100%;
+          text-align: center;
+        }
+
+        @include media(tabletSmall) {
+          flex: 0 1 300px;
+          text-align: left;
+        }
+      }
+
+      &__title {
+        @include text-h5;
+      }
+
+      &__text {
+        margin-top: 8px;
+        @include text-body-2;
+      }
+    }
+  }
+
+  &--popup {
+    .person {
+      &__image {
+        max-width: 114px;
+      }
+
+      &__content {
+        text-align: left;
+      }
+
+      &__title {
+        @include text-h3;
+      }
+
+      &__text {
+        @include text-body-2;
+      }
+    }
+  }
+}

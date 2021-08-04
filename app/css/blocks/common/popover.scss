@@ -1,0 +1,238 @@
+.popover {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: $color-gray-10;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  @include transition;
+
+  &:before {
+    content: '';
+    @include sprite('popover-question');
+    @include align(true, true);
+  }
+
+  &.active {
+    background-color: $color-primary;
+
+    &:before {
+      @include sprite('popover-question-hover');
+    }
+  }
+
+  /*
+  &.active {
+    .popover__content {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .icon-info {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__icon {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  &__content {
+    position: absolute;
+    top: -18px;
+    left: calc(100% + 18px);
+    z-index: z(default) + 1;
+    width: 235px;
+    max-width: 235px;
+    padding: 18px;
+    border-radius: 15px;
+    background-color: $color-white;
+
+    @include tablet-and-mobile {
+      box-shadow: 0px 9px 20px rgba(48, 66, 117, 0.13);
+    }
+    @include desktop {
+      filter: drop-shadow(0px 9px 20px rgba(48, 66, 117, 0.13));
+    }
+
+    opacity: 0;
+    visibility: hidden;
+    @include transition;
+
+    &::before {
+      position: absolute;
+      top: 18px;
+      right: calc(100% - 1px);
+      content: '';
+      @include sprite('popover-tail');
+    }
+
+    .popover--bottom-left & {
+      left: auto;
+      top: 100%;
+      margin-top: 12px;
+      right: 0;
+
+      &::before {
+        left: auto;
+        right: 5px;
+        top: -15px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 0;
+    @include text-body-2;
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+
+    @include media(mobile, up) {
+      display: none;
+    }
+  }
+
+  a {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+  }
+
+  .icon-close {
+
+    &::after,
+    &::before {
+      width: #{diagonal(10)}px;
+    }
+  }
+
+  &--bottom {
+    .popover__content {
+      top: calc(100% + 18px);
+      left: -235px + 36px;
+
+      &::before {
+        top: -22px;
+        right: 16px;
+        transform: rotate(90deg);
+      }
+    }
+  }*/
+}
+
+.popover-tooltip {
+  padding-left: 25px;
+  position: absolute;
+  z-index: z(default) + 1;
+
+  &__inner {
+    width: 235px;
+    max-width: 235px;
+    padding: 18px;
+    border-radius: 15px;
+    background-color: $color-white;
+    filter: drop-shadow(0px 9px 20px rgba(48, 66, 117, 0.13));
+
+    @include text-body-2;
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+
+    &::before {
+      pointer-events: none;
+      position: absolute;
+      top: 18px;
+      right: calc(100% - 1px);
+      content: '';
+      @include sprite('popover-tail');
+    }
+  }
+
+  &._left {
+    padding-right: 25px;
+    padding-left: 0;
+
+    .popover-tooltip__inner::before {
+      right: 1px;
+      transform: rotate(180deg) translateX(-100%);
+    }
+  }
+
+  &__close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: block;
+    z-index: 1;
+    padding: 3px;
+    width: 24px;
+    height: 24px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      @include align(true, true);
+      width: 18px;
+      height: 18px;
+
+      @include sprite('popover-close');
+    }
+  }
+
+  &._touch {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+
+    .popover-tooltip__inner {
+      padding: 30px 15px;
+      width: 100%;
+      max-width: none;
+      border-radius: 15px 15px 0 0;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: -0.04em;
+      text-align: center;
+
+      p{
+        margin-top: 15px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="ibank-card {{#if big}}ibank-card--big{{/if}} {{#if dark}}ibank-card--dark{{/if}}" {{#if bg-color}}style="background: {{bg-color}}"{{/if}}>
+  <a href="#" class="ibank-card__link"></a>
+  {{#if background}}
+    <div class="ibank-card__bg">{{> components/image img=background ext="png"}}</div>
+  {{/if}}
+
+  <div class="ibank-card__inner">
+    <span class="ibank-card__title">{{{title}}}</span>
+    <p class="ibank-card__text">{{text}}</p>
+    <div class="ibank-card__image">
+      {{>components/image
+              ext="png"
+              img=image
+              img-mobile=image-mobile
+      }}
+    </div>
+    <div class="ibank-card__button {{#if no-button-bottom}}ibank-card__button--no-bottom{{/if}}">
+      {{#if mobile-apps}}
+        {{> widgets/button-and-more small=true white=dark label=button-label no-link=true mobile-apps=true mobile-apps-gray=true}}
+      {{else}}
+        {{#if link-label}}
+          {{> widgets/button-and-more small=true white=dark label=button-label link-label=link-label}}
+        {{else}}
+          {{> widgets/button-and-more small=true white=dark label=button-label no-link=true}}
+        {{/if}}
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.deposits-list {
+  padding: 45px 0 100px;
+
+  @include mobile {
+    padding: 20px 0 50px;
+  }
+
+  &__item {
+    margin-top: 40px;
+
+    @include mobile{
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

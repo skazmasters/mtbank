@@ -1,0 +1,50 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="3">
+      <header class="section__header">
+        <h2 class="section__title">Как оформить кредит?</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--3 carousel-slider--mobile-block">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-slider__slide">
+                {{>widgets/base-card
+                        img="deposits/credit-single/steps/01"
+                        ext="png"
+                        title="Оставить заявку на сайте"
+                        text="Работа в физ отделении банка.<br/>С такими продуктами как и тут перечисление."
+                        label="Оставить заявку"
+                        outlined=true
+                }}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{>widgets/base-card
+                        img="deposits/credit-single/steps/02"
+                        ext="png"
+                        title="В любом отделении"
+                        text="Приходите в отделение для оформления кредита. Не забудьте необходимые документы и паспорт."
+                        label="Найти ближайшее отделение"
+                        outlined=true
+                }}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{>widgets/base-card
+                        img="deposits/credit-single/steps/03"
+                        ext="png"
+                        title="Для вопросов"
+                        text="Позвоните по телефонам горячей линии:<br/>+375 (29) 699 39 72; +375 (29) 209 95 42. Или задайте вопрос на сайте."
+                        label="Задать вопрос онлайн"
+                        outlined=true
+                }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

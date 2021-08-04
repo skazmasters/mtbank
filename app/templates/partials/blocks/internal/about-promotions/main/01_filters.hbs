@@ -1,0 +1,66 @@
+<section class="page-filters js-filters">
+  <div class="container">
+    <div class="page-filters__content">
+
+      <div class="page-filters__header">
+        <div class="page-filters__header-left">
+          <span class="page-filters__mobile-title">Акции</span>
+        </div>
+        <div class="page-filters__header-right">
+          {{>components/button-filter js-mod="js-filters__toggle"}}
+        </div>
+      </div>
+
+      <div class="page-filters__body js-filters__body">
+        <div class="page-filters__inner">
+          <div class="page-filters__inner-left">
+            <ul class="page-filters__list js-filters__list">
+              <li class="page-filters__list-item">
+                {{#> form/select border=true}}
+                  <option value="Все продукты">Все продукты</option>
+                  <option value="Карточные продукты">Карточные продукты</option>
+                  <option value="Карты Mastercard">Карты Mastercard</option>
+                  <option value="Карты Visa">Карты Visa</option>
+                  <option value="Карты рассрочки">Карты рассрочки</option>
+                  <option value="Рекламные игры">Рекламные игры</option>
+                {{/form/select}}
+              </li>
+              <li class="page-filters__list-item">
+                {{> components/btn-toggle label="Сначала ближайшие" id="check_02"}}
+              </li>
+            </ul>
+          </div>
+          <div class="page-filters__inner-right">
+            <ul class="page-filters__list js-filters__list">
+              <li class="page-filters__list-item">
+                {{#> form/select border=true}}
+                  <option value="">Все года</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                {{/form/select}}
+              </li>
+              <li class="page-filters__list-item">
+                {{#> form/select border=true}}
+                  <option value="">Все месяцы</option>
+                  <option value="1">Январь</option>
+                  <option value="2">Февраль</option>
+                  <option value="3">Март</option>
+                  <option value="4">Апрель</option>
+                  <option value="5">Май</option>
+                  <option value="6">Июнь</option>
+                  <option value="7">Июль</option>
+                  <option value="8">Август</option>
+                  <option value="9">Сентябрь</option>
+                  <option value="10">Октябрь</option>
+                  <option value="11">Ноябрь</option>
+                  <option value="12">Декабрь</option>
+                {{/form/select}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

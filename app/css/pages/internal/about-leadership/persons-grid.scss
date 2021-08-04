@@ -1,0 +1,34 @@
+.persons-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  @include media(mobile, up) {
+    margin: -45px -22px -45px;
+  }
+
+  &__item {
+    @include media(tabletSmall, up) {
+      flex: 0 1 calc((100% / 4) - 45px);
+      margin: 45px 22px;
+    }
+
+    @include media(tabletSmall, only) {
+      flex: 0 1 calc((100% / 3) - 45px);
+      margin: 45px 22px;
+    }
+
+    @include media(mobile) {
+      flex: 0 1 calc(50% - 6px);
+      margin-bottom: 50px;
+
+      &:nth-child(even) {
+        margin-left: 12px;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

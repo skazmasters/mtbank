@@ -1,0 +1,319 @@
+.base-card {
+  height: 100%;
+  min-width: 267px;
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h3;
+    @include transition;
+
+    @include tablet-and-mobile {
+      letter-spacing: 0em !important;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 8px 0 0;
+    @include text-body-2;
+    color: $color-gray-80;
+
+    .base-card--small & {
+      margin-top: 5px;
+    }
+
+    a {
+      position: relative;
+      z-index: 1;
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+
+  &__action {
+    margin-top: 15px;
+
+    .base-card--small & {
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .btn--simple {
+      padding: 0;
+    }
+  }
+
+  &__link {
+    margin-top: 20px;
+    color: $color-primary;
+
+    .btn--simple {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      @include desktop {
+        letter-spacing: -0.04em;
+      }
+      padding: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__inner {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    padding-top: 20px;
+    margin-top: auto;
+  }
+
+  &--outline {
+    position: relative;
+
+    .base-card {
+
+      &__image {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+
+        @include media(mobile) {
+          width: 50px;
+          height: 50px;
+          min-width: 50px;
+        }
+      }
+
+      &__inner {
+        margin-top: 15px;
+
+        @include mobile {
+          margin-top: 0;
+          margin-left: 25px;
+        }
+      }
+
+      &__link {
+        @include fill;
+        z-index: z(default);
+
+        &:hover {
+          + .base-card__container {
+            bottom: 5px;
+            @include shadow(lg);
+            border-color: transparent;
+
+            .base-card__title {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+
+      &__container {
+        position: relative;
+        bottom: 0;
+        padding: 24px 35px 40px;
+        border: 1px solid $color-gray-40;
+        border-radius: 15px;
+        background: $color-white;
+        @include transition;
+        box-shadow: 0 0 0 0 transparent;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @include media(mobile) {
+          padding: 25px 20px;
+          border-radius: 8px;
+          display: flex;
+        }
+
+        &:hover {
+          bottom: 5px;
+          @include shadow(lg);
+          border-color: transparent;
+
+          .base-card__title {
+            color: $color-primary;
+          }
+        }
+      }
+
+      &__action {
+        position: relative;
+        z-index: z(default);
+
+        .btn--simple {
+          padding: 0;
+        }
+
+        @include mobile {
+          .btn--simple {
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -0.04em;
+          }
+        }
+      }
+    }
+  }
+
+  &--static {
+    position: relative;
+
+    .base-card {
+      &__image {
+        width: 65px;
+        height: 65px;
+
+        @include media(mobile) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &__inner {
+        margin-top: 15px;
+      }
+
+      &__container {
+        padding: 24px 35px 40px;
+        border: 1px solid $color-gray-40;
+        border-radius: 15px;
+
+        @include media(mobile) {
+          padding: 25px 20px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  &--no-border {
+    .base-card__container {
+      border: 0 none;
+      box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+    }
+  }
+
+  &--mobile-block {
+    @include mobile {
+      .base-card__container {
+        display: block;
+      }
+      .base-card__inner {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  &--mobile-center {
+    @include mobile {
+      text-align: center;
+      .base-card__container {
+        display: block;
+      }
+      .base-card__image {
+        margin: 0 auto 20px;
+      }
+      .base-card__inner {
+        margin: 4px 0 0 0;
+      }
+    }
+  }
+
+  &--small {
+
+    .base-card__container {
+      padding: 25px 30px 30px;
+      @include smallTablet-and-mobile {
+        padding: 25px 20px 30px;
+      }
+
+      .base-card__btn {
+        .btn {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.base-card--no-border{
+      .base-card__container{
+        padding-bottom: 45px;
+        @include smallTablet-and-mobile {
+          padding-bottom: 40px;
+        }
+      }
+    }
+
+
+    .base-card__title {
+      font-size: 20px;
+      line-height: 130%;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 130%;
+      }
+    }
+
+    .base-card__text {
+      font-size: 15px;
+      line-height: 140%;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 8px;
+      }
+    }
+
+    .base-card__action {
+      .btn--simple {
+        font-size: 15px;
+        line-height: 120%;
+        font-weight: 600;
+        padding: 0;
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 100%;
+        }
+      }
+    }
+  }
+
+  &__action, &__btn {
+    z-index: 2;
+    display: inline-block;
+  }
+
+  &.base-card--no-border.base-card--outline {
+    @include mobile {
+      padding: 10px;
+      margin: 0 -10px;
+    }
+  }
+
+  &:not(.base-card--mobile-center):not(.base-card--mobile-block) {
+    @include mobile {
+      .base-card__container {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}

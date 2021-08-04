@@ -1,0 +1,45 @@
+<div class="banner banner--background {{#if dark}}{{else}}banner--white{{/if}} banner--partners">
+  <div class="banner__bg">
+    {{#if bg}}
+      {{> components/image img=bg img-tabletSmall=bg-mobile ext="jpg"}}
+    {{else}}
+      {{> components/image img="banners/partners/bg" img-tabletSmall="banners/partners/bg-mobile" ext="jpg"}}
+    {{/if}}
+  </div>
+  <div class="banner__container">
+    <div class="banner__inner">
+      <span class="banner__title">{{{title}}}</span>
+      <p class="banner__description">{{{text}}}</p>
+      <div class="banner__image">
+        {{#if image}}
+          {{> components/image ext="png" img=image img-tabletSmall=image-mobile}}
+        {{else}}
+          {{> components/image ext="png" img="banners/partners/image" img-tabletSmall="banners/partners/mobile"}}
+        {{/if}}
+      </div>
+      <div class="banner__features {{#if mobile-block}}banner__features--block{{/if}}">
+        {{#if feature-1-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-1-value}}</span>
+            <span class="banner__feature-label">{{feature-1-label}}</span>
+          </div>
+        {{/if}}
+        {{#if feature-2-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-2-value}}</span>
+            <span class="banner__feature-label">{{feature-2-label}}</span>
+          </div>
+        {{/if}}
+        {{#if feature-3-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-3-value}}</span>
+            <span class="banner__feature-label">{{feature-3-label}}</span>
+          </div>
+        {{/if}}
+      </div>
+      <div class="banner__actions">
+        {{> widgets/button-and-more white=dark label=button-label no-link=true}}
+      </div>
+    </div>
+  </div>
+</div>

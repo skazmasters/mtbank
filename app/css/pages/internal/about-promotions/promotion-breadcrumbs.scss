@@ -1,0 +1,9 @@
+.promotion-breadcrumbs {
+  @include media(tablet, up) {
+    display: none;
+  }
+
+  @include media(tablet) {
+    margin: 20px 0;
+  }
+}

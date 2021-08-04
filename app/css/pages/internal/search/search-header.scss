@@ -1,0 +1,32 @@
+.search-header {
+  margin-top: 44px;
+  text-align: center;
+  @include mobile {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin: 0;
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 120%;
+    }
+  }
+
+  &__stats {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: #717784;
+    display: block;
+    text-align: center;
+  }
+}

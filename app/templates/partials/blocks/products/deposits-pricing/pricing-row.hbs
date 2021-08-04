@@ -1,0 +1,14 @@
+<div class="deposit-table__tr">
+  <div class="deposit-table__td deposit-table__td--amount">50 BYN</div>
+  <div class="deposit-table__td deposit-table__td--add">нет</div>
+  <div class="deposit-table__td deposit-table__td--period">{{period}}</div>
+  <div class="deposit-table__td deposit-table__td--percent">
+    {{percent}}
+    {{#if percent-tooltip}}
+      {{>ui/popover text="<p>Паспорт нам не нужен, выдаем кредиты всем!</p><p>Паспорт нам не нужен, выдаем кредиты всем!</p><p>Паспорт нам не нужен, выдаем кредиты всем!</p><p><a href='#'>Согласен</a>"}}
+    {{/if}}
+  </div>
+  <div class="deposit-table__td deposit-table__td--button">
+    <button class="btn btn--small btn--primary-outline">Оформить</button>
+  </div>
+</div>

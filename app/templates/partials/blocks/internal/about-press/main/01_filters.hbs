@@ -1,0 +1,55 @@
+<section class="page-filters js-filters">
+  <div class="page-filters__content">
+    <div class="page-filters__header">
+      <div class="page-filters__header-left">
+        <span class="page-filters__mobile-title">Пресс-центр</span>
+      </div>
+      <div class="page-filters__header-right">
+        {{>components/button-filter js-mod="js-filters__toggle"}}
+      </div>
+    </div>
+
+    <div class="page-filters__body js-filters__body">
+      <div class="page-filters__inner">
+        <div class="page-filters__inner-left">
+          <ul class="page-filters__list page-filters__list--small-gutters js-filters__list">
+            <li class="page-filters__list-item">
+              {{#> form/select border=true}}
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2019">2018</option>
+              {{/form/select}}
+            </li>
+            <li class="page-filters__list-item">
+              {{#> form/select border=true}}
+                <option value="Все месяцы">Все месяцы</option>
+                <option value="Декабрь">Декабрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Август">Август</option>
+                <option value="Июль">Июль</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Май">Май</option>
+                <option value="Апрель">Апрель</option>
+                <option value="Март">Март</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Январь">Январь</option>
+              {{/form/select}}
+            </li>
+          </ul>
+        </div>
+        <div class="page-filters__inner-right">
+          <ul class="page-filters__list page-filters__list--tabs">
+            <li class="page-filters__list-item">
+              <span class="button-tab active">Частным лицам</span>
+            </li>
+            <li class="page-filters__list-item">
+              <a href="#" class="button-tab">Юридическим лицам</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<section class="section js-accordion">
+  <div class="container">
+    {{# each internal.about-property.items}}
+      {{#>blocks/common/accordion-item title=this.title text=this.category}}
+        {{> blocks/internal/about-property/components/property-item}}
+      {{/blocks/common/accordion-item}}
+    {{/each}}
+  </div>
+</section>

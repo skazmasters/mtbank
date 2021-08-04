@@ -1,0 +1,148 @@
+.section-credit-banner {
+  margin: 95px 0 65px;
+  padding: 0;
+
+  @include mobile {
+    margin: 30px 0 50px;
+  }
+}
+
+.credit-banner {
+  position: relative;
+  padding: 34px 70px 44px 55px;
+  border-radius: 15px;
+
+  @include smallTablet {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include mobile {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    position: relative;
+
+    @include mobile{
+      font-size: 21px;
+      line-height: 120%;
+    }
+  }
+
+  &__text {
+    color: $color-gray-80;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    display: block;
+    margin-top: 4px;
+    position: relative;
+
+    @include mobile{
+      font-size: 15px;
+      line-height: 140%;
+      margin-top: 7px;
+    }
+  }
+
+  &__row {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+
+    margin-left: -27px;
+    margin-right: -27px;
+
+    @include mobile{
+      margin: 30px 0 0 0;
+      display: block;
+    }
+  }
+
+  &__cell {
+    flex: 1 1 1px;
+    padding: 0 27px;
+
+    @include mobile{
+      padding: 0;
+      margin-top: 20px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @include smallTablet-and-mobile {
+      display: block;
+      text-align: center
+    }
+
+    &-image {
+      flex-basis: 200px;
+      min-width: 200px;
+      display: block;
+
+      img {
+        margin: 0 auto;
+      }
+
+      @include smallTablet-and-mobile {
+        min-width: 0;
+      }
+    }
+
+    &-content {
+      margin-left: 20px;
+      width: 350px;
+
+      @include desktop{
+        margin-top: 55px;
+      }
+
+      @include tablet-and-mobile {
+        width: auto;
+      }
+
+      @include smallTablet-and-mobile {
+        margin-top: 15px;
+      }
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+      color: $color-gray-100;
+      display: block;
+
+      @include mobile{
+        font-size: 18px;
+        line-height: 120%;
+      }
+    }
+
+    &-text {
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+      color: $color-gray-80;
+      display: block;
+      margin-top: 5px;
+
+      @include mobile{
+        font-size: 15px;
+        line-height: 140%;
+      }
+    }
+  }
+}

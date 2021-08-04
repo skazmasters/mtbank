@@ -1,0 +1,35 @@
+<section class="section section--gray">
+  <div class="container-880">
+    <header class="section__header">
+      <h2 class="section__title section__title--center section__title--mob-center">Заявка на открытие счета</h2>
+    </header>
+    <div class="section__content">
+      <div class="business-form">
+        <div class="business-form__progress">
+          {{> widgets/form-progress step=step}}
+        </div>
+        <div class="business-form__content business-form__content--account">
+          {{#ifCond step 1}}
+            {{#if with-error}}
+              {{> forms/components/business/step_01-error}}
+            {{else}}
+              {{> forms/components/business/step_01}}
+            {{/if}}
+          {{/ifCond}}
+          {{#ifCond step 2}}
+            {{> forms/components/business/step_02}}
+          {{/ifCond}}
+          {{#ifCond step 3}}
+            {{> forms/components/business/step_03 with-error=with-error}}
+          {{/ifCond}}
+          {{#ifCond step 4}}
+            {{> forms/components/business/step_04}}
+          {{/ifCond}}
+          {{#ifCond step 5}}
+            {{> forms/components/business/step_05}}
+          {{/ifCond}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

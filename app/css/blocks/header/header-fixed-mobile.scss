@@ -1,0 +1,45 @@
+@include tablet-and-mobile {
+  body.header-fixed {
+    margin-top: 203px;
+
+    @include mobile {
+      margin-top: 167px;
+
+      &.header--with-mobile-app {
+        margin-top: 235px;
+      }
+    }
+  }
+
+  .header {
+    z-index: z(header);
+
+    &.animate {
+      transition: transform .5s;
+    }
+
+    &.hide {
+      transform: translateY(-100%);
+    }
+
+    &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: z(header) + 1;
+
+      .header-top {
+        display: none;
+      }
+
+      .header-main {
+        padding-bottom: 0;
+      }
+
+      .header-main__center {
+        display: none;
+      }
+    }
+  }
+}

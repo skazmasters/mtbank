@@ -1,0 +1,22 @@
+<div class="steps-content__cell">
+  <div class="steps-content__item js-steps__item">
+    <div class="steps-content__inner">
+      <div class="steps-content__icon">
+        {{> components/image img=(concat "business/loyalty/step_" icon) ext="png"}}
+      </div>
+      <span class="steps-content__name">{{ title }}</span>
+    </div>
+    <div class="steps-content__body">
+      <div class="steps-content__text">
+        {{#ifCond icon "01"}}{{else}}Item {{icon}}<br/>{{/ifCond}}
+        Когда на Вашем бонусном счете будет достаточное количество МТБаллов, просто отправьте нам заявку
+        на
+        интересующий Вас бонус по одному из удобных каналов связи (электронная почта, системы дистанционного
+        банковского обслуживания или в бумажном виде согласно форме)
+      </div>
+      <div class="steps-content__button">
+        {{> ui/btn icon=null label="Присоединиться" color="primary" size="large"}}
+      </div>
+    </div>
+  </div>
+</div>

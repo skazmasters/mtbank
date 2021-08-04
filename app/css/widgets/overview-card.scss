@@ -1,0 +1,283 @@
+.overview-card {
+
+  &--no-padding {
+    @include no-smallTablet {
+      margin-top: -50px !important;
+      margin-bottom: -80px !important;
+      .overview-card__content {
+        padding: 50px 0 80px;
+      }
+    }
+  }
+
+  &__container {
+    @include media(tabletSmall, up) {
+      display: flex;
+      align-items: center;
+    }
+
+    @include media(tabletSmall) {
+      display: block;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__button {
+    @include mobile {
+      width: 100%;
+      .btn {
+        width: 100%;
+        justify-content: center;
+        display: inline-flex;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-left: 20px;
+      @include mobile {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @include media(tabletSmall, up) {
+      flex: 0 1 385px;
+    }
+
+    .overview-card--big-left & {
+      @include media(tabletSmall, up) {
+        flex: 0 1 500px;
+      }
+    }
+
+    @include media(tabletSmall) {
+      display: flex;
+      justify-content: center;
+      max-width: none;
+    }
+
+    .overview-card--salary & {
+      @include media(tabletSmall, up) {
+        flex: 0;
+        min-width: 440px;
+      }
+    }
+
+    @include mobile{
+      max-height: 220px;
+      img{
+        max-height: 220px;
+      }
+    }
+  }
+
+  &__content {
+    @include media(tabletSmall, up) {
+      flex: 1 1 1px;
+      margin-left: 110px;
+    }
+
+    .overview-card--salary & {
+      @include media(tabletSmall, up) {
+        .overview-card__text{
+
+        }
+      }
+    }
+
+
+    @include media(tabletSmall) {
+      margin-top: 25px;
+    }
+
+    &--small {
+      @include desktop {
+        max-width: 495px;
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2;
+
+    .overview-card__content--small & {
+      @include desktop {
+        max-width: 400px;
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 15px 0 0;
+    @include text-body-1;
+    color: $color-gray-80;
+    max-width: 550px;
+    padding-right: 0;
+
+    @include mobile{
+      max-width: none;
+    }
+
+    .overview-card__content--small & {
+      @include desktop {
+        padding-right: 0;
+      }
+    }
+
+    @include media(tabletSmall) {
+      margin-top: 10px;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+  }
+
+  &__html {
+    display: block;
+    margin: 20px 0 0;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include mobile {
+      font-size: 15px;
+      line-height: 140%;
+    }
+
+    @include desktop {
+      padding-right: 30px;
+    }
+
+    @include media(tabletSmall) {
+      margin-top: 10px;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+      }
+    }
+
+    ul {
+      margin-top: 20px;
+      @include mobile {
+        margin-top: 12px;
+      }
+    }
+
+    li {
+      position: relative;
+      padding-left: 42px;
+      margin-top: 15px;
+
+      @include mobile {
+        padding-left: 23px;
+        margin-top: 5px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        background: $color-primary;
+        border-radius: 100%;
+        width: 8px;
+        height: 8px;
+        top: 8px;
+
+        @include mobile {
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+
+    @include mobile {
+      margin-top: 10px;
+    }
+
+    &-item {
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+      padding-left: 39px;
+      position: relative;
+
+      @include mobile {
+        font-size: 15px;
+        line-height: 140%;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        @include align(false, true);
+        @include sprite('list-tick--business');
+
+        @include mobile {
+          transform: scale(0.75);
+          top: 6px;
+        }
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__cta {
+    margin-top: 35px;
+
+    @include media(tabletSmall) {
+      margin-top: 25px;
+    }
+  }
+
+  &__btn {
+    @include btn-base;
+    @include btn-primary;
+    @include shadow(lg);
+
+    @include media(tabletSmall, up) {
+      @include btn-large;
+    }
+
+    @include media(tabletSmall) {
+      @include btn-regular;
+    }
+  }
+}

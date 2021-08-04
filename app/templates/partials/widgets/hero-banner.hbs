@@ -1,0 +1,179 @@
+<section class="hero-banner {{#if text-wide}}hero-banner--wide{{/if}} {{#if white}}hero-banner--white{{/if}} {{#if
+        is-small}}hero-banner--small{{/if}} {{#if
+        is-center}}hero-banner--center{{/if}} {{#if
+        features-enabled}}hero-banner--features{{/if}}  {{#if mod}}hero-banner--{{mod}}{{/if}}">
+  <div class="hero-banner__bg" {{#if background}}style="background:{{background}}"{{/if}}>
+    {{#if background}}{{else}}
+      {{>components/image no-2x=true  img=(concat 'hero/' assets-folder '/bg') ext="jpg"}}
+    {{/if}}
+  </div>
+  {{# if link}}
+    <a href="#" class="hero-banner__link"></a>
+  {{/if}}
+  <div class="container">
+    <div class="hero-banner__inner">
+      <div class="hero-banner__image">
+        {{>components/image
+                img=(concat 'hero/' assets-folder '/image') ext="png"
+                img-tabletSmall=(concat 'hero/' assets-folder '/mobile') ext-tablet="jpg"
+        }}
+      </div>
+      <div class="hero-banner__content {{#if mobile-center}}hero-banner__content--mobile-center{{/if}} {{#if content-space-left}}hero-banner__content--space-left{{/if}} {{#if
+              feature-1-title}}hero-banner__content--features{{/if}}"
+           {{#if mobile-background}}style="background:{{mobile-background}}"{{/if}}>
+
+        {{#if is-center}}
+          <span class="hero-banner__title">{{{title}}}</span>
+        {{else}}
+          <div class="hero-banner__main">
+            {{#if back-button}}
+              <a href="#" class="hero-banner__back">
+                {{> ui/svg name="back-arrow"}}
+                {{back-button}}
+              </a>
+            {{/if}}
+
+            <span class="hero-banner__title">{{{title}}}</span>
+            {{#if text}}
+              <p class="hero-banner__text">{{{text}}}</p>
+            {{/if}}
+
+            {{#if button-label}}
+              <div class="hero-banner__actions">
+                {{#if link-label}}
+                  {{> widgets/button-and-more label=button-label label-2=button-2-label link-label=link-label link-with-dots=link-with-dots}}
+                {{else}}
+                  {{> widgets/button-and-more label=button-label label-2=button-2-label no-link=true}}
+                {{/if}}
+              </div>
+            {{/if}}
+
+            {{#if mobile-app-buttons}}
+              <div class="hero-banner__actions">
+                <div class="hero-banner__apps">
+                  <div class="hero-banner__app">
+                    {{> widgets/mobileapp-button appstore=true label="Скачать в App Store"}}
+                  </div>
+                  <div class="hero-banner__app">
+                    {{> widgets/mobileapp-button googleplay=true label="Скачать в Google Play"}}
+                  </div>
+                </div>
+              </div>
+            {{/if}}
+
+            {{#if link-full-label}}
+              <div class="hero-banner__actions hero-banner__actions--link">
+                <a href="#" class="hero-banner__actions-link">{{link-full-label}}</a>
+              </div>
+            {{/if}}
+
+          </div>
+        {{/if}}
+
+        {{#if feature-1-title}}
+          <div class="hero-banner__features {{#if feature-3-title}}{{else}}hero-banner__features--small{{/if}}">
+            <div class="hero-banner__features-inner">
+              {{#if feature-1-title}}
+                <div class="hero-banner__feature">
+                  {{#if features-icons}}
+                    <div class="hero-banner__feature-icon">
+                      {{#if feature-1-svg}}
+                        {{>components/image img=(concat 'hero/' assets-folder '/icon_01') ext="svg"}}
+                      {{else}}
+                        {{>components/image img=(concat 'hero/' assets-folder '/icon_01') ext="png"}}
+                      {{/if}}
+                    </div>
+                  {{/if}}
+                  <div class="hero-banner__feature-content {{#if
+                          feature-1-text}}{{else}}hero-banner__feature-content--no-text{{/if}}">
+                    <span class="hero-banner__feature-title">{{{feature-1-title}}}</span>
+                    {{#if feature-1-text}}
+                      <p class="hero-banner__feature-text">{{{feature-1-text}}}</p>
+                    {{/if}}
+                  </div>
+                </div>
+              {{/if}}
+              {{#if feature-2-title}}
+                <div class="hero-banner__feature">
+                  {{#if features-icons}}
+                    <div class="hero-banner__feature-icon">
+                      {{#if feature-2-svg}}
+                        {{>components/image img=(concat 'hero/' assets-folder '/icon_02') ext="svg"}}
+                      {{else}}
+                        {{>components/image img=(concat 'hero/' assets-folder '/icon_02') ext="png"}}
+                      {{/if}}
+                    </div>
+                  {{/if}}
+                  <div class="hero-banner__feature-content {{#if
+                          feature-2-text}}{{else}}hero-banner__feature-content--no-text{{/if}}">
+                    <span class="hero-banner__feature-title">{{{feature-2-title}}}</span>
+                    {{#if feature-2-text}}
+                      <p class="hero-banner__feature-text">{{{feature-2-text}}}</p>
+                    {{/if}}
+                  </div>
+                </div>
+              {{/if}}
+              {{#if feature-3-title}}
+                <div class="hero-banner__feature">
+                  {{#if features-icons}}
+                    <div class="hero-banner__feature-icon">
+                      {{#if feature-3-svg}}
+                        {{>components/image img=(concat 'hero/' assets-folder '/icon_03') ext="svg"}}
+                      {{else}}
+                        {{>components/image img=(concat 'hero/' assets-folder '/icon_03') ext="png"}}
+                      {{/if}}
+                    </div>
+                  {{/if}}
+                  <div class="hero-banner__feature-content {{#if
+                          feature-3-text}}{{else}}hero-banner__feature-content--no-text{{/if}}">
+                    <span class="hero-banner__feature-title">{{{feature-3-title}}}</span>
+                    {{#if feature-3-text}}
+                      <p class="hero-banner__feature-text">{{{feature-3-text}}}</p>
+                    {{/if}}
+                  </div>
+                </div>
+              {{/if}}
+            </div>
+          </div>
+
+          {{#if button-label}}
+            {{#if is-center}}{{else}}
+              <div class="hero-banner__actions hero-banner__actions--mobile">
+                {{#if link-label}}
+                  {{> widgets/button-and-more label=button-label label-2=button-2-label link-label=link-label}}
+                {{else}}
+                  {{> widgets/button-and-more label=button-label label-2=button-2-label no-link=true}}
+                {{/if}}
+              </div>
+            {{/if}}
+          {{/if}}
+
+          {{#if mobile-app-buttons}}
+            <div class="hero-banner__actions hero-banner__actions--mobile">
+              <div class="hero-banner__apps">
+                <div class="hero-banner__app">
+                  {{> widgets/mobileapp-button appstore=true label="Скачать в App Store"}}
+                </div>
+                <div class="hero-banner__app">
+                  {{> widgets/mobileapp-button googleplay=true label="Скачать в Google Play"}}
+                </div>
+              </div>
+            </div>
+          {{/if}}
+        {{/if}}
+
+        {{#if is-center}}
+          {{#if button-label}}
+            <div class="hero-banner__actions">
+              {{#if link-label}}
+                {{> widgets/button-and-more label=button-label label-2=button-2-label link-label=link-label}}
+              {{else}}
+                {{> widgets/button-and-more label=button-label label-2=button-2-label no-link=true}}
+              {{/if}}
+            </div>
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</section>

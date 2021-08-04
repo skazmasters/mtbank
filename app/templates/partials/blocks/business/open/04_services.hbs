@@ -1,0 +1,57 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="4">
+      <header class="section__header">
+        <div class="section__header-left section__header-left--block">
+          <h2 class="section__title section__title--small">Сервисы для бизнеса</h2>
+          <p class="section__description">Инструменты для управления денежными средствами</p>
+        </div>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{# times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card outlined=true small=true
+                          img="business/open/business_01" ext="png"
+                          title="Онлайн-сервисы"
+                          text="Системы Интернет-банк  и Клиент-банк"
+                          label="Узнать больше"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card outlined=true small=true
+                          img="business/open/business_02" ext="png"
+                          title="Смс и email информирование"
+                          text="Уведомления о поступлении  и (или) списании денежных средств по банковским счетам"
+                          label="Узнать больше"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card outlined=true small=true
+                          img="business/open/business_03" ext="png"
+                          title="Электронный документооборот"
+                          text="по валютным операциям"
+                          label="Узнать больше"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card outlined=true small=true
+                          img="business/open/business_04" ext="png"
+                          title="Самоинкассация"
+                          text="Внесение выручки через автоматизированную депозитную машину"
+                          label="Узнать больше"
+                  }}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

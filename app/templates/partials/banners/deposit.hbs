@@ -1,0 +1,47 @@
+<div class="banner banner--white banner--link">
+  <a href="#" class="banner__link"></a>
+  <div class="banner__container">
+    <div class="banner__inner">
+      <div class="banner__badges">
+        {{#if currency-1}}
+          <span class="banner__badges-item">{{currency-1}}</span>
+        {{/if}}
+        {{#if currency-2}}
+          <span class="banner__badges-item">{{currency-2}}</span>
+        {{/if}}
+      </div>
+      <span class="banner__title">{{{title}}}</span>
+      <p class="banner__description">{{{text}}}</p>
+      <div class="banner__image">
+        {{> components/image ext="png" img=img img-tabletSmall=img-mobile}}
+      </div>
+      <div class="banner__features">
+        {{#if feature-1-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-1-value}}</span>
+            <span class="banner__feature-label">{{feature-1-label}}</span>
+          </div>
+        {{/if}}
+        {{#if feature-2-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-2-value}}</span>
+            <span class="banner__feature-label">{{feature-2-label}}</span>
+          </div>
+        {{/if}}
+        {{#if feature-3-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-3-value}}</span>
+            <span class="banner__feature-label">{{feature-3-label}}</span>
+          </div>
+        {{/if}}
+      </div>
+      <div class="banner__actions">
+        {{#if button-label}}
+          {{> widgets/button-and-more label=button-label link-label="Подробнее"}}
+        {{else}}
+          {{> widgets/button-and-more label="Открыть онлайн" link-label="Подробнее"}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

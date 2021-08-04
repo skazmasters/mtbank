@@ -1,0 +1,122 @@
+<section class="section section--gray">
+  <div class="container">
+    <header class="section__header section__header--simple">
+      <h2 class="section__title">Выбирайте удобный тариф</h2>
+      <p class="section__description section__description--short">Наши условия подходят всем, осталось остановиться то
+        том, что необходимо именно
+        вам</p>
+    </header>
+    <div class="section__content">
+      <div class="business-pricing">
+        <div class="packages-row packages-row--4 js-packages-row">
+          <div class="packages-row__inner">
+            <div class="packages-row__cell">
+              {{> widgets/pricing-card
+                      title="Первый счет"
+                      text="Специальное предложение для тех, кто начинает свой бизнес"
+                      param-1="обслуживание"
+                      param-1-big=true
+                      param-1-value="9,9 BYN в месяц"
+                      param-2="1 BYN за платеж сверх включенных"
+                      param-2-value="0 BYN - 5 платежей в месяц"
+                      param-3="карточки для получения личного дохода ИП и 1 корпоративной Visa Business"
+                      param-3-value="0 BYN выпуск и обслуживание"
+              }}
+            </div>
+            <div class="packages-row__cell">
+              {{> widgets/pricing-card selected=true
+                      title="Свой счет"
+                      text="Тарифный план для индивидуальных предпринимателей"
+                      param-1="карточки для получения личного дохода ИП и 1 корпоративной Visa Business"
+                      param-1-value="0 BYN выпуск и&nbsp;обслуживание"
+                      param-1-big=true
+                      param-2="0 BYN"
+                      param-2-value="выпуск и обслуживание двух корпоративных карт Visa Business"
+                      param-3="Бесплатное использование терминалов при подключении тарифного плана мобильного эквайринга “mPOS Pro”"
+                      param-3-value="Бесплатный выпуск 1 карты Visa Classic для получения личного дохода ИП и 1 корпокарты Visa Business"
+              }}
+            </div>
+            <div class="packages-row__cell">
+              {{> widgets/pricing-card
+                      title="Точный счет"
+                      text="Полный комплекс услуг РКО для компаний по гибкой цене"
+                      param-1="платежи"
+                      param-1-value="0 BYN без ограничениий"
+                      param-1-big=true
+                      param-2="выпуск и обслуживание двух корпоративных карт Visa Business"
+                      param-2-value="0 BYN"
+                      param-3="Бесплатное использование терминалов при подключении тарифного плана мобильного эквайринга “mPOS Pro”"
+                      param-3-value="Бесплатный выпуск 1 карты Visa Classic для получения личного дохода ИП и 1 корпокарты Visa Business"
+              }}
+            </div>
+            <div class="packages-row__cell">
+              {{> widgets/pricing-card
+                      title="Супер-счет"
+                      text="Лучшие условия РКО для активных компаний"
+                      param-1="обслуживание"
+                      param-1-value="120 BYN в месяц"
+                      param-1-big=true
+                      param-2="платежи"
+                      param-2-value="0 BYN<br/>без ограничений"
+                      param-3="выпуск и обслуживание неограниченного количества корпоративных карт Visa Business"
+                      param-3-value="0 BYN"
+                      param-4='терминалы от банка при подключении тарифного плана мобильного эквайринга "mPOS Pro" и торгового эквайринга "Супер-POS"'
+                      param-4-value="0 BYN"
+                      param-5="прием, пересчет и зачисление выручки на счет"
+                      param-5-value="0,05% от суммы (мин. 1,5 BYN)"
+              }}
+            </div>
+            <div class="packages-row__cell">
+              {{> widgets/pricing-card
+                      title="Точный счет"
+                      text="Полный комплекс услуг РКО для компаний по гибкой цене"
+                      param-1="платежи"
+                      param-1-value="0 BYN без ограничениий"
+                      param-1-big=true
+                      param-2="выпуск и обслуживание двух корпоративных карт Visa Business"
+                      param-2-value="0 BYN"
+                      param-3="Бесплатное использование терминалов при подключении тарифного плана мобильного эквайринга “mPOS Pro”"
+                      param-3-value="Бесплатный выпуск 1 карты Visa Classic для получения личного дохода ИП и 1 корпокарты Visa Business"
+              }}
+            </div>
+            <div class="packages-row__cell">
+              {{> widgets/pricing-card
+                      title="Супер-счет"
+                      text="Лучшие условия РКО для активных компаний"
+                      param-1="обслуживание"
+                      param-1-value="120 BYN в месяц"
+                      param-1-big=true
+                      param-2="платежи"
+                      param-2-value="0 BYN<br/>без ограничений"
+                      param-3="выпуск и обслуживание неограниченного количества корпоративных карт Visa Business"
+                      param-3-value="0 BYN"
+                      param-4='терминалы от банка при подключении тарифного плана мобильного эквайринга "mPOS Pro" и торгового эквайринга "Супер-POS"'
+                      param-4-value="0 BYN"
+                      param-5="прием, пересчет и зачисление выручки на счет"
+                      param-5-value="0,05% от суммы (мин. 1,5 BYN)"
+              }}
+            </div>
+          </div>
+        </div>
+        <div class="business-pricing__more">
+          <span class="business-pricing__subtitle">Все тарифы включают</span>
+          <div class="business-pricing__more-row">
+            <div class="row-three row-three--mobile-column">
+              <div class="row-three__inner">
+                <div class="row-three__cell">
+                  {{> widgets/include-card title="Бесплатное информирование" text="о движении по всем банковским счетам"}}
+                </div>
+                <div class="row-three__cell">
+                  {{> widgets/include-card title="Бесплатное пользованиие" text="одной из систем: «Интернет-банк» или «Клиент-банк»"}}
+                </div>
+                <div class="row-three__cell">
+                  {{> widgets/include-card title="4 бонуса" text="на продвижение в интернете ваших товаров и услуг!"}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

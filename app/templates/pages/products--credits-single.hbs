@@ -1,0 +1,26 @@
+{{! Продукты / Кредиты / Карточка }}
+
+{{> layout/head page-title="Продукты / Кредиты / Карточка"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main" header-nav-active="cards"}}
+
+<div class="hero-menu-block">
+  {{> hero/credit }}
+  {{> blocks/common/page-header title="Обзор"
+          item-1="Обзор"
+          item-1-active=true
+          item-3="Условия и документы"
+          item-4="Вопрос-Ответ"
+          sticky-button=true
+          sticky-button-label="Оформить кредит"
+  }}
+</div>
+
+{{> blocks/products/credits-single/02_calculator }}
+{{> blocks/products/credits-single/03_features }}
+{{> blocks/products/credits-single/04_banner }}
+{{> blocks/products/credits-single/05_howto }}
+
+{{> forms/credit }}
+
+{{> layout/footer no-clickable-logo=true }}

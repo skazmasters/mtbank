@@ -1,0 +1,56 @@
+<section class="section">
+  <div class="container">
+    <div class="js-carousel-slider" data-slides-count="2" data-scroll-count="1">
+      <header class="section__header">
+        <div class="section__header-left section__header-left--block">
+          <h2 class="section__title">Интернет банк</h2>
+          <p class="section__description">Управляйте средствами из любой точки мира</p>
+        </div>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--mobile-block">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/ibank-card dark=true
+                        title="Интернет банк"
+                        text="Работает на всех устройствах и без ЭЦП, высокий уровень безопасности."
+                        background="business/home/bank_01-bg"
+                        image="business/home/bank_01-image"
+                        image-mobile="business/home/bank_01-mobile"
+                        button-label="Войти"
+                        link-label="Подробнее"
+                }}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/ibank-card
+                        title="Мобильный банк"
+                        text="Совершайте и быстро повторяйте платежи с телефона. Актуальная информация о счетах и операциях"
+                        background="business/home/bank_02-bg"
+                        image="business/home/bank_02-image"
+                        image-mobile="business/home/bank_02-mobile"
+                        button-label="Подробнее"
+                        mobile-apps=true
+                }}
+              </div>
+              <div class="swiper-slide carousel-slider__slide">
+                {{> widgets/ibank-card
+                        title="Мобильный банк"
+                        text="Совершайте и быстро повторяйте платежи с телефона. Актуальная информация о счетах и операциях"
+                        background="business/home/bank_02-bg"
+                        image="business/home/bank_02-image"
+                        image-mobile="business/home/bank_02-mobile"
+                        button-label="Подробнее"
+                        mobile-apps=true
+                }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

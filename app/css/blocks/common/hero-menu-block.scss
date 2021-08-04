@@ -1,0 +1,8 @@
+.hero-menu-block{
+  display: flex;
+  flex-direction: column;
+
+  @include smallTablet-and-mobile{
+    flex-direction: column-reverse;
+  }
+}

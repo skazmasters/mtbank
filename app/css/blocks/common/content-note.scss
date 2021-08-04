@@ -1,0 +1,31 @@
+.content-note {
+  padding-left: 42px;
+  position: relative;
+  margin: 40px 0;
+  padding-top: 7px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 10px;
+    bottom: 2px;
+    width: 3px;
+    background: $color-primary;
+    border-radius: 10px;
+  }
+
+  @include media(mobile) {
+    padding-left: 15px;
+  }
+
+  b {
+    color: $color-primary;
+    @include text-h6;
+    display: block;
+  }
+
+  p {
+    margin: 8px 0 0 0 !important;
+  }
+}

@@ -1,0 +1,42 @@
+<section class="section">
+  <div class="container">
+    <div class="service-install">
+      <div class="service-install__header">
+        <div class="service-install__icon">
+          {{>components/image img="services/mobile-bank/install-icon" ext="png"}}
+        </div>
+        <span class="service-install__title">Установите приложение<br/>мобильный банк</span>
+      </div>
+      <div class="service-install__image">
+        {{>components/image img="services/mobile-bank/install" ext="png"}}
+      </div>
+      <ul class="service-install__features">
+        <li class="service-install__feature">
+          <span class="service-install__feature-title">Скачайте и пользуйтесь</span>
+          <p class="service-install__feature-text">Доступно бесплатно в App Store<br/>или Google Play.</p>
+        </li>
+        <li class="service-install__feature">
+          <span class="service-install__feature-title">Для регистрации не нужна карта</span>
+          <p class="service-install__feature-text">Для этого вам понадобится только<br/>ваш номер телефона.</p>
+        </li>
+        <li class="service-install__feature">
+          <span class="service-install__feature-title">Оформляйте карты и продукты</span>
+          <p class="service-install__feature-text">Оформляйте продукты и карты нашего банка без посещения офиса.</p>
+        </li>
+        <li class="service-install__feature">
+          <span class="service-install__feature-title">Безопасность</span>
+          <p class="service-install__feature-text">Все ваши данные надежно защищены нашими уникальными
+            технологиями.</p>
+        </li>
+      </ul>
+      <div class="service-install__links">
+        <div class="service-install__link">
+          {{> widgets/mobileapp-button appstore=true label="Скачать в App Store"}}
+        </div>
+        <div class="service-install__link">
+          {{> widgets/mobileapp-button googleplay=true label="Скачать в Google Play"}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

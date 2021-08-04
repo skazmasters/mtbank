@@ -1,0 +1,66 @@
+.number-step {
+  display: flex;
+  align-items: center;
+
+  &__content {
+    margin-left: 40px;
+
+    @include mobile {
+      margin-left: 18px;
+    }
+  }
+
+  &__number {
+    background: $color-white;
+    box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+    border-radius: 100%;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: $color-primary;
+
+    @include mobile {
+      width: 40px;
+      height: 40px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-gray-100;
+    display: block;
+    letter-spacing: -0.04em;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    margin-top: 3px;
+    display: block;
+    color: $color-gray-80;
+
+    @include mobile {
+      margin-top: 5px;
+      font-size: 14px;
+      letter-spacing: -0.04em;
+    }
+  }
+}

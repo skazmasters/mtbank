@@ -1,0 +1,65 @@
+<section class="section section--gray section--gray-bt-desktop" id="v-form">
+  <div class="container-770">
+    <div class="vacancy-form">
+      <div class="vacancy-form__header">
+        {{#if single}}
+          <span class="vacancy-form__title">Заинтересовала вакансия?</span>
+          <p class="vacancy-form__text vacancy-form__text--bold">Оставьте свои контактные данные, <a href="#">скачайте и
+            заполните анкету</a> прикрепите к письму. После мы свяжемся с вами.
+          </p>
+        {{else}}
+          <span class="vacancy-form__title">Нет подходящей вакансии или вы  еще не отпределись?</span>
+          <p class="vacancy-form__text">
+            Оставьте свои контактные данные, <a href="#">скачайте и заполните анкету</a>
+            прикрепите к письму. Или отправьте заполненную анкету на почту
+            <a href="#">HRanketa@mtbank.by</a>
+          </p>
+        {{/if}}
+      </div>
+      <div class="vacancy-form__content">
+        <form>
+          <div class="vacancy-form__form">
+            <div class="vacancy-form__item vacancy-form__item--50">
+              {{> form/input label="Фамилия Имя Отчество" placeholder="Подсказка"}}
+            </div>
+            <div class="vacancy-form__item vacancy-form__item--50">
+              {{#> form/select label="Город" empty-value=true search=true search-empty="Городов не найдено"}}
+                {{> blocks/selects/cities}}
+              {{/form/select}}
+            </div>
+            <div class="vacancy-form__item vacancy-form__item--50">
+              {{> form/input label="E-Mail" placeholder="Подсказка"}}
+            </div>
+            <div class="vacancy-form__item vacancy-form__item--50">
+              {{> form/input label="Телефон для связи" phone=true placeholder="Подсказка"}}
+            </div>
+            <div class="vacancy-form__item">
+              {{> form/textarea label="Расскажите о себе" placeholder="Подсказка"}}
+            </div>
+            {{#if single}}{{else}}
+              <div class="vacancy-form__item">
+                {{> form/input label="Название вакансии" placeholder="Подсказка"}}
+              </div>
+            {{/if}}
+            <div class="vacancy-form__item">
+              {{> form/input label="Ссылка на резюме (дополнительно к анкете)" placeholder="Подсказка"}}
+            </div>
+            <div class="vacancy-form__item vacancy-form__item--action">
+              {{> form/file id="form_file" label="Прикрепить заполненную анкету"}}
+            </div>
+            <div class="vacancy-form__item vacancy-form__item--submit">
+              <div class="vacancy-form__btn">
+                <button class="btn btn--primary" type="submit">Отправить заявку</button>
+              </div>
+              <div class="vacancy-form__credits">
+                <div class="business-form__bottom-agreement">
+                  {{>form/checkbox label='Я даю согласие на <a href="#">обработку персональных данных</a> и соглашаюсь с&nbsp;<a href="#">условиями пользования сервисом</a>'}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+.page-vacancies {
+  .section {
+    padding: 70px 0 110px;
+
+    @include media(mobile) {
+      padding: 45px 0 35px;
+    }
+  }
+
+  .career-form {
+    @include media(mobile) {
+      padding: 35px 0 50px;
+    }
+  }
+}

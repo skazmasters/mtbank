@@ -1,0 +1,76 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="form-steps {{#if credit}}form-steps--credit{{/if}}">
+      <div class="form-steps__left">
+        <div class="form-steps__form">
+          {{#if business}}
+            {{> blocks/common/page-form
+                    title=title
+                    submit-label=button-submit-label
+                    field-1="Фамилия Имя*"
+                    field-2="Номер телефона *"
+                    field-3="УНП *"
+            }}
+          {{else}}
+            {{#if investments}}
+              {{> blocks/common/page-form
+                      title=title
+                      submit-label=button-submit-label
+                      field-1="Фамилия Имя*"
+                      field-2="Номер телефона *"
+              }}
+            {{else}}
+              {{> blocks/common/page-form
+                      title=title
+                      submit-label=button-submit-label
+                      field-1="Фамилия Имя Отчество*"
+                      field-2="Номер телефона *"
+                      field-3="E-Mail *"
+              }}
+            {{/if}}
+          {{/if}}
+        </div>
+      </div>
+      <div class="form-steps__right">
+        <ul class="form-steps__steps">
+
+          {{#if step-1-title}}
+            <li class="form-steps__step">
+              {{> widgets/number-step number="1" title=step-1-title text=step-1-text}}
+            </li>
+          {{else}}
+            {{#if feature-1-title}}
+              <li class="form-steps__step">
+                {{> widgets/contact-card icon=feature-1-icon title=feature-1-title text=feature-1-text link=feature-1-link}}
+              </li>
+            {{/if}}
+          {{/if}}
+
+          {{#if step-2-title}}
+            <li class="form-steps__step">
+              {{> widgets/number-step number="2" title=step-2-title text=step-2-text}}
+            </li>
+          {{else}}
+            {{#if feature-2-title}}
+              <li class="form-steps__step">
+                {{> widgets/contact-card icon=feature-2-icon title=feature-2-title text=feature-2-text link=feature-2-link}}
+              </li>
+            {{/if}}
+          {{/if}}
+
+          {{#if step-3-title}}
+            <li class="form-steps__step">
+              {{> widgets/number-step number="3" title=step-3-title text=step-3-text}}
+            </li>
+          {{else}}
+            {{#if feature-3-title}}
+              <li class="form-steps__step">
+                {{> widgets/contact-card icon=feature-3-icon title=feature-3-title text=feature-3-text link=feature-3-link}}
+              </li>
+            {{/if}}
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

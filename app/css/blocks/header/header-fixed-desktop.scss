@@ -1,0 +1,34 @@
+@include desktop {
+  body.header-fixed {
+    margin-top: 139px;
+  }
+
+  .header {
+    z-index: z(header);
+    @include transition(top, 0.3s);
+
+    &.fixed-prepare {
+      position: fixed;
+      height: 94px;
+      top: -94px;
+      z-index: z(header);
+      left: 0;
+      right: 0;
+
+      .header-top {
+        display: none;
+      }
+    }
+
+    &.fixed {
+      background-color: $color-white;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: z(header);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      height: 94px;
+    }
+  }
+}

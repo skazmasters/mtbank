@@ -1,0 +1,32 @@
+<div class="rates-card">
+  {{#if label}}
+    <span class="rates-card__title">{{ label }}</span>
+  {{/if}}
+  <div class="rates-card__content">
+    {{#if icon}}
+      <span class="rates-card__icon rates-card__icon--{{icon}}"></span>
+    {{/if}}
+    <div class="rates-card__value">
+      {{#if value}}
+        <span class="rates-card__number">{{ value }}</span>
+      {{else}}
+        <div class="rates-card__double">
+          {{#if buy}}
+            <div class="rates-card__double-cell">
+              <span class="rates-card__double-label">покупка</span>
+              <span class="rates-card__double-value {{#if
+                      buy-mod}}rates-card__double-value--{{buy-mod}}{{/if}}">{{ buy }}</span>
+            </div>
+          {{/if}}
+          {{#if sell}}
+            <div class="rates-card__double-cell">
+              <span class="rates-card__double-label">продажа</span>
+              <span class="rates-card__double-value {{#if
+                      sell-mod}}rates-card__double-value--{{sell-mod}}{{/if}}">{{ sell }}</span>
+            </div>
+          {{/if}}
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

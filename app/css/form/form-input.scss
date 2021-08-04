@@ -1,0 +1,214 @@
+.form-input {
+  position: relative;
+  width: 100%;
+  padding-bottom: 14px;
+  margin-bottom: -14px;
+
+  &:not(.form-input--date) {
+    overflow: hidden;
+  }
+
+  &__label {
+    display: block;
+    vertical-align: top;
+    padding: 14px 0 0;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+  }
+
+  &__input {
+    display: block;
+    padding: 0 0 4px;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: -.04em;
+    color: $color-gray-100;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid $color-gray-60;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+
+    &::placeholder {
+      color: transparent;
+      @include transition;
+      font-size: 17px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+
+      .form-input__label--empty &, .form-input--placeholder & {
+        color: $color-gray-60;
+      }
+    }
+
+
+    &:hover {
+      border-bottom-color: $color-gray-80;
+    }
+
+    &:placeholder-shown ~ .form-input__placeholder {
+      top: 14px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: -.04em;
+      color: $color-gray-60;
+    }
+
+    &:focus {
+      &::placeholder {
+        color: $color-gray-60;
+      }
+
+      ~ .form-input__placeholder {
+        top: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -.02em;
+        color: var(--mt-color-primary);
+      }
+    }
+
+    .form-field-money & {
+      ~ .form-input__placeholder {
+        top: 6px !important;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -.02em;
+        color: var(--mt-color-primary);
+      }
+
+      &::placeholder {
+        color: $color-gray-60 !important;
+      }
+    }
+
+    .form-input--error & {
+      border-bottom-color: $color-red-100;
+    }
+
+    .form-input--success & {
+      border-bottom-color: $color-green-100;
+    }
+
+    &:focus & {
+      border-bottom-color: $color-blue-100;
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: block;
+    width: 100%;
+    color: $color-gray-60;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.02em;
+    white-space: nowrap;
+    transition: all 150ms ease-in-out;
+    text-overflow: ellipsis;
+    pointer-events: none;
+
+    @include mobile {
+      font-size: 11px;
+      text-overflow: inherit;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    line-height: 100%;
+    display: block;
+    margin-top: 2px;
+    white-space: nowrap;
+    color: $color-red-100;
+  }
+
+  &__hint {
+    color: $color-gray-80;
+    font-size: 12px;
+    line-height: 100%;
+    display: block;
+    margin-top: 4px;
+
+    .form-input--border & {
+      margin-left: 22px;
+    }
+  }
+
+  &--date {
+    .form-input__input {
+      padding-right: 40px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+
+      @include desktop {
+        line-height: normal !important;
+        margin-top: -1px;
+      }
+
+      @media (hover: none) {
+        line-height: 36px;
+      }
+
+      @include placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 36px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 0px;
+      @include sprite('input-date');
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &.form-input--border::after {
+      top: 10px;
+    }
+  }
+
+}
+
+textarea.form-input__input {
+  height: 34px;
+}
+
+input[type=date] {
+  text-align: left;
+
+
+  &::-webkit-datetime-edit {
+    display: none;
+  }
+
+  &:not(.filled):before {
+    color: lightgrey;
+    content: attr(placeholder) !important;
+  }
+
+  &.filled:before {
+    color: #000;
+    content: attr(data-value) !important;
+  }
+
+  @include smallTablet-and-mobile {
+    font-size: 16px !important;
+  }
+}

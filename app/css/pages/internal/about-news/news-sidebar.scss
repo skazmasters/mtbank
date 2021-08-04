@@ -1,0 +1,13 @@
+.news-sidebar {
+  &__item {
+    margin-top: 60px;
+
+    @include media(tabletSmall) {
+      margin-top: 45px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<section class="section {{#if gray}}section--gray{{/if}}">
+  <div class="container">
+    {{#if title}}
+      <header class="section__header">
+        <h2 class="section__title">{{title}}</h2>
+      </header>
+      <div class="section__content">
+        {{> @partial-block }}
+      </div>
+    {{ else }}
+      {{> @partial-block }}
+    {{/if}}
+  </div>
+</section>

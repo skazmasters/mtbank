@@ -1,0 +1,33 @@
+{{! Бизнесу / Продукт }}
+
+{{> layout/head page-title="Бизнесу / Продукт" theme-color="business"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="business"}}
+
+<div class="hero-menu-block">
+  {{> hero/business-product }}
+  {{> blocks/common/page-header title="Открытие счета"
+          item-1="Обзор"
+          item-1-active=true
+          item-2="Тарифы и документы"
+          item-3="Как открыть счет"
+          item-4="Вопрос-ответ"
+  }}
+</div>
+
+{{> blocks/business/product/01_calculator }}
+{{> blocks/business/product/02_features }}
+{{> blocks/business/product/03_banners }}
+{{> blocks/common/terms-section
+        title="Процесс открытия счета" small-title=true
+        term-1="Оформите заявку"
+        term-1-text="Укажите основную информацию о компании"
+        term-2="Дождитесь нашего звонка"
+        term-2-text="Мы свяжемся с вами, чтобы уточнить удобные для вас офис и время визита для открытия счёта"
+        term-3="Приходите в офис"
+        term-3-text="В выбранное время приходите оформлять счёт, обязательно возьмите паспорт"
+}}
+
+{{> forms/business step=1 }}
+
+{{> layout/footer business=true }}

@@ -1,0 +1,67 @@
+.page-form {
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    display: block;
+
+    @include mobile{
+      font-size: 21px;
+      line-height: 120%;
+      padding-right: 20px;
+    }
+  }
+
+  &__field{
+    margin-top: 21px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+  &__inner {
+    margin-top: 20px;
+
+    @include smallTablet-and-mobile{
+      margin-top: 15px;
+    }
+  }
+
+  &__submit {
+    margin-top: 25px;
+
+    @include smallTablet-and-mobile{
+      margin-top: 15px;
+    }
+  }
+
+  &__agreement {
+    margin-top: 25px;
+
+    &-text {
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: rgba(6, 27, 79, 0.5);
+      display: block;
+
+
+      @include smallTablet-and-mobile{
+        font-size: 12px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+
+      a {
+        color: $color-primary;
+
+        &:hover {
+          color: $color-primary-hover;
+        }
+      }
+    }
+  }
+}

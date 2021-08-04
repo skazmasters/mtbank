@@ -1,0 +1,61 @@
+<nav class="header-menu js-header-menu">
+  <ul class="header-menu__list">
+
+    <li class="header-menu__item">
+      {{#ifCond active "main"}}
+        <span class="header-menu__link js-header-menu__item header-menu__link--active" data-active>Для жизни</span>
+      {{else}}
+        <a href="/home.html" class="header-menu__link js-header-menu__item">Для жизни</a>
+      {{/ifCond}}
+    </li>
+
+    <li class="header-menu__item">
+      {{#ifCond active "business"}}
+        <span class="header-menu__link js-header-menu__item header-menu__link--active" data-active>Бизнесу</span>
+      {{else}}
+        <a href="#" class="header-menu__link js-header-menu__item">Бизнесу</a>
+      {{/ifCond}}
+    </li>
+
+    <li class="header-menu__item">
+      {{#ifCond active "big-business"}}
+        <span class="header-menu__link js-header-menu__item header-menu__link--active" data-active>Крупному бизнесу</span>
+      {{else}}
+        <a href="#" class="header-menu__link js-header-menu__item">Крупному бизнесу</a>
+      {{/ifCond}}
+    </li>
+
+    <li class="header-menu__item">
+      {{#ifCond active "investments"}}
+        <span class="header-menu__link js-header-menu__item header-menu__link--active" data-active>Инвестиции</span>
+      {{else}}
+        <a href="#" class="header-menu__link js-header-menu__item">Инвестиции</a>
+      {{/ifCond}}
+    </li>
+
+    <li class="header-menu__item">
+      {{#ifCond active "about"}}
+        <span class="header-menu__link js-header-menu__item header-menu__link--active" data-active>О Банке</span>
+      {{else}}
+        <a href="/about.html" class="header-menu__link js-header-menu__item">О банке</a>
+      {{/ifCond}}
+
+      <div class="header-menu__dropdown">
+        <ul class="header-menu__dropdown-menu">
+          <li class="header-menu__dropdown-item"><a href="/about--about-us.html">О нас</a></li>
+          <li class="header-menu__dropdown-item"><a href="/about--promotions.html">Акции</a></li>
+          <li class="header-menu__dropdown-item"><a href="#">Офисы и банкоматы</a></li>
+          <li class="header-menu__dropdown-item"><a href="#">Курсы валют</a></li>
+          <li class="header-menu__dropdown-item"><a href="#">Контакт-центр</a></li>
+          <li class="header-menu__dropdown-item"><a href="/about--tenders.html">Тендеры</a></li>
+          <li class="header-menu__dropdown-item"><a href="/about--pricing.html">Тарифы и документы</a></li>
+          <li class="header-menu__dropdown-item"><a href="/about--property.html">Реализация имущества</a></li>
+          <li class="header-menu__dropdown-item"><a href="/about--career--benefits.html">Работа в банке</a></li>
+          <li class="header-menu__dropdown-item"><a href="#">Учебный портал</a></li>
+          <li class="header-menu__dropdown-item"><a href="/about--press.html">Пресс-центр</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <div class="header-menu__mobile js-header-menu__mobile"></div>
+</nav>

@@ -1,0 +1,31 @@
+{{! Страхование / Карточка }}
+
+{{> layout/head page-title="Страхование / Карточка"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+<div class="hero-menu-block">
+{{> hero/insurance}}
+{{> blocks/common/page-header title="Обзор"
+        item-1="Обзор"
+        item-1-active=true
+        item-2="Тарифы и условия"
+        item-3="Вопрос-ответ"
+}}
+</div>
+
+{{> blocks/insurance/single/01_carousel}}
+{{> blocks/common/conditions-section
+        title="Выгодные условия по страхованию" img="insurance/single/params" button-label="Заполнить онлайн заявку"
+        label-1="Страховой взнос" value-1="Всего от 6,25 BYN в квартал."
+        label-2="Деление страховой доли" value-2="75% - жилое помещение, 15% - домашнее имущество, гражданская ответственность - 10%."
+        label-3="Cтраховой тариф" value-3="Всего 0,25% от стоимости имущества."
+        label-4="Cтраховой срок" value-4="1 год."
+        label-5="Сумма страховки" value-5="Максимальный размер выплат: 10 000 BYN, 14 000 BYN, от 24 000 до 168 000 BYN."
+}}
+{{> blocks/insurance/single/03_facts}}
+{{> blocks/insurance/single/04_info}}
+{{> blocks/insurance/single/05_сonditions}}
+{{> forms/insurance }}
+
+{{> layout/footer }}

@@ -1,0 +1,31 @@
+<div class="news-sidebar">
+  <div class="news-sidebar__item">
+    {{#> widgets/sidebar-widget title="Пресс–служба"}}
+      {{>widgets/press-service
+          title="Иванов Иван"
+          text="Руководитель пресс–службы"
+          phone="+375 44 509 99 99"
+          mail="ivan.ivanov@mtbank.by"
+      }}
+    {{/widgets/sidebar-widget}}
+  </div>
+
+  <div class="news-sidebar__item">
+    {{#> widgets/sidebar-widget title="Вас может заинтересовать"}}
+      <ul class="sidebar-list">
+        <li class="sidebar-list__item">
+          <a class="sidebar-list__link" href="#">Отделения и банкоматы</a>
+        </li>
+        <li class="sidebar-list__item">
+          <a class="sidebar-list__link" href="#">Раскрытие информации</a>
+        </li>
+        <li class="sidebar-list__item">
+          <a class="sidebar-list__link" href="#">Реквизиты</a>
+        </li>
+        <li class="sidebar-list__item">
+          <a class="sidebar-list__link" href="#">Отчетность</a>
+        </li>
+      </ul>
+    {{/widgets/sidebar-widget}}
+  </div>
+</div>

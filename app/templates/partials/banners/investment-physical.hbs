@@ -1,0 +1,44 @@
+<div class="banner banner--background banner--white banner--investments">
+  <div class="banner__bg">
+    {{>components/image  img="banners/investment/bg" img-mobile="banners/investment/bg-mobile" ext="jpg"}}
+  </div>
+  <div class="banner__container">
+    <div class="banner__inner">
+      <div class="banner__logo">
+        {{> components/image img="banners/investment/logo" ext="png"}}
+      </div>
+      <span class="banner__title">Зарабатывайте надежно</span>
+      <p class="banner__description">Первая банковская форекс-площадка</p>
+      <div class="banner__image">
+        {{> components/image no-lazy=true ext="png" img="banners/investment/image" img-mobile="banners/investment/image-mobile"}}
+      </div>
+      <div class="banner__features">
+        <div class="banner__feature">
+          <span class="banner__feature-value">Чистые котировки</span>
+          <span class="banner__feature-label">Чистые котировки ликвидность по технологии ECN</span>
+        </div>
+        <div class="banner__feature">
+          <span class="banner__feature-value">2 платформы на выбор</span>
+          <span class="banner__feature-label">VJForex и MT4</span>
+        </div>
+        <div class="banner__feature">
+          <span class="banner__feature-value">Вывод и ввод за 1&nbsp;день</span>
+          <span class="banner__feature-label">Ввод и вывод средств на вашу карту в течение 24 часов</span>
+        </div>
+      </div>
+      <div class="banner__actions">
+        <div class="banner__buttons">
+          <div class="banner__buttons-btn">
+            {{> ui/btn color="primary" label="Подробнее"}}
+          </div>
+          <div class="banner__buttons-socials">
+            {{> widgets/social-button light=true small=true social="vkontakte"}}
+            {{> widgets/social-button light=true small=true social="facebook"}}
+            {{> widgets/social-button light=true small=true social="telegram"}}
+            {{> widgets/social-button light=true small=true social="youtube"}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

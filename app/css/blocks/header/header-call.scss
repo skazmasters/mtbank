@@ -1,0 +1,41 @@
+.header-call {
+  &__item {
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &--button{
+      margin-top: 29px;
+    }
+  }
+
+  &__phone {
+
+    &-link {
+      color: $color-gray-100;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+
+      @include tablet-and-mobile{
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &-note {
+      display: block;
+      white-space: nowrap;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      color: $color-gray-60;
+    }
+  }
+}

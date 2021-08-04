@@ -1,0 +1,29 @@
+<section class="debits-promotions js-carousel-slider" data-slides-count="3">
+  <header class="debits-promotions__header">
+    <div class="debits-promotions__header-left">
+      <span class="debits-promotions__title">Акции по картам МТБанка</span>
+
+      <div class="debits-promotions__cta">
+        <a class="debits-promotions__header-link" href="#">Все акции</a>
+      </div>
+    </div>
+
+    <div class="debits-promotions__header-right">
+      {{> components/slider-nav small=true}}
+    </div>
+  </header>
+
+  <div class="debits-promotions__content">
+    <div class="carousel-slider">
+      <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+        <div class="swiper-wrapper">
+          {{#each internal.debit-cards.promotions}}
+            <div class="swiper-slide carousel-slider__slide">
+              {{> widgets/promotions-card img=img title=title tag=tag}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+<section class="section js-home-exchange">
+  <div class="container">
+    <header class="section__header section__header--border home-exchange__header">
+      <div class="section__header-left">
+        <span class="section__title">Курсы валют</span>
+        <span class="section__header-note">Обновлено 26 марта 2020, в 10:05</span>
+      </div>
+      <div class="section__header-right">
+        <div class="home-exchange__actions">
+          <div class="home-exchange__actions-btn">
+            {{>ui/btn label="Найти отделение" color="gray" icon="ui--location"}}
+          </div>
+
+          <div class="home-exchange__actions-btn hidden">
+            <button type="button" class="btn btn--gray btn--icon js-home-exchange__button"
+                    data-target=".js-tab-content--converter">
+              {{>ui/svg name="currency--usd"}} Курсы валют
+            </button>
+          </div>
+
+          <div class="home-exchange__actions-btn">
+            <button type="button" class="btn btn--gray btn--icon js-home-exchange__button"
+                    data-target=".js-tab-content--courses">
+              {{>ui/svg name="ui--convert"}} Конвертер валюты
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section__content">
+      <div class="home-exchange__container">
+        <div class="home-exchange__tab visible js-tab-content--converter">
+          <ul class="home-exchange__list">
+            <li class="home-exchange__item">
+              {{> widgets/exchange-item icon="currency--usd" label="1 Доллар США" acceptance="2,645" sale="2,645"}}
+            </li>
+            <li class="home-exchange__item">
+              {{> widgets/exchange-item icon="currency--eur" label="1 Евро" acceptance="2,825" sale="2,965"}}
+            </li>
+            <li class="home-exchange__item">
+              {{> widgets/exchange-item icon="currency--rub" label="100 Российских рублей" acceptance="3,265" sale="3,675"}}
+            </li>
+          </ul>
+        </div>
+
+        <div class="home-exchange__tab js-tab-content--courses">
+          {{> widgets/exchange-convertor}}
+        </div>
+
+        <div class="home-exchange__btn">
+          {{> components/link-arrow label="Все курсы"}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

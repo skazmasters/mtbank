@@ -1,0 +1,31 @@
+<section class="page-filters js-filters">
+  <div class="container">
+    <div class="page-filters__content">
+      <div class="page-filters__header">
+        <div class="page-filters__header-left">
+          <span class="page-filters__mobile-title">Тарифы</span>
+        </div>
+        <div class="page-filters__header-right">
+          {{>components/button-filter js-mod="js-filters__toggle"}}
+        </div>
+      </div>
+      <div class="page-filters__body js-filters__body">
+        <div class="page-filters__inner page-filters__inner--mobile-reverse">
+          <div class="page-filters__inner-left">
+            <ul class="page-filters__list js-filters__list page-filters__list--tabs">
+              <li class="page-filters__list-item">
+                {{>components/button-tab label="Частным лицам" mode="gray" tab='[data-tab-content="physical"]'}}
+              </li>
+              <li class="page-filters__list-item">
+                {{>components/button-tab label="Юридическим лицам" mode="gray" tab='[data-tab-content="legal"]'}}
+              </li>
+            </ul>
+          </div>
+          <div class="page-filters__inner-right">
+            {{> form/date default=true border=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

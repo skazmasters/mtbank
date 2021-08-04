@@ -1,0 +1,21 @@
+.payokay-main {
+  @include media(mobile, up) {
+    padding: 60px 0 95px;
+  }
+
+  //&__banner {
+  //  margin-top: 70px;
+  //
+  //  @include media(mobile) {
+  //    margin-top: 50px;
+  //  }
+  //}
+
+  &__advantages {
+    margin-top: 70px;
+
+    @include media(mobile) {
+      margin-top: 50px;
+    }
+  }
+}

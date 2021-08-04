@@ -1,0 +1,25 @@
+<div class="product-card">
+  <a href="{{href}}" class="product-card__link"></a>
+  <div class="product-card__content">
+    <div class="product-card__top">
+      <div class="product-card__image">
+        {{#if video}}
+          {{> widgets/video-image no-link=true small=true bottom=true img=img}}
+        {{ else}}
+          {{#if ext}}
+            {{> components/image img=img ext=ext}}
+          {{else}}
+            {{> components/image img=img ext="jpg"}}
+          {{/if}}
+        {{/if}}
+      </div>
+      <span class="product-card__title">{{title}}</span>
+      <p class="product-card__text">{{{text}}}</p>
+    </div>
+    {{#if button-label}}
+      <div class="product-card__btn">
+        {{>ui/btn label=button-label}}
+      </div>
+    {{/if}}
+  </div>
+</div>

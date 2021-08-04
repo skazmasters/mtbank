@@ -1,0 +1,45 @@
+<div class="product-banner {{#if mod}}product-banner--{{mod}}{{/if}} {{#if dark}}product-banner--dark{{/if}} {{#if small}}product-banner--small{{/if}} {{#if
+        full-width}}product-banner--full{{/if}}" {{#if background}}style="background: {{background}}"{{/if}}>
+  <div class="product-banner__image">
+    {{#if png}}
+      {{> components/image img=img img-tablet=img-mobile ext="png"}}
+    {{else}}
+      {{> components/image img=img img-tablet=img-mobile ext="png" ext-tablet="jpg"}}
+    {{/if}}
+  </div>
+  <div class="product-banner__content {{#if text-wide}}product-banner__content--wide{{/if}}">
+    <span class="product-banner__title">{{{title}}}</span>
+    {{#if text}}
+      <p class="product-banner__text">{{{text}}}</p>
+    {{/if}}
+
+    {{#if item-1}}
+      <ul class="product-banner__list {{#if list-big}}product-banner__list--big{{/if}}">
+        <li class="product-banner__list-item">{{item-1}}</li>
+        {{#if item-2}}
+          <li class="product-banner__list-item">{{item-2}}</li>{{/if}}
+        {{#if item-3}}
+          <li class="product-banner__list-item">{{item-3}}</li>{{/if}}
+        {{#if item-4}}
+          <li class="product-banner__list-item">{{item-4}}</li>{{/if}}
+        {{#if item-5}}
+          <li class="product-banner__list-item">{{item-5}}</li>{{/if}}
+      </ul>
+    {{/if}}
+
+    {{#if link-label}}
+      <div class="product-banner__link">
+        <a href="#">{{link-label}}</a>
+      </div>
+    {{/if}}
+    {{#if button-label}}
+      <div class="product-banner__button {{#if button-no-bottom}}product-banner__button--no-bottom{{/if}}">
+        {{#if button-primary}}
+          {{> ui/btn label=button-label color="primary"}}
+        {{else}}
+          {{> ui/btn label=button-label}}
+        {{/if}}
+      </div>
+    {{/if}}
+  </div>
+</div>

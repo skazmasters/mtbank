@@ -1,0 +1,28 @@
+<div class="account-form">
+  <div class="account-form__header">
+    <span class="account-form__title">Данные организации</span>
+  </div>
+  <div class="account-form__main">
+    <div class="account-form__row">
+      <div class="account-form__unp">
+        <div class="account-form__unp-input">
+          {{> form/input label="УНП" placeholder="Подсказка"}}
+        </div>
+        <div class="account-form__unp-checkbox">
+          {{>form/checkbox-switch id="unp_1" label="Нестандартный УНП"}}
+        </div>
+      </div>
+    </div>
+    <div class="account-form__row">
+      {{> form/input label="Ваш телефон *" placeholder="Подсказка" hint="На этот номер мы отправим смс с кодом"}}
+    </div>
+  </div>
+  <div class="account-form__footer account-form__footer--mobile-block">
+    <div class="account-form__footer-left">
+      {{>widgets/agreement-checkbox}}
+    </div>
+    <div class="account-form__footer-right">
+      {{>ui/btn button=true type="submit" size="large" label="Продолжить" color="primary" arrow=true}}
+    </div>
+  </div>
+</div>

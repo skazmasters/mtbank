@@ -1,0 +1,31 @@
+.vacancies-list {
+  display: flex;
+
+  @include media(tabletSmall) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @include media(tabletSmall, up) {
+      flex: 0 1 calc((100% / 3) - 22px);
+      margin-left: 45px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @include media(tabletSmall) {
+      flex: 1 1 100%;
+      margin-top: 40px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      @include media(mobile) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

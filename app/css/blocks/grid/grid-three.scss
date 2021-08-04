@@ -1,0 +1,66 @@
+.grid-three {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -40px;
+  margin-left: -56px;
+  margin-right: -56px;
+  padding-top: 15px;
+
+  @include desktop{
+    padding-right: 111px;
+  }
+
+  @include desktop-small{
+    padding-right: 0;
+  }
+
+  @include tablet {
+    margin: -30px -20px 0 -20px;
+    padding-top: 10px;
+  }
+
+  @include mobile {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &__cell {
+    flex-basis: 33.3333%;
+    margin-top: 40px;
+    padding: 0 56px;
+
+    @include tablet {
+      flex-basis: 50%;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    @include mobile {
+      margin-top: 30px;
+      padding: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &--small{
+    @include desktop{
+      .offer-card{
+        max-width: 275px;
+      }
+    }
+  }
+}
+
+.grid-button {
+  margin-top: 40px;
+  @include mobile {
+    margin-top: 25px;
+  }
+}
+
+
+

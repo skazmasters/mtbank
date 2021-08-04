@@ -1,0 +1,35 @@
+<li class="header-nav__item js-header__item">
+  <a href="debit-cards.html" class="header-nav__link js-header__link{{#ifCond
+          active 'cards'}} header-nav__link--current{{/ifCond}}">Карты</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/main/cards}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="deposits.html" class="header-nav__link js-header__link{{#ifCond
+          active 'credits'}} header-nav__link--current{{/ifCond}}">Кредиты</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/main/credits}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="deposits.html" class="header-nav__link js-header__link{{#ifCond
+          active 'deposits'}} header-nav__link--current{{/ifCond}}">Вклады</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/main/deposits}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="#" class="header-nav__link js-header__link{{#ifCond
+          active 'services'}} header-nav__link--current{{/ifCond}}">Сервисы</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/main/services}}
+  </div>
+</li>
+<li class="header-nav__item js-header__item">
+  <a href="#" class="header-nav__link js-header__link{{#ifCond
+          active 'insurance'}} header-nav__link--current{{/ifCond}}">Страхование</a>
+  <div class="header-nav__dropdown js-header__dropdown">
+    {{> blocks/header/dropdown/main/insurance}}
+  </div>
+</li>

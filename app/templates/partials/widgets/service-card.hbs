@@ -1,0 +1,94 @@
+{{#if title-link}}
+  <div class="service-card{{#if card-mode}} service-card--{{card-mode}}{{/if}}{{#if
+          bg-mode}} service-card--{{bg-mode}}{{/if}}">
+    <div class="service-card__container">
+      <div class="service-card__inner">
+        <div class="service-card__icon">
+          {{>components/image
+                  img=(concat 'common/apps/' icon)
+                  no-webp=true
+                  ext="png"
+          }}
+        </div>
+        <div class="service-card__content">
+          <span class="service-card__title"><a href="#">{{{title}}}</a></span>
+          <p class="service-card__text">{{{text}}}</p>
+        </div>
+        {{#if image}}
+          <div class="service-card__image">
+            {{>components/image
+                    img=(concat 'home/services/' image)
+                    img-mobile=(concat 'home/services/' image-mobile)
+                    no-webp=true
+                    ext="png"
+            }}
+          </div>
+        {{/if}}
+        <div class="service-card__bottom">
+          <div class="service-card__button-container"><a class="service-card__button" href="#">{{link-label}}</a></div>
+          <div class="service-card__actions">
+            {{#if app-stores}}
+              {{>blocks/common/app-stores app-store=app-stores}}
+            {{/if}}
+            {{#if action-link-label}}
+              <div class="service-card__actions-item">
+                <a class="service-card__actions-link" href="#">
+                  {{>ui/svg name="additional--web"}} {{action-link-label}}
+                </a>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{else}}
+  <div class="service-card{{#if card-mode}} service-card--{{card-mode}}{{/if}}{{#if
+          bg-mode}} service-card--{{bg-mode}}{{/if}}">
+    <a class="service-card__link" href="{{href}}" aria-label="Переход на страницу."></a>
+
+    <div class="service-card__container">
+      <div class="service-card__inner">
+        <div class="service-card__icon">
+          {{>components/image
+                  img=(concat 'common/apps/' icon)
+                  no-webp=true
+                  ext="png"
+          }}
+        </div>
+        <div class="service-card__content">
+          <span class="service-card__title"><a href="#">{{{title}}}</a></span>
+          <p class="service-card__text">{{{text}}}</p>
+        </div>
+        {{#if image}}
+          <div class="service-card__image">
+            {{>components/image
+                    img=(concat 'home/services/' image)
+                    img-mobile=(concat 'home/services/' image-mobile)
+                    no-webp=true
+                    ext="png"
+            }}
+          </div>
+        {{/if}}
+        <div class="service-card__bottom">
+          <div class="service-card__button-container"><a class="service-card__button" href="#">{{link-label}}</a></div>
+          <div class="service-card__actions">
+            {{#if app-stores}}
+              {{>blocks/common/app-stores app-store=app-stores}}
+            {{/if}}
+            {{#if only-browser}}
+              <span class="service-card__browser">Только в браузере</span>
+            {{/if}}
+            {{#if action-link-label}}
+              <div class="service-card__actions-item">
+                <a class="service-card__actions-link" href="#">
+                  {{>ui/svg name="additional--web"}} {{action-link-label}}
+                </a>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/if}}

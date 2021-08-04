@@ -1,0 +1,20 @@
+<div class="business-card">
+  <a href="#" class="business-card__link"></a>
+  <div class="business-card__inner">
+    <div class="business-card__image">
+      {{>components/image
+              ext="png"
+              ext-tablet="jpg"
+              img=image
+              img-tablet=image-mobile
+      }}
+    </div>
+    <div class="business-card__content">
+      <span class="business-card__title">{{{title}}}</span>
+      <p class="business-card__text">{{{text}}}</p>
+      <div class="business-card__action">
+        <a href="#" class="business-card__action-link">Подробнее</a>
+      </div>
+    </div>
+  </div>
+</div>

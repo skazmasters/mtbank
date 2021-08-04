@@ -1,0 +1,54 @@
+<section class="section section--gray">
+  <div class="container">
+    <div class="js-carousel-slider">
+      <header class="section__header">
+        <h2 class="section__title section__title--small">Другие сервисы для бизнеса</h2>
+        <div class="section__header-right">
+          {{> components/slider-nav small=true dark=true}}
+        </div>
+      </header>
+      <div class="section__content">
+        <div class="carousel-slider carousel-slider--3">
+          <div class="swiper-container carousel-slider__inner js-carousel-slider__slider">
+            <div class="swiper-wrapper">
+              {{#times 2}}
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card small=true mobile-block=true outlined=true no-border=true
+                          img="business/services/other_01" ext="png"
+                          title="Валютная площадка"
+                          text="Внесение выручки через автоматизированную депозитную машину."
+                          label="Подробнее"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card small=true mobile-block=true outlined=true no-border=true
+                          img="business/services/other_02" ext="png"
+                          title="Электронный документооборот"
+                          text="по валютным операциям"
+                          label="Подробнее"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card small=true mobile-block=true outlined=true no-border=true
+                          img="business/services/other_03" ext="png"
+                          title="Смс и email информирование"
+                          text="Уведомления о поступлении  и (или) списании денежных средств по банковским счетам"
+                          label="Подробнее"
+                  }}
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  {{>widgets/base-card small=true mobile-block=true outlined=true no-border=true
+                          img="business/services/other_04" ext="png"
+                          title="Машина самоинкассации"
+                          text="Внесение выручки через автоматизированную депозитную машину."
+                          label="Подробнее"
+                  }}
+                </div>
+              {{/times}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

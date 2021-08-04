@@ -1,0 +1,13 @@
+<div class="radio-card{{#if mode}} radio-card--{{mode}}{{/if}}">
+  <label class="radio-card__label">
+    <input class="radio-card__input" name="{{name}}" type="radio" {{#if checked}}checked{{/if}}>
+    <span class="radio-card__container">
+      <span class="radio-card__image">{{>components/image img=img ext=ext}}</span>
+      <span class="radio-card__content">
+        <span class="radio-card__title">{{title}}</span>
+        <span class="radio-card__text">{{text}}</span>
+      </span>
+      <i class="radio-card__icon"></i>
+    </span>
+  </label>
+</div>

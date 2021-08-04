@@ -1,0 +1,93 @@
+.footer-actions {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__item {
+
+    @include no-smallTablet {
+      margin-left: 31px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &--language {
+      @include smallTablet-and-mobile {
+        order: 1;
+        margin-left: 0;
+      }
+
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+
+    &--reviews {
+      @include smallTablet-and-mobile {
+        order: 2;
+        margin-left: 20px;
+      }
+      @include mobile {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 100px;
+    background: $color-white-10;
+    color: $color-white;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+
+    @include no-mobile {
+      &:hover {
+        background: $color-white-20;
+      }
+    }
+
+    @include mobile {
+      background: transparent !important;
+      padding: 0;
+    }
+
+    svg {
+      margin-right: 12px;
+    }
+  }
+
+  .select__input {
+    border-radius: 100px;
+    background: $color-white-10;
+    color: $color-white;
+    @include no-mobile {
+      &:hover {
+        background: $color-white-20;
+      }
+    }
+  }
+
+  @include mobile {
+    .select {
+      margin-left: -16px;
+
+      .select__input {
+        background: none;
+      }
+
+      .select__dropdown {
+        left: 16px;
+        right: 0;
+        min-width: 0;
+      }
+    }
+  }
+}

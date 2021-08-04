@@ -1,0 +1,21 @@
+<div class="slider-nav {{#if dark}}slider-nav--dark {{/if}}{{#if small}} slider-nav--small{{/if}}{{#if fill}} slider-nav--fill{{/if}}{{#if
+    slider-nav-mode}} {{slider-nav-mode}}{{/if}}">
+  <div class="slider-nav__cell">
+    <button class="slider-nav__item slider-nav__item--prev js-slider-nav__prev"
+            type="button" aria-label="Предыдущий сайд."></button>
+  </div>
+  <div class="slider-nav__cell">
+    {{#if indicator}}
+      <div class="slider-nav__loading js-slider-nav__loading">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+          <circle r="44" cx="50" cy="50" fill="transparent"/>
+        </svg>
+        <button class="slider-nav__item slider-nav__item--next js-slider-nav__next"
+                type="button" aria-label="Слудующий сайд."></button>
+      </div>
+    {{ else }}
+      <button class="slider-nav__item slider-nav__item--next js-slider-nav__next"
+              type="button" aria-label="Слудующий сайд."></button>
+    {{/if}}
+  </div>
+</div>

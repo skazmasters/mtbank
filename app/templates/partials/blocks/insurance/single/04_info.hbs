@@ -1,0 +1,26 @@
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section__title">Важная информация</h2>
+
+    <div class="insurance-info">
+      <ul class="faq__list js-accordion">
+        <li class="faq__item">
+          {{#>blocks/common/accordion-item icon="insurance/single/faq_01" title="Что покрывает страховка?"}}
+            {{> blocks/insurance/single/faq-item}}
+          {{/blocks/common/accordion-item}}
+        </li>
+        <li class="faq__item">
+          {{#>blocks/common/accordion-item icon="insurance/single/faq_02" title="Как оплатить страховой взнос?"}}
+            {{> blocks/insurance/single/faq-item}}
+          {{/blocks/common/accordion-item}}
+        </li>
+        <li class="faq__item">
+          {{#>blocks/common/accordion-item icon="insurance/single/faq_03"
+                                           title="Что делать при возникновении страхового случая?"}}
+            {{> blocks/insurance/single/faq-item}}
+          {{/blocks/common/accordion-item}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

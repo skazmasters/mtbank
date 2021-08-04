@@ -1,0 +1,12 @@
+<a href="#" class="file-download {{#if color}} file-download--{{color}}{{/if}}">
+  <div class="file-download__type">
+    {{>ui/svg name=file-icon}}
+  </div>
+  <div class="file-download__content">
+    {{label}}
+    <small>{{small}}</small>
+  </div>
+  <div class="file-download__action">
+    {{>ui/svg name="action--download"}}
+  </div>
+</a>

@@ -1,0 +1,71 @@
+.payokay-exchange {
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h2
+  }
+
+  &__text {
+    display: block;
+    max-width: 600px;
+    margin: 4px 0 0;
+    @include text-body-1;
+    color: $color-gray-80;
+  }
+
+  &__content {
+    margin-top: 33px;
+
+    @include media(tablet, up) {
+      display: flex;
+      align-self: center;
+      max-width: 1256px;
+    }
+  }
+
+  &__field {
+    @include media(tablet, up) {
+      flex: 0 1 345px;
+      padding-right: 15px;
+    }
+  }
+
+  &__list {
+    @include media(tablet, up) {
+      flex: 0 1 auto;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    @include media(tablet) {
+      margin-top: 25px;
+    }
+  }
+
+  &__list-item {
+    @include media(tablet, up) {
+      flex: 0 1 auto;
+      margin-left: 90px;
+    }
+
+    @include media(tablet) {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid $color-gray-40;
+    }
+
+    &:first-child {
+      @include media(tablet, up) {
+        margin-left: 0;
+      }
+
+      @include media(tablet) {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: unset;
+      }
+    }
+  }
+}

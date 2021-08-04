@@ -1,0 +1,46 @@
+.news-article {
+  position: relative;
+
+  &__link {
+    display: block;
+    @include fill;
+
+    &:hover {
+      + .news-article__container {
+        .news-article__title {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    @include text-h3;
+    @include transition;
+    white-space: pre-wrap;
+  }
+
+  &__text {
+    display: block;
+    margin: 5px 0 0;
+    max-width: 740px;
+    color: $color-gray-80;
+    @include text-body-1;
+  }
+
+  &__pubdate-container {
+    margin-top: 20px;
+
+    @include media(tabletSmall) {
+      margin-top: 15px;
+    }
+  }
+
+  &__time {
+    margin: 0;
+    color: $color-gray-80;
+    @include text-body-2;
+  }
+}

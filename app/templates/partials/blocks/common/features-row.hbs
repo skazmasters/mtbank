@@ -1,0 +1,78 @@
+<section class="section {{#if gray}}section--gray{{/if}}">
+  <div class="container">
+    {{#if title}}
+      <header class="section__header">
+        <h2 class="section__title {{#if small-title}}section__title--small{{/if}}">{{title}}</h2>
+      </header>
+    {{/if}}
+    <div class="section__content">
+      {{#if title-4}}
+        <div class="row-four row-four--mobile-column">
+          <div class="row-four__inner">
+            <div class="row-four__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_01") ext="png"
+                      title=title-1
+                      text=text-1
+              }}
+            </div>
+            <div class="row-four__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_02") ext="png"
+                      title=title-2
+                      text=text-2
+              }}
+            </div>
+            <div class="row-four__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_03") ext="png"
+                      title=title-3
+                      text=text-3
+              }}
+            </div>
+            <div class="row-four__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_04") ext="png"
+                      title=title-4
+                      text=text-4
+              }}
+            </div>
+          </div>
+        </div>
+      {{else}}
+        <div class="row-three row-three--wide row-three--mobile-column">
+          <div class="row-three__inner">
+            <div class="row-three__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_01") ext="png"
+                      title=title-1
+                      text=text-1
+              }}
+            </div>
+            <div class="row-three__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_02") ext="png"
+                      title=title-2
+                      text=text-2
+              }}
+            </div>
+            <div class="row-three__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_03") ext="png"
+                      title=title-3
+                      text=text-3
+              }}
+            </div>
+            <div class="row-three__cell">
+              {{>widgets/advantage-card
+                      img=(concat assets-folder "/feature_03") ext="png"
+                      title=title-3
+                      text=text-3
+              }}
+            </div>
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</section>

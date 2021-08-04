@@ -1,0 +1,84 @@
+.video-manual {
+  display: flex;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__image {
+    flex-basis: 329px;
+    min-width: 329px;
+
+    @include smallTablet {
+      min-width: 250px;
+      flex-basis: 250px;
+    }
+
+    @include mobile {
+      min-width: 0;
+    }
+  }
+
+  &__content {
+    margin-left: 57px;
+    flex: 1 1 auto;
+
+    @include smallTablet {
+      margin-left: 30px;
+    }
+
+    @include mobile{
+     margin: 20px 0 0 0;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+    margin-bottom: 15px;
+
+    @include mobile{
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+
+  ol {
+    @include digital_list;
+
+    li {
+      margin-top: 15px;
+      padding-left: 42px;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+
+      @include mobile{
+        padding-left: 35px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 100%;
+        color: $color-primary;
+        letter-spacing: -0.04em;
+
+        @include mobile{
+          font-size: 17px;
+          letter-spacing: -0.02em;
+        }
+      }
+    }
+  }
+}

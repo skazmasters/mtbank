@@ -1,0 +1,28 @@
+<div class="account-form">
+  <div class="account-form__header">
+    <span class="account-form__title">Документы</span>
+    <span class="account-form__intro">Загрузите документы в формате DOC, XLS</span>
+  </div>
+  <div class="account-form__main">
+    <div class="account-form__doc">
+      {{> widgets/upload-doc label="Устав *" id="file_01"}}
+    </div>
+    <div class="account-form__doc">
+      {{> widgets/upload-doc label="Контракт *" id="file_02"}}
+    </div>
+    <div class="account-form__doc">
+      {{> widgets/upload-doc label="Решение либо протокол о назначении директора&nbsp;*" id="file_03"}}
+    </div>
+    <div class="account-form__doc">
+      {{> widgets/upload-doc label="Паспорт директора&nbsp;*" id="file_04"}}
+    </div>
+  </div>
+  <div class="account-form__submit account-form__submit--mobile-block">
+    <div class="account-form__submit-left">
+      {{> widgets/button-arrow label="Назад"}}
+    </div>
+    <div class="account-form__submit-right">
+      {{> ui/btn label="Отправить документы" size="large" color="primary" arrow=true}}
+    </div>
+  </div>
+</div>

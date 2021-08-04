@@ -1,0 +1,61 @@
+.business-pricing {
+  margin-top: 35px;
+
+  &__more {
+    margin-top: 50px;
+
+    &-row {
+      margin-top: 25px;
+      @include mobile {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__inner {
+    margin-top: 35px;
+    display: flex;
+    @include mobile {
+      margin-top: 20px;
+    }
+
+    margin-left: -10px;
+    margin-right: -10px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      margin: -10px;
+    }
+
+    @include mobile{
+      margin: 0;
+      display: block;
+    }
+  }
+
+  &__cell {
+    flex: 1 1 1px;
+    padding: 0 10px;
+
+    @include tablet {
+      flex-basis: 50%;
+      padding: 10px;
+    }
+
+    @include mobile{
+      padding: 0;
+      margin-top: 20px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    display: block;
+  }
+}

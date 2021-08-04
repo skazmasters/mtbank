@@ -1,0 +1,66 @@
+<div class="pricing-card {{#if selected}}pricing-card--selected{{/if}}">
+  <span class="pricing-card__title">{{title}}</span>
+  <p class="pricing-card__text">{{text}}</p>
+
+  <div class="pricing-card__params">
+    {{#if param-1}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value {{#if
+                param-1-big}}pricing-card__param-value--big{{/if}}">{{{param-1-value}}}</span>
+        <span class="pricing-card__param-label">{{{param-1}}}</span>
+      </div>
+    {{/if}}
+
+    {{#if param-2}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value">{{{param-2-value}}}</span>
+        <span class="pricing-card__param-label">{{{param-2}}}</span>
+      </div>
+    {{/if}}
+
+    {{#if param-3}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value">{{{param-3-value}}}</span>
+        <span class="pricing-card__param-label {{#if
+                param-3-red}}pricing-card__param-label--red{{/if}}">{{{param-3}}}</span>
+      </div>
+    {{/if}}
+
+    {{#if param-4}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value">{{{param-4-value}}}</span>
+        <span class="pricing-card__param-label {{#if
+                param-4-red}}pricing-card__param-label--red{{/if}}">{{{param-4}}}</span>
+      </div>
+    {{/if}}
+
+    {{#if param-5}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value">{{{param-5-value}}}</span>
+        <span class="pricing-card__param-label">{{{param-5}}}</span>
+      </div>
+    {{/if}}
+
+    {{#if param-6}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value">{{{param-6-value}}}</span>
+        <span class="pricing-card__param-label">{{{param-6}}}</span>
+      </div>
+    {{/if}}
+
+    {{#if param-7}}
+      <div class="pricing-card__param">
+        <span class="pricing-card__param-value">{{{param-7-value}}}</span>
+        <span class="pricing-card__param-label">{{{param-7}}}</span>
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="pricing-card__actions">
+    {{#if button-label}}
+      {{> widgets/button-and-more small=true label=button-label no-link=true}}
+    {{else}}
+      {{> widgets/button-and-more small=true label="Оформить" link-label="Подробнее"}}
+    {{/if}}
+  </div>
+</div>

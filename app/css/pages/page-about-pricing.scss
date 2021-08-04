@@ -1,0 +1,7 @@
+.pricing-item{
+  padding-top: 37px;
+
+  @include mobile{
+    padding: 20px 0 40px;
+  }
+}

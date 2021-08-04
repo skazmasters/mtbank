@@ -1,0 +1,53 @@
+<section class="page-filters js-filters">
+  <div class="container">
+    <div class="page-filters__content">
+      <div class="page-filters__header">
+        <div class="page-filters__header-left">
+          <span class="page-filters__mobile-title">Вакансии</span>
+          <span class="page-filters__count">42 вакансии</span>
+        </div>
+        <div class="page-filters__header-right">
+          {{>components/button-filter js-mod="js-filters__toggle"}}
+        </div>
+      </div>
+      <div class="page-filters__body js-filters__body">
+        <div class="page-filters__inner">
+          <div class="page-filters__inner-left">
+            <ul class="page-filters__list js-filters__list">
+              <li class="page-filters__list-item">
+                {{#> form/select border=true search=true search-empty="Городов не найдено"}}
+                  <option value="Минск" selected>Минск</option>
+                  <option value="Гродно">Брест</option>
+                  <option value="Гомель">Гомель</option>
+                  <option value="Гомель">Могилев</option>
+                  <option value="Гомель">Витебск</option>
+                  <option value="Гомель">Гродно</option>
+                {{/form/select}}
+              </li>
+              <li class="page-filters__list-item">
+                {{#> form/select border=true}}
+                  <option value="">Все направления</option>
+                  <option value="Бизнес-отдел">Бизнес-отдел</option>
+                  <option value="Частные лица">Частные лица</option>
+                  <option value="Бэк-офис">Бэк-офис</option>
+                {{/form/select}}
+              </li>
+              <li class="page-filters__list-item">
+                {{#> form/select border=true}}
+                  <option value="">Специализации</option>
+                  <option value="Кредитный эксперт">Кредитный эксперт (4)</option>
+                  <option value="Юрисконсульт">Юрисконсульт (11)</option>
+                  <option value="Ассистент клиент-менеджера">Ассистент клиент-менеджера (5)</option>
+                  <option value="Главный специалист">Главный специалист (10)</option>
+                {{/form/select}}
+              </li>
+            </ul>
+          </div>
+          <div class="page-filters__inner-right">
+            <span class="page-filters__count">42 вакансии</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+<div class="banner banner--white banner--link banner--insurance">
+  <a href="#" class="banner__link"></a>
+  <div class="banner__container">
+    <div class="banner__inner">
+      <span class="banner__title">{{{title}}}</span>
+      <p class="banner__description">{{{text}}}</p>
+      <div class="banner__image">
+        {{> components/image ext="png" img=(concat 'insurance/list/' img) img-tabletSmall=(concat 'insurance/list/' img-mobile)}}
+      </div>
+      <div class="banner__features">
+        {{#if feature-1-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-1-value}}</span>
+            <span class="banner__feature-label">{{feature-1-label}}</span>
+          </div>
+        {{/if}}
+        {{#if feature-2-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-2-value}}</span>
+            <span class="banner__feature-label">{{feature-2-label}}</span>
+          </div>
+        {{/if}}
+        {{#if feature-3-label}}
+          <div class="banner__feature">
+            <span class="banner__feature-value">{{feature-3-value}}</span>
+            <span class="banner__feature-label">{{feature-3-label}}</span>
+          </div>
+        {{/if}}
+      </div>
+      <div class="banner__actions">
+        {{> widgets/button-and-more label="Оформить" link-label="Подробнее"}}
+      </div>
+    </div>
+  </div>
+</div>

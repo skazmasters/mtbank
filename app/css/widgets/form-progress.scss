@@ -1,0 +1,60 @@
+.form-progress {
+  display: flex;
+  justify-content: center;
+  height: 18px;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background: $color-gray-40;
+      left: 0;
+      right: 0;
+      @include align(false, true);
+    }
+  }
+
+  &__step {
+    margin-left: 48px;
+    @include mobile {
+      margin-left: 40px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 3px solid $color-gray-40;
+    box-sizing: border-box;
+    filter: drop-shadow(3px 15px 30px rgba(48, 66, 117, 0.1));
+    border-radius: 100%;
+    background: $color-gray-20;
+
+    &.active {
+      border-color: $color-primary;
+    }
+
+    &.filled {
+      background: $color-primary;
+      border-color: $color-primary;
+      position: relative;
+      width: 26px;
+      height: 26px;
+      margin-top: -4px;
+
+      &:before {
+        content: '';
+        @include align(true, true);
+        @include sprite('progress-tick');
+      }
+    }
+  }
+}

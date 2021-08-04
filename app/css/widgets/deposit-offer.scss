@@ -1,0 +1,61 @@
+.deposit-offer {
+  background: #FFFFFF;
+  box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+  border-radius: 15px;
+  padding: 20px 30px 33px;
+  width: 100%;
+
+  @include smallTablet-and-mobile{
+    padding: 20px;
+  }
+
+  &__name {
+    color: $color-gray-60;
+    display: block;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+  }
+
+  &__value {
+    margin-top: 40px;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 110%;
+    display: block;
+    letter-spacing: -0.05em;
+
+    &--blue {
+      color: $color-primary;
+    }
+
+    &--red {
+      color: $color-red-100;
+    }
+
+    @include smallTablet-and-mobile {
+      margin-top: 15px;
+    }
+  }
+
+  &__text {
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: $color-gray-100;
+    display: block;
+
+    @include smallTablet-and-mobile {
+      margin-top: 11px;
+    }
+  }
+
+  &__button {
+    margin-top: 34px;
+
+    @include smallTablet-and-mobile {
+      margin-top: 15px;
+    }
+  }
+}

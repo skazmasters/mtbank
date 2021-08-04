@@ -1,0 +1,161 @@
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-input' width=300}}
+    {{> form/input label="Номер телефона" placeholder="Подсказка"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--success' width=300}}
+    {{> form/input label="Номер телефона" placeholder="Подсказка" success=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--error' width=300}}
+    {{> form/input label="Номер телефона" placeholder="Подсказка" error=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input[disabled]' width=300}}
+    {{> form/input label="Номер телефона" placeholder="Подсказка" disabled=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input' width=300}}
+    {{> form/input label="Номер телефона" placeholder="Подсказка" hint="Подсказка"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input (no label)' width=300}}
+    {{> form/input placeholder="Без label"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-input--border' width=300}}
+    {{> form/input border=true label="Номер телефона" placeholder="Подсказка"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--border .form-input--small' width=300}}
+    {{> form/input border=true small=true label="Номер телефона" placeholder="Подсказка"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--border .form-input--success' width=300}}
+    {{> form/input border=true label="Номер телефона" placeholder="Подсказка" success=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--border .form-input--error' width=300}}
+    {{> form/input border=true label="Номер телефона" placeholder="Подсказка" error=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--border[disabled]' width=300}}
+    {{> form/input border=true label="Номер телефона" placeholder="Подсказка" disabled=true}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-input--border' width=300}}
+    {{> form/input border=true label="Номер телефона" placeholder="Подсказка" hint="Подсказка"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-input--date' width=300}}
+    {{> form/date}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.form-input--border.form--input--date' width=300}}
+    {{> form/date border=true}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-input--money' width=400}}
+    {{> form/input-money label="Сумма кредита"  value=1000}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-select' width=300}}
+    {{#> form/select label="Тип карточки"}}
+      <option></option>
+      <option value="1">Кредитная</option>
+      <option value="2">Дебетовая</option>
+      <option value="3">Карта рассрочки</option>
+    {{/form/select}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.form-select' width=300}}
+    {{#> form/select label="Тип карточки" error="Текст ошибки"}}
+      <option></option>
+      <option value="1">Кредитная</option>
+      <option value="2">Дебетовая</option>
+      <option value="3">Карта рассрочки</option>
+    {{/form/select}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.form-select--border' width=300}}
+    {{#> form/select border=true label="На срок"}}
+      <option></option>
+      <option value="1">12 месяцев</option>
+      <option value="2">24 месяца</option>
+      <option value="3">3 года</option>
+    {{/form/select}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-select--border' width=300}}
+    {{#> form/select border=true label="На срок" error="Текст ошибки"}}
+      <option></option>
+      <option value="1">12 месяцев</option>
+      <option value="2">24 месяца</option>
+      <option value="3">3 года</option>
+    {{/form/select}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-select--border (no label)' width=300}}
+    {{#> form/select border=true}}
+      <option value="0" selected>Все направления</option>
+      <option value="1">Кредитная</option>
+      <option value="2">Дебетовая</option>
+      <option value="3">Карта рассрочки</option>
+    {{/form/select}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.form-checkbox' width=300}}
+    {{> form/checkbox field-id="check" label="Застраховать вклад"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-checkbox (Switch)' width=300}}
+    {{>form/checkbox-switch id="unp_1" label="Нестандартный УНП"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-checkbox--extended' width=500}}
+    {{> form/checkbox-extended
+            id="check_ext"
+            title="Застраховать вклад"
+            text="Для вашей суммы вклада единовременная оплата страхового взноса 18,8 BYN"
+    }}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.radio-row' width=400}}
+    {{> form/checkbox-row label="Кассы"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.form-checkbox (Switch)' width=400}}
+    {{> form/tabs-radio name="type" option-1="Физ. лицо" option-2="Юр. лицо"}}
+  {{/core/ui-kit/blocks/widget}}
+
+  {{#> core/ui-kit/blocks/widget title='.radio-row' width=400}}
+    {{> form/radio-row name="param" value="1" label="Кассы"}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.radio-row' width=400}}
+    {{> form/radio-row name="param" value="1" label="Кассы 2"}}
+  {{/core/ui-kit/blocks/widget}}
+
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.agreement-checkbox' width=500}}
+    {{>widgets/agreement-checkbox}}
+  {{/core/ui-kit/blocks/widget}}
+  {{#> core/ui-kit/blocks/widget title='.agreement-checkbox (With Error)' width=500}}
+    {{>widgets/agreement-checkbox error=true}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+
+{{#> core/ui-kit/blocks/subsection id=null title=null}}
+  {{#> core/ui-kit/blocks/widget title='.upload-doc' width=500}}
+    {{> widgets/upload-doc label="Паспорт директора *" id="file_04"}}
+  {{/core/ui-kit/blocks/widget}}
+{{/core/ui-kit/blocks/subsection}}
+

@@ -1,0 +1,28 @@
+{{! Зарплатные карты }}
+
+{{> layout/head page-title="Зарплатные карты"}}
+
+{{> layout/header no-menu-mobile=true active-header-menu="main"}}
+
+{{> blocks/common/page-header title="Зарплатные карты"
+        no-border=true
+        item-1="Дебетовые"
+        item-2="Премиальные"
+        item-3="Карты рассрочки"
+        item-4="Кредитные"
+        item-5="Виртуальные"
+        item-6="Зарплатные"
+        item-6-active=true
+}}
+
+{{> hero/salary}}
+
+{{> blocks/products/salary/01_cards }}
+{{> blocks/products/salary/02_packages }}
+{{> blocks/products/salary/03_special }}
+{{> blocks/products/salary/04_banner }}
+{{> blocks/products/salary/05_salary }}
+
+{{> forms/salary}}
+
+{{> layout/footer no-clickable-logo=true }}

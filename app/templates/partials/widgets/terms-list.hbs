@@ -1,0 +1,68 @@
+<{{#if no-number}}ul{{else}}ol{{/if}} class="terms-list {{#if block}}terms-list--block{{/if}} {{#if term-4}}terms-list--4{{/if}}">
+  {{#if term-1}}
+    <li class="terms-list__cell {{#if term-1-text}}terms-list__cell--text{{/if}}">
+      <div class="terms-list__inner">
+        {{#if no-number}}<i class="terms-list__icon">{{> ui/svg name="terms-tick"}}</i>{{/if}}
+
+        {{#if term-1-text}}
+          <span class="terms-list__title">{{term-1}}</span>
+          <p class="terms-list__text">{{{term-1-text}}}</p>
+          {{#if term-1-link}}
+            <a href="#" class="terms-list__link">{{term-1-link}}</a>
+          {{/if}}
+        {{else}}
+          {{{term-1}}}
+        {{/if}}
+      </div>
+    </li>
+  {{/if}}
+  {{#if term-2}}
+    <li class="terms-list__cell {{#if term-2-text}}terms-list__cell--text{{/if}}">
+      <div class="terms-list__inner">
+        {{#if no-number}}<i class="terms-list__icon">{{> ui/svg name="terms-tick"}}</i>{{/if}}
+        {{#if term-2-text}}
+          <span class="terms-list__title">{{term-2}}</span>
+          <p class="terms-list__text">{{{term-2-text}}}</p>
+          {{#if term-2-link}}
+            <a href="#" class="terms-list__link">{{term-2-link}}</a>
+          {{/if}}
+        {{else}}
+          {{{term-2}}}
+        {{/if}}
+      </div>
+    </li>
+  {{/if}}
+  {{#if term-3}}
+    <li class="terms-list__cell {{#if term-3-text}}terms-list__cell--text{{/if}}">
+      <div class="terms-list__inner">
+        {{#if no-number}}<i class="terms-list__icon">{{> ui/svg name="terms-tick"}}</i>{{/if}}
+        {{#if term-3-text}}
+          <span class="terms-list__title">{{term-3}}</span>
+          <p class="terms-list__text">{{{term-3-text}}}</p>
+          {{#if term-3-link}}
+            <a href="#" class="terms-list__link">{{term-3-link}}</a>
+          {{/if}}
+        {{else}}
+          {{{term-3}}}
+        {{/if}}
+      </div>
+    </li>
+  {{/if}}
+  {{#if term-4}}
+    <li class="terms-list__cell {{#if term-4-text}}terms-list__cell--text{{/if}}">
+      <div class="terms-list__inner">
+        {{#if no-number}}<i class="terms-list__icon"></i>{{/if}}
+
+        {{#if term-4-text}}
+          <span class="terms-list__title">{{term-4}}</span>
+          <p class="terms-list__text">{{{term-4-text}}}</p>
+          {{#if term-4-link}}
+            <a href="#" class="terms-list__link">{{term-4-link}}</a>
+          {{/if}}
+        {{else}}
+          {{{term-3}}}
+        {{/if}}
+      </div>
+    </li>
+  {{/if}}
+</{{#if no-number}}ul{{else}}ol{{/if}}>

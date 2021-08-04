@@ -1,0 +1,100 @@
+.achievement-history {
+
+  padding-bottom: 50px;
+  @include tablet-and-mobile{
+    padding-bottom: 0;
+  }
+
+  &__inner {
+    margin-right: -5000px;
+    @include tablet-and-mobile {
+      margin-right: 0;
+    }
+
+    @include reset-slider-container;
+  }
+
+  .carousel-slider {
+    margin: 0;
+    max-width: 1320px;
+    padding: 0;
+    @include media(desktop) {
+      margin: 0;
+    }
+
+    @include tablet {
+      //padding-left: 20px;
+    }
+
+    .swiper-container {
+      overflow: visible;
+    }
+
+    @include tablet {
+      .swiper-slide:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .achievement-card {
+    //max-width: 385px;
+  }
+
+  .section__content {
+    margin-top: 40px;
+    //margin-right: -1000px;
+
+    @include media(mobile) {
+      margin-top: 25px;
+    }
+  }
+
+  .swiper-container {
+    @include tablet-and-mobile {
+      padding: 10px 15px 25px;
+      display: flex;
+      overflow: auto;
+      @include hide-scrollbar;
+    }
+
+    @include tablet {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .swiper-wrapper {
+    @include mobile {
+      flex: 1 0 100%;
+      width: auto;
+      padding: 0 15px 0 0;
+    }
+
+    @include tablet {
+      flex: 1 0 100%;
+      width: auto;
+      padding: 0 20px 0 0;
+    }
+  }
+
+  .swiper-slide {
+    @include media(mobile) {
+      width: auto;
+      min-width: calc(100vw / 1.6);
+      flex: 0 1 calc(100vw - 45px);
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.additional-about {
+  padding-top: 35px;
+  @include mobile{
+    padding-top: 20px;
+  }
+}

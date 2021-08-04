@@ -1,0 +1,168 @@
+.service-install {
+  position: relative;
+
+  @include desktop{
+    margin-left: 55px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    filter: drop-shadow(0px 2px 5px rgba(48, 66, 117, 0.2));
+    border-radius: 8px;
+    width: 68px;
+    height: 68px;
+
+    @include mobile {
+      width: 54px;
+      height: 54px;
+    }
+  }
+
+  &__title {
+    margin-left: 42px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+
+    @include desktop{
+      margin-top: -5px;
+    }
+
+    @include mobile {
+      font-size: 21px;
+      line-height: 120%;
+      margin-left: 25px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 123px;
+    top: -10px;
+
+    @include tablet {
+      right: 0;
+    }
+
+    @include smallTablet-and-mobile {
+      margin-top: 25px;
+      position: static;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include mobile {
+      img {
+        max-height: 170px;
+      }
+    }
+  }
+
+  &__features {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px + 330px + 55px;
+
+    @include smallTablet-and-mobile {
+      width: auto;
+      display: block;
+    }
+  }
+
+  &__feature {
+    margin-top: 35px;
+    width: 330px;
+
+    @include tablet {
+      width: 300px;
+    }
+
+    @include smallTablet-and-mobile {
+      width: auto;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 55px;
+
+      @include tablet {
+        margin-left: 30px;
+      }
+
+      @include smallTablet-and-mobile {
+        margin-left: 0;
+      }
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+      display: block;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 130%;
+      }
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      color: $color-gray-80;
+      display: block;
+      margin-top: 9px;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 3px;
+      }
+    }
+
+    @include smallTablet-and-mobile {
+      margin-top: 20px;
+      width: auto;
+      margin-left: 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__links {
+    margin-top: 86px;
+    display: flex;
+
+    @include smallTablet-and-mobile {
+      margin-top: 30px;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__link {
+    margin-left: 23px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin: 17px 0 0 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

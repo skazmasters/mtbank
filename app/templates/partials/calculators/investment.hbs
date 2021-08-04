@@ -1,0 +1,73 @@
+<div class="calculator">
+  <div class="calculator__inner">
+    <div class="investment-calc">
+      <div class="investment-calc__left">
+
+        <span class="investment-calc__title">Ваши данные</span>
+
+        <div class="investment-calc__row">
+          <div class="investment-calc__cell">
+            {{#> form/select border=true label="Пол"}}
+              <option value="female" selected>Женский</option>
+              <option value="male">Мужской</option>
+            {{/form/select}}
+          </div>
+          <div class="investment-calc__cell">
+            {{#> form/select border=true label="Возраст"}}
+              <option value="26" selected>26 лет</option>
+              <option value="50">50+ лет</option>
+            {{/form/select}}
+          </div>
+        </div>
+
+        <div class="investment-calc__row">
+          {{#> form/select border=true label="Срок выплат"}}
+            <option value="month" selected>12 лет</option>
+            <option value="daily">20 лет</option>
+          {{/form/select}}
+        </div>
+
+        <div class="investment-calc__row">
+          {{#> form/select border=true label="Период выплат"}}
+            <option value="month" selected>Ежемесячно</option>
+            <option value="daily">Ежедневно</option>
+          {{/form/select}}
+        </div>
+
+        <div class="investment-calc__row">
+          {{> form/input-money label="Размер аванса" value=1000}}
+        </div>
+      </div>
+      <div class="investment-calc__right">
+        <span class="investment-calc__title">Страховая сумма</span>
+
+        <div class="investment-calc__params">
+          <div class="investment-calc__param">
+            <span class="investment-calc__param-value">150 375.94 ВYN</span>
+            <span class="investment-calc__param-label">Страховая сумма</span>
+          </div>
+          <div class="investment-calc__param">
+            <span class="investment-calc__param-value">2 506.27 ВYN</span>
+            <span class="investment-calc__param-label">Размер дополнительной пенсии</span>
+          </div>
+          <div class="investment-calc__param">
+            <span class="investment-calc__param-value">126 246.89 ВYN</span>
+            <span class="investment-calc__param-label">При единовременной выплате</span>
+          </div>
+          <div class="investment-calc__param">
+            <span class="investment-calc__param-value">4 992.00 ВYN</span>
+            <span class="investment-calc__param-label">Налоговая льгота за весь период</span>
+          </div>
+        </div>
+
+        <div class="investment-calc__buttons">
+          {{> widgets/button-and-more label="Оформить через интернет-банк" link-label="Получить консультацию"}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="calculator__note">
+    <span class="calculator__note-star">*</span>
+    Пример расчета носит исключительно информационный характер
+  </div>
+</div>

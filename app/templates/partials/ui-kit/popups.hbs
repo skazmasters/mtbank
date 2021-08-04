@@ -1,0 +1,24 @@
+<button type="button" class="btn btn--small btn--primary js-popup-open" data-popup="call">
+  Call
+</button>
+{{> popups/call id="call"}}
+
+<button type="button" class="btn btn--small btn--primary js-popup-open" data-popup="call-success">
+  Call Success
+</button>
+{{> popups/call id="call-success" success=true}}
+
+<button type="button" class="btn btn--small btn--primary js-popup-open" data-popup="call-failure">
+  Call Failure
+</button>
+{{> popups/call id="call-failure" failure=true}}
+
+<button type="button" class="btn btn--small btn--primary js-popup-open" data-popup="person">
+  Person
+</button>
+{{> popups/person id="person" image="01" title="Заголовок" text="Текст"}}
+
+<button type="button" class="btn btn--small btn--primary js-popup-open" data-popup="achievement">
+  Achievement
+</button>
+{{> popups/achievement id="achievement" year="2019" text="Текст"}}

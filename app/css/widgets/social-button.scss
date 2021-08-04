@@ -1,0 +1,104 @@
+.social-button {
+  width: 52px;
+  height: 52px;
+  display: block;
+  border-radius: 100%;
+  box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+  position: relative;
+
+  &:before {
+    content: '';
+    @include align(true, true);
+  }
+
+  &:hover {
+    opacity: .85;
+  }
+
+  @include mobile {
+    width: 42px;
+    height: 42px;
+    &:before {
+      transform: translate(-50%, -50%) scale(0.75);
+    }
+  }
+
+  &--small {
+    width: 42px;
+    height: 42px;
+
+    &:before {
+      transform: translate(-50%, -50%) scale(0.75);
+    }
+  }
+
+  &--instagram {
+    background: linear-gradient(137.89deg, #E4385B 4.56%, #C628AE 100%);
+
+    &:before {
+      @include sprite('social-instagram');
+    }
+  }
+
+  &--vkontakte {
+    background: #508ADA;
+
+    &:before {
+      @include sprite('social-vkontakte');
+    }
+  }
+
+  &--youtube {
+    background: $color-red-100;
+
+    &:before {
+      @include sprite('social-youtube');
+    }
+  }
+
+  &--facebook {
+    background: #3979DB;
+
+    &:before {
+      @include sprite('social-facebook');
+    }
+  }
+
+  &--white {
+    background: $color-white-10;
+    box-shadow: none;
+
+    &:hover {
+      opacity: 1;
+      background: $color-white-20;
+    }
+  }
+
+  &--light {
+    background: $color-white;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:before {
+      @include align(true, true);
+    }
+
+    &.social-button--vkontakte:before {
+      @include sprite('social-vkontakte-black');
+    }
+
+    &.social-button--facebook:before {
+      @include sprite('social-facebook-black');
+    }
+
+    &.social-button--youtube:before {
+      @include sprite('social-youtube-black');
+    }
+
+    &.social-button--telegram:before {
+      @include sprite('social-telegram-black');
+    }
+  }
+}

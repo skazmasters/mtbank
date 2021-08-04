@@ -1,0 +1,82 @@
+.contact-card {
+  display: flex;
+
+  &__icon {
+    width: 62px;
+    min-width: 62px;
+
+    @include mobile {
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+
+  &__content {
+    margin-left: 29px;
+    @include mobile{
+      margin-left: 15px;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $color-gray-80;
+    margin-top: 3px;
+
+    @include mobile {
+      font-size: 14px;
+    }
+
+    .contact-card__content--no-title &{
+      font-size: 17px;
+      line-height: 150%;
+      color: $color-gray-100;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  &__action {
+    margin-top: 15px;
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-hover;
+    }
+
+    @include mobile {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+    }
+  }
+}

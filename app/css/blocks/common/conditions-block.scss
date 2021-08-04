@@ -1,0 +1,193 @@
+.conditions-block {
+  display: flex;
+
+  @include tablet{
+    align-items: center;
+  }
+
+  @include smallTablet-and-mobile {
+    display: block;
+  }
+
+  &__image {
+    flex-basis: 495px;
+    min-width: 495px;
+
+    @include tablet {
+      flex-basis: 350px;
+      min-width: 350px;
+    }
+
+
+    @include smallTablet-and-mobile {
+      min-width: 0;
+      margin-right: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-height: 211px;
+      }
+    }
+
+    @include mobile {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+
+    @include tablet {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__list {
+    margin-top: 7px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 385px;
+    grid-column-gap: 20px;
+
+    &--row {
+      &-1 {
+        grid-template-rows: repeat(1, auto);
+      }
+
+      &-2 {
+        grid-template-rows: repeat(2, auto);
+      }
+
+      &-3 {
+        grid-template-rows: repeat(3, auto);
+      }
+
+      &-4 {
+        grid-template-rows: repeat(4, auto);
+      }
+
+      &-5 {
+        grid-template-rows: repeat(5, auto);
+      }
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include smallTablet-and-mobile {
+      margin-top: 0;
+      display: block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: 392px;
+    padding-left: 37px;
+    margin-top: 33px;
+
+    @include smallTablet-and-mobile {
+      max-width: 100%;
+      margin-top: 15px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 22px;
+      height: 22px;
+      background: $color-primary;
+      border-radius: 100%;
+
+      @include mobile {
+        top: 2px;
+      }
+    }
+
+    &:after {
+      content: '';
+      @include sprite('insurance-params-tick');
+      left: 6px;
+      top: 12px;
+      position: absolute;
+
+      @include mobile {
+        top: 10px;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 100%;
+    color: $color-gray-80;
+    display: block;
+    letter-spacing: -0.02em;
+
+    @include mobile {
+      font-size: 11px;
+    }
+
+    .conditions-block__list--big & {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: -0.04em;
+      color: $color-gray-100;
+
+      @include mobile {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+  }
+
+  &__value {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    margin-top: 5px;
+    display: block;
+
+    @include smallTablet-and-mobile {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    .conditions-block__list--big & {
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      color: $color-gray-80;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 43px;
+    @include smallTablet-and-mobile {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+</main>
+
+<footer class="page__footer footer">
+  {{> blocks/footer/main}}
+  {{> blocks/footer/apps}}
+  {{> blocks/footer/bottom}}
+</footer>
+
+{{#if gdpr}}
+  {{> blocks/footer/gdpr}}
+{{/if}}
+
+{{> popups/call id="call"}}
+
+<button class="js-scroll-up scroll-up"></button>
+
+</div>
+
+{{> layout/bottom}}

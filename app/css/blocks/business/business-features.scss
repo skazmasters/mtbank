@@ -1,0 +1,76 @@
+.business-features {
+  padding-top: 55px;
+  border-top: 1px solid $color-gray-40;
+
+  @include tablet-and-mobile {
+    padding-top: 30px;
+  }
+
+  @include reset-slider-container;
+
+  &__row {
+    display: flex;
+    @include tablet-and-mobile{
+      margin-bottom: -20px;
+    }
+
+    @include desktop {
+      flex-wrap: wrap;
+      margin: -50px -20px 0;
+    }
+  }
+
+  &__cell {
+
+    @include tablet-and-mobile {
+      margin-left: 50px;
+    }
+
+    @include desktop{
+      flex-basis: 25%;
+      width: 25%;
+      padding: 0 20px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @include desktop {
+      margin-top: 50px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &-image {
+      img {
+        min-width: 66px;
+        @include tablet-and-mobile {
+          min-width: 50px;
+        }
+      }
+
+    }
+
+    &-text {
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: -0.04em;
+
+      @include desktop {
+        max-width: 155px;
+      }
+
+      @include tablet-and-mobile {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+      }
+    }
+  }
+}
