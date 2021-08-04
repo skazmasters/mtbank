@@ -1,20 +1,16 @@
 {
-  "name": "html-starter",
-  "version": "1.2.0",
-  "description": "html-starter",
+  "name": "mtbank-theme",
+  "version": "1.0.0",
+  "description": "Custom HTML theme for mtbank",
   "private": true,
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
     "prod": "gulp build-prod"
   },
-  "keywords": [],
-  "author": "OZiTAG Ltd.",
-  "license": "ISC",
-  "homepage": "https://gitlab.com/ozitag/internal-projects/html-starter/blob/master/README.md",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
