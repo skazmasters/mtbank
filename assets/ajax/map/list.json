@@ -1,0 +1,133 @@
+[
+  {
+    "id": "0",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "workingHours": "Praesentium, ullam",
+    "currency": "BYN, USD",
+    "marker": {
+      "color": "blue",
+      "icon": "map--office"
+    },
+    "coords": [
+      53.918,
+      27.41
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "workingHours": "Praesentium, ullam",
+    "type": "Физ. и юр. лица",
+    "marker": {
+      "color": "dark-blue",
+      "icon": "map--atm"
+    },
+    "coords": [
+      53.8967,
+      27.591952
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "openingTime": "Quae quibusdam vero",
+    "currency": "BYN, USD",
+    "marker": {
+      "color": "double-blue",
+      "icon": "map--terminal",
+      "closed": true
+    },
+    "coords": [
+      53.8467915,
+      27.541952
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "workingHours": "Praesentium, ullam",
+    "currency": "BYN, USD",
+    "marker": {
+      "color": "orange",
+      "icon": "map--office"
+    },
+    "coords": [
+      53.954901,
+      27.499910
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "openingTime": "Quae quibusdam vero",
+    "currency": "BYN, USD",
+    "marker": {
+      "color": "green",
+      "icon": "map--atm",
+      "closed": true
+    },
+    "coords": [
+      53.806742,
+      27.591951
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "workingHours": "Praesentium, ullam",
+    "type": "Физ. и юр. лица",
+    "marker": {
+      "color": "green",
+      "icon": "map--terminal"
+    },
+    "coords": [
+      53.9167,
+      27.591952
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "openingTime": "Quae quibusdam vero",
+    "currency": "BYN, USD",
+    "marker": {
+      "color": "dark-blue",
+      "icon": "map--office",
+      "closed": true
+    },
+    "coords": [
+      53.8497915,
+      27.601952
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Lorem ipsum dolor sit amet.",
+    "location1": "Ab aliquid asperiores beatae",
+    "location2": "Laudantium minus molestiae",
+    "workingHours": "Praesentium, ullam",
+    "currency": "BYN, USD",
+    "marker": {
+      "color": "double-blue",
+      "icon": "map--atm"
+    },
+    "coords": [
+      53.914901,
+      27.309910
+    ]
+  }
+]

@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Карты / PayOkay</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+  <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#532AD3">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#532AD3">
+<!-- Яндекс.Браузер -->
+<meta content="ya-title=#532AD3,ya-dock=fade">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#532AD3">
+<meta name="msapplication-TileColor" content="#532AD3">
+
+
+  
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicon/site.webmanifest" crossorigin="use-credentials">
+
+  <link rel="preload" href="/assets/fonts/Inter/400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Inter/500-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Inter/600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Inter/700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css?v=1132">
+
+  <link rel="stylesheet" href="../css/main.css?v=1132">
+</head>
+
+<body class="page theme-payokay">
+<div class="preloader js-preloader"></div>
+<div class="page__inner">
+
+<header class="page__header header js-header header--no-menu-mobile">
+
+  <div class="header-top">
+    <div class="app-download js-app-download">
+      <div class="container">
+        <div class="app-download__inner">
+          <div class="app-download__left">
+            <a href="#" target="_blank" class="app-download__image">
+                <picture>
+              
+              
+              
+                  
+                  <source data-srcset="../assets/images/common/mobileapp-icon.png, ../assets/images/common/mobileapp-icon@2x.png 2x" type="image/png">
+              
+                      <img class="lazy" data-sizes="auto" data-original="../assets/images/common/mobileapp-icon.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+            </a>
+          </div>
+          <div class="app-download__center">
+            <span class="app-download__text">Скачай приложение Мой банк для Android</span>
+          </div>
+          <div class="app-download__right">
+            <button class="app-download__close js-app-download__close">
+              <svg class="icon icon-app-download-close ">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#app-download-close"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page__container">
+      <div class="header-top__inner">
+        <div class="header-top__left">
+          <nav class="header-menu js-header-menu">
+            <ul class="header-menu__list">
+          
+              <li class="header-menu__item">
+                  <span class="header-menu__link js-header-menu__item header-menu__link--active" data-active>Для жизни</span>
+              </li>
+          
+              <li class="header-menu__item">
+                  <a href="#" class="header-menu__link js-header-menu__item">Бизнесу</a>
+              </li>
+          
+              <li class="header-menu__item">
+                  <a href="#" class="header-menu__link js-header-menu__item">Крупному бизнесу</a>
+              </li>
+          
+              <li class="header-menu__item">
+                  <a href="#" class="header-menu__link js-header-menu__item">Инвестиции</a>
+              </li>
+          
+              <li class="header-menu__item">
+                  <a href="/about.html" class="header-menu__link js-header-menu__item">О банке</a>
+          
+                <div class="header-menu__dropdown">
+                  <ul class="header-menu__dropdown-menu">
+                    <li class="header-menu__dropdown-item"><a href="/about--about-us.html">О нас</a></li>
+                    <li class="header-menu__dropdown-item"><a href="/about--promotions.html">Акции</a></li>
+                    <li class="header-menu__dropdown-item"><a href="#">Офисы и банкоматы</a></li>
+                    <li class="header-menu__dropdown-item"><a href="#">Курсы валют</a></li>
+                    <li class="header-menu__dropdown-item"><a href="#">Контакт-центр</a></li>
+                    <li class="header-menu__dropdown-item"><a href="/about--tenders.html">Тендеры</a></li>
+                    <li class="header-menu__dropdown-item"><a href="/about--pricing.html">Тарифы и документы</a></li>
+                    <li class="header-menu__dropdown-item"><a href="/about--property.html">Реализация имущества</a></li>
+                    <li class="header-menu__dropdown-item"><a href="/about--career--benefits.html">Работа в банке</a></li>
+                    <li class="header-menu__dropdown-item"><a href="#">Учебный портал</a></li>
+                    <li class="header-menu__dropdown-item"><a href="/about--press.html">Пресс-центр</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="header-menu__mobile js-header-menu__mobile"></div>
+          </nav>
+        </div>
+        <div class="header-top__right">
+          <div class="header-actions">
+            <div class="header-actions__item">
+              <a class="header-actions__link js-responsive-text" href="#" data-tablet-mobile-text="Отделения">
+                <svg class="icon icon-ui--location ">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--location"/>
+                </svg>
+                <span class="header-actions__text">Отделения и банкоматы</span>
+              </a>
+            </div>
+          
+            <div class="header-actions__item header-actions__item--call">
+              <span class="header-actions__link">
+                <svg class="icon icon-ui--phone ">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--phone"/>
+                </svg>
+                Позвонить в банк
+              </span>
+              <div class="header-actions__dropdown">
+                <div class="header-call">
+                  <div class="header-call__item">
+                    <div class="header-call__phone">
+                      <a href="tel:+375291810000" class="header-call__phone-link">
+                        +375 29 181 00 00
+                      </a>
+                      <span class="header-call__phone-note">
+                        Круглосуточная поддержка
+                      </span>
+                    </div>
+                  </div>
+                  <div class="header-call__item">
+                    <div class="header-call__phone">
+                      <a href="tel:+375291810000" class="header-call__phone-link">
+                        +375 29 181 00 00
+                      </a>
+                      <span class="header-call__phone-note">
+                        Обслуживание карт
+                      </span>
+                    </div>
+                  </div>
+                  <div class="header-call__item header-call__item--button">
+                      <a href="#" class="btn   btn--true-outline btn--icon btn--w100 js-popup-open " data-popup="call"> <svg class="icon icon-ui--call ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--call"/>
+                    </svg>
+                    Заказать звонок</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="header-actions__item header-actions__item--search">
+              <div class="header-search js-header-search">
+                <button class="header-actions__link header-actions__link--no-text js-header-search__open" type="button" aria-label="Воспользоваться поиском.">
+                  <svg class="icon icon-header--search ">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--search"/>
+                  </svg>
+                </button>
+              
+                <div class="header-search__opened js-header-search__dropdown">
+                  <form>
+                    <div class="header-search__header">
+                      <div class="header-search__icon">
+                        <button class="header-search__icon-search">
+                          <svg class="icon icon-header--search ">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--search"/>
+                          </svg>
+                        </button>
+                        <button class="header-search__icon-back js-header-search__back">
+                          <svg class="icon icon-header--back ">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--back"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="header-search__input">
+                        <input type="search" class="js-header-search__input" name="q" autocomplete="off" placeholder="Введите фразу для поиска...">
+                      </div>
+                      <button class="header-search__close js-header-search__close"></button>
+                    </div>
+                    <div class="header-search__dropdown js-header-search__results">
+                      <div class="header-search__intro js-header-search__intro">
+                        <div class="header-search__section">
+                          <div class="header-search__header">
+                            <span class="header-search__title">Ранее вы искали</span>
+                            <button class="header-search__reset">Очистить</button>
+                          </div>
+                          <ul class="header-search__list">
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Карты рассрочки</button>
+                            </li>
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Кредиты</button>
+                            </li>
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Карты для путешествия</button>
+                            </li>
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Кредитные карты</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-search__section">
+                          <div class="header-search__header">
+                            <span class="header-search__title">Вызможно вы ищите</span>
+                          </div>
+                          <ul class="header-search__list">
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Курсы валют</button>
+                            </li>
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Офисы</button>
+                            </li>
+                            <li class="header-search__list-item">
+                              <button class="header-search__list-action">Взять кредит</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="header-search__result js-header-search__result">
+                        <ul class="header-search__results">
+                          <li class="header-search__results-item">
+                            <a href="#" class="header-search__results-link">
+                              <span class="header-search__results-title"><mark>Карты</mark> рассрочки</span>
+                              <span class="header-search__results-category">Карты</span>
+                            </a>
+                          </li>
+                          <li class="header-search__results-item">
+                            <a href="#" class="header-search__results-link">
+                              <span class="header-search__results-title">Сделайте ваши расчеты более удобными с картами МТБанка!</span>
+                              <span class="header-search__results-category">Карты Master Card</span>
+                            </a>
+                          </li>
+                          <li class="header-search__results-item">
+                            <a href="#" class="header-search__results-link">
+                              <span class="header-search__results-title">«Hello, world!», или <mark>Карта</mark> для тех, кто летает</span>
+                              <span class="header-search__results-category">Акции</span>
+                            </a>
+                          </li>
+                          <li class="header-search__results-item">
+                            <a href="#" class="header-search__results-link">
+                              <span class="header-search__results-title"><mark>Автокарта</mark> от МТБанка – это уникальный банковский продукт, не имеющий аналогов  в Беларуси. </span>
+                              <span class="header-search__results-category">Акции</span>
+                            </a>
+                          </li>
+                          <li class="header-search__results-item">
+                            <a href="#" class="header-search__results-link">
+                              <span class="header-search__results-title">Кредитные <mark>карты</mark></span>
+                              <span class="header-search__results-category">Карты</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="header-search__summary">
+                          <a href="#" class="header-search__summary-link">Все результаты поиска: 98</a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-main  header-main--hide_mobile">
+    <div class="page__container">
+      <div class="header-main__inner">
+        <div class="header-main__left">
+          <div class="header-burger">
+            <button class="header-burger__button js-header__burger" type="button" aria-label="Переключатель Меню">
+              <i class="header-burger__icon"></i>
+            </button>
+          </div>
+          <div class="header-logo">
+              <a class="header-logo__link" href="/home.html">
+                <svg class="icon icon-logo--colored header-logo__image">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#logo--colored"/>
+                </svg>
+              </a>
+          </div>
+        </div>
+
+        <div class="header-main__center">
+            <nav class="header-nav">
+              <div class="header-nav__mobile js-header__sub">
+                <button class="header-nav__mobile-back js-header__sub_back">
+                  <svg class="icon icon-header--back-big ">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--back-big"/>
+                  </svg>
+                </button>
+                <span class="header-nav__mobile-title js-header__sub_title"></span>
+                <button class="header-nav__mobile-search js-header__sub_search">
+                  <svg class="icon icon-header--search-big ">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--search-big"/>
+                  </svg>
+                </button>
+              </div>
+            
+              <ul class="header-nav__list">
+                  <li class="header-nav__item js-header__item">
+                    <a href="debit-cards.html" class="header-nav__link js-header__link header-nav__link--current">Карты</a>
+                    <div class="header-nav__dropdown js-header__dropdown">
+                      <div class="header-dropdown">
+                        <div class="container">
+                          <div class="header-dropdown__inner">
+                            <div class="header-dropdown__content">
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Типы карт</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Дебетовые карты</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Кредитные</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Виртуальные</a></li>
+                                  </ul>
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Карты рассрочки</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Зарплатные</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Премиальные</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Лучшие карты</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="mixmax.html">Карта рассрочки Халва</a></li>
+                                    <li class="header-dropdown__list-item"><a href="payokay.html">PayOkay для путешествий</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Имклива с овердрафтом</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="header-dropdown__footer">
+                              <ul class="header-dropdown__links">
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-questions ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-questions"/>
+                                      </svg>
+                                    </div>
+                                    Вопросы и ответы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-usd ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-usd"/>
+                                      </svg>
+                                    </div>
+                                    Курсы валют
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-docs ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-docs"/>
+                                      </svg>
+                                    </div>
+                                    Тарифы и документы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-ui--chat ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                                      </svg>
+                                    </div>
+                                    Обратная связь
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-nav__item js-header__item">
+                    <a href="deposits.html" class="header-nav__link js-header__link">Кредиты</a>
+                    <div class="header-nav__dropdown js-header__dropdown">
+                      <div class="header-dropdown">
+                        <div class="container">
+                          <div class="header-dropdown__inner">
+                            <div class="header-dropdown__content">
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Кредиты банка</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="credits-single.html">Кредит «Выручай»</a></li>
+                                    <li class="header-dropdown__list-item"><a href="credits-single.html">Кредит «Еще больше»</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Карты рассрочек</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="mixmax.html">Халва MIX</a></li>
+                                    <li class="header-dropdown__list-item"><a href="mixmax.html">Халва MAX</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Карты с овердрафтом</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Имклива</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">HELLO, WORLD!</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Visa Infinite</a></li>
+                                    <li class="header-dropdown__list-item"><a href="debit-cards.html">Visa Platinum</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="header-dropdown__footer">
+                              <ul class="header-dropdown__links">
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-questions ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-questions"/>
+                                      </svg>
+                                    </div>
+                                    Вопросы и ответы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-usd ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-usd"/>
+                                      </svg>
+                                    </div>
+                                    Курсы валют
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-docs ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-docs"/>
+                                      </svg>
+                                    </div>
+                                    Тарифы и документы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-ui--chat ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                                      </svg>
+                                    </div>
+                                    Обратная связь
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-nav__item js-header__item">
+                    <a href="deposits.html" class="header-nav__link js-header__link">Вклады</a>
+                    <div class="header-nav__dropdown js-header__dropdown">
+                      <div class="header-dropdown">
+                        <div class="container">
+                          <div class="header-dropdown__inner">
+                            <div class="header-dropdown__content">
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Вклады</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="deposits-single.html">МТБелки</a></li>
+                                    <li class="header-dropdown__list-item"><a href="deposits-single.html">Актуальный</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Типы вкладов</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="deposits.html">В долларах</a></li>
+                                    <li class="header-dropdown__list-item"><a href="deposits.html">В белорусских рублях</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="header-dropdown__footer">
+                              <ul class="header-dropdown__links">
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-questions ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-questions"/>
+                                      </svg>
+                                    </div>
+                                    Вопросы и ответы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-usd ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-usd"/>
+                                      </svg>
+                                    </div>
+                                    Курсы валют
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-docs ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-docs"/>
+                                      </svg>
+                                    </div>
+                                    Тарифы и документы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-ui--chat ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                                      </svg>
+                                    </div>
+                                    Обратная связь
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-nav__item js-header__item">
+                    <a href="#" class="header-nav__link js-header__link">Сервисы</a>
+                    <div class="header-nav__dropdown js-header__dropdown">
+                      <div class="header-dropdown">
+                        <div class="container">
+                          <div class="header-dropdown__inner">
+                            <div class="header-dropdown__content">
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Банк онлайн</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="#">USSD-банкинг</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Мобильный Банк</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Платежи и переводы</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="#">Переводы с карты на карту</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Приложение Denegram</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Приложение Икс-карта</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Приложение Халва</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">USSD-банкинг</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Другие сервисы банка</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="#">Билеты MTB Tickets</a></li>
+                                    <li class="header-dropdown__list-item"><a href="https://mtbankfx.mtbank.by/" target="_blank">Форекс MTBankFX</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Сервисы Open API</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">SMS-уведомления</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="header-dropdown__footer">
+                              <ul class="header-dropdown__links">
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-questions ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-questions"/>
+                                      </svg>
+                                    </div>
+                                    Вопросы и ответы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-usd ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-usd"/>
+                                      </svg>
+                                    </div>
+                                    Курсы валют
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-docs ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-docs"/>
+                                      </svg>
+                                    </div>
+                                    Тарифы и документы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-ui--chat ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                                      </svg>
+                                    </div>
+                                    Обратная связь
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-nav__item js-header__item">
+                    <a href="#" class="header-nav__link js-header__link">Страхование</a>
+                    <div class="header-nav__dropdown js-header__dropdown">
+                      <div class="header-dropdown">
+                        <div class="container">
+                          <div class="header-dropdown__inner">
+                            <div class="header-dropdown__content">
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Жизнь и здоровье</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="#">Выезд за границу</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Водители и пассажиры</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Мед. страховка Кентавр</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Мед. страховка Имклива</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="header-dropdown__cell">
+                                <span class="header-dropdown__title">Дом и имущество</span>
+                                <div class="header-dropdown__nav">
+                                  <ul class="header-dropdown__list">
+                                    <li class="header-dropdown__list-item"><a href="#">Недвижимость и имущество</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Квартира и загородный дом</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Домашнее имущество</a></li>
+                                    <li class="header-dropdown__list-item"><a href="#">Дом и граждане</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="header-dropdown__footer">
+                              <ul class="header-dropdown__links">
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-questions ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-questions"/>
+                                      </svg>
+                                    </div>
+                                    Вопросы и ответы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-usd ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-usd"/>
+                                      </svg>
+                                    </div>
+                                    Курсы валют
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-header--sub-docs ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#header--sub-docs"/>
+                                      </svg>
+                                    </div>
+                                    Тарифы и документы
+                                  </a>
+                                </li>
+                                <li class="header-dropdown__links-cell">
+                                  <a href="#">
+                                    <div class="header-dropdown__links-icon">
+                                      <svg class="icon icon-ui--chat ">
+                                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                                      </svg>
+                                    </div>
+                                    Обратная связь
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+            </nav>
+        </div>
+
+        <div class="header-main__right">
+            <div class="header-buttons ">
+              <div class="header-buttons__item">
+                  <a href="#" class="button-chat"><svg class="icon icon-ui--chat ">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                </svg>
+                </a>
+              </div>
+              <div class="header-buttons__item header-buttons__item--desktop">
+                <a href="https://mybank.by/" target="_blank" class="button-bank ">
+                  <svg class="icon icon-ui--login ">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--login"/>
+                  </svg>
+                  Интернет-банк
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-overlay js-header__overlay"></div>
+</header>
+
+<main class="page__content">
+
+<div class="hero-menu-block">
+<section class="hero-banner hero-banner--wide      ">
+  <div class="hero-banner__bg">
+    
+        <picture>
+      
+      
+      
+          
+          <source data-srcset="../assets/images/hero/payokay/bg.jpg" type="image/jpeg">
+      
+              <img class="lazy" data-sizes="auto" data-original="../assets/images/hero/payokay/bg.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+        </picture>
+  </div>
+  <div class="container">
+    <div class="hero-banner__inner">
+      <div class="hero-banner__image">
+          <picture>
+        
+                
+                <source media="(max-width: 979px)" data-srcset="../assets/images/hero/payokay/mobile.jpg, ../assets/images/hero/payokay/mobile@2x.jpg 2x" type="image/jpeg">
+        
+        
+            
+            <source data-srcset="../assets/images/hero/payokay/image.png, ../assets/images/hero/payokay/image@2x.png 2x" type="image/png">
+        
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/hero/payokay/image.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+          </picture>
+      </div>
+      <div class="hero-banner__content   hero-banner__content--features" style="background:#E7E8FF">
+
+          <div class="hero-banner__main">
+
+            <span class="hero-banner__title">PayOkay— карта заряженная впечатлениями</span>
+
+              <div class="hero-banner__actions">
+                  <div class="button-and-more button-and-more--no-link    ">
+                  
+                            <a href="#" class="btn btn--large   btn--primary ">Оформить карту онлайн</a>
+                  
+                    
+                  </div>
+              </div>
+
+
+
+          </div>
+
+          <div class="hero-banner__features ">
+            <div class="hero-banner__features-inner">
+                <div class="hero-banner__feature">
+                    <div class="hero-banner__feature-icon">
+                          <picture>
+                        
+                        
+                        
+                            
+                            <source data-srcset="../assets/images/hero/payokay/icon_01.png, ../assets/images/hero/payokay/icon_01@2x.png 2x" type="image/png">
+                        
+                                <img class="lazy" data-sizes="auto" data-original="../assets/images/hero/payokay/icon_01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                          </picture>
+                    </div>
+                  <div class="hero-banner__feature-content ">
+                    <span class="hero-banner__feature-title">Мани-бэк до 5%</span>
+                      <p class="hero-banner__feature-text">Путешествуйте, покупайте за&nbsp;границей и&nbsp;получайте деньги обратно.</p>
+                  </div>
+                </div>
+                <div class="hero-banner__feature">
+                    <div class="hero-banner__feature-icon">
+                          <picture>
+                        
+                        
+                        
+                            
+                            <source data-srcset="../assets/images/hero/payokay/icon_02.png, ../assets/images/hero/payokay/icon_02@2x.png 2x" type="image/png">
+                        
+                                <img class="lazy" data-sizes="auto" data-original="../assets/images/hero/payokay/icon_02.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                          </picture>
+                    </div>
+                  <div class="hero-banner__feature-content ">
+                    <span class="hero-banner__feature-title">Страховка в подарок</span>
+                      <p class="hero-banner__feature-text">Получите страховку онлайн и&nbsp;совершенно бесплатно.</p>
+                  </div>
+                </div>
+                <div class="hero-banner__feature">
+                    <div class="hero-banner__feature-icon">
+                          <picture>
+                        
+                        
+                        
+                            
+                            <source data-srcset="../assets/images/hero/payokay/icon_03.png, ../assets/images/hero/payokay/icon_03@2x.png 2x" type="image/png">
+                        
+                                <img class="lazy" data-sizes="auto" data-original="../assets/images/hero/payokay/icon_03.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                          </picture>
+                    </div>
+                  <div class="hero-banner__feature-content ">
+                    <span class="hero-banner__feature-title">Выгодный курc</span>
+                      <p class="hero-banner__feature-text">Обменивайте валюту по выгодному курсу.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+            
+              <div class="hero-banner__actions hero-banner__actions--mobile">
+                  <div class="button-and-more button-and-more--no-link    ">
+                  
+                            <a href="#" class="btn btn--large   btn--primary ">Оформить карту онлайн</a>
+                  
+                    
+                  </div>
+              </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="inner-header  inner-header--simple  js-inner-header">
+  <div class="container">
+    <div class="inner-header__inner js-inner-header__content">
+      <div class="inner-header__content">
+        <div class="inner-header__left">
+          <span class="inner-header__title">Обзор</span>
+        </div>
+        <div class="inner-header__right js-inner-header__container">
+          <ul class="inner-header__list">
+              <li class="inner-header__item  js-inner-header__item">
+                    <span class="inner-header__link active">Обзор</span>
+              </li>
+
+              <li class="inner-header__item  js-inner-header__item">
+                  <a href="#" class="inner-header__link">Тарифы и условия</a>
+              </li>
+
+              <li class="inner-header__item  js-inner-header__item">
+                  <a href="#" class="inner-header__link">Как работает</a>
+              </li>
+
+
+
+          </ul>
+
+
+            <div class="inner-header__button">
+                  <a href="#form" class="btn btn--small   btn--primary js-scroll-to ">Оформить карту</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="section ">
+  <div class="container">
+    <div class="overview-card   ">
+      <div class="overview-card__container">
+        <div class="overview-card__image">
+            <picture>
+          
+          
+          
+              
+              <source srcset="../assets/images/common/cards/payokay/payokay.jpg, ../assets/images/common/cards/payokay/payokay@2x.jpg 2x" type="image/jpeg">
+          
+                <img src="../assets/images/common/cards/payokay/payokay.jpg" alt>
+            </picture>
+        </div>
+        <div class="overview-card__content ">
+          <span class="overview-card__title">Деньги возвращаются!</span>
+    
+              <p class="overview-card__text">В течение месяца вы пользуетесь картой PayOkay. По итогам месяца МТБанк возвращает вам часть потраченных средств деньгами на счет вашей карты.</p>
+          <div class="overview-card__cta">
+                  <div class="button-and-more button-and-more--no-link    ">
+                  
+                            <a href="#" class="btn btn--large   btn--primary ">Оформить карту онлайн</a>
+                  
+                    
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cards-advantages">
+      <ul class="cards-advantages__list">
+        <li class="cards-advantages__item">
+          <div class="advantage-card advantage-card--big">
+            <div class="advantage-card__container ">
+                <div class="advantage-card__image ">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/cards/payokay/icons/04.png, ../assets/images/cards/payokay/icons/04@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/04.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                </div>
+              <div class="advantage-card__inner">
+                <p class="advantage-card__title">Мани-бэк 1% за любые покупки</p>
+                  <p class="advantage-card__text">Мани-бэк 1% за все покупки (кроме  продуктовых магазинов) в Беларуси и за границей.</p>
+          
+          
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards-advantages__item">
+          <div class="advantage-card advantage-card--big">
+            <div class="advantage-card__container ">
+                <div class="advantage-card__image ">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/cards/payokay/icons/05.png, ../assets/images/cards/payokay/icons/05@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/05.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                </div>
+              <div class="advantage-card__inner">
+                <p class="advantage-card__title">Мани-бэк здо 2%, за покупку билетов на mtb.tickets.by</p>
+                  <p class="advantage-card__text">Бронируйте отели со скидной и возвращайте до 2% реальными деньгами.</p>
+          
+          
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards-advantages__item">
+          <div class="advantage-card advantage-card--big">
+            <div class="advantage-card__container ">
+                <div class="advantage-card__image ">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/cards/payokay/icons/06.png, ../assets/images/cards/payokay/icons/06@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/06.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                </div>
+              <div class="advantage-card__inner">
+                <p class="advantage-card__title">Мани-бэк до 5% за расчеты на booking.com</p>
+                  <p class="advantage-card__text">Бронируйте отели со скидной и возвращайте до 2% реальными деньгами.</p>
+          
+          
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards-advantages__item">
+          <div class="advantage-card advantage-card--big">
+            <div class="advantage-card__container ">
+                <div class="advantage-card__image ">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/cards/payokay/icons/07.png, ../assets/images/cards/payokay/icons/07@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/07.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                </div>
+              <div class="advantage-card__inner">
+                <p class="advantage-card__title">Мани-бэк до 5% при возврате Tax Free на карту</p>
+                  <p class="advantage-card__text">Получайте Tax Free прямо на карту PayOkay с дополнительным бонусом от банка.</p>
+          
+          
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--background" style="background: linear-gradient(90.78deg,#9849e6 .56%,#98a1f8 98.87%)">
+  <div class="container">
+    <div class="card-benefits card-benefits--dark  js-benefits-slider">
+      <div class="card-benefits__inner">
+        <div class="section__header">
+          <div class="section__header-left section__header-left--block">
+            <span class="section__title">Преимущества вашей карты</span>
+            <span class="section__description">Страховка, скидки, специальный курс. Все это доступно с картой PayOkay от МТБанк.</span>
+          </div>
+          <div class="section__header-right">
+              <div class="slider-navigation slider-navigation--white">
+                <div class="slider-navigation__item">
+                  <button class="slider-navigation__btn js-slider-nav__prev" type="button" aria-label="Предыдущий сайд.">
+                    <svg class="icon icon-action--left-arrow white">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#action--left-arrow"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="slider-navigation__item">
+                  <button class="slider-navigation__btn js-slider-nav__next" type="button" aria-label="Слудующий сайд.">
+                    <svg class="icon icon-action--right-arrow white">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#action--right-arrow"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <div class="carousel-slider">
+            <div class="swiper-container carousel-slider__inner js-benefits-slider__slider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide carousel-slider__slide">
+                  <div class="benefits-card">
+                    <div class="benefits-card__container">
+                        <div class="benefits-card__image">
+                            <picture>
+                          
+                          
+                          
+                              
+                              <source data-srcset="../assets/images/cards/payokay/icons/01.png, ../assets/images/cards/payokay/icons/01@2x.png 2x" type="image/png">
+                          
+                                  <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                            </picture>
+                        </div>
+                      <div class="benefits-card__inner">
+                        <p class="benefits-card__title">Страховка в подарок</p>
+                        <p class="benefits-card__text">Не беспокойтесь о получении страховки перед выездом за границу, получите страховку онлайн и бесплатно.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  <div class="benefits-card">
+                    <div class="benefits-card__container">
+                        <div class="benefits-card__image">
+                            <picture>
+                          
+                          
+                          
+                              
+                              <source data-srcset="../assets/images/cards/payokay/icons/02.png, ../assets/images/cards/payokay/icons/02@2x.png 2x" type="image/png">
+                          
+                                  <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/02.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                            </picture>
+                        </div>
+                      <div class="benefits-card__inner">
+                        <p class="benefits-card__title">Бесплатное пополнение карт</p>
+                        <p class="benefits-card__text">Любой банк РБ и в 61 страну мира. Бесплатно для карты МТБанка.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  <div class="benefits-card">
+                    <div class="benefits-card__container">
+                        <div class="benefits-card__image">
+                            <picture>
+                          
+                          
+                          
+                              
+                              <source data-srcset="../assets/images/cards/payokay/icons/03.png, ../assets/images/cards/payokay/icons/03@2x.png 2x" type="image/png">
+                          
+                                  <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/03.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                            </picture>
+                        </div>
+                      <div class="benefits-card__inner">
+                        <p class="benefits-card__title">Экстренное восстановление карты</p>
+                        <p class="benefits-card__text">Теперь не стоит беспокоится о потере карты за рубежом. Восстановление за 2 часа.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide carousel-slider__slide">
+                  <div class="benefits-card">
+                    <div class="benefits-card__container">
+                        <div class="benefits-card__image">
+                            <picture>
+                          
+                          
+                          
+                              
+                              <source data-srcset="../assets/images/cards/payokay/icons/01.png, ../assets/images/cards/payokay/icons/01@2x.png 2x" type="image/png">
+                          
+                                  <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                            </picture>
+                        </div>
+                      <div class="benefits-card__inner">
+                        <p class="benefits-card__title">Страховка в подарок</p>
+                        <p class="benefits-card__text">Не беспокойтесь о получении страховки перед выездом за границу, получите страховку онлайн и бесплатно.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  <div class="benefits-card">
+                    <div class="benefits-card__container">
+                        <div class="benefits-card__image">
+                            <picture>
+                          
+                          
+                          
+                              
+                              <source data-srcset="../assets/images/cards/payokay/icons/02.png, ../assets/images/cards/payokay/icons/02@2x.png 2x" type="image/png">
+                          
+                                  <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/02.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                            </picture>
+                        </div>
+                      <div class="benefits-card__inner">
+                        <p class="benefits-card__title">Бесплатное пополнение карт</p>
+                        <p class="benefits-card__text">Любой банк РБ и в 61 страну мира. Бесплатно для карты МТБанка.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slider__slide">
+                  <div class="benefits-card">
+                    <div class="benefits-card__container">
+                        <div class="benefits-card__image">
+                            <picture>
+                          
+                          
+                          
+                              
+                              <source data-srcset="../assets/images/cards/payokay/icons/03.png, ../assets/images/cards/payokay/icons/03@2x.png 2x" type="image/png">
+                          
+                                  <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/icons/03.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                            </picture>
+                        </div>
+                      <div class="benefits-card__inner">
+                        <p class="benefits-card__title">Экстренное восстановление карты</p>
+                        <p class="benefits-card__text">Теперь не стоит беспокоится о потере карты за рубежом. Восстановление за 2 часа.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-benefits__image">
+          <picture>
+        
+        
+        
+            
+            <source data-srcset="../assets/images/cards/payokay/benefits/bg.png, ../assets/images/cards/payokay/benefits/bg@2x.png 2x" type="image/png">
+        
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/cards/payokay/benefits/bg.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+          </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="payokay-exchange">
+      <div class="payokay-exchange__header">
+        <span class="payokay-exchange__title">Специальный курс</span>
+        <p class="payokay-exchange__text">Покупайте или обмениваете валюту по специальному курсу, доступному лишь
+          держателям карты PayOkay.</p>
+      </div>
+      <div class="payokay-exchange__content">
+        <div class="payokay-exchange__field">
+          <div class="exchange-input js-exchange-input">
+            <div class="exchange-input__input">
+              <input value="1" type="text" class="js-numeric-input">
+            </div>
+            <div class="exchange-input__select">
+              <select class="js-link-select visually-hidden">
+                <option value="usd" selected>USD</option>
+                <option value="byn">BYN</option>
+                <option value="eur">EUR</option>
+                <option value="rub">RUB</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <ul class="payokay-exchange__list">
+          <li class="payokay-exchange__list-item">
+              <div class="exchange-item exchange-item--simple">
+                <div class="exchange-item__icon">
+                    <img src="../assets/images/payokay/byn.svg">
+                </div>
+                <div class="exchange-item__content">
+                  <span class="exchange-item__label">Лучший курс BYN</span>
+                  <span class="exchange-item__value">2, 6380</span>
+                </div>
+              </div>
+          </li>
+          <li class="payokay-exchange__list-item">
+              <div class="exchange-item exchange-item--simple">
+                <div class="exchange-item__icon">
+                    <img src="../assets/images/payokay/pay.svg">
+                </div>
+                <div class="exchange-item__content">
+                  <span class="exchange-item__label">Курс PayOkay</span>
+                  <span class="exchange-item__value">2, 6365</span>
+                </div>
+              </div>
+          </li>
+          <li class="payokay-exchange__list-item">
+              <div class="exchange-item exchange-item--simple">
+                <div class="exchange-item__icon">
+                    <img src="../assets/images/payokay/up.svg">
+                </div>
+                <div class="exchange-item__content">
+                  <span class="exchange-item__label">Выша выгода в BYN</span>
+                  <span class="exchange-item__value">1, 4985</span>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header section__header--simple">
+      <h2 class="section__title">Рассчитайте свой кэшбэк</h2>
+      <p class="section__description">Возвращайте до 40% от прибыли в год с картой “Название карты”</p>
+    </div>
+    <div class="section__content">
+      <div class="cashback-banner cashback-banner--white">
+        <div class="cashback-banner__container">
+          <div class="cashback-banner__bg"></div>
+          <div class="cashback-banner__calc">
+            <span class="cashback-banner__calc-title">Сумма расходов в месяц</span>
+            <div class="cashback-banner__calc-content">
+              <div class="cashback-banner__calc-item"><div class="range-slider js-range-slider" data-currency="BYN" data-min="100" data-max="10000" data-step="10">
+        <input type="hidden" name="range_01" value="2000" class="js-range-slider__input"> 
+        <div class="range-slider__container">
+          <div class="range-slider__top">
+            <span class="range-slider__label">Любые товары и услуги</span>
+            <span class="range-slider__value js-range-slider__value"></span>
+          </div>
+          <div class="range-slider__bottom">
+            <div class="js-range-slider__content"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+              <div class="cashback-banner__calc-item"><div class="range-slider js-range-slider" data-currency="BYN" data-min="100" data-max="10000" data-step="10">
+        <input type="hidden" name="range_02" value="2000" class="js-range-slider__input"> 
+        <div class="range-slider__container">
+          <div class="range-slider__top">
+            <span class="range-slider__label">Партнерские программы</span>
+            <span class="range-slider__value js-range-slider__value"></span>
+          </div>
+          <div class="range-slider__bottom">
+            <div class="js-range-slider__content"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+            </div>
+              <div class="cashback-banner__calc-filters">
+                <div class="cashback-banner__accordion js-accord" data-disabled-scroll>
+                  <div class="cashback-banner__accordion-header">
+                    <button class="cashback-banner__accordion-button js-accord__toggle">
+                      <span class="cashback-banner__accordion-title">Больше фильтров</span>
+                      <div class="cashback-banner__accordion-icon">
+                        <svg class="icon icon-action--expand-down ">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#action--expand-down"/>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="cashback-banner__accordion-content js-accord__body">
+                    <div class="cashback-banner__accordion-inner">
+                      <div class="range-slider js-range-slider" data-currency="USD" data-min="100" data-max="10000" data-step="10">
+                        
+                        <div class="range-slider__container">
+                          <div class="range-slider__top">
+                            <span class="range-slider__label">Дополнительно</span>
+                            <span class="range-slider__value js-range-slider__value"></span>
+                          </div>
+                          <div class="range-slider__bottom">
+                            <div class="js-range-slider__content"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="cashback-banner__card">
+            <span class="cashback-banner__card-title">Ваша прибыль в год</span>
+            <div class="cashback-banner__card-container">
+              <div class="cashback-banner__card-image">  <picture>
+      
+      
+      
+          
+          <source data-srcset="../assets/images/common/cards/payokay/payokay.jpg, ../assets/images/common/cards/payokay/payokay@2x.jpg 2x" type="image/jpeg">
+      
+              <img class="lazy" data-sizes="auto" data-original="../assets/images/common/cards/payokay/payokay.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+        </picture>
+      </div>
+              <div class="cashback-banner__card-content">
+                <div class="cashback-banner__card-item">
+                  <p class="cashback-banner__card-value">50</p>
+                  <p class="cashback-banner__card-currency">BYN</p>
+                  <p class="cashback-banner__card-text">Вы заработаете за год</p>
+                </div>
+                <div class="cashback-banner__card-item">
+                  <p class="cashback-banner__card-value">106</p>
+                  <p class="cashback-banner__card-currency">%</p>
+                  <p class="cashback-banner__card-text">Возврат от стоимости карты</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cashback-banner__note">* Пример расчета носит исключительно информационный характер</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="banner banner--background banner--white banner--services">
+      <div class="banner__bg">
+          <picture>
+        
+                
+                <source media="(max-width: 979px)" data-srcset="../assets/images/banners/partners/bg-mobile.jpg, ../assets/images/banners/partners/bg-mobile@2x.jpg 2x" type="image/jpeg">
+        
+        
+            
+            <source data-srcset="../assets/images/banners/partners/bg.jpg, ../assets/images/banners/partners/bg@2x.jpg 2x" type="image/jpeg">
+        
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/banners/partners/bg.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+          </picture>
+      </div>
+      <div class="banner__container">
+        <div class="banner__inner">
+          <span class="banner__title">Дистанционные сервисы</span>
+          <p class="banner__description">Оплачивайте товары и услуги при помощи гаджетов</p>
+          <div class="banner__image">
+              <picture>
+            
+                    
+                    <source media="(max-width: 979px)" data-srcset="../assets/images/banners/payokay-services/mobile.png, ../assets/images/banners/payokay-services/mobile@2x.png 2x" type="image/png">
+            
+            
+                
+                <source data-srcset="../assets/images/banners/payokay-services/image.png, ../assets/images/banners/payokay-services/image@2x.png 2x" type="image/png">
+            
+                    <img class="lazy" data-sizes="auto" data-original="../assets/images/banners/payokay-services/image.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+          </div>
+          <ul class="banner__list">
+            <li class="banner__list-item">Мобильный банк</li>
+            <li class="banner__list-item">ApplePay</li>
+            <li class="banner__list-item">ИКС карта</li>
+            <li class="banner__list-item">Samsung Pay</li>
+          </ul>
+          <div class="banner__facts">
+            <div class="banner__fact">
+              <div class="banner__fact-image">
+                  <picture>
+                
+                
+                
+                    
+                    <source data-srcset="../assets/images/banners/payokay-services/feature.png, ../assets/images/banners/payokay-services/feature@2x.png 2x" type="image/png">
+                
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/banners/payokay-services/feature.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                  </picture>
+              </div>
+              <div class="banner__fact-content">
+                <span class="banner__fact-title">Безопасные платежи</span>
+                <p class="banner__fact-text">Каждая карта МТБанка защищена технологией 3D Secure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__title ">Оформите PayOkay для получения зарплаты</span>
+    </div>
+    <div class="section__content">
+      <ol class="terms-list  ">
+          <li class="terms-list__cell ">
+            <div class="terms-list__inner">
+              
+      
+                Оформите карту и заполните заявление
+            </div>
+          </li>
+          <li class="terms-list__cell ">
+            <div class="terms-list__inner">
+              
+                Передайте заявление в бухгалтерию на вашей работе
+            </div>
+          </li>
+          <li class="terms-list__cell ">
+            <div class="terms-list__inner">
+              
+                Получайте дополнительные преимущества по вашей карте
+            </div>
+          </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--gray section-cards-form" id="form">
+  <div class="container">
+    <div class="cards-form  ">
+      <div class="cards-form__left">
+        <div class="card-form__inner">
+            <ul class="cards-form__cards">
+              <li class="cards-form__cards-item">
+                <div class="cards-form__cards-image">
+                    <picture>
+                  
+                  
+                  
+                      
+                      <source data-srcset="../assets/images/common/cards/payokay/payokay.jpg, ../assets/images/common/cards/payokay/payokay@2x.jpg 2x" type="image/jpeg">
+                  
+                          <img class="lazy" data-sizes="auto" data-original="../assets/images/common/cards/payokay/payokay.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                    </picture>
+                </div>
+              </li>
+            </ul>
+          <div class="cards-form__benefits-list">
+            <ul>
+              <li>Ответ на заявку течение 2 часов</li>
+              <li>Оформление карты за 5-10 минут</li>
+              <li>Бесплатное оформление</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cards-form__right">
+        <div class="cards-form__form">
+          <div class="page-form">
+            <span class="page-form__title">Оформление карты</span>
+            <div class="page-form__inner">
+          
+          
+          
+          
+                <div class="page-form__field">
+                  <div class="form-input">
+                  
+                    
+                    <label class="form-input__label">
+                  
+                    <input autocomplete="off" type="text" class="form-input__input    " placeholder="Подсказка">
+                  
+                    <span class="form-input__placeholder">Фамилия *</span>
+                  
+                    
+                  
+                    
+                  
+                    
+                    </label>
+                  </div>
+                </div>
+                <div class="page-form__field">
+                  <div class="form-input">
+                  
+                    
+                    <label class="form-input__label">
+                  
+                    <input autocomplete="off" type="text" class="form-input__input    " placeholder="Подсказка">
+                  
+                    <span class="form-input__placeholder">Имя *</span>
+                  
+                    
+                  
+                    
+                  
+                    
+                    </label>
+                  </div>
+                </div>
+                <div class="page-form__field">
+                  <div class="form-input">
+                  
+                    
+                    <label class="form-input__label">
+                  
+                    <input autocomplete="off" type="text" class="form-input__input    " placeholder="Подсказка">
+                  
+                    <span class="form-input__placeholder">Номер телефона *</span>
+                  
+                    
+                  
+                    
+                  
+                    
+                    </label>
+                  </div>
+                </div>
+          
+              <div class="page-form__agreement">
+                <div class="form-checkbox  ">
+                  <label class="form-checkbox__label">
+                    <input type="checkbox" class="form-checkbox__input">
+                    <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                    <span class="form-checkbox__label-text">Я даю согласие на <a href="#">обработку персональных&nbsp;данных</a></span>
+                  </label>
+                </div>
+              </div>
+          
+              <div class="page-form__submit">
+                  <button type="submit" class="btn  btn--large btn--w100  btn--primary ">Оформить карты</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="page__footer footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-main__top">
+        <div class="footer-main__left">
+          <div class="footer-main__logo">
+              <a href="#">
+                <svg class="icon icon-logo--white ">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#logo--white"/>
+                </svg>
+              </a>
+          </div>
+        </div>
+        <div class="footer-main__right">
+          <div class="footer-main__contacts">
+            <div class="footer-main__phones">
+              <div class="footer-phones">
+                  <div class="footer-phones__item">
+                    <a href="tel:+375296993972" class="footer-phones__phone">+375 29 699 39 72</a>
+                    <span class="footer-phones__name">Частные клиенты</span>
+                  </div>
+                  <div class="footer-phones__item">
+                    <a href="tel:+375291810000" class="footer-phones__phone">+375 29 181 00 00</a>
+                    <span class="footer-phones__name">Корпоративные клиенты</span>
+                  </div>
+              </div>
+            </div>
+            <div class="footer-main__actions">
+              <div class="footer-main__bank">
+                <a href="https://mybank.by/" target="_blank" class="button-bank button-bank--white">
+                  <svg class="icon icon-ui--login ">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--login"/>
+                  </svg>
+                  Интернет-банк
+                </a>
+              </div>
+              <div class="footer-main__buttons">
+                <div class="footer-buttons">
+                  <div class="footer-buttons__item">
+                    <a href="#" class="footer-buttons__link">
+                      <svg class="icon icon-ui--location ">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--location"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="footer-buttons__item">
+                    <button class="footer-buttons__link"><svg class="icon icon-ui--chat ">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#ui--chat"/>
+                </svg>
+                </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-main__nav">
+            <nav class="footer-nav">
+              <div class="footer-nav__cell">
+                <div class="js-footer-menu">
+                  <div class="footer-nav__header">
+                    <a href="#" class="footer-nav__header-link js-footer-menu__toggle">Частным клиентам</a>
+                  </div>
+                  <div class="footer-nav__content js-footer-menu__body">
+                    <ul class="footer-nav__menu">
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Кредиты</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="debit-cards.html" class="footer-nav__item-link">Карты</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="deposits.html" class="footer-nav__item-link">Вклады</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Страхование</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Сервисы</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Мобильные платежи</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="about--promotions.html" class="footer-nav__item-link">Акции</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Курсы валют</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">MTB.tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="footer-nav__cell">
+                <div class="js-footer-menu">
+                  <div class="footer-nav__header">
+                    <a href="#" class="footer-nav__header-link js-footer-menu__toggle">Бизнесу</a>
+                  </div>
+                  <div class="footer-nav__content js-footer-menu__body">
+                    <ul class="footer-nav__menu">
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Финансирование</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Расчёты</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="deposits.html" class="footer-nav__item-link">Депозиты</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Сервисы</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Эквайринг</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Крупному бизнесу</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="footer-nav__cell">
+                <div class="js-footer-menu">
+                  <div class="footer-nav__header">
+                    <a href="#" class="footer-nav__header-link js-footer-menu__toggle">Банк</a>
+                  </div>
+                  <div class="footer-nav__content  js-footer-menu__body">
+                    <ul class="footer-nav__menu">
+                      <li class="footer-nav__item">
+                        <a href="about--about-us.html" class="footer-nav__item-link">О нас</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Контакт-центр</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Отделения и банкоматы</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="about--pricing.html" class="footer-nav__item-link">Тарифы и документы</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="about--career-vacancies.html" class="footer-nav__item-link">Работа в банке</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="about--press-single.html" class="footer-nav__item-link">Пресс-центр</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Корресподнентам</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Реквизиты</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="about--tenders.html" class="footer-nav__item-link">Тендеры</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="about--property.html" class="footer-nav__item-link">Реализация имущества</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Учебный портал</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Раскрытие информации</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="footer-nav__cell">
+                <div class="js-footer-menu">
+                  <div class="footer-nav__header">
+                    <a href="#" class="footer-nav__header-link js-footer-menu__toggle">Инвестиции</a>
+                  </div>
+                  <div class="footer-nav__content js-footer-menu__body">
+                    <ul class="footer-nav__menu">
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Частным лицам</a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__item-link">Бизнесу</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main__bottom">
+        <div class="footer-main__left">
+          <div class="footer-socials">
+            <div class="footer-socials__item">
+              <a href="#" class="social-button social-button--youtube  social-button--small social-button--white"></a>
+            </div>
+            <div class="footer-socials__item">
+              <a href="#" class="social-button social-button--vkontakte  social-button--small social-button--white"></a>
+            </div>
+            <div class="footer-socials__item">
+              <a href="#" class="social-button social-button--instagram  social-button--small social-button--white"></a>
+            </div>
+            <div class="footer-socials__item">
+              <a href="#" class="social-button social-button--facebook  social-button--small social-button--white"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main__right">
+          <div class="footer-actions">
+            <div class="footer-actions__item footer-actions__item--reviews">
+              <a href="#" class="footer-actions__button">
+                <svg class="icon icon-additional--book ">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#additional--book"/>
+                </svg>
+                Электронная книга отзывов
+              </a>
+            </div>
+            <div class="footer-actions__item footer-actions__item--language">
+              <select class="js-link-select visually-hidden">
+                <option value="ru" selected data-select-link="#">Русский</option>
+                <option value="en" data-select-link="#">Английский</option>
+                <option value="by" data-select-link="#">Белорусский</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-apps">
+    <div class="container">
+      <div class="footer-apps__inner">
+        <div class="footer-apps__slider">
+          <div class="footer-apps__item">
+            <div class="app-card">
+              <div class="app-card__left">
+                <div class="app-card__image">
+                  <a href="#">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/common/apps/banking.png, ../assets/images/common/apps/banking@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/common/apps/banking.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="app-card__right">
+                <span class="app-card__category">Мобильный банкинг</span>
+                <a href="#" class="app-card__name">MTBank Moby</a>
+                <div class="app-card__links">
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--android ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--android"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--apple ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--apple"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-apps__item">
+            <div class="app-card">
+              <div class="app-card__left">
+                <div class="app-card__image">
+                  <a href="#">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/common/apps/denegram.png, ../assets/images/common/apps/denegram@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/common/apps/denegram.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="app-card__right">
+                <span class="app-card__category">Перевод денег</span>
+                <a href="#" class="app-card__name">Denegram</a>
+                <div class="app-card__links">
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--android ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--android"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--apple ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--apple"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-apps__item">
+            <div class="app-card">
+              <div class="app-card__left">
+                <div class="app-card__image">
+                  <a href="#">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/common/apps/halva.png, ../assets/images/common/apps/halva@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/common/apps/halva.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="app-card__right">
+                <span class="app-card__category">Карта рассрочки</span>
+                <a href="#" class="app-card__name">Halva</a>
+                <div class="app-card__links">
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--android ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--android"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--apple ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--apple"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-apps__item">
+            <div class="app-card">
+              <div class="app-card__left">
+                <div class="app-card__image">
+                  <a href="#">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/common/apps/x-cart.png, ../assets/images/common/apps/x-cart@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/common/apps/x-cart.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="app-card__right">
+                <span class="app-card__category">Приложение</span>
+                <a href="#" class="app-card__name">ИКС карта</a>
+                <div class="app-card__links">
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--android ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--android"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--apple ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--apple"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-apps__item">
+            <div class="app-card">
+              <div class="app-card__left">
+                <div class="app-card__image">
+                  <a href="#">
+                      <picture>
+                    
+                    
+                    
+                        
+                        <source data-srcset="../assets/images/common/apps/mt-forex.png, ../assets/images/common/apps/mt-forex@2x.png 2x" type="image/png">
+                    
+                            <img class="lazy" data-sizes="auto" data-original="../assets/images/common/apps/mt-forex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="app-card__right">
+                <span class="app-card__category">Форекс-площадка</span>
+                <a href="#" class="app-card__name">MTBankFX</a>
+                <div class="app-card__links">
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--android ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--android"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="app-card__link" target="_blank">
+                    <svg class="icon icon-brands--apple ">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#brands--apple"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <div class="footer-bottom__left">
+          <div class="footer-bottom__item">© 1994–2019 ЗАО «МТБанк»</div>
+          <div class="footer-bottom__item">Лицензия на осуществление банковской деятельности №13 от 06.05.2013г.</div>
+        </div>
+        <div class="footer-bottom__right">
+          <div class="footer-bottom__right-cell">
+            <div class="footer-bottom__item">
+              <a href="#">Правовая информация о лицензии</a>
+            </div>
+            <div class="footer-bottom__item">
+              <a href="#">Раскрытие информации</a>
+            </div>
+          </div>
+          <div class="footer-bottom__right-cell">
+            <div class="footer-bottom__item">
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-bottom__item">
+              <a href="#">Лицензия</a>
+            </div>
+          </div>
+          <div class="footer-bottom__right-cell">
+            <div class="footer-bottom__item">
+              <a href="#">Проектирование и дизайн</a> — <span>FlexMedia</span>
+            </div>
+            <div class="footer-bottom__item">
+              <a href="#">Разработка и интеграция</a> — <span>Новый сайт</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="popup js-popup" data-popup-id="call">
+  <div class="popup__wrapper">
+    <div class="popup__inner">
+      <button class="popup__close js-popup-close"></button>
+
+      <div class="popup__window">
+        <div class="popup__content">
+            <div class="popup-call">
+              <div class="popup-call__success" style="display: none">
+                <span class="popup-call__title">Звонок заказа</span>
+                <p class="popup-call__text">Обычно мы перезваниваем в течени 10 минут</p>
+                <div class="popup-call__submit">
+                  <button class="btn btn--large btn--primary js-popup-close">Закрыть</button>
+                </div>
+              </div>
+              <div class="popup-call__failure" style="display: none">
+                <span class="popup-call__title">Ошибка отправки</span>
+                <p class="popup-call__text">К сожалению ваша заявка не была отправлена.<br>
+                  Но вы можете попробовать отправить еще раз,
+                  данные сохранились в форме.</p>
+                <div class="popup-call__submit">
+                  <button class="btn btn--large btn--primary">Вернуться к заявке</button>
+                </div>
+              </div>
+              <div class="popup-call__normal" style="display: block">
+                <div class="popup-call__form">
+                  <span class="popup-call__title">Заказ звонка</span>
+                  <div class="popup-call__input">
+                    <div class="form-input">
+                    
+                      
+                      <label class="form-input__label">
+                    
+                      <input autocomplete="off" type="text" class="form-input__input    " placeholder="Фамилия и имя*">
+                    
+                      <span class="form-input__placeholder">Фамилия и имя*</span>
+                    
+                      
+                    
+                      
+                    
+                      
+                      </label>
+                    </div>
+                  </div>
+                  <div class="popup-call__input">
+                    <div class="form-input">
+                    
+                      
+                      <label class="form-input__label">
+                    
+                      <input autocomplete="off" type="text" class="form-input__input    " placeholder="Номер телефона*">
+                    
+                      <span class="form-input__placeholder">Номер телефона*</span>
+                    
+                      
+                    
+                      
+                    
+                      
+                      </label>
+                    </div>
+                  </div>
+                  <div class="popup-call__input">
+          <div class="form-select   form-select--label  ">
+            <select class="js-select visually-hidden " data-label="Тема звонка">
+          
+                          <option></option>
+                          <option value="1">Консультация по действующим продуктам</option>
+                          <option value="2">Тема 2</option>
+                          <option value="3">Тема 3</option>
+            </select>
+          
+              <label class="form-select__label">Тема звонка</label>
+          
+          </div>
+                  </div>
+                  <div class="popup-call__input">
+          <div class="form-select   form-select--label  ">
+            <select class="js-select visually-hidden " data-label="Желаемое время звонка">
+          
+                          <option></option>
+                          <option value="1">до 21</option>
+                          <option value="2">до 22</option>
+                          <option value="3">до 23</option>
+            </select>
+          
+              <label class="form-select__label">Желаемое время звонка</label>
+          
+          </div>
+                  </div>
+                  <div class="popup-call__input">
+                    <div class="form-input">
+                    
+                      
+                      <label class="form-input__label">
+                    
+                      <input autocomplete="off" type="text" class="form-input__input    " placeholder="Комментарий*">
+                    
+                      <span class="form-input__placeholder">Комментарий*</span>
+                    
+                      
+                    
+                      
+                    
+                      
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup-call__submit">
+                  <button class="btn btn--large btn--primary btn--w100">Отправить заявку</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="js-scroll-up scroll-up"></button>
+
+</div>
+
+<script src="../js/vendors.js?v=1132" defer></script>
+  <script src="../js/main.js?v=1132" defer></script>
+</body>
+</html>
